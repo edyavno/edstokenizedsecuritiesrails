@@ -1,0 +1,14 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+/* compact tables (database) */
+article .table-container { overflow-x: auto; }
+article table { font-size: 0.85rem; width: 100%; border-collapse: collapse; }
+article table th, article table td { padding: 0.3rem 0.5rem; vertical-align: top; white-space: normal; }
+article table td:last-child, article table th:last-child { white-space: nowrap; }
+
+/* database page: use full width, hide right sidebar */
+body[data-slug="database"] .sidebar.right { display: none !important; }
+@media (min-width: 1200px) { body[data-slug="database"] article .table-container { width: calc(100% + 320px); } }
+body[data-slug="database"] article table { font-size: 0.8rem; }

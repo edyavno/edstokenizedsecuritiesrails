@@ -1,0 +1,47 @@
+# Ed's Tokenized Securities Rails
+
+> Source-linked knowledge base on tokenized securities infrastructure. Content CC BY-NC 4.0.
+
+## Core
+- [Database](https://edstokenizedsecuritiesrails.com/database)
+- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/)
+
+## Topics
+- [Innovation Exemption and the onchain-venue (TSV) model](https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption)
+- [International regimes](https://edstokenizedsecuritiesrails.com/concepts/international)
+- [Legal taxonomy of tokenized securities](https://edstokenizedsecuritiesrails.com/concepts/legal-taxonomy)
+- [Post-trade / Reg NMS-inside model](https://edstokenizedsecuritiesrails.com/concepts/post-trade-reg-nms-model)
+- [Token primitives](https://edstokenizedsecuritiesrails.com/concepts/token-primitives)
+- [Corporate actions & dividends](https://edstokenizedsecuritiesrails.com/topics/corporate-actions-and-dividends)
+- [Custody](https://edstokenizedsecuritiesrails.com/topics/custody)
+- [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures)
+- [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation)
+- [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching)
+- [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy)
+- [Coinbase B20](https://edstokenizedsecuritiesrails.com/standards/b20)
+- [ERC-1400 / ERC-1410](https://edstokenizedsecuritiesrails.com/standards/erc-1400)
+- [ERC-3643 (T-REX)](https://edstokenizedsecuritiesrails.com/standards/erc-3643)
+- [Solana Token-2022 extensions](https://edstokenizedsecuritiesrails.com/standards/solana-token-2022)
+- [BUIDL (adjacent fund precedent)](https://edstokenizedsecuritiesrails.com/comparisons/buidl-precedent)
+- [Implementations compared by model](https://edstokenizedsecuritiesrails.com/comparisons/implementations-by-model)
+
+## Entities
+- [bStocks](https://edstokenizedsecuritiesrails.com/issuers/bstocks)
+- [Coinbase Tokenized Stocks](https://edstokenizedsecuritiesrails.com/issuers/coinbase-tokenized-stocks)
+- [Dinari dShares](https://edstokenizedsecuritiesrails.com/issuers/dinari)
+- [Figure OPEN](https://edstokenizedsecuritiesrails.com/issuers/figure-open)
+- [Ondo Global Markets (Ondo Stocks)](https://edstokenizedsecuritiesrails.com/issuers/ondo-global-markets)
+- [Robinhood Stock Tokens](https://edstokenizedsecuritiesrails.com/issuers/robinhood-stock-tokens)
+- [Securitize (issuer-sponsored shares)](https://edstokenizedsecuritiesrails.com/issuers/securitize)
+- [Superstate Opening Bell](https://edstokenizedsecuritiesrails.com/issuers/superstate-opening-bell)
+- [WisdomTree tokenized funds](https://edstokenizedsecuritiesrails.com/issuers/wisdomtree)
+- [xStocks (Backed)](https://edstokenizedsecuritiesrails.com/issuers/xstocks-backed)
+- [Bybit](https://edstokenizedsecuritiesrails.com/platforms-venues/bybit)
+- [Kraken](https://edstokenizedsecuritiesrails.com/platforms-venues/kraken)
+- [Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/platforms-venues/nasdaq-tokenized-securities)
+- [NYSE / ICE tokenized securities](https://edstokenizedsecuritiesrails.com/platforms-venues/nyse-ice-tokenized-platform)
+- [OKXICE TSV](https://edstokenizedsecuritiesrails.com/platforms-venues/okxice-tsv)
+- [Chainlink tokenized equity feeds](https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds)
+- [DTCC / DTC tokenization pilot](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot)
+- [Uniswap v4 permissioned pools](https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools)
+- [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash)
