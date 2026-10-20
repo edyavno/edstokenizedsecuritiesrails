@@ -14,7 +14,10 @@ sources:
 - https://eips.ethereum.org/EIPS/eip-3643
 ---
 
-![How tokenized securities fit together](/diagrams/overview.svg)
+<picture>
+<source media="(max-width: 700px)" srcset="/diagrams/overview-mobile.svg">
+<img src="/diagrams/overview-desktop.svg" alt="How tokenized securities fit together: issuer and transfer agent, identity and allowlist, security token and cash token on a shared ledger settling by atomic DvP, trading venue, investor wallets, plus native vs wrapped inset" style="width:100%;height:auto">
+</picture>
 
 *For readers who know capital markets (and maybe crypto at a high level) but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.*
 
@@ -36,8 +39,19 @@ The legal wrapper decides what the holder actually owns. More: [[concepts/legal-
 ## The four flows in the diagram
 1. **Issue.** The issuer, or its transfer agent, mints tokens and keeps them in sync with the official register. For wrapped tokens, the custodian holds the underlying shares.
 2. **Permission.** Investors are onboarded once (KYC) and their wallets are allowlisted, and every transfer checks the list. This replaces part of what account opening does today.
-3. **Trade + settle.** Orders are matched by a familiar venue (exchange, ATS or broker) or by an onchain pool. Settlement can then be an atomic token-for-cash swap instead of T+1 through a CSD. Several US models today keep the traditional book and tokenize post-trade instead: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]], the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]].
+3. **Trade + settle.** This is where tokenized rails differ most from today's, so it is broken into four parts below.
 4. **Service.** Dividends, splits, votes and redemptions run through the token contract or the issuer's agent. See [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] and [[concepts/token-primitives|Token primitives]].
+
+## Inside step 3: trade and settle
+- **3a Match.** Orders still meet on a familiar venue, such as an exchange or ATS order book or a broker's RFQ, or in an onchain pool or AMM, as in [[infrastructure/uniswap-permissioned-pools|permissioned pools]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]]. Matching can happen off-chain with only settlement on the ledger, or entirely on-chain. Several US models keep the traditional book and tokenize post-trade only: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]] and the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]].
+- **3b Pre-trade checks.** The token contract checks that the receiving wallet is eligible ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)). Because on-ledger settlement is usually trade by trade (gross), both legs typically have to be in place up front. Projects that "eliminate principal counterparty risk" do so by requiring "high levels of liquidity, often through prefunding on a platform" ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf)), rather than the netting and credit that today's CCPs and brokers provide.
+- **3c Settle.** A smart contract swaps the security token for the cash token in one transaction, so both legs settle or neither does ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). IOSCO describes a range of settlement models. At one end the ledger is only shared books and records, and settlement finality "remain[s] with the CSD". At the other is DLT-native settlement, with assets and settlement instruments on the same ledger or linked ones ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Finality is still a legal question, not just a technical one: final settlement "is a legally defined moment" ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)).
+- **3d Post-trade.** Wallet balances update at once. For native tokens that is the register update. For wrapped tokens, or where a transfer agent keeps the official register, the books must still be updated or reconciled against the ledger ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/); [IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Regulatory reporting still applies.
+
+**Trade-offs.**
+- **Pre-funding.** It removes settlement exposure but costs liquidity. The FSB warns that higher prefunding needs at scale could weaken resilience to liquidity shocks ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)). IOSCO notes that CCP functions such as netting could in time be encoded in smart contracts ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
+- **Market hours.** An always-on ledger does not make 24/7 trading automatic. WEF calls always-on infrastructure "a design choice dependent on market demand, risk tolerance and technology" ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)).
+- **Cash leg.** The choice of cash token matters. The CPMI-IOSCO principles favour central bank money where practical and available, as cited by [WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/).
 
 ## Mapping to familiar roles
 | TradFi role | Tokenized equivalent |
@@ -45,7 +59,7 @@ The legal wrapper decides what the holder actually owns. More: [[concepts/legal-
 | Registrar / transfer agent / CSD | Token contract (native) or custodian plus token (wrapped); transfer agent often remains ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)) |
 | Account opening / KYC | Identity registry and allowlist ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)) |
 | Exchange / ATS / broker | Same roles, or an onchain venue |
-| Clearing + T+1 settlement | Atomic DvP on the ledger |
+| CCP netting + T+1 settlement via CSD | Pre-funded, trade-by-trade atomic DvP on the ledger ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)) |
 | Cash in bank or central bank accounts | Tokenized deposits, wholesale CBDC or stablecoins ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)) |
 | Brokerage account | Custodial or self-held wallet ([[topics/custody|Custody]]) |
 
@@ -61,9 +75,11 @@ flowchart TB
     T --> D((Atomic DvP))
     C[Cash token: stablecoin / tokenized deposit / wCBDC] --> D
   end
-  A[Investor wallet] --> V[Trading venue]
+  A[Investor wallet] --> V[Trading venue: order book, RFQ or AMM]
   B[Investor wallet] --> V
-  V -->|3 Trade + settle| D
+  V -->|3a match| P{3b checks: allowlist, pre-funded legs}
+  P -->|3c settle| D
+  D -->|3d balances + register update| A
   T -->|4 Dividends, votes, redemption| A
 ```
 
