@@ -10,7 +10,7 @@ A tokenized security is a security whose ownership record lives on, or is mirror
 
 Read the full overview: [content/overview.md](content/overview.md) (on the site: `/overview`).
 
-An LLM-maintained, source-linked wiki on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
+A human-curated, LLM-maintained, source-linked wiki on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 Site: https://edstokenizedsecuritiesrails.com · Machine-readable index: [`content/llms.txt`](content/llms.txt)
 
