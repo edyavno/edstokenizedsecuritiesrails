@@ -3,6 +3,7 @@
 > Source-linked knowledge base on tokenized securities infrastructure. Content CC BY-NC 4.0.
 
 ## Core
+- [Overview](https://edstokenizedsecuritiesrails.com/overview)
 - [Database](https://edstokenizedsecuritiesrails.com/database)
 - [Changelog](https://edstokenizedsecuritiesrails.com/changelog/)
 

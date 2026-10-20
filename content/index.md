@@ -2,6 +2,10 @@
 title: Ed's Tokenized Securities Rails
 ---
 
+[![How tokenized securities fit together](/diagrams/overview.svg)](/overview)
+
+**New here?** Start with the [[overview|overview: how tokenized securities fit together]]. The token can be the official record or mirror it, permissioned transfers, atomic delivery-versus-payment against a tokenized cash leg, and native vs wrapped models.
+
 An LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 ## Start here
