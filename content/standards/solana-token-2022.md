@@ -9,6 +9,7 @@ sources:
 - https://solana.com/docs/tokens/extensions/transfer-hook
 - https://solana.com/docs/tokens/extensions/scaled-ui-amount
 - https://docs.ondo.finance/ondo-stocks/overview
+description: Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata.
 ---
 
 Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata ([Solana](https://solana.com/docs/tokens/extensions)).

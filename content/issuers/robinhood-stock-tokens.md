@@ -18,6 +18,7 @@ chain:
 - Robinhood Chain
 status: live
 last_updated: '2026-10-17'
+description: Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a base prospectus; they give economic exposure without rights in…
 ---
 
 > [!info] At a glance

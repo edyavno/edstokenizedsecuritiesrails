@@ -16,6 +16,7 @@ type: venue
 chain: unknown
 status: rule approved by SEC 2026-03-18
 last_updated: '2026-10-17'
+description: The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during DTC's tokenization pilot.
 ---
 
 > [!info] At a glance

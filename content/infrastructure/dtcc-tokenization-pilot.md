@@ -16,6 +16,7 @@ type: infrastructure
 chain: unknown
 status: pilot (SEC no-action letter 2025-12-11)
 last_updated: '2026-10-17'
+description: DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter; 24X Exchange filed rules referencing it.
 ---
 
 > [!info] At a glance

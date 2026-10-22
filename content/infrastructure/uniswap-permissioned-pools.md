@@ -16,6 +16,7 @@ type: infrastructure
 chain: unknown
 status: unknown
 last_updated: '2026-10-17'
+description: An open-source Uniswap v4 hook standard for compliant trading of tokenized RWAs and equities; issuer allowlists are enforced on every swap and liquidity mint.
 ---
 
 > [!info] At a glance

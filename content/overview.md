@@ -12,6 +12,7 @@ sources:
 - https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
 - https://eips.ethereum.org/EIPS/eip-3643
+description: For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
 ---
 
 <picture>

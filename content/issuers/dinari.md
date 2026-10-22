@@ -26,6 +26,7 @@ chain:
 - (Sei, Solana announced)
 status: live (US launch 2026-08-04)
 last_updated: '2026-10-17'
+description: On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligible US investors.
 ---
 
 > [!info] At a glance

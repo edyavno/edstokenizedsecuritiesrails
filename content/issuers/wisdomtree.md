@@ -20,6 +20,7 @@ chain:
 - others (multi-chain)
 status: live (tokenized registered funds)
 last_updated: '2026-10-17'
+description: WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX.
 ---
 
 > [!info] At a glance

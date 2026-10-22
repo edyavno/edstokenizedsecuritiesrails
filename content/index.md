@@ -1,5 +1,5 @@
 ---
-title: Ed's Tokenized Securities Rails
+title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
 ---
 

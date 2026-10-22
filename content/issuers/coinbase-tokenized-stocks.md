@@ -18,6 +18,7 @@ chain:
 - Base
 status: live
 last_updated: '2026-10-17'
+description: Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remote custody. Coinbase holds an FSRA permission in ADGM.
 ---
 
 > [!info] At a glance

@@ -13,6 +13,7 @@ sources:
 - https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks
 - https://didalabs.com/tokenized-stock-objection/
 - https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm
+description: On 17 Sep 2026 the SEC issued an order granting temporary, conditional section 36(a)(1) relief.
 ---
 
 On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting temporary, conditional section 36(a)(1) relief ([SEC order](https://business.cch.com/srd/34-106402091726.pdf); [press release](https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf)):

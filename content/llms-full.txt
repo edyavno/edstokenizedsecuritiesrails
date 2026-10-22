@@ -1,8 +1,8 @@
-# Ed's Tokenized Securities Rails (all public pages)
+# Ed’s Tokenized Securities Rails (all public pages)
 > Human-curated, LLM-maintained. Generated 2026-10-21; public data is delayed 30 days. CC BY-NC 4.0.
 
 ========================================================================
-# Ed's Tokenized Securities Rails
+# Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
 
 
@@ -129,7 +129,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/agents
 
 
-Ed's Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page explains how to read and cite it.
+Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page explains how to read and cite it.
 
 ## Fast ways in
 - `https://edstokenizedsecuritiesrails.com/llms.txt`: one line per page with a short summary.

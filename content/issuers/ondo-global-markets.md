@@ -22,6 +22,7 @@ chain:
 - Solana
 status: unknown
 last_updated: '2026-10-17'
+description: Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial…
 ---
 
 > [!info] At a glance

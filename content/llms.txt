@@ -1,68 +1,68 @@
-# Ed's Tokenized Securities Rails
+# Ed’s Tokenized Securities Rails
 
 > A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. Public data is published with a 30-day delay. Content CC BY-NC 4.0. All pages in one file: https://edstokenizedsecuritiesrails.com/llms-full.txt
 
 ## Start here
-- [Ed's Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): For readers who know capital markets (and maybe crypto at a high level) but not how the pieces connect.
+- [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
+- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki.
 - [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts): Example questions an AI agent can answer from this wiki.
-- [Database](https://edstokenizedsecuritiesrails.com/database): Generated from vault frontmatter on 2026-10-21. Headline fields only; unknown means not yet verified from a source.
-- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, published with a 30-day delay. - 2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20) - 2026-03-18: SEC approves Nasdaq tokenized securities rule - 2026-02-24: WisdomTree announce…
+- [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
+- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, published with a 30-day delay.
 
 ## Concepts
-- [Innovation Exemption and the onchain-venue (TSV) model](https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption): On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting temporary, conditional section 36(a)(1) relief (SEC order; press release): - Tokenized Securities Venues (TSVs) operating permissioned AMM liq…
-- [International regimes](https://edstokenizedsecuritiesrails.com/concepts/international): EU DLT Pilot Regime: ESMA's 2025 review found low uptake, with only CSD Prague, 21X and 360X authorised; barriers include thresholds, interoperability, central-bank money and legal uncertainty.
-- [Legal taxonomy of tokenized securities](https://edstokenizedsecuritiesrails.com/concepts/legal-taxonomy): The SEC staff statement of 28 Jan 2026 (SEC) is the vocabulary used throughout this wiki: - Issuer-sponsored tokenization: the issuer (or its agent) integrates DLT into its securityholder records; the onchain record is,…
-- [Post-trade / Reg NMS-inside model](https://edstokenizedsecuritiesrails.com/concepts/post-trade-reg-nms-model): In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through DTC's tokenization pilot (SEC Nasdaq approval).
-- [Token primitives](https://edstokenizedsecuritiesrails.com/concepts/token-primitives): The building blocks used by tokenized-stock implementations: - Identity-gated transfers: ERC-3643 (identity registry + compliance), ERC-1400 (transfer validation, partitions), Token-2022 transfer hooks. - Plain ERC-20 w…
+- [Innovation Exemption and the onchain-venue (TSV) model](https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption): On 17 Sep 2026 the SEC issued an order granting temporary, conditional section 36(a)(1) relief.
+- [International regimes](https://edstokenizedsecuritiesrails.com/concepts/international): EU DLT Pilot Regime: ESMA's 2025 review found low uptake, with only CSD Prague, 21X and 360X authorised; barriers include thresholds, interoperability…
+- [Legal taxonomy of tokenized securities](https://edstokenizedsecuritiesrails.com/concepts/legal-taxonomy): The SEC staff statement of 28 Jan 2026 is the vocabulary used throughout this wiki.
+- [Post-trade / Reg NMS-inside model](https://edstokenizedsecuritiesrails.com/concepts/post-trade-reg-nms-model): In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through…
+- [Token primitives](https://edstokenizedsecuritiesrails.com/concepts/token-primitives): The building blocks used by tokenized-stock implementations.
 
 ## Topics
-- [Corporate actions & dividends](https://edstokenizedsecuritiesrails.com/topics/corporate-actions-and-dividends): Coinbase and Robinhood use multipliers that reflect reinvested dividends; others pay distributions (Zerion).
-- [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): Backed models hold underlying shares with a custodian or broker-dealer (Ondo: US broker-dealers;
-- [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures): Tokenized stocks fall into distinct legal models (Zerion): - Debt security / certificate backed by shares (Robinhood, bStocks, xStocks). - Beneficial claim on custodied shares (Coinbase B20). - Issuer-sponsored shares r…
-- [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation): Key US milestones: DTC no-action letter (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026) (SEC);
-- [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): Venue models: centralized exchanges listing tokens (Kraken 24/5, PR); onchain DEXs;
-- [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood);
+- [Corporate actions & dividends](https://edstokenizedsecuritiesrails.com/topics/corporate-actions-and-dividends): Coinbase and Robinhood use multipliers that reflect reinvested dividends; others pay distributions.
+- [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): Backed models hold underlying shares with a custodian or broker-dealer. Issuer-sponsored models replace custody with a transfer-agent register.
+- [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures): Tokenized stocks fall into distinct legal models.
+- [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation): Key US milestones: DTC no-action letter (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026); WisdomTree's exemptive relief for…
+- [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): Venue models: centralized exchanges listing tokens (Kraken 24/5, PR); onchain DEXs; ATS (Figure); and national exchanges trading tokenized and traditional…
+- [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): Most offshore products exclude US persons; Dinari documents a US broker-dealer route; issuer-sponsored shares may admit eligible US investors.
 
 ## Standards
-- [Coinbase B20](https://edstokenizedsecuritiesrails.com/standards/b20): B20 is the token format Coinbase uses for its tokenized stocks on Base (Base).
-- [ERC-1400 / ERC-1410](https://edstokenizedsecuritiesrails.com/standards/erc-1400): ERC-1400 (draft, 2018) is an umbrella suite: ERC-1594 (transfer validation, off-chain data), ERC-1643 (documents), ERC-1644 (controller/forced transfers) and ERC-1410 (partitions) (spec).
+- [Coinbase B20](https://edstokenizedsecuritiesrails.com/standards/b20): B20 is the token format Coinbase uses for its tokenized stocks on Base. The B20 specification itself was not found in the collected sources (status: unknown).
+- [ERC-1400 / ERC-1410](https://edstokenizedsecuritiesrails.com/standards/erc-1400): ERC-1400 (draft, 2018) is an umbrella suite: ERC-1594, ERC-1643 (documents), ERC-1644 and ERC-1410 (partitions).
 - [ERC-3643 (T-REX)](https://edstokenizedsecuritiesrails.com/standards/erc-3643): Final EIP: a permissioned ERC-20 extension with conditional transfers, pause/freeze, forced transfer and recovery.
-- [Solana Token-2022 extensions](https://edstokenizedsecuritiesrails.com/standards/solana-token-2022): Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata (Solana). - Transfer hook: a custom program runs on every transfer;
+- [Solana Token-2022 extensions](https://edstokenizedsecuritiesrails.com/standards/solana-token-2022): Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata.
 
 ## Comparisons
-- [BUIDL (adjacent fund precedent)](https://edstokenizedsecuritiesrails.com/comparisons/buidl-precedent): BlackRock's BUIDL fund (launched 20 Mar 2024) used Securitize as transfer agent, tokenization platform and placement agent (Nasdaq PR).
+- [BUIDL (adjacent fund precedent)](https://edstokenizedsecuritiesrails.com/comparisons/buidl-precedent): BlackRock's BUIDL fund (launched 20 Mar 2024) used Securitize as transfer agent, tokenization platform and placement agent.
 - [Implementations compared by model](https://edstokenizedsecuritiesrails.com/comparisons/implementations-by-model): Classification follows the SEC staff taxonomy. Details and sources are on each linked page.
 
 ## Issuers
-- [bStocks](https://edstokenizedsecuritiesrails.com/issuers/bstocks): bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated custodian, admitted to the FSRA Official List (Binance).
-- [Coinbase Tokenized Stocks](https://edstokenizedsecuritiesrails.com/issuers/coinbase-tokenized-stocks): Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remote custody (Coinbase;
-- [Dinari dShares](https://edstokenizedsecuritiesrails.com/issuers/dinari): On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligible US investors (Dinari).
-- [Figure OPEN](https://edstokenizedsecuritiesrails.com/issuers/figure-open): Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS (Figure); registration filing announced Nov 2025 (Figure).
-- [Ondo Global Markets (Ondo Stocks)](https://edstokenizedsecuritiesrails.com/issuers/ondo-global-markets): Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial broker-dealers (Ondo docs; trust & transparency).
-- [Robinhood Stock Tokens](https://edstokenizedsecuritiesrails.com/issuers/robinhood-stock-tokens): Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a base prospectus; they give economic exposure without rights in the underlying (docs; product page).
-- [Securitize (issuer-sponsored shares)](https://edstokenizedsecuritiesrails.com/issuers/securitize): Example: Exodus Class A common stock tokens on Algorand, with Securitize as transfer agent (PR Newswire); trading began on Securitize Markets in March 2022 (Securitize).
-- [Superstate Opening Bell](https://edstokenizedsecuritiesrails.com/issuers/superstate-opening-bell): Galaxy (GLXY) Class A common stock is tokenized on Solana via Opening Bell;
-- [WisdomTree tokenized funds](https://edstokenizedsecuritiesrails.com/issuers/wisdomtree): WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX (WisdomTree).
+- [bStocks](https://edstokenizedsecuritiesrails.com/issuers/bstocks): bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated custodian, admitted to the FSRA Official List.
+- [Coinbase Tokenized Stocks](https://edstokenizedsecuritiesrails.com/issuers/coinbase-tokenized-stocks): Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remote custody. Coinbase holds an FSRA permission in ADGM.
+- [Dinari dShares](https://edstokenizedsecuritiesrails.com/issuers/dinari): On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligible US investors.
+- [Figure OPEN](https://edstokenizedsecuritiesrails.com/issuers/figure-open): Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS; registration filing announced Nov 2025.
+- [Ondo Global Markets (Ondo Stocks)](https://edstokenizedsecuritiesrails.com/issuers/ondo-global-markets): Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial…
+- [Robinhood Stock Tokens](https://edstokenizedsecuritiesrails.com/issuers/robinhood-stock-tokens): Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a base prospectus; they give economic exposure without rights in…
+- [Securitize (issuer-sponsored shares)](https://edstokenizedsecuritiesrails.com/issuers/securitize): Example: Exodus Class A common stock tokens on Algorand, with Securitize as transfer agent; trading began on Securitize Markets in March 2022.
+- [Superstate Opening Bell](https://edstokenizedsecuritiesrails.com/issuers/superstate-opening-bell): Galaxy (GLXY) Class A common stock is tokenized on Solana via Opening Bell; Superstate, an SEC-registered transfer agent, updates ownership records.
+- [WisdomTree tokenized funds](https://edstokenizedsecuritiesrails.com/issuers/wisdomtree): WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX.
 - [xStocks (Backed)](https://edstokenizedsecuritiesrails.com/issuers/xstocks-backed): xStocks are stock and ETF tokens issued by Backed Assets (JE) Limited, backed 1:1 by the underlying asset.
 
 ## Platforms and venues
-- [Bybit](https://edstokenizedsecuritiesrails.com/platforms-venues/bybit): Bybit listed xStocks on its spot platform on 30 June 2025 (PR Newswire).
-- [Kraken](https://edstokenizedsecuritiesrails.com/platforms-venues/kraken): Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals (PR Newswire).
-- [Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/platforms-venues/nasdaq-tokenized-securities): The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during DTC's tokenization pilot (SEC).
-- [NYSE / ICE tokenized securities](https://edstokenizedsecuritiesrails.com/platforms-venues/nyse-ice-tokenized-platform): NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the DTC pilot (NYSE).
-- [OKXICE TSV](https://edstokenizedsecuritiesrails.com/platforms-venues/okxice-tsv): The first public TSV notice under the Innovation Exemption, dated 4 Oct 2026 (OKXICE notice).
+- [Bybit](https://edstokenizedsecuritiesrails.com/platforms-venues/bybit): Bybit listed xStocks on its spot platform on 30 June 2025.
+- [Kraken](https://edstokenizedsecuritiesrails.com/platforms-venues/kraken): Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals.
+- [Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/platforms-venues/nasdaq-tokenized-securities): The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during DTC's tokenization pilot.
+- [NYSE / ICE tokenized securities](https://edstokenizedsecuritiesrails.com/platforms-venues/nyse-ice-tokenized-platform): NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the DTC pilot.
+- [OKXICE TSV](https://edstokenizedsecuritiesrails.com/platforms-venues/okxice-tsv): The first public TSV notice under the Innovation Exemption, dated 4 Oct 2026.
 
 ## Infrastructure
-- [Chainlink tokenized equity feeds](https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds): Feeds combine the underlying 24/5 equity price with the issuer's multiplier and respect issuer-controlled oracle pauses; issuer-specific pages exist for Coinbase B20 and Robinhood (Chainlink).
-- [DTCC / DTC tokenization pilot](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot): DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter (SEC); 24X Exchange filed rules referencing it (SEC).
-- [Uniswap v4 permissioned pools](https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools): An open-source Uniswap v4 hook standard for compliant trading of tokenized RWAs and equities; issuer allowlists are enforced on every swap and liquidity mint (Uniswap).
-- [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): Zerohash markets a Tokenization Engine to brokerages (Zerohash).
+- [Chainlink tokenized equity feeds](https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds): Feeds combine the underlying 24/5 equity price with the issuer's multiplier and respect issuer-controlled oracle pauses; issuer-specific pages exist for…
+- [DTCC / DTC tokenization pilot](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot): DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter; 24X Exchange filed rules referencing it.
+- [Uniswap v4 permissioned pools](https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools): An open-source Uniswap v4 hook standard for compliant trading of tokenized RWAs and equities; issuer allowlists are enforced on every swap and liquidity mint.
+- [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): Zerohash markets a Tokenization Engine to brokerages.
 
 ## Changelog entries
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](https://edstokenizedsecuritiesrails.com/changelog/2026-06-16-sec): SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20).
-- [2026-03-18: SEC approves Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/changelog/2026-03-18-sec): SEC approves Nasdaq tokenized securities rule. Source: https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
+- [2026-03-18: SEC approves Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/changelog/2026-03-18-sec): SEC approves Nasdaq tokenized securities rule.
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](https://edstokenizedsecuritiesrails.com/changelog/2026-02-24-wisdomtree): WisdomTree announces 24x7 trading and instant settlement for WTGXX.
 - [2025-12-02: Kraken agrees to acquire Backed Finance AG](https://edstokenizedsecuritiesrails.com/changelog/2025-12-02-kraken): Source: https://blog.kraken.com/news/backed-acquisition
-- [2025-06-30: xStocks live on Bybit, Kraken, Solana DeFi](https://edstokenizedsecuritiesrails.com/changelog/2025-06-30-xstocks): xStocks live on Bybit, Kraken, Solana DeFi. Source: https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html
+- [2025-06-30: xStocks live on Bybit, Kraken, Solana DeFi](https://edstokenizedsecuritiesrails.com/changelog/2025-06-30-xstocks): xStocks live on Bybit, Kraken, Solana DeFi.

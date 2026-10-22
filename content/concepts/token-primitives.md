@@ -8,6 +8,7 @@ sources:
 - https://docs.robinhood.com/chain/building-with-stock-tokens/
 - https://docs.ondo.finance/ondo-stocks/overview
 - https://docs.xstocks.fi/developers/multipliers
+description: The building blocks used by tokenized-stock implementations.
 ---
 
 The building blocks used by tokenized-stock implementations:

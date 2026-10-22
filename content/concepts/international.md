@@ -7,6 +7,7 @@ last_checked: '2026-10-17'
 sources:
 - https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf
 - https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent
+description: 'EU DLT Pilot Regime: ESMA''s 2025 review found low uptake, with only CSD Prague, 21X and 360X authorised; barriers include thresholds, interoperability…'
 ---
 
 **EU DLT Pilot Regime**: ESMA's 2025 review found low uptake, with only CSD Prague, 21X and 360X authorised; barriers include thresholds, interoperability, central-bank money and legal uncertainty. ESMA recommends making the regime permanent and wider ([ESMA report](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf); [ESMA press](https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent)).

@@ -11,6 +11,7 @@ sources:
 - https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology
 - https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers
 - https://www.sidley.com/en/insights/newsupdates/2025/12/sec-issues-further-crypto-asset-security-guidance-addresses-broker-dealer-physical-possession
+description: The SEC staff statement of 28 Jan 2026 is the vocabulary used throughout this wiki.
 ---
 
 The SEC staff statement of 28 Jan 2026 ([SEC](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)) is the vocabulary used throughout this wiki:

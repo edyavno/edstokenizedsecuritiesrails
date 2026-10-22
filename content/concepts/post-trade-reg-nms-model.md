@@ -8,6 +8,7 @@ sources:
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
 - https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf
+description: 'In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through…'
 ---
 
 In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through DTC's tokenization pilot ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)). Components:

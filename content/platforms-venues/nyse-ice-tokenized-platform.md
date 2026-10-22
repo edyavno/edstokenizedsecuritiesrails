@@ -16,6 +16,7 @@ type: venue
 chain: unknown
 status: rule filed; platform in development
 last_updated: '2026-10-17'
+description: NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the DTC pilot.
 ---
 
 > [!info] At a glance

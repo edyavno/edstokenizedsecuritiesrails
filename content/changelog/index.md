@@ -1,5 +1,6 @@
 ---
 title: Changelog
+description: Public changes, published with a 30-day delay.
 ---
 
 Public changes, published with a 30-day delay.

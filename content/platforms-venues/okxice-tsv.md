@@ -16,6 +16,7 @@ type: venue
 chain: unknown
 status: TSV notice published 2026-10-04
 last_updated: '2026-10-17'
+description: The first public TSV notice under the Innovation Exemption, dated 4 Oct 2026.
 ---
 
 > [!info] At a glance

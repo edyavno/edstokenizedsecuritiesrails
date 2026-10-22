@@ -22,6 +22,7 @@ chain:
 - (TON, Tron, Mantle, BNB Chain announced as coming, Dec 2025)
 status: live (since 2025-06-30)
 last_updated: '2026-10-17'
+description: xStocks are stock and ETF tokens issued by Backed Assets (JE) Limited, backed 1:1 by the underlying asset.
 ---
 
 > [!info] At a glance

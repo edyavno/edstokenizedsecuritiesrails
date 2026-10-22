@@ -24,6 +24,7 @@ chain:
 - Avalanche (per Zerion, secondary)
 status: live (Securitize Stocks launched 2026-10-08)
 last_updated: '2026-10-17'
+description: 'Example: Exodus Class A common stock tokens on Algorand, with Securitize as transfer agent; trading began on Securitize Markets in March 2022.'
 ---
 
 > [!info] At a glance

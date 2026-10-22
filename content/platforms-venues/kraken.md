@@ -16,6 +16,7 @@ type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
 last_updated: '2026-10-17'
+description: Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals.
 ---
 
 > [!info] At a glance

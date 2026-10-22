@@ -20,6 +20,7 @@ chain:
 - Solana
 status: live
 last_updated: '2026-10-17'
+description: Galaxy (GLXY) Class A common stock is tokenized on Solana via Opening Bell; Superstate, an SEC-registered transfer agent, updates ownership records.
 ---
 
 > [!info] At a glance

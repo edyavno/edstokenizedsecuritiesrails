@@ -18,6 +18,7 @@ chain:
 - Provenance
 status: live
 last_updated: '2026-10-17'
+description: Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS; registration filing announced Nov 2025.
 ---
 
 > [!info] At a glance

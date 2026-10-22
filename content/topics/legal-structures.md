@@ -3,6 +3,7 @@ title: Legal structures
 tags:
 - topics
 last_checked: 2026-10-17
+description: Tokenized stocks fall into distinct legal models.
 ---
 
 Tokenized stocks fall into distinct legal models ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)):

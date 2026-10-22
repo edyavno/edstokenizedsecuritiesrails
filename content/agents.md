@@ -3,7 +3,7 @@ title: Guide for AI agents
 description: How AI agents should read, query and cite this wiki.
 ---
 
-Ed's Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page explains how to read and cite it.
+Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page explains how to read and cite it.
 
 ## Fast ways in
 - `https://edstokenizedsecuritiesrails.com/llms.txt`: one line per page with a short summary.

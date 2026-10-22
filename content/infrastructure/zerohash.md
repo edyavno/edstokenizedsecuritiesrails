@@ -16,6 +16,7 @@ type: infrastructure
 chain: unknown
 status: unknown
 last_updated: '2026-10-17'
+description: Zerohash markets a Tokenization Engine to brokerages.
 ---
 
 > [!info] At a glance

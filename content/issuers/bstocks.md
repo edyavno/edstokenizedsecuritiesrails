@@ -18,6 +18,7 @@ chain:
 - BNB Smart Chain
 status: live (admitted to FSRA Official List)
 last_updated: '2026-10-17'
+description: bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated custodian, admitted to the FSRA Official List.
 ---
 
 > [!info] At a glance

@@ -16,6 +16,7 @@ type: infrastructure
 chain: unknown
 status: live
 last_updated: '2026-10-17'
+description: Feeds combine the underlying 24/5 equity price with the issuer's multiplier and respect issuer-controlled oracle pauses; issuer-specific pages exist for…
 ---
 
 > [!info] At a glance
