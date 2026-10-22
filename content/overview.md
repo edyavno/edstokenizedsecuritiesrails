@@ -3,7 +3,7 @@ title: 'Tokenized securities: how it fits together'
 type: overview
 tags:
 - overview
-last_checked: '2026-10-19'
+last_checked: '2026-10-21'
 sources:
 - https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf
 - https://www.fsb.org/uploads/P221024-2.pdf
@@ -12,13 +12,31 @@ sources:
 - https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
 - https://eips.ethereum.org/EIPS/eip-3643
-description: For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
+- https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260826~3641116314.en.html
+- https://www.blackrock.com/corporate/investor-relations/2025-larry-fink-annual-chairmans-letter
+- https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november
+- https://www.cftc.gov/PressRoom/PressReleases/9146-25
+- https://app.rwa.xyz/treasuries
+- https://www.mckinsey.com/industries/financial-services/our-insights/from-ripples-to-waves-the-transformational-power-of-tokenizing-assets
+- https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto
+- https://www.mas.gov.sg/news/speeches/2024/tokenisation-in-financial-services-pathways-to-scale
+description: 'It''s already real in wholesale markets: about $368B of tokenized repo settles every day.'
 ---
 
 <picture>
 <source media="(max-width: 700px)" srcset="/diagrams/overview-mobile.svg">
 <img src="/diagrams/overview-desktop.svg" alt="How tokenized securities fit together: issuer and transfer agent, identity and allowlist, security token and cash token on a shared ledger settling by atomic DvP, trading venue, investor wallets, plus native vs wrapped inset" style="width:100%;height:auto">
 </picture>
+
+## Why tokenize securities?
+Today, buying a stock or bond goes through a chain of brokers, custodians and clearinghouses. Each one keeps its own records and has to reconcile them with the others, which is why settlement takes days and markets close at night. A token puts the asset and its ownership record on one shared ledger, so:
+
+- **Cash and asset swap in one step.** Both sides settle together or not at all ([ECB](https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260826~3641116314.en.html)).
+- **Markets don't need to close.** Trades could clear in seconds, 24/7 ([BlackRock](https://www.blackrock.com/corporate/investor-relations/2025-larry-fink-annual-chairmans-letter)).
+- **Assets plug into other things.** Tokenized Treasuries can already be posted as collateral for futures and swaps ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9146-25)).
+- **More people get access.** You can own fractions, from anywhere.
+
+It's already real in wholesale markets: about $368B of tokenized repo settles every day ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). The catch is that it's still early and mostly bonds and money market funds, about $14.5B in tokenized Treasuries as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
 
 *For readers who know capital markets (and maybe crypto at a high level) but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.*
 
@@ -96,3 +114,11 @@ Public originals for the facts on this page.
 - <https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
 - <https://eips.ethereum.org/EIPS/eip-3643>
+- <https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260826~3641116314.en.html>
+- <https://www.blackrock.com/corporate/investor-relations/2025-larry-fink-annual-chairmans-letter>
+- <https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november>
+- <https://www.cftc.gov/PressRoom/PressReleases/9146-25>
+- <https://app.rwa.xyz/treasuries>
+- <https://www.mckinsey.com/industries/financial-services/our-insights/from-ripples-to-waves-the-transformational-power-of-tokenizing-assets>
+- <https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto>
+- <https://www.mas.gov.sg/news/speeches/2024/tokenisation-in-financial-services-pathways-to-scale>
