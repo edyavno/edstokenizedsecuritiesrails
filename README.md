@@ -1,4 +1,4 @@
-# Ed's Tokenized Securities Rails
+# <img src="quartz/static/icon.svg" alt="" width="44" align="absmiddle"> Ed's Tokenized Securities Rails
 
 ![How tokenized securities fit together](content/diagrams/overview-desktop.svg)
 
