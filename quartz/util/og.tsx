@@ -222,8 +222,8 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         {iconBase64 && (
           <img
             src={iconBase64}
-            width={56}
-            height={56}
+            width={96}
+            height={96}
             style={{
               borderRadius: "50%",
             }}
@@ -232,12 +232,13 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         <div
           style={{
             display: "flex",
-            fontSize: 32,
-            color: cfg.theme.colors[colorScheme].gray,
-            fontFamily: bodyFont,
+            fontSize: 36,
+            fontWeight: 700,
+            color: cfg.theme.colors[colorScheme].dark,
+            fontFamily: headerFont,
           }}
         >
-          {cfg.baseUrl}
+          {(cfg.pageTitle ?? cfg.baseUrl ?? "").replace(/'/g, "\u2019")}
         </div>
       </div>
 
