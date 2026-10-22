@@ -17,7 +17,23 @@ last_checked: '2026-10-17'
 title: Dinari dShares
 tags:
 - issuers
+type: issuer
+chain:
+- Ethereum
+- Avalanche
+- Arbitrum
+- Base
+- (Sei, Solana announced)
+status: live (US launch 2026-08-04)
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** United States (+85 jurisdictions per Fensory)  
+> **Chain:** Ethereum, Avalanche, Arbitrum, Base, (Sei, Solana announced)  
+> **Status:** live (US launch 2026-08-04)  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -34,12 +50,14 @@ On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligib
 In its input to the SEC Crypto Task Force, Dinari describes tokens as secondary, non-transferable records mirroring authoritative off-chain brokerage books ([SEC](https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf)). US clearing is through Alpaca Securities LLC ([Dinari](https://docs.dinari.com/docs/us)). See [What is a dShare](https://docs.dinari.com/docs/what-is-dshare).
 
 ## Sources
-- https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses
-- https://www.globenewswire.com/news-release/2026/08/04/3338495/0/en/dinari-inc-opens-platform-licenses-to-u-s-financial-institutions.html
-- https://docs.dinari.com/docs/quickstart
-- https://fensory.com/best/tokenized-stocks-platforms
-- https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf
-- https://docs.dinari.com/docs/what-is-dshare
-- https://docs.dinari.com/docs/us
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses>
+- <https://www.globenewswire.com/news-release/2026/08/04/3338495/0/en/dinari-inc-opens-platform-licenses-to-u-s-financial-institutions.html>
+- <https://docs.dinari.com/docs/quickstart>
+- <https://fensory.com/best/tokenized-stocks-platforms>
+- <https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf>
+- <https://docs.dinari.com/docs/what-is-dshare>
+- <https://docs.dinari.com/docs/us>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

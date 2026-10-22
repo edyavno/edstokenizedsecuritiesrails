@@ -18,6 +18,8 @@ The building blocks used by tokenized-stock implementations:
 - **Oracles** for a 24/5 underlying traded 24/7: [[infrastructure/chainlink-equity-feeds|Chainlink]].
 
 ## Sources
-- https://docs.robinhood.com/chain/building-with-stock-tokens/
-- https://docs.ondo.finance/ondo-stocks/overview
-- https://docs.xstocks.fi/developers/multipliers
+Public originals for the facts on this page.
+
+- <https://docs.robinhood.com/chain/building-with-stock-tokens/>
+- <https://docs.ondo.finance/ondo-stocks/overview>
+- <https://docs.xstocks.fi/developers/multipliers>

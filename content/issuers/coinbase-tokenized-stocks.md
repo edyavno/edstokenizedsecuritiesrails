@@ -13,7 +13,19 @@ last_checked: '2026-10-17'
 title: Coinbase Tokenized Stocks
 tags:
 - issuers
+type: issuer
+chain:
+- Base
+status: live
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** Abu Dhabi Global Market (FSRA-authorized, per Coinbase via Zerion)  
+> **Chain:** Base  
+> **Status:** live  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -30,11 +42,13 @@ Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remot
 Authorized participants (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and custodian ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
 
 ## Sources
-- https://www.coinbase.com/tokenize
-- https://www.base.org/stocks
-- https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority
-- https://docs.base.org/sdks/tokenized-stocks/overview
-- https://blog.base.org/tokenized-stocks
-- https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://www.coinbase.com/tokenize>
+- <https://www.base.org/stocks>
+- <https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority>
+- <https://docs.base.org/sdks/tokenized-stocks/overview>
+- <https://blog.base.org/tokenized-stocks>
+- <https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

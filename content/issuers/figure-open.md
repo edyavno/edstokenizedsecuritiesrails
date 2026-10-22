@@ -13,7 +13,19 @@ last_checked: '2026-10-17'
 title: Figure OPEN
 tags:
 - issuers
+type: issuer
+chain:
+- Provenance
+status: live
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** United States  
+> **Chain:** Provenance  
+> **Status:** live  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -28,8 +40,10 @@ tags:
 Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running)); registration filing announced Nov 2025 ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-public-filing-registration-statement-proposed)).
 
 ## Sources
-- https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running
-- https://investors.figure.com/news-releases/news-release-details/figure-announces-public-filing-registration-statement-proposed
-- https://zerion.io/blog/best-tokenized-stock-platforms/
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running>
+- <https://investors.figure.com/news-releases/news-release-details/figure-announces-public-filing-registration-statement-proposed>
+- <https://zerion.io/blog/best-tokenized-stock-platforms/>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

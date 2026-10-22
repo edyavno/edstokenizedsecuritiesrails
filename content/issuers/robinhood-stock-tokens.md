@@ -13,7 +13,19 @@ last_checked: '2026-10-17'
 title: Robinhood Stock Tokens
 tags:
 - issuers
+type: issuer
+chain:
+- Robinhood Chain
+status: live
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** Jersey  
+> **Chain:** Robinhood Chain  
+> **Status:** live  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -30,11 +42,13 @@ Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) L
 On Robinhood Chain, trading at launch is via RFQ plus AMMs and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
 ## Sources
-- https://docs.robinhood.com/chain/stock-tokens/
-- https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf
-- https://robinhood.com/rhj/stocktokens/
-- https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
-- https://docs.robinhood.com/chain/building-with-stock-tokens/
-- https://blog.arbitrum.io/robinhood-chain-mainnet/
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://docs.robinhood.com/chain/stock-tokens/>
+- <https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf>
+- <https://robinhood.com/rhj/stocktokens/>
+- <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
+- <https://docs.robinhood.com/chain/building-with-stock-tokens/>
+- <https://blog.arbitrum.io/robinhood-chain-mainnet/>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

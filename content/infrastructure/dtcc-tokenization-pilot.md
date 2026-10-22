@@ -12,7 +12,18 @@ last_checked: '2026-10-17'
 title: DTCC / DTC tokenization pilot
 tags:
 - infrastructure
+type: infrastructure
+chain: unknown
+status: pilot (SEC no-action letter 2025-12-11)
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** infrastructure  
+> **Jurisdiction:** United States  
+> **Chain:** unknown  
+> **Status:** pilot (SEC no-action letter 2025-12-11)  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -32,13 +43,15 @@ Staff relief lets DTC participants record security entitlements on DLT ("Tokeniz
 DTCC said the service was designed with feedback from more than 50 firms, with limited production trades planned for July 2026 and launch in October 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service)). About 40 firms took part in live production trades ([DTCC](https://www.dtcc.com/digital-assets/tokenization/live-production-trades); [DTCC press](https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality)). As of this page's check, no DTCC go-live press release was found; The Block (8 Oct 2026) reported launch was expected that month ([The Block](https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839), secondary).
 
 ## Sources
-- https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
-- https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20
-- https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
-- https://www.mayerbrown.com/-/media/files/perspectives-events/publications/2025/12/sec-staff-no-action-relief-for-dtc-pilot-provides-a-pathway-for-tokenized-securities.pdf
-- https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service
-- https://www.dtcc.com/digital-assets/tokenization/live-production-trades
-- https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality
-- https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
+- <https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20>
+- <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
+- <https://www.mayerbrown.com/-/media/files/perspectives-events/publications/2025/12/sec-staff-no-action-relief-for-dtc-pilot-provides-a-pathway-for-tokenized-securities.pdf>
+- <https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service>
+- <https://www.dtcc.com/digital-assets/tokenization/live-production-trades>
+- <https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality>
+- <https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

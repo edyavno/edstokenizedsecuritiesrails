@@ -14,5 +14,7 @@ sources:
 Not yet collected: MiCA/MiFID II detail, UK Digital Securities Sandbox, Swiss DLT Act, Singapore, Hong Kong.
 
 ## Sources
-- https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf
-- https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent
+Public originals for the facts on this page.
+
+- <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
+- <https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent>

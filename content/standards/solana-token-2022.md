@@ -17,7 +17,9 @@ Token-2022 adds extensions including transfer hook, permanent delegate, default 
 Used by Ondo Stocks on Solana ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)).
 
 ## Sources
-- https://solana.com/docs/tokens/extensions
-- https://solana.com/docs/tokens/extensions/transfer-hook
-- https://solana.com/docs/tokens/extensions/scaled-ui-amount
-- https://docs.ondo.finance/ondo-stocks/overview
+Public originals for the facts on this page.
+
+- <https://solana.com/docs/tokens/extensions>
+- <https://solana.com/docs/tokens/extensions/transfer-hook>
+- <https://solana.com/docs/tokens/extensions/scaled-ui-amount>
+- <https://docs.ondo.finance/ondo-stocks/overview>

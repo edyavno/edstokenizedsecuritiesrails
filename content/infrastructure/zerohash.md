@@ -12,7 +12,18 @@ last_checked: '2026-10-17'
 title: Zerohash
 tags:
 - infrastructure
+type: infrastructure
+chain: unknown
+status: unknown
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** infrastructure  
+> **Jurisdiction:** unknown  
+> **Chain:** unknown  
+> **Status:** unknown  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -27,6 +38,8 @@ tags:
 Zerohash markets a Tokenization Engine to brokerages ([Zerohash](https://zerohash.com/industries/brokerages)).
 
 ## Sources
-- https://zerohash.com/industries/brokerages
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://zerohash.com/industries/brokerages>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

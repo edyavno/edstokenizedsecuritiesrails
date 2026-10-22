@@ -12,7 +12,18 @@ last_checked: '2026-10-17'
 title: OKXICE TSV
 tags:
 - platforms-venues
+type: venue
+chain: unknown
+status: TSV notice published 2026-10-04
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** United States (TSV Exemption)  
+> **Chain:** unknown  
+> **Status:** TSV notice published 2026-10-04  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -27,9 +38,10 @@ tags:
 The first public TSV notice under the [[concepts/innovation-exemption|Innovation Exemption]], dated 4 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). Design per the notice: Uniswap v4 pools with an OKXICE TSV hook, access via soulbound tokens, pairs against USDC/USDG/USDT, no order book and no custody; it describes admin-key governance. The notice lists 63 symbols ([Dida Labs](https://didalabs.com/tokenized-stock-objection/), analysis). A Cerebras objection was reported; Dida Labs notes Cerebras is not among the 63 and the notice does not say a name was removed ([Dida Labs](https://didalabs.com/tokenized-stock-objection/)). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
 
 ## Sources
-- https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf
-- https://didalabs.com/tokenized-stock-objection/
-- https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/
-- https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://didalabs.com/tokenized-stock-objection/>
+- <https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/>
+- <https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

@@ -12,7 +12,18 @@ last_checked: '2026-10-17'
 title: Kraken
 tags:
 - platforms-venues
+type: venue
+chain: unknown
+status: live (xStocks listed 2025-06-30)
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** unknown  
+> **Chain:** unknown  
+> **Status:** live (xStocks listed 2025-06-30)  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -27,7 +38,9 @@ tags:
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 
 ## Sources
-- https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html
-- https://blog.kraken.com/news/backed-acquisition
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
+- <https://blog.kraken.com/news/backed-acquisition>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

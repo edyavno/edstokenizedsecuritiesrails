@@ -33,11 +33,13 @@ TSV pools pair against payment stablecoins; the GENIUS Act (S.1582, P.L. 119-27)
 First notice: [[platforms-venues/okxice-tsv|OKXICE TSV]]. Primitive: [[infrastructure/uniswap-permissioned-pools|Uniswap permissioned pools]].
 
 ## Sources
-- https://business.cch.com/srd/34-106402091726.pdf
-- https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf
-- https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf
-- https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes
-- https://www.davispolk.com/insights/client-update/sec-s-innovation-exemption-opens-path-tokenized-stock-trading
-- https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks
-- https://didalabs.com/tokenized-stock-objection/
-- https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm
+Public originals for the facts on this page.
+
+- <https://business.cch.com/srd/34-106402091726.pdf>
+- <https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf>
+- <https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf>
+- <https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes>
+- <https://www.davispolk.com/insights/client-update/sec-s-innovation-exemption-opens-path-tokenized-stock-trading>
+- <https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks>
+- <https://didalabs.com/tokenized-stock-objection/>
+- <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>

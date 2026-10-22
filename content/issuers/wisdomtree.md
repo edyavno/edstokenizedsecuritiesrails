@@ -14,7 +14,20 @@ last_checked: '2026-10-17'
 title: WisdomTree tokenized funds
 tags:
 - issuers
+type: issuer
+chain:
+- Solana
+- others (multi-chain)
+status: live (tokenized registered funds)
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** United States  
+> **Chain:** Solana, others (multi-chain)  
+> **Status:** live (tokenized registered funds)  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -29,8 +42,10 @@ tags:
 WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
 
 ## Sources
-- https://ir.wisdomtree.com/news-events/press-releases/detail/774/wisdomtree-expands-tokenization-ecosystem-to-solana
-- https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement
-- https://app.rwa.xyz/stocks
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://ir.wisdomtree.com/news-events/press-releases/detail/774/wisdomtree-expands-tokenization-ecosystem-to-solana>
+- <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
+- <https://app.rwa.xyz/stocks>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

@@ -26,4 +26,6 @@ Classification follows the [[concepts/legal-taxonomy|SEC staff taxonomy]]. Detai
 | [[concepts/post-trade-reg-nms-model\|Nasdaq / NYSE]] | Venue (exchange) | Same book, DTC settlement |
 
 ## Sources
-- https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
+Public originals for the facts on this page.
+
+- <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>

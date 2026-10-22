@@ -2,7 +2,7 @@
 title: Database
 ---
 
-Generated from vault frontmatter on 2026-10-19. Headline fields only; `unknown` means not yet verified from a source.
+Generated from vault frontmatter on 2026-10-21. Headline fields only; `unknown` means not yet verified from a source.
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|

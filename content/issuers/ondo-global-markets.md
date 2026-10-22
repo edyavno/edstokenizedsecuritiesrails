@@ -15,7 +15,21 @@ last_checked: '2026-10-17'
 title: Ondo Global Markets (Ondo Stocks)
 tags:
 - issuers
+type: issuer
+chain:
+- Ethereum
+- BNB Chain
+- Solana
+status: unknown
+last_updated: '2026-10-17'
 ---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** British Virgin Islands  
+> **Chain:** Ethereum, BNB Chain, Solana  
+> **Status:** unknown  
+> **Last updated:** 2026-10-17  
 
 | Field | Value |
 |---|---|
@@ -32,12 +46,14 @@ Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limit
 The issuer is a bankruptcy-remote BVI SPV; assets are held at U.S. broker-dealers, overcollateralized, with Ankura as security agent ([Ondo](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Tokens are ERC-20 on Ethereum and BNB Chain and Token-2022 on Solana ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)). Mint and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
 
 ## Sources
-- https://docs.ondo.finance/ondo-stocks/legal-and-regulatory
-- https://docs.ondo.finance/ondo-stocks/eligibility
-- https://docs.ondo.finance/ondo-stocks/investing-and-redeeming
-- https://docs.ondo.finance/ondo-stocks/trust-and-transparency
-- https://zerion.io/blog/best-tokenized-stock-platforms/
-- https://docs.ondo.finance/ondo-stocks/overview
-- https://docs.ondo.finance/api-reference/overview
+Public originals for the facts on this page.
 
-*Last checked 2026-10-17. Headline fields only.*
+- <https://docs.ondo.finance/ondo-stocks/legal-and-regulatory>
+- <https://docs.ondo.finance/ondo-stocks/eligibility>
+- <https://docs.ondo.finance/ondo-stocks/investing-and-redeeming>
+- <https://docs.ondo.finance/ondo-stocks/trust-and-transparency>
+- <https://zerion.io/blog/best-tokenized-stock-platforms/>
+- <https://docs.ondo.finance/ondo-stocks/overview>
+- <https://docs.ondo.finance/api-reference/overview>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

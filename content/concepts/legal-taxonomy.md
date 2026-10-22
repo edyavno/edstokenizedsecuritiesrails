@@ -26,9 +26,11 @@ Rule 15c3-3 possession-and-control applies to crypto asset securities; the 2020 
 See also [[comparisons/implementations-by-model|implementations compared by model]].
 
 ## Sources
-- https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
-- https://www.sidley.com/en/insights/newsupdates/2026/01/sec-staff-unveils-a-playbook-for-tokenized-securities
-- https://www.jonesday.com/en/insights/2026/02/sec-staff-provides-its-views-on-taxonomies-associated-with-tokenized-securities
-- https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology
-- https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers
-- https://www.sidley.com/en/insights/newsupdates/2025/12/sec-issues-further-crypto-asset-security-guidance-addresses-broker-dealer-physical-possession
+Public originals for the facts on this page.
+
+- <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
+- <https://www.sidley.com/en/insights/newsupdates/2026/01/sec-staff-unveils-a-playbook-for-tokenized-securities>
+- <https://www.jonesday.com/en/insights/2026/02/sec-staff-provides-its-views-on-taxonomies-associated-with-tokenized-securities>
+- <https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology>
+- <https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers>
+- <https://www.sidley.com/en/insights/newsupdates/2025/12/sec-issues-further-crypto-asset-security-guidance-addresses-broker-dealer-physical-possession>

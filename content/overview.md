@@ -86,10 +86,12 @@ flowchart TB
 *Reference information only. Not investment advice.*
 
 ## Sources
-- https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf
-- https://www.fsb.org/uploads/P221024-2.pdf
-- https://www.bis.org/publ/arpdf/ar2025e3.htm
-- https://www.bis.org/cpmi/publ/d225.htm
-- https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/
-- https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
-- https://eips.ethereum.org/EIPS/eip-3643
+Public originals for the facts on this page.
+
+- <https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf>
+- <https://www.fsb.org/uploads/P221024-2.pdf>
+- <https://www.bis.org/publ/arpdf/ar2025e3.htm>
+- <https://www.bis.org/cpmi/publ/d225.htm>
+- <https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/>
+- <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
+- <https://eips.ethereum.org/EIPS/eip-3643>
