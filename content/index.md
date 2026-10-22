@@ -21,7 +21,7 @@ Today, buying a stock or bond goes through a chain of brokers, custodians and cl
 - **Assets plug into other things.** Tokenized Treasuries can already be posted as collateral for futures and swaps ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9146-25)).
 - **More people get access.** You can own fractions, from anywhere.
 
-It's already real in wholesale markets: about $368B of tokenized repo settles every day ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). The catch is that it's still early and mostly bonds and money market funds, about $14.5B in tokenized Treasuries as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
+It's already real in wholesale markets: about \$368B of tokenized repo settles every day ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). The catch is that it's still early and mostly bonds and money market funds, about \$14.5B in tokenized Treasuries as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
 
 ## Explore the wiki
 - **Look up a company:** [[database|Issuer & platform database]] (19 entities)

@@ -4,7 +4,7 @@
 
 ## Start here
 - [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): It's already real in wholesale markets: about $368B of tokenized repo settles every day.
+- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki on the live site.
 - [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts): Example questions an AI agent can answer from this wiki.
 - [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
