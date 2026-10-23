@@ -122,6 +122,12 @@ async function route(req, env, url) {
       reviewer: { id: id0, name, role: isAuthor ? "author" : "reviewer", email },
       review: { id: reviewId, name: "Ed's Tokenized Securities Rails (preview)", note: "", pages: [] } });
   }
+  // edstsr: read-only per-page counts so the site can point to comments on other pages.
+  if (rest.length === 1 && rest[0] === "summary") {
+    if (m !== "GET") throw new E(405, "method_not_allowed");
+    const r = (await db.prepare("SELECT page, COUNT(*) n, MAX(updated_at) u FROM comments WHERE review=? AND deleted_at IS NULL GROUP BY page ORDER BY page").bind(reviewId).all()).results;
+    return json(200, { pages: r.map(x => ({ page: x.page, count: x.n, updatedAt: x.u })) }, { "Cache-Control": "no-store" });
+  }
   if (rest[0] !== "comments") throw new E(404, "not_found");
   // Bearer token must belong to the same Access-authenticated email.
   const mt = /^Bearer\s+s\.(\S+)$/i.exec(req.headers.get("authorization") || "");

@@ -3421,13 +3421,23 @@
     return true;
   }
   function importComments(data) {
+    // edstsr patch: accept a JSON array of several exports (reviewers often
+    // merge per-page exports into one file) as well as a bare comment array.
+    if (Array.isArray(data)) {
+      var merged = [];
+      data.forEach(function (x) {
+        if (x && Array.isArray(x.comments)) merged = merged.concat(x.comments);
+        else if (x && typeof x === "object" && typeof x.id === "string") merged.push(x);
+      });
+      data = { comments: merged, page: null, multi: true };
+    }
     var incoming = data && Array.isArray(data.comments) ? data.comments : null;
     if (!incoming) { toast("No comments found in that file", { kind: "error" }); return; }
     if (incoming.length > MAX_EXPORT_COMMENTS) {
       toast("That file has too many comments to import", { kind: "error" }); return;
     }
     // Warn if the export came from a different page
-    if (data.page && data.page !== PAGE)
+    if (data.page && data.page !== PAGE && !(CFG.project && String(data.page).indexOf(CFG.project + ":") === 0))
       toast("These comments were from a different page — positions may not match.", { kind: "info", duration: 6000 });
     // Existing IDs span the WHOLE project (all pages), not just the current
     // route — so importing one page's export onto another page cannot create
@@ -3442,11 +3452,14 @@
       if (exists[c.id]) { skipped++; return; }             // already imported to this project (any page)
       seenIds[c.id] = true;
       var copy = normalizeComment(serialize(c));
-      copy.page = PAGE;
+      // edstsr patch: keep each comment on its original page when it came
+      // from this project, instead of moving everything onto the current page.
+      var keep = CFG.project && typeof c.page === "string" && c.page.indexOf(CFG.project + ":/") === 0;
+      copy.page = keep ? c.page : PAGE;
       prepared.push(copy);
     });
     if (!prepared.length) {
-      toast(skipped ? "Nothing new to import (" + skipped + " invalid or already present)" : "Nothing new to import", { kind: skipped ? "error" : "info" });
+      toast(skipped ? "Nothing new to import: " + skipped + " already in this review or invalid" : "Nothing new to import", { kind: "info", duration: 6000 });
       return;
     }
     var d = dbRead();
