@@ -100,6 +100,13 @@ export default (() => {
             return resource
           }
         })}
+        {/* annotate.js (MIT, self-hosted): local-only review comments; no data-api/post-url, so nothing is sent anywhere */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.AnnotateConfig={project:"edstsr",theme:"auto",position:"bottom-right",accent:"#0f766e",spa:true};document.addEventListener("nav",function(){var A=window.Annotate;if(!A)return;var h=document.querySelector("#__an_host");try{if(!h||!h.isConnected){A.destroy();A.init(window.AnnotateConfig)}else if(A.refresh){A.refresh()}}catch(e){console.warn("annotate",e)}});`,
+          }}
+        />
+        <script src={joinSegments(baseDir, "static/annotate/annotate.js")} defer></script>
       </head>
     )
   }
