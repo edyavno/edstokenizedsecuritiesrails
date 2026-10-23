@@ -9,7 +9,7 @@ who_can_buy: Not US, Canada, UK, Switzerland; other restrictions apply
 num_assets: 190+ (Robinhood)
 structure_short: Tokenised debt securities
 who_can_buy_short: Non-US; excl. CA, UK, CH
-last_checked: '2026-10-17'
+last_checked: '2026-10-23'
 title: Robinhood Stock Tokens
 tags:
 - issuers
@@ -17,7 +17,7 @@ type: issuer
 chain:
 - Robinhood Chain
 status: live
-last_updated: '2026-10-17'
+last_updated: '2026-10-23'
 description: Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a base prospectus; they give economic exposure without rights in…
 ---
 
@@ -26,7 +26,7 @@ description: Stock Tokens are tokenised debt securities issued by Robinhood Asse
 > **Jurisdiction:** Jersey  
 > **Chain:** Robinhood Chain  
 > **Status:** live  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-23  
 
 | Field | Value |
 |---|---|
@@ -42,9 +42,13 @@ Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) L
 
 On Robinhood Chain, trading at launch is via RFQ plus AMMs and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
+## Adoption
+Tokenized stock volume on Robinhood Chain was \$526M in July, \$2.21B in August and \$11.31B in September 2026, per Bitwise's quarterly report as cited by [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) (news; Bitwise report not retrieved).
+
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://docs.robinhood.com/chain/stock-tokens/>
 - <https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf>
 - <https://robinhood.com/rhj/stocktokens/>
@@ -52,4 +56,4 @@ Public originals for the facts on this page.
 - <https://docs.robinhood.com/chain/building-with-stock-tokens/>
 - <https://blog.arbitrum.io/robinhood-chain-mainnet/>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*

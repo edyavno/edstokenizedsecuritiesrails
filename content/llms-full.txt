@@ -1,5 +1,5 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-10-21; public data is delayed 30 days. CC BY-NC 4.0.
+> Human-curated, LLM-maintained. Generated 2026-10-23; public data is delayed 30 days. CC BY-NC 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
@@ -82,11 +82,11 @@ A tokenized security is a security whose ownership record lives on, or is mirror
 - **Native (digital native, issuer-sponsored).** The security is issued on the ledger, and the token is the ownership record ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf); [FSB](https://www.fsb.org/uploads/P221024-2.pdf)). In SEC staff terms, the issuer or its agent integrates the ledger into the securityholder records ([SEC staff, 28 Jan 2026](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Examples: [[issuers/superstate-opening-bell|Superstate Opening Bell]], [[issuers/securitize|Securitize]] transfer-agent issuances.
 - **Wrapped / backed (digital twin, third-party).** The underlying security stays in traditional custody and the token is a claim on it. The SEC staff split this into custodial (security entitlement) and synthetic (a separate note or swap) models ([SEC staff](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Backed models need audits and reconciliation of tokens against the reference asset, and depend on bankruptcy-remote custody and the issuer's redemption operations ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)).
 
-The legal wrapper decides what the holder actually owns. More: [[concepts/legal-taxonomy|Legal taxonomy]] and [[comparisons/implementations-by-model|implementations by model]].
+The legal wrapper decides what the holder actually owns. More: [[concepts/legal-taxonomy|Legal taxonomy]], [[topics/legal-structures|Legal structures]] and [[comparisons/implementations-by-model|implementations by model]].
 
 ## The four flows in the diagram
 1. **Issue.** The issuer, or its transfer agent, mints tokens and keeps them in sync with the official register. For wrapped tokens, the custodian holds the underlying shares.
-2. **Permission.** Investors are onboarded once (KYC) and their wallets are allowlisted, and every transfer checks the list. This replaces part of what account opening does today.
+2. **Permission.** Investors are onboarded once (KYC) and their wallets are allowlisted, and every transfer checks the list. This replaces part of what account opening does today. See [[topics/who-can-buy|Who can buy]].
 3. **Trade + settle.** This is where tokenized rails differ most from today's, so it is broken into four parts below.
 4. **Service.** Dividends, splits, votes and redemptions run through the token contract or the issuer's agent. See [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] and [[concepts/token-primitives|Token primitives]].
 
@@ -112,7 +112,7 @@ The legal wrapper decides what the holder actually owns. More: [[concepts/legal-
 | Brokerage account | Custodial or self-held wallet ([[topics/custody|Custody]]) |
 
 ## Where it stands
-Adoption is real but early. IOSCO finds it "incipient and incremental," led by fixed income and money market funds. A lack of cross-chain interoperability and of credible settlement assets limits scale, and many participants still use traditional trading and post-trade infrastructure ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). The FSB sees no material stability risk at today's small scale. It names liquidity and maturity mismatch, leverage, asset quality, interconnectedness and operational fragility as the vulnerabilities to watch ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)). The BIS argues for a "unified ledger" with tokenised central bank reserves, commercial bank money and government bonds at its centre ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). Regulators broadly apply "same activities, same risks, same regulatory outcomes" ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). For the US and EU specifics, see [[topics/regulation|Regulation]] and [[concepts/international|International]].
+Adoption is real but early. IOSCO finds it "incipient and incremental," led by fixed income and money market funds (see the [[comparisons/buidl-precedent|BUIDL precedent]]). A lack of cross-chain interoperability and of credible settlement assets limits scale, and many participants still use traditional trading and post-trade infrastructure ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). The FSB sees no material stability risk at today's small scale. It names liquidity and maturity mismatch, leverage, asset quality, interconnectedness and operational fragility as the vulnerabilities to watch ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)). The BIS argues for a "unified ledger" with tokenised central bank reserves, commercial bank money and government bonds at its centre ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). Regulators broadly apply "same activities, same risks, same regulatory outcomes" ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). For the US and EU specifics, see [[topics/regulation|Regulation]] and [[concepts/international|International]].
 
 ## Text version of the diagram
 ```mermaid
@@ -225,7 +225,7 @@ Example questions an AI agent can answer from this wiki alone. Point the agent a
 URL: https://edstokenizedsecuritiesrails.com/database
 
 
-Generated from vault frontmatter on 2026-10-21. Headline fields only; `unknown` means not yet verified from a source.
+Generated from vault frontmatter on 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|
@@ -234,7 +234,7 @@ Generated from vault frontmatter on 2026-10-21. Headline fields only; `unknown` 
 | [Dinari dShares](/issuers/dinari) | Issuer | United States | Custodial tokenized shares | Ethereum, Avalanche, Arbitrum +1 | US eligible + intl | 2026-10-17 |
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-17 |
 | [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-17 |
-| [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-17 |
+| [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-23 |
 | [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-17 |
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-10-17 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-10-17 |
@@ -243,9 +243,9 @@ Generated from vault frontmatter on 2026-10-21. Headline fields only; `unknown` 
 | [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-17 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-10-17 |
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
-| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-17 |
+| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-23 |
 | [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-10-17 |
-| [DTCC / DTC tokenization pilot](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | unknown | DTC participants | 2026-10-17 |
+| [DTCC / DTC tokenization pilot](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-23 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-10-17 |
 | [Zerohash](/infrastructure/zerohash) | Infra | unknown | Tokenization engine (B2B) | unknown | B2B | 2026-10-17 |
 
@@ -277,7 +277,7 @@ On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting tem
 Chairman Atkins framed it as a bridge to durable rulemaking ([statement](https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf)). Law-firm analyses: [Skadden](https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes), [Davis Polk](https://www.davispolk.com/insights/client-update/sec-s-innovation-exemption-opens-path-tokenized-stock-trading), [WilmerHale](https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks).
 
 ## Issuer objection
-For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis).
+For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news). The contrast CNBC draws: offshore volume is mostly perps and wrapped tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
 ## Stablecoin legs
 TSV pools pair against payment stablecoins; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)).
@@ -287,6 +287,7 @@ First notice: [[platforms-venues/okxice-tsv|OKXICE TSV]]. Primitive: [[infrastru
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://business.cch.com/srd/34-106402091726.pdf>
 - <https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf>
 - <https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf>
@@ -728,14 +729,14 @@ type: issuer
 jurisdiction: Jersey
 chain: Robinhood Chain
 status: live
-last_updated: 2026-10-17
+last_updated: 2026-10-23
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** Jersey  
 > **Chain:** Robinhood Chain  
 > **Status:** live  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-23  
 
 | Field | Value |
 |---|---|
@@ -751,9 +752,13 @@ Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) L
 
 On Robinhood Chain, trading at launch is via RFQ plus AMMs and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
+## Adoption
+Tokenized stock volume on Robinhood Chain was \$526M in July, \$2.21B in August and \$11.31B in September 2026, per Bitwise's quarterly report as cited by [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) (news; Bitwise report not retrieved).
+
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://docs.robinhood.com/chain/stock-tokens/>
 - <https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf>
 - <https://robinhood.com/rhj/stocktokens/>
@@ -761,7 +766,7 @@ Public originals for the facts on this page.
 - <https://docs.robinhood.com/chain/building-with-stock-tokens/>
 - <https://blog.arbitrum.io/robinhood-chain-mainnet/>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Securitize (issuer-sponsored shares)
@@ -1086,14 +1091,14 @@ type: venue
 jurisdiction: United States (TSV Exemption)
 chain: unknown
 status: TSV notice published 2026-10-04
-last_updated: 2026-10-17
+last_updated: 2026-10-23
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States (TSV Exemption)  
 > **Chain:** unknown  
 > **Status:** TSV notice published 2026-10-04  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-23  
 
 | Field | Value |
 |---|---|
@@ -1107,14 +1112,18 @@ last_updated: 2026-10-17
 
 The first public TSV notice under the [[concepts/innovation-exemption|Innovation Exemption]], dated 4 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). Design per the notice: Uniswap v4 pools with an OKXICE TSV hook, access via soulbound tokens, pairs against USDC/USDG/USDT, no order book and no custody; it describes admin-key governance. The notice lists 63 symbols ([Dida Labs](https://didalabs.com/tokenized-stock-objection/), analysis). A Cerebras objection was reported; Dida Labs notes Cerebras is not among the 63 and the notice does not say a name was removed ([Dida Labs](https://didalabs.com/tokenized-stock-objection/)). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
 
+## Issuer objections
+CNBC reports that as of 21 Oct 2026, 16 companies had objected to tokenized versions of their shares trading on OKXICE; a 19 Oct OKXICE notice added Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald's, Western Digital and Alphabet to earlier objectors including CoreWeave, UnitedHealth, Broadcom, Applied Digital, AppLovin and Cerebras ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news; OKXICE's 19 Oct notice not yet retrieved). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)).
+
 ## Sources
 Public originals for the facts on this page.
 
 - <https://didalabs.com/tokenized-stock-objection/>
 - <https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/>
 - <https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/>
+- <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Chainlink tokenized equity feeds
@@ -1158,16 +1167,16 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot
 type: infrastructure
 jurisdiction: United States
-chain: unknown
+chain: At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)
 status: pilot (SEC no-action letter 2025-12-11)
-last_updated: 2026-10-17
+last_updated: 2026-10-23
 
 > [!info] At a glance
 > **Type:** infrastructure  
 > **Jurisdiction:** United States  
-> **Chain:** unknown  
+> **Chain:** At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)  
 > **Status:** pilot (SEC no-action letter 2025-12-11)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-23  
 
 | Field | Value |
 |---|---|
@@ -1175,16 +1184,23 @@ last_updated: 2026-10-17
 | jurisdiction | United States |
 | product_name | DTC Tokenization Service (Tokenized Entitlements) |
 | structure | Security entitlements recorded on DLT |
-| chains | unknown |
+| chains | At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle) |
 | who_can_buy | DTC participants |
-| num_assets | Eligible: Russell 1000, major-index ETFs, Treasuries |
+| num_assets | 25 securities at launch (~$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
 DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); 24X Exchange filed rules referencing it ([SEC](https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20)).
 
 ## DTC no-action letter (11 Dec 2025)
 Staff relief lets DTC participants record security entitlements on DLT ("Tokenized Entitlements") for Russell 1000 stocks, major-index ETFs and Treasuries; tokens have no collateral or settlement value for Net Debit Cap / Collateral Monitor ([SEC NAL](https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf); [Mayer Brown](https://www.mayerbrown.com/-/media/files/perspectives-events/publications/2025/12/sec-staff-no-action-relief-for-dtc-pilot-provides-a-pathway-for-tokenized-securities.pdf)). The letter is withdrawn three years from the date DTC launches the service ([SEC NAL](https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf)).
 ## Progress
-DTCC said the service was designed with feedback from more than 50 firms, with limited production trades planned for July 2026 and launch in October 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service)). About 40 firms took part in live production trades ([DTCC](https://www.dtcc.com/digital-assets/tokenization/live-production-trades); [DTCC press](https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality)). As of this page's check, no DTCC go-live press release was found; The Block (8 Oct 2026) reported launch was expected that month ([The Block](https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839), secondary).
+DTCC said the service was designed with feedback from more than 50 firms, with limited production trades planned for July 2026 and launch in October 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service)). About 40 firms took part in live production trades ([DTCC](https://www.dtcc.com/digital-assets/tokenization/live-production-trades); [DTCC press](https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality)). As of 23 Oct 2026, no DTCC go-live press release was found; The Block (8 Oct 2026) reported launch was expected that month ([The Block](https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839), secondary).
+
+## Scope at launch (Oct 2026)
+DTCC's at-a-glance sheet: 25 securities available to tokenize at launch out of about \$30T eligible, backed 1:1 by securities held at DTC, same CUSIP and the same rights and investor protections as book-entry securities, and 24/7 peer-to-peer transfers between DTC-registered wallets on the same chain ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Live at launch: Canton Network (CIP-56) and Besu, DTCC's private network (ERC-20); Stellar and Circle's Arc are anticipated in 2027 ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Eligible assets start with select large-cap Russell 1000 equities, select ETFs and a select set of Treasury bills, notes and bonds ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Conversion orders run 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less; tokens carry transfer restrictions; official books and records stay with DTC; Treasury distributions and maturities pay in fiat to participants' traditional accounts ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Roadmap for 2027 and beyond (indicative): equity/ETF corporate actions, a consolidated stock record, on-chain netting and digital cash ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Coverage: [Crypto Briefing](https://cryptobriefing.com/dtcc-tokenization-service-launch-october/) (news; says "more than 30" firms in the July trades, where DTCC says about 40).
+
+## Watch
+- Go-live: DTCC says October 2026 but gives no date; "end of October" comes from Digital Asset's CEO via [CantonNews](https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap) (news). Check for a DTCC go-live release after 2026-10-31.
+- First named users: none named yet in DTCC materials. Record them when announced.
 
 ## Sources
 Public originals for the facts on this page.
@@ -1197,8 +1213,11 @@ Public originals for the facts on this page.
 - <https://www.dtcc.com/digital-assets/tokenization/live-production-trades>
 - <https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality>
 - <https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839>
+- <https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf>
+- <https://cryptobriefing.com/dtcc-tokenization-service-launch-october/>
+- <https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Uniswap v4 permissioned pools
