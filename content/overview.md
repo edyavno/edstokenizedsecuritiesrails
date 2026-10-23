@@ -36,12 +36,20 @@ Today, buying a stock or bond goes through a chain of brokers, custodians and cl
 - **Assets plug into other things.** Tokenized Treasuries can already be posted as collateral for futures and swaps ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9146-25)).
 - **More people get access.** You can own fractions, from anywhere.
 
-It's already real in wholesale markets: about \$368B of tokenized repo settles every day ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). The catch is that it's still early and mostly bonds and money market funds, about \$14.5B in tokenized Treasuries as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
+It's already real for big institutions: about \$368B a day of repo trades settle on Broadridge's blockchain platform ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). What's been turned into tokens so far is mostly bonds and money market funds; tokenized Treasuries total about \$14.5B as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
 
 *For readers who know capital markets (and maybe crypto at a high level) but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.*
 
+## How to use this wiki
+- **New to this?** Read the "Why" above, then the diagram at the top, then [[topics/who-can-buy|Who can buy]].
+- **Comparing platforms?** Use the [database](/database) of issuers and venues.
+- **Using an AI assistant?** Start with the [starter prompts](/starter-prompts) or the [guide for agents](/agents).
+- **Following rule changes?** Check the [changelog](/changelog/) or [subscribe](/subscribe) for updates.
+
 ## The one-sentence version
-A tokenized security is a security whose ownership record lives on, or is mirrored to, a programmable shared ledger. Once that's true, transfer rules, the cash leg and asset servicing can run as code on the same platform. Standard setters define it as "the process of generating and recording a digital representation of traditional assets on a programmable platform" ([CPMI 2024](https://www.bis.org/cpmi/publ/d225.htm)), or as the "creation, issuance, or representation of assets on a digital token ledger or a programmable platform" ([IOSCO 2025](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
+A tokenized security is an ordinary stock or bond whose ownership record lives on a shared digital ledger, so trading, settling and paying dividends can run automatically.
+
+> **Formal definitions.** CPMI: "the process of generating and recording a digital representation of traditional assets on a programmable platform" ([CPMI 2024](https://www.bis.org/cpmi/publ/d225.htm)). IOSCO: the "creation, issuance, or representation of assets on a digital token ledger or a programmable platform" ([IOSCO 2025](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
 
 ## What's actually different from today's rails
 - **The token is the record, or mirrors it.** Today the issuer's register sits with a transfer agent or CSD, and every intermediary keeps its own books that must be reconciled. On a shared ledger the token balance can be the register entry itself. The BIS says tokenisation "enables the integration of messaging, reconciliation and asset transfer into a single, seamless operation" ([BIS AER 2025, ch. III](https://www.bis.org/publ/arpdf/ar2025e3.htm)). IOSCO notes that a registrar is not technically required, but a transfer agent often stays for regulatory reasons ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
@@ -52,6 +60,13 @@ A tokenized security is a security whose ownership record lives on, or is mirror
 ## Native vs wrapped
 - **Native (digital native, issuer-sponsored).** The security is issued on the ledger, and the token is the ownership record ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf); [FSB](https://www.fsb.org/uploads/P221024-2.pdf)). In SEC staff terms, the issuer or its agent integrates the ledger into the securityholder records ([SEC staff, 28 Jan 2026](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Examples: [[issuers/superstate-opening-bell|Superstate Opening Bell]], [[issuers/securitize|Securitize]] transfer-agent issuances.
 - **Wrapped / backed (digital twin, third-party).** The underlying security stays in traditional custody and the token is a claim on it. The SEC staff split this into custodial (security entitlement) and synthetic (a separate note or swap) models ([SEC staff](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Backed models need audits and reconciliation of tokens against the reference asset, and depend on bankruptcy-remote custody and the issuer's redemption operations ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)).
+
+> **Downsides of wrapped tokens.**
+> - You own a claim on a company that holds the share, not the share itself.
+> - Usually no voting rights.
+> - You depend on that company's custody and its ability to redeem.
+> - The token can trade away from the share price.
+> - The company behind the share may not have agreed: 16 companies have objected to tokens of their shares on OKXICE ([[platforms-venues/okxice-tsv#issuer-objections|OKXICE objections]]).
 
 The legal wrapper decides what the holder actually owns. More: [[concepts/legal-taxonomy|Legal taxonomy]], [[topics/legal-structures|Legal structures]] and [[comparisons/implementations-by-model|implementations by model]].
 
