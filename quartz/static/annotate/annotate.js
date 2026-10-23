@@ -652,7 +652,7 @@
     if (sync.token) h.Authorization = "Bearer " + sync.token;
     if (body !== undefined) h["Content-Type"] = "application/json";
     return window.fetch(API_BASE + path, {
-      method: method, headers: h, credentials: "omit", cache: "no-store",
+      method: method, headers: h, credentials: "same-origin" /* edstsr patch: send Cloudflare Access cookie to same-origin API */, cache: "no-store",
       body: body === undefined ? undefined : JSON.stringify(body),
       signal: controller ? controller.signal : undefined,
     }).then(function (res) {

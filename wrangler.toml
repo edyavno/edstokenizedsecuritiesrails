@@ -1,0 +1,15 @@
+# Cloudflare Pages config. Shared annotate.js comments are PREVIEW ONLY:
+# production has no D1 binding and ANNOTATE_ENABLED unset, so the Function returns 404.
+name = "edstsr"
+pages_build_output_dir = "public"
+compatibility_date = "2026-10-01"
+
+[env.preview.vars]
+ANNOTATE_ENABLED = "1"
+ANNOTATE_REVIEW_ID = "edstsr-preview"
+ANNOTATE_AUTHORS = "edyavno@gmail.com"
+
+[[env.preview.d1_databases]]
+binding = "ANNOTATE_DB"
+database_name = "edstsr-annotate-preview"
+database_id = "bd141f53-0942-42b3-a94a-8fd6fcb9bfdf"
