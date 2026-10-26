@@ -1013,23 +1013,23 @@ last_checked: 2026-10-25
 ## End-to-end components
 ```mermaid
 flowchart LR
-    subgraph Access
-      KYC[KYC / onboarding] --> REG[Identity registry / allowlist]
-      WAL[Wallets and keys]
+    subgraph Access["1 · Access"]
+      KYC["KYC /<br/>onboarding"] --> REG["Identity registry<br/>/ allowlist"]
+      WAL["Wallets<br/>and keys"]
     end
-    subgraph Trading
-      VEN[Onchain venue: permissioned pool]
-      HYB[Hybrid: offchain match]
-      ORA[Oracle and halt controller]
+    subgraph Trading["2 · Trading"]
+      VEN["Onchain venue:<br/>permissioned pool"]
+      HYB["Hybrid:<br/>offchain match"]
+      ORA["Oracle and<br/>halt controller"]
     end
-    subgraph Asset
-      TOK[Token contract + compliance hook]
-      CASH[Cash token: stablecoin or tokenized deposit]
+    subgraph Asset["3 · Asset"]
+      TOK["Token contract<br/>+ compliance hook"]
+      CASH["Cash token: stablecoin<br/>or tokenized deposit"]
     end
-    subgraph Records
-      MR[Mint / redeem + reconciliation]
-      TA[Transfer agent / register or custodian]
-      CA[Corporate actions: multiplier]
+    subgraph Records["4 · Records"]
+      MR["Mint / redeem<br/>+ reconciliation"]
+      TA["Transfer agent / register<br/>or custodian"]
+      CA["Corporate actions:<br/>multiplier"]
     end
     WAL --> VEN
     WAL --> HYB
@@ -1043,35 +1043,62 @@ flowchart LR
     MR --> TA
     CA --> TOK
     CA --> ORA
+    classDef access fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef trading fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef asset fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef records fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class KYC,REG,WAL access
+    class VEN,HYB,ORA trading
+    class TOK,CASH asset
+    class MR,TA,CA records
+    style Access fill:#eff6ff,stroke:#2563eb
+    style Trading fill:#fffbeb,stroke:#d97706
+    style Asset fill:#f0fdf4,stroke:#16a34a
+    style Records fill:#f5f3ff,stroke:#7c3aed
 ```
+Colors: **blue** = access, **amber** = trading, **green** = asset and cash, **purple** = records.
 
 ## One trade, end to end
 ```mermaid
 sequenceDiagram
-    participant I as Investor wallet
-    participant K as KYC / registry
-    participant O as Oracle + halt controller
-    participant V as Venue (pool or offchain matcher)
-    participant T as Stock token + compliance
-    participant C as Cash token
-    participant R as Transfer agent / register
-    I->>K: onboard, wallet allowlisted
+    autonumber
+    participant I as Investor<br/>wallet
+    participant K as KYC /<br/>registry
+    participant O as Oracle +<br/>halt control
+    participant V as Venue: pool<br/>or matcher
+    participant T as Stock token<br/>+ compliance
+    participant C as Cash<br/>token
+    participant R as Transfer<br/>agent
+    rect rgb(219, 234, 254)
+    Note over I,K: Onboard
+    I->>K: onboard
+    K-->>I: wallet allowlisted
+    end
+    rect rgb(254, 243, 199)
+    Note over I,O: Order and pre-trade checks
     I->>V: order or swap
-    V->>O: symbol open? price fresh?
+    V->>O: symbol open?<br/>price fresh?
     O-->>V: open / halted
+    end
     alt halted or stale
         V-->>I: reject
     else open
-        V->>T: canTransfer(seller, buyer)?
+        rect rgb(220, 252, 231)
+        Note over V,C: Settle: atomic DvP, both legs or neither
+        V->>T: canTransfer<br/>(seller, buyer)?
         T->>K: both verified?
         K-->>T: yes
         V->>T: deliver stock token
         V->>C: deliver cash
-        Note over T,C: atomic DvP: both legs or neither
+        end
+        rect rgb(237, 233, 254)
+        Note over T,R: Record
         T-->>R: transfer event
-        R->>R: update register / reconcile
+        Note over R: update<br/>register,<br/>reconcile
+        end
     end
 ```
+Phases: **blue** = onboard, **amber** = order and checks, **green** = atomic settlement, **purple** = record. Same colors as the component map above.
 On the **onchain path**, the pool prices and settles in one transaction (Uniswap v4 hooks check the allowlist on every swap ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))). On the **hybrid path**, an offchain matcher agrees the trade and submits a settlement transaction. TSV LLC's notice describes atomic settlement on Canton with the issuer's transfer agent verifying participants and minting ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ## Components
