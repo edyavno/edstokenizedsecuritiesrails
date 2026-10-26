@@ -8,13 +8,15 @@ sources:
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
 - https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf
-description: 'In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through…'
+description: 'In plain English: In this model a tokenized share is the same share as the normal one.'
 ---
 
-In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through DTC's tokenization pilot ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)). Components:
-- **DTC Tokenized Entitlements** under the 11 Dec 2025 no-action letter ([[infrastructure/dtcc-tokenization-pilot|DTCC]]).
+*In plain English: In this model a tokenized share is the same share as the normal one. It trades on the same exchanges and only the record-keeping behind it changes.*
+
+In this model the security does not change: tokenized and traditional shares share one order book, priority, CUSIP, symbol and rights, and settle through [[concepts/glossary#dtc|DTC]]'s tokenization pilot ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)). Components:
+- **DTC Tokenized Entitlements** under the 11 Dec 2025 [[concepts/glossary#no-action-letter|no-action letter]] ([[infrastructure/dtcc-tokenization-pilot|DTCC]]).
 - **Exchange rules**: [[platforms-venues/nasdaq-tokenized-securities|Nasdaq]] (approved 18 Mar 2026), [[platforms-venues/nyse-ice-tokenized-platform|NYSE]].
-Contrast with the [[concepts/innovation-exemption|onchain-venue model]] (TSVs).
+Contrast with the [[concepts/innovation-exemption|onchain-venue model]] ([[concepts/glossary#tsv|TSVs]]).
 
 ## Sources
 Public originals for the facts on this page.

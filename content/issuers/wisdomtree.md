@@ -20,7 +20,7 @@ chain:
 - others (multi-chain)
 status: live (tokenized registered funds)
 last_updated: '2026-10-17'
-description: WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX.
+description: 'In plain English: WisdomTree tokenizes its registered funds rather than single stocks.'
 ---
 
 > [!info] At a glance
@@ -39,6 +39,8 @@ description: WisdomTree tokenizes registered funds, not single stocks; in Feb 20
 | chains | Solana, others (multi-chain) |
 | who_can_buy | unknown |
 | num_assets | 6 on RWA.xyz stocks view |
+
+*In plain English: WisdomTree tokenizes its registered funds rather than single stocks.*
 
 WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
 

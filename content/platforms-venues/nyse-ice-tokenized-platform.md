@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: rule filed; platform in development
 last_updated: '2026-10-17'
-description: NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the DTC pilot.
+description: 'In plain English: NYSE has a rule, like Nasdaq''s, to trade tokenized versions of listed stocks through DTC''s pilot.'
 ---
 
 > [!info] At a glance
@@ -36,7 +36,13 @@ description: NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effecti
 | who_can_buy | unknown |
 | num_assets | unknown |
 
-NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the DTC pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)). Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and ETFs with instant settlement and stablecoin funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)). No technical spec or launch date was found.
+*In plain English: NYSE has a rule, like Nasdaq's, to trade tokenized versions of listed stocks through DTC's pilot.*
+
+NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along the lines of Nasdaq's and tied to the [[concepts/glossary#dtc|DTC]] pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)).
+
+Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and [[concepts/glossary#etf|ETFs]] with instant settlement and [[concepts/glossary#stablecoin|stablecoin]] funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
+
+No technical spec or launch date was found.
 
 ## Sources
 Public originals for the facts on this page.

@@ -18,7 +18,7 @@ chain:
 - BNB Smart Chain
 status: live (admitted to FSRA Official List)
 last_updated: '2026-10-17'
-description: bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated custodian, admitted to the FSRA Official List.
+description: 'In plain English: bStocks are certificates backed one-for-one by real US shares held at a custodian.'
 ---
 
 > [!info] At a glance
@@ -38,7 +38,9 @@ description: bStocks are certificates issued by BTECH Holdings Ltd, each backed 
 | who_can_buy | Offer made only in ADGM; not to US persons (Reg S) |
 | num_assets | 95 on RWA.xyz (third-party tracker, Oct 2026) |
 
-bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated custodian, admitted to the FSRA Official List ([Binance](https://www.binance.com/my-MM/square/post/332985202800018)). Each ticker has its own FSRA-approved prospectus, e.g. [NVIDIA bStocks, 11 Jun 2026](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf).
+*In plain English: bStocks are certificates backed one-for-one by real US shares held at a custodian.*
+
+bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated [[concepts/glossary#custodian|custodian]], admitted to the FSRA Official List ([Binance](https://www.binance.com/my-MM/square/post/332985202800018)). Each ticker has its own FSRA-approved prospectus, e.g. [NVIDIA bStocks, 11 Jun 2026](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf).
 
 ## Sources
 Public originals for the facts on this page.

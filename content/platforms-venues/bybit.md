@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
 last_updated: '2026-10-17'
-description: Bybit listed xStocks on its spot platform on 30 June 2025.
+description: 'In plain English: Bybit is a crypto exchange that lists xStocks for trading.'
 ---
 
 > [!info] At a glance
@@ -35,6 +35,8 @@ description: Bybit listed xStocks on its spot platform on 30 June 2025.
 | chains | unknown |
 | who_can_buy | unknown |
 | num_assets | unknown |
+
+*In plain English: Bybit is a crypto exchange that lists xStocks for trading.*
 
 Bybit listed xStocks on its spot platform on 30 June 2025 ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 

@@ -18,7 +18,7 @@ chain:
 - Base
 status: live
 last_updated: '2026-10-17'
-description: Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remote custody. Coinbase holds an FSRA permission in ADGM.
+description: 'In plain English: Coinbase''s stock tokens on Base are each backed by a real share held in custody.'
 ---
 
 > [!info] At a glance
@@ -38,9 +38,13 @@ description: Each B20 token on Base is a beneficial claim on a real share in ban
 | who_can_buy | Eligible jurisdictions outside the US; offered under Regulation S |
 | num_assets | 58 prospectuses listed on coinbase.com/tokenize (2026-10-17) |
 
-Each B20 token on Base is a beneficial claim on a real share in bankruptcy-remote custody ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)). Coinbase holds an FSRA permission in ADGM ([ADGM](https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority)). A public read-only API publishes records, multipliers and prospectuses ([Base docs](https://docs.base.org/sdks/tokenized-stocks/overview)).
+*In plain English: Coinbase's stock tokens on Base are each backed by a real share held in custody.*
 
-Authorized participants (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and custodian ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
+Each [[concepts/glossary#b20|B20]] token on Base is a beneficial claim on a real share in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)). Coinbase holds an FSRA permission in ADGM ([ADGM](https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority)).
+
+A public read-only API publishes records, [[concepts/glossary#multiplier|multipliers]] and prospectuses ([Base docs](https://docs.base.org/sdks/tokenized-stocks/overview)).
+
+[[concepts/glossary#authorized-participant|Authorized participants]] (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and [[concepts/glossary#custodian|custodian]] ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
 
 ## Sources
 Public originals for the facts on this page.

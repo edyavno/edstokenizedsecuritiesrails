@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: rule approved by SEC 2026-03-18
 last_updated: '2026-10-17'
-description: The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during DTC's tokenization pilot.
+description: 'In plain English: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC''s pilot.'
 ---
 
 > [!info] At a glance
@@ -36,9 +36,11 @@ description: The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized
 | who_can_buy | DTC Pilot eligible participants |
 | num_assets | Russell 1000 constituents + certain ETPs |
 
-The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during DTC's tokenization pilot ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
+*In plain English: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC's pilot.*
 
-Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf). The approval keeps tokenized shares on the same book with the same priority, CUSIP, symbol and rights, settling through the DTC pilot; see [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]].
+The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during [[concepts/glossary#dtc|DTC]]'s tokenization pilot ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
+
+Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf). The approval keeps tokenized shares on the same book with the same priority, [[concepts/glossary#cusip|CUSIP]], symbol and rights, settling through the DTC pilot; see [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]].
 
 ## Sources
 Public originals for the facts on this page.

@@ -22,7 +22,7 @@ chain:
 - Solana
 status: unknown
 last_updated: '2026-10-17'
-description: Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial…
+description: 'In plain English: Ondo''s stock tokens are notes that track US stocks, backed by shares held at US brokers. They are not the shares themselves.'
 ---
 
 > [!info] At a glance
@@ -42,9 +42,15 @@ description: Ondo stock tokens are structured notes issued by Ondo Global Market
 | who_can_buy | Excludes US persons and several jurisdictions; some require qualified/professional status |
 | num_assets | 450+ advertised (per Zerion) |
 
-Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial broker-dealers ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory); [trust & transparency](https://docs.ondo.finance/ondo-stocks/trust-and-transparency)). Eligibility: [Ondo docs](https://docs.ondo.finance/ondo-stocks/eligibility). Redemption: [Ondo docs](https://docs.ondo.finance/ondo-stocks/investing-and-redeeming). Asset count (450+) is from Zerion (secondary).
+*In plain English: Ondo's stock tokens are notes that track US stocks, backed by shares held at US brokers. They are not the shares themselves.*
 
-The issuer is a bankruptcy-remote BVI SPV; assets are held at U.S. broker-dealers, overcollateralized, with Ankura as security agent ([Ondo](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Tokens are ERC-20 on Ethereum and BNB Chain and Token-2022 on Solana ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)). Mint and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
+Ondo stock tokens are structured notes issued by Ondo Global Markets (BVI) Limited, backed 1:1 plus a buffer by securities held through US custodial [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory); [trust & transparency](https://docs.ondo.finance/ondo-stocks/trust-and-transparency)).
+
+Eligibility: [Ondo docs](https://docs.ondo.finance/ondo-stocks/eligibility). [[concepts/glossary#redeem|Redemption]]: [Ondo docs](https://docs.ondo.finance/ondo-stocks/investing-and-redeeming). Asset count (450+) is from Zerion (secondary).
+
+The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[concepts/glossary#spv|SPV]]; assets are held at U.S. broker-dealers, overcollateralized, with Ankura as security agent ([Ondo](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Tokens are [[concepts/glossary#erc-20|ERC-20]] on [[concepts/glossary#ethereum|Ethereum]] and BNB Chain and [[concepts/glossary#token-2022|Token-2022]] on [[concepts/glossary#solana|Solana]] ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)).
+
+[[concepts/glossary#mint|Mint]] and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
 
 ## Sources
 Public originals for the facts on this page.

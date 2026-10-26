@@ -6,8 +6,10 @@ tags:
 last_checked: '2026-10-17'
 sources:
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
-description: Classification follows the SEC staff taxonomy. Details and sources are on each linked page.
+description: 'In plain English: A side-by-side table of tokenized stock projects, grouped by legal model.'
 ---
+
+*In plain English: A side-by-side table of tokenized stock projects, grouped by legal model.*
 
 Classification follows the [[concepts/legal-taxonomy|SEC staff taxonomy]]. Details and sources are on each linked page.
 

@@ -16,7 +16,7 @@ type: infrastructure
 chain: unknown
 status: unknown
 last_updated: '2026-10-17'
-description: Zerohash markets a Tokenization Engine to brokerages.
+description: 'In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.'
 ---
 
 > [!info] At a glance
@@ -35,6 +35,8 @@ description: Zerohash markets a Tokenization Engine to brokerages.
 | chains | unknown |
 | who_can_buy | unknown |
 | num_assets | unknown |
+
+*In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.*
 
 Zerohash markets a Tokenization Engine to brokerages ([Zerohash](https://zerohash.com/industries/brokerages)).
 

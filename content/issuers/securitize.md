@@ -24,7 +24,7 @@ chain:
 - Avalanche (per Zerion, secondary)
 status: live (Securitize Stocks launched 2026-10-08)
 last_updated: '2026-10-17'
-description: 'Example: Exodus Class A common stock tokens on Algorand, with Securitize as transfer agent; trading began on Securitize Markets in March 2022.'
+description: 'In plain English: Securitize acts as transfer agent and tokenization platform for funds and companies that issue tokens.'
 ---
 
 > [!info] At a glance
@@ -44,10 +44,12 @@ description: 'Example: Exodus Class A common stock tokens on Algorand, with Secu
 | who_can_buy | unknown |
 | num_assets | 12 companies at launch (CoinDesk) |
 
-Example: Exodus Class A common stock tokens on Algorand, with Securitize as transfer agent ([PR Newswire](https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html)); trading began on Securitize Markets in March 2022 ([Securitize](https://securitize.io/press-releases/exodus-begins-trading-on-securitize-markets)).
+*In plain English: Securitize acts as transfer agent and tokenization platform for funds and companies that issue tokens.*
+
+Example: Exodus Class A common stock tokens on Algorand, with Securitize as [[concepts/glossary#transfer-agent|transfer agent]] ([PR Newswire](https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html)); trading began on Securitize Markets in March 2022 ([Securitize](https://securitize.io/press-releases/exodus-begins-trading-on-securitize-markets)).
 
 ## Securitize Stocks (8 Oct 2026)
-Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on Solana, settled in USDC, through Securitize's broker-dealer; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
+Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
 
 ## Sources
 Public originals for the facts on this page.

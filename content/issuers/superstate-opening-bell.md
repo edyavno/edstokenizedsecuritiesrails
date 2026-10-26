@@ -20,7 +20,7 @@ chain:
 - Solana
 status: live
 last_updated: '2026-10-17'
-description: Galaxy (GLXY) Class A common stock is tokenized on Solana via Opening Bell; Superstate, an SEC-registered transfer agent, updates ownership records.
+description: 'In plain English: Superstate''s Opening Bell puts real company shares on a blockchain, with Superstate keeping the official shareholder register.'
 ---
 
 > [!info] At a glance
@@ -40,9 +40,11 @@ description: Galaxy (GLXY) Class A common stock is tokenized on Solana via Openi
 | who_can_buy | KYC-verified investors in self-custody wallets |
 | num_assets | 3 on RWA.xyz |
 
-Galaxy (GLXY) Class A common stock is tokenized on Solana via Opening Bell; Superstate, an SEC-registered transfer agent, updates ownership records ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares); [Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+*In plain English: Superstate's Opening Bell puts real company shares on a blockchain, with Superstate keeping the official shareholder register.*
 
-Superstate acts as SEC-registered transfer agent and keeps the cap table onchain ([Superstate](https://www.superstate.com/opening-bell)). Galaxy's research describes allowlisted self-custody and transfer-agent mechanics ([Galaxy](https://www.galaxy.com/insights/research/tokenized-glxy)); launch exhibit on EDGAR ([SEC](https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm)).
+Galaxy (GLXY) Class A common stock is tokenized on [[concepts/glossary#solana|Solana]] via Opening Bell; Superstate, an SEC-registered [[concepts/glossary#transfer-agent|transfer agent]], updates ownership records ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares); [Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+
+Superstate acts as SEC-registered transfer agent and keeps the cap table onchain ([Superstate](https://www.superstate.com/opening-bell)). Galaxy's research describes [[concepts/glossary#allowlist|allowlisted]] self-custody and transfer-agent mechanics ([Galaxy](https://www.galaxy.com/insights/research/tokenized-glxy)); launch exhibit on EDGAR ([SEC](https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm)).
 
 ## Sources
 Public originals for the facts on this page.

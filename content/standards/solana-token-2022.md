@@ -9,12 +9,14 @@ sources:
 - https://solana.com/docs/tokens/extensions/transfer-hook
 - https://solana.com/docs/tokens/extensions/scaled-ui-amount
 - https://docs.ondo.finance/ondo-stocks/overview
-description: Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata.
+description: 'In plain English: Token-2022 is Solana''s token program with optional add-ons that tokenized stocks use for compliance and splits.'
 ---
+
+*In plain English: Token-2022 is Solana's token program with optional add-ons that tokenized stocks use for compliance and splits.*
 
 Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata ([Solana](https://solana.com/docs/tokens/extensions)).
 - **Transfer hook**: a custom program runs on every transfer; ExtraAccountMetaList resolves extra accounts. This is Solana's equivalent of identity-gated compliance checks ([Solana](https://solana.com/docs/tokens/extensions/transfer-hook)).
-- **Scaled UI amount**: a multiplier changes the displayed balance without changing raw balances; used for splits and reinvested dividends ([Solana](https://solana.com/docs/tokens/extensions/scaled-ui-amount)).
+- **Scaled UI amount**: a [[concepts/glossary#multiplier|multiplier]] changes the displayed balance without changing raw balances; used for splits and reinvested dividends ([Solana](https://solana.com/docs/tokens/extensions/scaled-ui-amount)).
 Used by Ondo Stocks on Solana ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)).
 
 ## Sources

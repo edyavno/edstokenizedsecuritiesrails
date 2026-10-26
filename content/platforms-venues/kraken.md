@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
 last_updated: '2026-10-17'
-description: Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals.
+description: 'In plain English: Kraken is a crypto exchange that lists xStocks for trading.'
 ---
 
 > [!info] At a glance
@@ -35,6 +35,8 @@ description: Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdra
 | chains | unknown |
 | who_can_buy | Eligible non-US clients |
 | num_assets | unknown |
+
+*In plain English: Kraken is a crypto exchange that lists xStocks for trading.*
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 

@@ -18,7 +18,7 @@ chain:
 - Robinhood Chain
 status: live
 last_updated: '2026-10-23'
-description: Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a base prospectus; they give economic exposure without rights in…
+description: 'In plain English: Robinhood''s stock tokens are debt securities that track a stock''s price. They give you no shareholder rights.'
 ---
 
 > [!info] At a glance
@@ -38,9 +38,11 @@ description: Stock Tokens are tokenised debt securities issued by Robinhood Asse
 | who_can_buy | Not US, Canada, UK, Switzerland; other restrictions apply |
 | num_assets | 190+ (Robinhood) |
 
+*In plain English: Robinhood's stock tokens are debt securities that track a stock's price. They give you no shareholder rights.*
+
 Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a [base prospectus](https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf); they give economic exposure without rights in the underlying ([docs](https://docs.robinhood.com/chain/stock-tokens/); [product page](https://robinhood.com/rhj/stocktokens/)). Separately, EU **Classic** Stock Tokens are MiFID II derivatives ([FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
 
-On Robinhood Chain, trading at launch is via RFQ plus AMMs and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
+On Robinhood Chain, trading at launch is via [[concepts/glossary#rfq|RFQ]] plus [[concepts/glossary#amm|AMMs]] and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
 ## Adoption
 Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinhood Chain rose 22x from July to September 2026, and that the chain earned over \$50M in fees in its first quarter ([Bitwise](https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026), analysis; summary page only, the full report was not retrieved). Monthly volumes of \$526M (July), \$2.21B (August) and \$11.31B (September) come from [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) citing Bitwise (news; unverified, not on Bitwise's summary page).

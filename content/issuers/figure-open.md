@@ -18,7 +18,7 @@ chain:
 - Provenance
 status: live
 last_updated: '2026-10-25'
-description: Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS; registration filing announced Nov 2025.
+description: 'In plain English: Figure lets companies issue their shares directly on a blockchain, so the token is the real share.'
 ---
 
 > [!info] At a glance
@@ -38,9 +38,15 @@ description: Figure's OPEN lets companies issue equity natively on Provenance, t
 | who_can_buy | unknown |
 | num_assets | 1 tracked |
 
-Figure's OPEN lets companies issue equity natively on Provenance, trading via Figure's ATS ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running)); registration filing announced Nov 2025 ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-public-filing-registration-statement-proposed)).
+*In plain English: Figure lets companies issue their shares directly on a blockchain, so the token is the real share.*
 
-The 18 Feb 2026 prospectus offered up to 4,375,000 shares of Series A Blockchain Common Stock, each convertible into one Class A share; the stock is recorded on Provenance and bought with YLDS from self-custodial wallets ([424(b)(4)](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm)). The prospectus does not state a ticker. Figure's launch announcement uses **FGRS** ([Figure](https://www.figure.com/newsroom/announcement/figure-launches-fgrs-first-sec-registered-blockchain-native-stock/)); launch coverage used FGRD, and Figure changed it to FGRS in March 2026 to match its final SEC registration ([Gate News](https://www.gate.com/news/detail/figure-tokenized-stock-ticker-changed-from-fgrd-to-fgrs-19721680), news). The Figure announcement page blocked retrieval, so only its headline was checked.
+Figure's OPEN lets companies issue equity [[concepts/glossary#native-token|natively]] on Provenance, trading via Figure's ATS ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running)); registration filing announced Nov 2025 ([Figure](https://investors.figure.com/news-releases/news-release-details/figure-announces-public-filing-registration-statement-proposed)).
+
+The 18 Feb 2026 prospectus offered up to 4,375,000 shares of Series A Blockchain Common Stock, each convertible into one Class A share; the stock is recorded on Provenance and bought with YLDS from self-custodial [[concepts/glossary#wallet|wallets]] ([424(b)(4)](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm)).
+
+The prospectus does not state a ticker. Figure's launch announcement uses **FGRS** ([Figure](https://www.figure.com/newsroom/announcement/figure-launches-fgrs-first-sec-registered-blockchain-native-stock/)); launch coverage used FGRD, and Figure changed it to FGRS in March 2026 to match its final SEC registration ([Gate News](https://www.gate.com/news/detail/figure-tokenized-stock-ticker-changed-from-fgrd-to-fgrs-19721680), news).
+
+The Figure announcement page blocked retrieval, so only its headline was checked.
 
 ## Sources
 Public originals for the facts on this page.
