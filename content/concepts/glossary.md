@@ -4,7 +4,7 @@ type: concept
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
-last_checked: '2026-10-25'
+last_checked: '2026-10-26'
 sources:
 - https://app.rwa.xyz/treasuries
 - https://blog.base.org/tokenized-stocks
@@ -42,6 +42,10 @@ sources:
 - https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture
 - https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry
 - https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf
+- https://www.tokenizedstockvenue.com/notice.html
+- https://llmstxt.org/
+- https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
+- https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html
 ---
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
@@ -51,6 +55,11 @@ New to all of this? Start with the [[overview|overview]], then come back here wh
 Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [W](#w)
 
 ## A
+
+### Admin keys
+Keys that control privileged token functions, such as pausing, freezing a wallet, forcing a transfer or upgrading the contract. Who holds them, and how they are protected, is a core custody and governance question. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643))
+
+*Related:* [[standards/erc-3643|ERC-3643 (T-REX)]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Allowlist
 A list of approved wallet addresses. A permissioned token only moves to wallets on the list, which is how identity checks are enforced onchain. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643))
@@ -101,6 +110,11 @@ A firm registered with the SEC to buy and sell securities for customers (broker)
 
 ## C
 
+### Canton
+A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton. ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]]
+
 ### CCP
 A central counterparty, or clearinghouse. It steps between buyer and seller so each side faces it instead of each other, and nets trades to reduce how much cash and stock must move. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
 
@@ -115,6 +129,11 @@ Code that runs on every token transfer or swap and can block it if a rule fails,
 Tokens on the same chain can plug into other apps, for example being posted as loan collateral, without special integration work. ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/))
 
 *Related:* [[overview|Tokenized securities: how it fits together]]
+
+### Corporate action
+An event the issuer causes that changes what a shareholder holds or gets: dividends, splits, mergers, votes. Wrapped stock tokens often handle them with a multiplier. ([xStocks](https://docs.xstocks.fi/developers/multipliers))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### CSD
 A central securities depository: the institution that holds securities centrally and records who owns them at the top level. In the US that is DTC. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
@@ -214,6 +233,11 @@ The Financial Services Regulatory Authority of Abu Dhabi Global Market, a financ
 
 ## H
 
+### Halt
+A pause in trading a stock, ordered by the primary exchange or a regulator. TSVs must stop trading a token while its stock is halted. ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
+
 ### Hybrid matching
 Trades are matched off chain (for example on an order book) and then settled on chain, instead of being priced and settled by an onchain pool in one step.
 
@@ -244,6 +268,11 @@ Know your customer: identity checks a firm must run before letting you open an a
 A blockchain that runs on top of another (usually Ethereum) to make transactions cheaper and faster. Base is one. Also written L2. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
 
 *Related:* [[standards/b20|Coinbase B20]]
+
+### llms.txt
+A plain-text index of a website written for AI models: one line per page with a short summary. This wiki publishes one at [/llms.txt](/llms.txt). ([llmstxt.org](https://llmstxt.org/))
+
+*Related:* [[build/index|Build with this wiki]]
 
 ## M
 
@@ -296,12 +325,27 @@ A letter from SEC staff saying they will not recommend enforcement if a firm doe
 
 ## O
 
-### Oracle
-A service that feeds outside data, such as a stock price, into a blockchain so smart contracts can use it. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
+### Onchain / offchain
+Onchain means recorded and executed on the blockchain itself; offchain means handled in an ordinary system, such as a firm's database or matching engine, and possibly settled onchain later. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
 
-*Related:* [[infrastructure/chainlink-equity-feeds|Chainlink tokenized equity feeds]]
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
+
+### Oracle
+A service that feeds outside data into a blockchain so smart contracts can use it. For tokenized stocks that means a reference price plus market status (open, closed or halted), so a venue can stop trading when the primary market stops. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
+
+*Related:* [[infrastructure/chainlink-equity-feeds|Chainlink tokenized equity feeds]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ## P
+
+### Permissioned network
+A blockchain where only approved operators run nodes and only approved parties join, unlike a public chain. Examples: Canton, and the Besu-based network DTCC uses for its Tokenization Service. ([DTCC](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
+
+### Permissioned pool
+An AMM pool that only allowlisted wallets can trade in; a hook checks eligibility on every swap. It is the model the SEC's Innovation Exemption covers for TSVs. ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Prefunding
 Putting the full cash and the full securities in place before a trade, because atomic settlement leaves no time to borrow or net. It costs liquidity. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
@@ -309,6 +353,11 @@ Putting the full cash and the full securities in place before a trade, because a
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
 
 ## R
+
+### Reconciliation
+Regularly checking that two records agree, for example that tokens in circulation match the real shares held, or that the share register matches the chain. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Redeem
 To hand tokens back to the issuer in exchange for the underlying asset or its cash value. Usually limited to eligible holders or Authorized Participants. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
@@ -421,6 +470,11 @@ A BIS proposal for one programmable platform holding tokenised central bank rese
 
 *Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
+### Uniswap v4 hooks
+Add-on code that a Uniswap v4 pool calls before or after swaps; used to build permissioned pools that check an allowlist. ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
+
 ## W
 
 ### Wallet
@@ -476,3 +530,7 @@ Public originals for the facts on this page.
 - <https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/>
 - <https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture>
 - <https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry>
+- <https://www.tokenizedstockvenue.com/notice.html>
+- <https://llmstxt.org/>
+- <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
+- <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>

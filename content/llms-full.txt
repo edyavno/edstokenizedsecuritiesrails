@@ -13,8 +13,8 @@ A human-curated, LLM-maintained, source-linked knowledge base on **tokenized sec
 - **Investors** curious about stock tokens: what you actually own, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
 - **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[overview#the-full-picture|the full-picture diagram]] and the topic pages: [[topics/settlement-and-matching|Settlement & matching]], [[topics/custody|Custody]], [[topics/regulation|Regulation]].
 - **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and the [database](/database).
-- **Software engineers and architects:** how tokenized securities systems are built: token contracts and compliance hooks, mint/redeem, onchain venues, atomic settlement, onchain corporate actions, with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
-- **AI agents:** machine-readable via [llms.txt](/llms.txt) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
+- **Software engineers and architects:** how tokenized securities systems are built: token contracts and [[concepts/glossary#compliance-hook|compliance hooks]], [[concepts/glossary#mint|mint]]/[[concepts/glossary#redeem|redeem]], onchain venues, [[concepts/glossary#atomic-settlement|atomic settlement]], onchain [[concepts/glossary#corporate-action|corporate actions]], with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
+- **AI agents:** machine-readable via [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
 
 What it isn't: a broker or investment advice. It's reference information, updated weekly.
 
@@ -98,8 +98,8 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Investors** curious about stock tokens: what you actually own, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
 - **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[overview#the-full-picture|the full-picture diagram]] and the topic pages: [[topics/settlement-and-matching|Settlement & matching]], [[topics/custody|Custody]], [[topics/regulation|Regulation]].
 - **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and the [database](/database).
-- **Software engineers and architects:** how tokenized securities systems are built: token contracts and compliance hooks, mint/redeem, onchain venues, atomic settlement, onchain corporate actions, with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
-- **AI agents:** machine-readable via [llms.txt](/llms.txt) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
+- **Software engineers and architects:** how tokenized securities systems are built: token contracts and [[concepts/glossary#compliance-hook|compliance hooks]], [[concepts/glossary#mint|mint]]/[[concepts/glossary#redeem|redeem]], onchain venues, [[concepts/glossary#atomic-settlement|atomic settlement]], onchain [[concepts/glossary#corporate-action|corporate actions]], with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
+- **AI agents:** machine-readable via [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
 
 What it isn't: a broker or investment advice. It's reference information, updated weekly.
 
@@ -303,33 +303,18 @@ description: How engineers and their AI coding agents can use this wiki as a des
 type: build
 last_checked: 2026-10-25
 
-*In plain English: this section is for software engineers and architects. It explains how tokenized-stock trading systems are put together, and how to point an AI coding agent at this wiki so its designs cite real rules and standards.*
+*In plain English: for software engineers, architects and their AI coding agents. An overview for now; pages will be added as the roadmap ships.*
 
-## Point your coding agent at the wiki
-- **[llms.txt](/llms.txt)**: one line per page with a short summary. Give this to the agent first so it can pick pages.
-- **[llms-full.txt](/llms-full.txt)**: every public page in one plain-text file, for agents that can hold it in context.
-- **[Guide for AI agents](/agents)**: URL patterns, freshness and how to cite.
-- **Raw markdown**: every page is a plain markdown file under `content/` in the site repo, with YAML frontmatter (`title`, `description`, `last_checked`, `sources`). An agent with a local copy can grep it, e.g. `rg -i "transfer policy" content/`.
+## Start here
+[[build/trading-reference-architecture|Reference architecture for trading tokenized securities]]: how one trade flows on tokenized rails, from [[concepts/glossary#allowlist|allowlisting]] through [[concepts/glossary#atomic-settlement|atomic settlement]] to the register. Built from public documents; a design reference, not legal advice.
 
-## What we expect for citations
-- Cite the wiki page URL and its `last_checked` date, and link to a heading where you can (headings are stable anchors, e.g. `/build/trading-reference-architecture#rules-that-must-always-hold`).
-- For a regulatory or standard requirement, cite the original source linked on the page (the SEC order, the EIP, the vendor docs), not just the wiki.
-- If a page says `unknown` or a fact is not on the wiki, say so rather than guess.
-- Pages update weekly. Check the source before relying on anything time-sensitive.
+## Point your coding agent here
+- [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) for a page index, [llms-full.txt](/llms-full.txt) for everything in one file, and the [guide for AI agents](/agents) for how to cite.
+- Ask it to cite the wiki page and the original source (SEC order, EIP), and to say "unknown" rather than guess.
 
-## Start here: reference architecture
-[[build/trading-reference-architecture|Reference architecture for trading tokenized securities]]: one trade's lifecycle on tokenized rails (onboarding and allowlisting, onchain or hybrid matching, compliance-hook checks, atomic DvP, register sync, oracle and halt controls), the components, the key design decisions and the rules that must always hold.
-
-It describes patterns from public documents only. It is a design reference, not legal advice or a certified architecture.
-
-## Starter prompts for engineers
-- "Using /build/trading-reference-architecture and /concepts/innovation-exemption, list the conditions a permissioned onchain pool for US stock tokens must meet, and which component enforces each. Cite the SEC order."
-- "Compare onchain and hybrid matching for my tokenized-stock venue using /build/trading-reference-architecture. Cite the pages behind each trade-off."
-- "Review my settlement flow against the rules that must always hold on /build/trading-reference-architecture. Flag any way one leg could settle without the other."
-- "Using /standards/erc-3643 and /standards/b20, explain where the transfer check runs in each and what that means for my integration."
-
-## Coming next
-Deeper pages are planned: token contracts and compliance hooks; mint, redeem and supply reconciliation; onchain venues; atomic settlement; corporate actions onchain; pricing, oracles and halts; wallets, custody and keys; interoperability; standards for developers; invariants and test scenarios; a page of prompts for coding agents; and published data schemas.
+## Starter prompts
+- "Using /build/trading-reference-architecture, review my settlement flow and flag any way one leg could settle without the other."
+- "Compare onchain and hybrid matching for my venue using /build/trading-reference-architecture. Cite the sources."
 
 ## Related
 [[overview|Overview]] · [[topics/settlement-and-matching|Settlement & matching]] · [[concepts/token-primitives|Token primitives]] · [[concepts/glossary|Glossary]]
@@ -346,7 +331,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/glossary
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 type: concept
-last_checked: 2026-10-25
+last_checked: 2026-10-26
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
 
@@ -355,6 +340,11 @@ New to all of this? Start with the [[overview|overview]], then come back here wh
 Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [W](#w)
 
 ## A
+
+### Admin keys
+Keys that control privileged token functions, such as pausing, freezing a wallet, forcing a transfer or upgrading the contract. Who holds them, and how they are protected, is a core custody and governance question. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643))
+
+*Related:* [[standards/erc-3643|ERC-3643 (T-REX)]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Allowlist
 A list of approved wallet addresses. A permissioned token only moves to wallets on the list, which is how identity checks are enforced onchain. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643))
@@ -405,6 +395,11 @@ A firm registered with the SEC to buy and sell securities for customers (broker)
 
 ## C
 
+### Canton
+A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton. ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]]
+
 ### CCP
 A central counterparty, or clearinghouse. It steps between buyer and seller so each side faces it instead of each other, and nets trades to reduce how much cash and stock must move. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
 
@@ -419,6 +414,11 @@ Code that runs on every token transfer or swap and can block it if a rule fails,
 Tokens on the same chain can plug into other apps, for example being posted as loan collateral, without special integration work. ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/))
 
 *Related:* [[overview|Tokenized securities: how it fits together]]
+
+### Corporate action
+An event the issuer causes that changes what a shareholder holds or gets: dividends, splits, mergers, votes. Wrapped stock tokens often handle them with a multiplier. ([xStocks](https://docs.xstocks.fi/developers/multipliers))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### CSD
 A central securities depository: the institution that holds securities centrally and records who owns them at the top level. In the US that is DTC. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
@@ -518,6 +518,11 @@ The Financial Services Regulatory Authority of Abu Dhabi Global Market, a financ
 
 ## H
 
+### Halt
+A pause in trading a stock, ordered by the primary exchange or a regulator. TSVs must stop trading a token while its stock is halted. ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
+
 ### Hybrid matching
 Trades are matched off chain (for example on an order book) and then settled on chain, instead of being priced and settled by an onchain pool in one step.
 
@@ -548,6 +553,11 @@ Know your customer: identity checks a firm must run before letting you open an a
 A blockchain that runs on top of another (usually Ethereum) to make transactions cheaper and faster. Base is one. Also written L2. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
 
 *Related:* [[standards/b20|Coinbase B20]]
+
+### llms.txt
+A plain-text index of a website written for AI models: one line per page with a short summary. This wiki publishes one at [/llms.txt](/llms.txt). ([llmstxt.org](https://llmstxt.org/))
+
+*Related:* [[build/index|Build with this wiki]]
 
 ## M
 
@@ -600,12 +610,27 @@ A letter from SEC staff saying they will not recommend enforcement if a firm doe
 
 ## O
 
-### Oracle
-A service that feeds outside data, such as a stock price, into a blockchain so smart contracts can use it. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
+### Onchain / offchain
+Onchain means recorded and executed on the blockchain itself; offchain means handled in an ordinary system, such as a firm's database or matching engine, and possibly settled onchain later. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
 
-*Related:* [[infrastructure/chainlink-equity-feeds|Chainlink tokenized equity feeds]]
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
+
+### Oracle
+A service that feeds outside data into a blockchain so smart contracts can use it. For tokenized stocks that means a reference price plus market status (open, closed or halted), so a venue can stop trading when the primary market stops. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
+
+*Related:* [[infrastructure/chainlink-equity-feeds|Chainlink tokenized equity feeds]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ## P
+
+### Permissioned network
+A blockchain where only approved operators run nodes and only approved parties join, unlike a public chain. Examples: Canton, and the Besu-based network DTCC uses for its Tokenization Service. ([DTCC](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
+
+### Permissioned pool
+An AMM pool that only allowlisted wallets can trade in; a hook checks eligibility on every swap. It is the model the SEC's Innovation Exemption covers for TSVs. ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Prefunding
 Putting the full cash and the full securities in place before a trade, because atomic settlement leaves no time to borrow or net. It costs liquidity. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
@@ -613,6 +638,11 @@ Putting the full cash and the full securities in place before a trade, because a
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
 
 ## R
+
+### Reconciliation
+Regularly checking that two records agree, for example that tokens in circulation match the real shares held, or that the share register matches the chain. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ### Redeem
 To hand tokens back to the issuer in exchange for the underlying asset or its cash value. Usually limited to eligible holders or Authorized Participants. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
@@ -725,6 +755,11 @@ A BIS proposal for one programmable platform holding tokenised central bank rese
 
 *Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
+### Uniswap v4 hooks
+Add-on code that a Uniswap v4 pool calls before or after swaps; used to build permissioned pools that check an allowlist. ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
+
 ## W
 
 ### Wallet
@@ -780,6 +815,10 @@ Public originals for the facts on this page.
 - <https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/>
 - <https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture>
 - <https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry>
+- <https://www.tokenizedstockvenue.com/notice.html>
+- <https://llmstxt.org/>
+- <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
+- <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 
 ========================================================================
 # What changed
@@ -1008,7 +1047,7 @@ description: End-to-end reference architecture for trading tokenized stocks on t
 type: build
 last_checked: 2026-10-25
 
-*In plain English: this page shows how all the parts of a tokenized-stock trading system fit together, from letting an investor in, through the trade, to updating the official record. Deeper pages on each part are planned.*
+*In plain English: an overview of how a tokenized-stock trading system fits together, from letting an investor in, through the trade, to updating the official record. Deeper pages on each part will be added as the roadmap ships.*
 
 ## End-to-end components
 ```mermaid
@@ -1056,6 +1095,8 @@ flowchart LR
     style Asset fill:#f0fdf4,stroke:#16a34a
     style Records fill:#f5f3ff,stroke:#7c3aed
 ```
+Terms: [[concepts/glossary#kyc|KYC]] · [[concepts/glossary#allowlist|allowlist]] · [[concepts/glossary#wallet|wallets]] · [[concepts/glossary#admin-keys|keys]] · [[concepts/glossary#permissioned-pool|permissioned pool]] · [[concepts/glossary#hybrid-matching|hybrid matching]] · [[concepts/glossary#onchain--offchain|offchain]] · [[concepts/glossary#oracle|oracle]] · [[concepts/glossary#halt|halt]] · [[concepts/glossary#compliance-hook|compliance hook]] · [[concepts/glossary#stablecoin|stablecoin]] · [[concepts/glossary#tokenized-deposit|tokenized deposit]] · [[concepts/glossary#mint|mint]] · [[concepts/glossary#redeem|redeem]] · [[concepts/glossary#reconciliation|reconciliation]] · [[concepts/glossary#transfer-agent|transfer agent]] · [[concepts/glossary#custodian|custodian]] · [[concepts/glossary#corporate-action|corporate actions]] · [[concepts/glossary#multiplier|multiplier]]
+
 Colors: **blue** = access, **amber** = trading, **green** = asset and cash, **purple** = records.
 
 ## One trade, end to end
@@ -1098,36 +1139,23 @@ sequenceDiagram
         end
     end
 ```
+Terms: [[concepts/glossary#dvp|DvP]] · [[concepts/glossary#atomic-settlement|atomic settlement]] · [[concepts/glossary#oracle|oracle]] · [[concepts/glossary#halt|halted]] · [[concepts/glossary#compliance-hook|compliance]] · [[concepts/glossary#transfer-agent|transfer agent]] · [[concepts/glossary#reconciliation|reconcile]]
+
 Phases: **blue** = onboard, **amber** = order and checks, **green** = atomic settlement, **purple** = record. Same colors as the component map above.
-On the **onchain path**, the pool prices and settles in one transaction (Uniswap v4 hooks check the allowlist on every swap ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))). On the **hybrid path**, an offchain matcher agrees the trade and submits a settlement transaction. TSV LLC's notice describes atomic settlement on Canton with the issuer's transfer agent verifying participants and minting ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ## Components
 | Component | What it does |
 |---|---|
-| Token contracts and compliance hooks | Enforce who can hold and receive; freeze, recover |
-| Mint, redeem and reconciliation | Create and destroy supply against real shares |
-| Onchain venue | Permissioned pool under the SEC exemption |
-| Settlement | Atomic DvP against a cash token |
-| Corporate actions | Multipliers, dividends, votes |
-| Pricing and halts | Oracles; stop when the primary market stops |
-| Wallets, custody and keys | Allowlisted wallets, custody, admin keys |
-| Interoperability | Cross-chain supply; DTCC conversion |
+| Token contract + [[concepts/glossary#compliance-hook|compliance hook]] | Only eligible wallets can hold or receive |
+| [[concepts/glossary#mint|Mint]] / [[concepts/glossary#redeem|redeem]] + [[concepts/glossary#reconciliation|reconciliation]] | Supply matches real shares |
+| Venue ([[concepts/glossary#permissioned-pool|permissioned pool]] or [[concepts/glossary#hybrid-matching|hybrid]]) | Matches and settles trades |
+| [[concepts/glossary#oracle|Oracle]] + [[concepts/glossary#halt|halt]] control | Fresh prices; stop when the stock is halted |
+| [[concepts/glossary#transfer-agent|Transfer agent]] / register | The official record stays in sync with the chain |
 
-## Key design decisions
-- **Onchain vs hybrid matching.** A permissioned pool is what the SEC's Innovation Exemption covers for TSVs, with symbol and volume caps ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)). Hybrid designs match offchain and settle onchain; Nasdaq's approved model keeps matching on its book and settlement at DTC ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
-- **Cash leg.** Stablecoins (OKXICE pairs USDC, USDG, USDT ([OKXICE](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf))) vs tokenized deposits or central bank money on a unified ledger ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)).
-- **Native vs wrapper.** A native token is the share on the register; a wrapper is a claim on a custodied share and needs mint/redeem reconciliation ([[overview#native-vs-wrapped|native vs wrapper]]).
-- **Chain choice.** Public chain (Uniswap on a public L1/L2) vs permissioned network (Canton, DTCC's Besu) ([DTCC](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
-
-## Rules that must always hold
-1. Only eligible, allowlisted wallets ever receive the stock token ([ERC-3643](https://eips.ethereum.org/EIPS/eip-3643)).
-2. Both legs of a trade settle or neither does.
-3. No trading while the primary exchange has the stock halted (TSVs) ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)).
-4. Backed supply on all chains x multiplier never exceeds shares held.
-5. The register (or custodian books) and chain state agree after every event.
-6. Prices and multipliers used for trading are fresh and consistent ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds)).
-
-Deeper pages on each component (token contracts and compliance hooks, mint and redeem, onchain venues, atomic settlement, corporate actions, pricing and halts, wallets and keys, interoperability) are planned.
+## Key rules
+1. Only allowlisted wallets ever receive the stock token ([ERC-3643](https://eips.ethereum.org/EIPS/eip-3643)).
+2. Both legs of a trade settle or neither does ([[concepts/glossary#atomic-settlement|atomic settlement]]).
+3. No trading while the primary exchange has the stock halted ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)).
 
 > [!note] vs traditional trading infrastructure
 > Traditional trading uses broker order routing, exchange order books or RFQ, CCP netting and T+1 settlement at DTC, with eligibility enforced by brokers and the transfer agent. Tokenized rails move eligibility into the token, settle atomically and run 24/7. See [[topics/settlement-and-matching|Settlement & matching]] and [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]].
