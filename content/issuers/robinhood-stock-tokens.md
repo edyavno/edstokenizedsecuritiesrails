@@ -43,11 +43,12 @@ Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) L
 On Robinhood Chain, trading at launch is via RFQ plus AMMs and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
 ## Adoption
-Tokenized stock volume on Robinhood Chain was \$526M in July, \$2.21B in August and \$11.31B in September 2026, per Bitwise's quarterly report as cited by [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) (news; Bitwise report not retrieved).
+Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinhood Chain rose 22x from July to September 2026, and that the chain earned over \$50M in fees in its first quarter ([Bitwise](https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026), analysis; summary page only, the full report was not retrieved). Monthly volumes of \$526M (July), \$2.21B (August) and \$11.31B (September) come from [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) citing Bitwise (news; unverified, not on Bitwise's summary page).
 
 ## Sources
 Public originals for the facts on this page.
 
+- <https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026>
 - <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://docs.robinhood.com/chain/stock-tokens/>
 - <https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf>

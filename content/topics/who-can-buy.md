@@ -2,8 +2,33 @@
 title: Who can buy
 tags:
 - topics
-last_checked: 2026-10-17
-description: Most offshore products exclude US persons; Dinari documents a US broker-dealer route; issuer-sponsored shares may admit eligible US investors.
+last_checked: 2026-10-25
+sources:
+- https://zerion.io/blog/best-tokenized-stock-platforms/
+- https://fensory.com/best/tokenized-stocks-platforms
+- https://support.kraken.com/articles/xstocks-faq
+- https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
+- https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/
+- https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm
+description: Who can hold a tokenized stock depends on the structure.
 ---
 
-Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood); Dinari documents a US broker-dealer route; issuer-sponsored shares may admit eligible US investors ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/); [Fensory](https://fensory.com/best/tokenized-stocks-platforms)).
+Who can hold a tokenized stock depends on the structure (see [[overview|the overview]] and [[topics/legal-structures|legal structures]]).
+
+## Offshore wrapped tokens
+Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood) ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/), secondary; [Fensory](https://fensory.com/best/tokenized-stocks-platforms), secondary). [[issuers/xstocks-backed|xStocks]] are offered to eligible non-US clients in 110+ countries and are not available in the US, Canada, the UK or Australia ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+
+## US routes
+- Broker-dealer model: [[issuers/dinari|Dinari]] documents a US broker-dealer route.
+- Issuer-sponsored shares can admit eligible US investors, usually behind KYC and a transfer-agent whitelist. Exodus token holders can only trade with holders who passed the transfer agent's AML/KYC and were whitelisted ([Exodus offering circular](https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm)). WisdomTree's WTGXX allows transfers only between verified, whitelisted wallets ([WisdomTree FAQ](https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/)).
+- Tokenized Securities Venues under the [[concepts/innovation-exemption|Innovation Exemption]] are permissioned: access is limited to approved participants ([SEC order 34-106402](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)).
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://zerion.io/blog/best-tokenized-stock-platforms/>
+- <https://fensory.com/best/tokenized-stocks-platforms>
+- <https://support.kraken.com/articles/xstocks-faq>
+- <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
+- <https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/>
+- <https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm>

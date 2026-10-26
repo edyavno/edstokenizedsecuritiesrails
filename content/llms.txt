@@ -18,15 +18,15 @@
 - [Token primitives](https://edstokenizedsecuritiesrails.com/concepts/token-primitives): The building blocks used by tokenized-stock implementations.
 
 ## Topics
-- [Corporate actions & dividends](https://edstokenizedsecuritiesrails.com/topics/corporate-actions-and-dividends): Coinbase and Robinhood use multipliers that reflect reinvested dividends; others pay distributions.
-- [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): Backed models hold underlying shares with a custodian or broker-dealer. Issuer-sponsored models replace custody with a transfer-agent register.
+- [Corporate actions & dividends](https://edstokenizedsecuritiesrails.com/topics/corporate-actions-and-dividends): How a dividend or split reaches a token holder depends on the model (see the overview).
+- [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): Who holds the real share, and who holds the keys, differs by model (see the overview).
 - [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures): Tokenized stocks fall into distinct legal models.
 - [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation): Key US milestones: DTC no-action letter (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026); WisdomTree's exemptive relief for…
-- [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): Venue models: centralized exchanges listing tokens (Kraken 24/5, PR); onchain DEXs; ATS (Figure); and national exchanges trading tokenized and traditional…
-- [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): Most offshore products exclude US persons; Dinari documents a US broker-dealer route; issuer-sponsored shares may admit eligible US investors.
+- [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): Tokenized stocks trade and settle in several ways (see the overview).
+- [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): Who can hold a tokenized stock depends on the structure.
 
 ## Standards
-- [Coinbase B20](https://edstokenizedsecuritiesrails.com/standards/b20): B20 is the token format Coinbase uses for its tokenized stocks on Base. The B20 specification itself was not found in the collected sources (status: unknown).
+- [Coinbase B20](https://edstokenizedsecuritiesrails.com/standards/b20): B20 is the Base-native token standard that Coinbase's tokenized stocks use. It is designed to work for any asset; stocks are one use case.
 - [ERC-1400 / ERC-1410](https://edstokenizedsecuritiesrails.com/standards/erc-1400): ERC-1400 (draft, 2018) is an umbrella suite: ERC-1594, ERC-1643 (documents), ERC-1644 and ERC-1410 (partitions).
 - [ERC-3643 (T-REX)](https://edstokenizedsecuritiesrails.com/standards/erc-3643): Final EIP: a permissioned ERC-20 extension with conditional transfers, pause/freeze, forced transfer and recovery.
 - [Solana Token-2022 extensions](https://edstokenizedsecuritiesrails.com/standards/solana-token-2022): Token-2022 adds extensions including transfer hook, permanent delegate, default account state, scaled UI amount and metadata.
