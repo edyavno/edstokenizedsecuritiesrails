@@ -4,18 +4,18 @@ jurisdiction: unknown
 product_name: xStocks listing
 structure: unknown
 chains: unknown
-who_can_buy: Eligible non-US clients
+who_can_buy: Eligible non-US clients; EEA clients after a questionnaire, fiat-only via Convert
 num_assets: unknown
 structure_short: Venue (CEX)
 who_can_buy_short: Non-US eligible
-last_checked: '2026-10-17'
+last_checked: '2026-10-25'
 title: Kraken
 tags:
 - platforms-venues
 type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
-last_updated: '2026-10-17'
+last_updated: '2026-10-25'
 description: 'In plain English: Kraken is a crypto exchange that lists xStocks for trading.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: Kraken is a crypto exchange that lists xStocks f
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live (xStocks listed 2025-06-30)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-25  
 
 | Field | Value |
 |---|---|
@@ -33,12 +33,14 @@ description: 'In plain English: Kraken is a crypto exchange that lists xStocks f
 | product_name | xStocks listing |
 | structure | unknown |
 | chains | unknown |
-| who_can_buy | Eligible non-US clients |
+| who_can_buy | Eligible non-US clients; EEA clients after a questionnaire, fiat-only via Convert |
 | num_assets | unknown |
 
 *In plain English: Kraken is a crypto exchange that lists xStocks for trading.*
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+On 18 Aug 2026 Kraken opened 7,000+ US-listed stocks to eligible EEA customers under MiFID II through Payward Europe Digital Solutions (CY) Limited, next to 700+ xStocks in the same account ([Kraken](https://blog.kraken.com/product/equities/announcing-us-listed-stock-trading-for-eea-customers)). EEA clients must pass a questionnaire and can trade xStocks only with fiat via Convert, not on Pro order books or the API ([Kraken support](https://support.kraken.com/articles/xstocks-availability)).
 
 Kraken said on 22 Oct 2026 that its xStocks lineup exceeds 1,000 tokenized instruments ([The Defiant](https://thedefiant.io/news/cefi/kraken-says-its-xstocks-lineup-now-exceeds-1-000), news; not yet confirmed on a Kraken page).
 
@@ -53,5 +55,6 @@ Public originals for the facts on this page.
 
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
 - <https://blog.kraken.com/news/backed-acquisition>
+- <https://blog.kraken.com/product/equities/announcing-us-listed-stock-trading-for-eea-customers>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*

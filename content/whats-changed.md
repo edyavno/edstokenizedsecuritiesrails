@@ -42,6 +42,16 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 - **[Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)**
   - *What this means for holders:* Nasdaq Equity Tokens are planned, not live; Nasdaq and Payward expect them in Q2 2027. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq tokenized securities]].
 
+## Week of 17 Aug 2026
+- **[Kraken opens US stocks and xStocks to EEA customers](/changelog/2026-08-18-kraken-eea-stocks)**
+  - *What this means for holders:* Eligible EEA customers can hold ordinary US shares and xStocks in one Kraken account. See [[platforms-venues/kraken|Kraken]].
+
+## Week of 10 Aug 2026
+- **[Crypto.com launches tokenized stock derivatives in the EEA](/changelog/2026-08-12-crypto-com-tokenized-stocks)**
+  - *What this means for holders:* These are derivatives: you get price exposure only, with no shares and no votes. See [[issuers/crypto-com-tokenized-stocks|Crypto.com Tokenized Stocks]].
+- **[Bullish trades its own tokenized shares on a GFSC-regulated exchange](/changelog/2026-08-12-bullish-tokenized-equity)**
+  - *What this means for holders:* BLSH tokens are real registered shares, but only Bullish's own stock trades this way so far. See [[platforms-venues/bullish|Bullish Exchange]].
+
 ## Week of 15 Jun 2026
 - **[SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)**
 

@@ -41,6 +41,7 @@
 ## Issuers
 - [bStocks](https://edstokenizedsecuritiesrails.com/issuers/bstocks): In plain English: bStocks are certificates backed one-for-one by real US shares held at a custodian.
 - [Coinbase Tokenized Stocks](https://edstokenizedsecuritiesrails.com/issuers/coinbase-tokenized-stocks): In plain English: Coinbase's stock tokens on Base are each backed by a real share held in custody.
+- [Crypto.com Tokenized Stocks](https://edstokenizedsecuritiesrails.com/issuers/crypto-com-tokenized-stocks): In plain English: Crypto.com sells tokens that follow US stock prices, but they are contracts, not shares.
 - [Dinari dShares](https://edstokenizedsecuritiesrails.com/issuers/dinari): In plain English: Dinari issues tokens backed by US stocks and offers them to eligible US investors.
 - [Figure OPEN](https://edstokenizedsecuritiesrails.com/issuers/figure-open): In plain English: Figure lets companies issue their shares directly on a blockchain, so the token is the real share.
 - [Ondo Global Markets (Ondo Stocks)](https://edstokenizedsecuritiesrails.com/issuers/ondo-global-markets): In plain English: Ondo's stock tokens are notes that track US stocks, backed by shares held at US brokers. They are not the shares themselves.
@@ -51,6 +52,7 @@
 - [xStocks (Backed)](https://edstokenizedsecuritiesrails.com/issuers/xstocks-backed): In plain English: xStocks are tokens backed one-for-one by US stocks and ETFs.
 
 ## Platforms and venues
+- [Bullish Exchange](https://edstokenizedsecuritiesrails.com/platforms-venues/bullish): In plain English: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.
 - [Bybit](https://edstokenizedsecuritiesrails.com/platforms-venues/bybit): In plain English: Bybit is a crypto exchange that lists xStocks for trading.
 - [Kraken](https://edstokenizedsecuritiesrails.com/platforms-venues/kraken): In plain English: Kraken is a crypto exchange that lists xStocks for trading.
 - [Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/platforms-venues/nasdaq-tokenized-securities): In plain English: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC's pilot.
@@ -76,6 +78,9 @@
 - [2026-09-17: SEC issues the Innovation Exemption for tokenized NMS stock](https://edstokenizedsecuritiesrails.com/changelog/2026-09-17-sec-innovation-exemption): - The SEC issued an order (Rel. 34-106402) exempting Tokenized Securities Venues from the exchange definition and certain liquidity providers from the dealer definition; it expires five years after publication (SEC). -…
 - [2026-09-14: UK tokenisation feedback; Robinhood plans redemption and voting](https://edstokenizedsecuritiesrails.com/changelog/2026-09-14-fca-robinhood): - FCA and Bank of England published FS26/1 on tokenisation in wholesale markets (123 responses); a joint roadmap is due later in 2026 (FCA). - Robinhood's CEO said in-kind redemption and voting are coming for Robinhood…
 - [2026-09-10: Nasdaq agrees to invest in Kraken's parent for tokenized equities](https://edstokenizedsecuritiesrails.com/changelog/2026-09-10-nasdaq-payward): - Nasdaq Ventures agreed to invest \$100M in Payward, Kraken's parent (Nasdaq). - The partners will build distribution, trading and post-trade infrastructure for Nasdaq Equity Tokens (NETs), linked to xStocks;
+- [2026-08-18: Kraken opens US stocks and xStocks to EEA customers](https://edstokenizedsecuritiesrails.com/changelog/2026-08-18-kraken-eea-stocks): - Kraken launched 7,000+ US stocks for eligible EEA customers under MiFID II via Payward Europe Digital Solutions (CY) Limited, alongside 700+ xStocks (Kraken). - EEA clients trade xStocks with fiat via Convert after a…
+- [2026-08-12: Crypto.com launches tokenized stock derivatives in the EEA](https://edstokenizedsecuritiesrails.com/changelog/2026-08-12-crypto-com-tokenized-stocks): - Crypto.com launched Tokenized Stocks in its app: price-tracking derivatives on 1,500 US stocks and ETFs, from US\$1, for eligible EEA and other users (Crypto.com). - Holders get no ownership or voting rights; issuer F…
+- [2026-08-12: Bullish trades its own tokenized shares on a GFSC-regulated exchange](https://edstokenizedsecuritiesrails.com/changelog/2026-08-12-bullish-tokenized-equity): - Bullish's issuer-sponsored BLSH tokens, recorded at the share registry, traded on Bullish Exchange against a USD stablecoin (Bullish). - Bullish says it received GFSC approval for tokenized securities trading in June…
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](https://edstokenizedsecuritiesrails.com/changelog/2026-06-16-sec): SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20).
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/changelog/2026-03-18-sec): SEC approves Nasdaq tokenized securities rule.
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](https://edstokenizedsecuritiesrails.com/changelog/2026-02-24-wisdomtree): WisdomTree announces 24x7 trading and instant settlement for WTGXX.

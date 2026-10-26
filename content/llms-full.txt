@@ -34,7 +34,7 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 
 ## Explore the wiki
-- **Look up a company:** [[database|Issuer & platform database]] (19 entities)
+- **Look up a company:** [[database|Issuer & platform database]] (21 entities)
 - **See what changed:** [[whats-changed|What changed, week by week]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 - **Understand the concepts:** [[concepts/glossary|Glossary]] · [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[concepts/international|International]]
 - **Compare models and standards:** [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]
@@ -273,6 +273,7 @@ Generated from vault frontmatter on 2026-10-25. Headline fields only; `unknown` 
 |---|---|---|---|---|---|---|
 | [bStocks](/issuers/bstocks) | Issuer | ADGM (UAE) | Certificates over shares | BNB Smart Chain | ADGM only; not US | 2026-10-17 |
 | [Coinbase Tokenized Stocks](/issuers/coinbase-tokenized-stocks) | Issuer | ADGM (UAE) | Beneficial claim, 1:1 | Base | Non-US (Reg S) | 2026-10-17 |
+| [Crypto.com Tokenized Stocks](/issuers/crypto-com-tokenized-stocks) | Issuer | Cyprus | Derivative | unknown | EEA and approved regions | 2026-10-25 |
 | [Dinari dShares](/issuers/dinari) | Issuer | United States | Custodial tokenized shares | Ethereum, Avalanche, Arbitrum +1 | US eligible + intl | 2026-10-17 |
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-25 |
 | [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-17 |
@@ -281,8 +282,9 @@ Generated from vault frontmatter on 2026-10-25. Headline fields only; `unknown` 
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-10-17 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-10-17 |
 | [xStocks (Backed)](/issuers/xstocks-backed) | Issuer | Jersey | Backed tracker tokens | Solana, Ethereum, TON +1 | Non-US eligible | 2026-10-25 |
+| [Bullish Exchange](/platforms-venues/bullish) | Venue/rule | Gibraltar | Venue (CEX), direct shares | unknown | unknown | 2026-10-25 |
 | [Bybit](/platforms-venues/bybit) | Venue/rule | unknown | Venue (CEX) | unknown | unknown | 2026-10-17 |
-| [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-17 |
+| [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-25 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-10-17 |
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
 | [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-25 |
@@ -335,6 +337,16 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 - **[Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)**
   - *What this means for holders:* Nasdaq Equity Tokens are planned, not live; Nasdaq and Payward expect them in Q2 2027. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq tokenized securities]].
 
+## Week of 17 Aug 2026
+- **[Kraken opens US stocks and xStocks to EEA customers](/changelog/2026-08-18-kraken-eea-stocks)**
+  - *What this means for holders:* Eligible EEA customers can hold ordinary US shares and xStocks in one Kraken account. See [[platforms-venues/kraken|Kraken]].
+
+## Week of 10 Aug 2026
+- **[Crypto.com launches tokenized stock derivatives in the EEA](/changelog/2026-08-12-crypto-com-tokenized-stocks)**
+  - *What this means for holders:* These are derivatives: you get price exposure only, with no shares and no votes. See [[issuers/crypto-com-tokenized-stocks|Crypto.com Tokenized Stocks]].
+- **[Bullish trades its own tokenized shares on a GFSC-regulated exchange](/changelog/2026-08-12-bullish-tokenized-equity)**
+  - *What this means for holders:* BLSH tokens are real registered shares, but only Bullish's own stock trades this way so far. See [[platforms-venues/bullish|Bullish Exchange]].
+
 ## Week of 15 Jun 2026
 - **[SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)**
 
@@ -374,6 +386,9 @@ Public changes, updated weekly (snapshot as of Monday 2026-10-19). See [[whats-c
 - [2026-09-17: SEC issues the Innovation Exemption for tokenized NMS stock](/changelog/2026-09-17-sec-innovation-exemption)
 - [2026-09-14: UK tokenisation feedback; Robinhood plans redemption and voting](/changelog/2026-09-14-fca-robinhood)
 - [2026-09-10: Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)
+- [2026-08-18: Kraken opens US stocks and xStocks to EEA customers](/changelog/2026-08-18-kraken-eea-stocks)
+- [2026-08-12: Crypto.com launches tokenized stock derivatives in the EEA](/changelog/2026-08-12-crypto-com-tokenized-stocks)
+- [2026-08-12: Bullish trades its own tokenized shares on a GFSC-regulated exchange](/changelog/2026-08-12-bullish-tokenized-equity)
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
@@ -804,7 +819,7 @@ On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting tem
 Chairman Atkins framed it as a bridge to durable rulemaking ([statement](https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf)). Law-firm analyses: [Skadden](https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes), [Davis Polk](https://www.davispolk.com/insights/client-update/sec-s-innovation-exemption-opens-path-tokenized-stock-trading), [WilmerHale](https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks).
 
 ## TSV notices
-The SEC lists three TSV notices: TSV LLC (23 Sep 2026), OKXICE TSV (4 Oct 2026) and Kephas Corporation d/b/a Perpetuals.com (14 Oct 2026) ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)). None had started trading by 25 Oct 2026 per their notices and the SEC page.
+The SEC lists three TSV notices: TSV LLC (23 Sep 2026), OKXICE TSV (4 Oct 2026) and Kephas Corporation d/b/a Perpetuals.com (14 Oct 2026) ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)). None had started trading by 25 Oct 2026 per their notices and the SEC page. TSV LLC revised its notice on 19 Oct (v1.1) and 23 Oct 2026 (v1.2): it will run on Canton with USDC and SBC as paired assets at commencement, and the issuer's transfer agent handles participant verification and minting ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ## Issuer objection
 For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
@@ -812,7 +827,7 @@ For third-party tokens, the issuer gets notice and can object during the 30-day 
 The contrast CNBC draws: offshore volume is mostly perps and [[concepts/glossary#wrapper|wrapped]] tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
 ## Stablecoin legs
-TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)).
+TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html); [Federal Register](https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the), FR Doc. 2026-21706).
 
 First notice: [[platforms-venues/okxice-tsv|OKXICE TSV]]. Primitive: [[infrastructure/uniswap-permissioned-pools|Uniswap permissioned pools]].
 
@@ -1037,7 +1052,7 @@ type: topic
 
 *In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
 
-Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 11 jurisdictions are not yet collected.
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 12 jurisdictions are not yet collected.
 
 | Jurisdiction | Status | Main rule or guidance | Last checked |
 |---|---|---|---|
@@ -1052,6 +1067,7 @@ Each row gives the status and the main rule or regulator guidance, linked to the
 | UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-10-25 |
 | Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-10-25 |
 | British Virgin Islands | Rules in force | [VASP Act 2022 and SIBA (issuer domicile for Ondo Global Markets)](https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022) | 2026-10-25 |
+| Gibraltar | Rules in force | [GFSC-regulated DLT exchange (Bullish) approved for tokenized securities trading](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading) | 2026-10-25 |
 
 **Status key.** *Rules in force*: a rule, order or licence regime that applies now. *Pilot or sandbox*: a time-limited or capped regime. *Regulator guidance*: guidance on how existing securities law applies to tokens. *Proposed*: filed or proposed, not yet approved.
 
@@ -1068,6 +1084,7 @@ Public originals for the facts on this page.
 - <https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f>
 - <https://business.cch.com/srd/34-106402091726.pdf>
 - <https://dfpi.ca.gov/regulated-industries/digital-financial-assets/digital-financial-assets-law-frequently-asked-questions/digital-financial-assets-law-preparing-for-your-application/>
+- <https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
 - <https://rulebooks.vara.ae/rulebook/virtual-asset-issuance-rulebook>
@@ -1081,11 +1098,11 @@ Public originals for the facts on this page.
 - <https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/article-2-scope>
 - <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
 - <https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets>
+- <https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the>
 - <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
 - <https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/>
 - <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
-- <https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
@@ -1388,6 +1405,49 @@ Public originals for the facts on this page.
 - <https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain>
 
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# Crypto.com Tokenized Stocks
+URL: https://edstokenizedsecuritiesrails.com/issuers/crypto-com-tokenized-stocks
+type: issuer
+jurisdiction: Cyprus (EEA offering); other approved jurisdictions
+chain: unknown
+status: live (launched 2026-08-12)
+last_updated: 2026-10-25
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** Cyprus (EEA offering); other approved jurisdictions  
+> **Chain:** unknown  
+> **Status:** live (launched 2026-08-12)  
+> **Last updated:** 2026-10-25  
+
+| Field | Value |
+|---|---|
+| name | Crypto.com Tokenized Stocks |
+| jurisdiction | Cyprus (EEA offering); other approved jurisdictions |
+| product_name | Tokenized Stocks |
+| structure | Derivative tracking the price of the underlying |
+| chains | unknown |
+| who_can_buy | Eligible users in the EEA and other approved jurisdictions |
+| num_assets | 1,500 stocks and ETFs at launch |
+
+*In plain English: Crypto.com sells tokens that follow US stock prices, but they are contracts, not shares.*
+
+Crypto.com launched Tokenized Stocks on 12 Aug 2026 with exposure to 1,500 US stocks and ETFs from US\$1, traded 24/7 in the Crypto.com App ([Crypto.com](https://crypto.com/us/company-news/tokenized-stocks-eea-launch)).
+
+## What this means for holders
+- These are derivative contracts issued by Foris Capital CY Limited: no legal or beneficial ownership, no voting or shareholder rights ([Crypto.com](https://crypto.com/us/company-news/tokenized-stocks-eea-launch)).
+- Dividend-equivalent adjustments may apply but are not guaranteed; hedging assets sit with Alpaca ([Crypto.com](https://crypto.com/us/company-news/tokenized-stocks-eea-launch)).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://crypto.com/us/company-news/tokenized-stocks-eea-launch>
+
+*Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Dinari dShares
@@ -1823,6 +1883,50 @@ Public originals for the facts on this page.
 *Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
+# Bullish Exchange
+URL: https://edstokenizedsecuritiesrails.com/platforms-venues/bullish
+type: venue
+jurisdiction: Gibraltar
+chain: unknown
+status: live (first trades 2026-08-12)
+last_updated: 2026-10-25
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** Gibraltar  
+> **Chain:** unknown  
+> **Status:** live (first trades 2026-08-12)  
+> **Last updated:** 2026-10-25  
+
+| Field | Value |
+|---|---|
+| name | Bullish Exchange |
+| jurisdiction | Gibraltar |
+| product_name | Tokenized BLSH shares |
+| structure | Issuer-sponsored shares recorded at the registry level |
+| chains | unknown |
+| who_can_buy | unknown |
+| num_assets | 1 (BLSH) at launch |
+
+*In plain English: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.*
+
+On 12 Aug 2026 market participants traded Bullish's tokenized BLSH shares on Bullish Exchange, settled against a USD stablecoin; Bullish says this was the first tokenized equity traded on a Gibraltar Financial Services Commission (GFSC) regulated digital asset exchange ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)). Bullish says it received GFSC approval for tokenized securities trading in June 2026 (not confirmed on a GFSC page), and the registry side depends on its pending acquisition of Equiniti ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+
+## What this means for holders
+- The tokens are issuer-sponsored and recorded at the share registry, so holders own shares directly, not a wrapper or derivative ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+- Only BLSH trades this way so far; trading runs 24/7 with near-instant settlement ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading>
+- <https://www.sec.gov/Archives/edgar/data/1872195/000143774926027408/blsh20260812_6k.htm>
+
+*Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
 # Bybit
 URL: https://edstokenizedsecuritiesrails.com/platforms-venues/bybit
 type: venue
@@ -1873,14 +1977,14 @@ type: venue
 jurisdiction: unknown
 chain: unknown
 status: live (xStocks listed 2025-06-30)
-last_updated: 2026-10-17
+last_updated: 2026-10-25
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live (xStocks listed 2025-06-30)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-25  
 
 | Field | Value |
 |---|---|
@@ -1889,12 +1993,14 @@ last_updated: 2026-10-17
 | product_name | xStocks listing |
 | structure | unknown |
 | chains | unknown |
-| who_can_buy | Eligible non-US clients |
+| who_can_buy | Eligible non-US clients; EEA clients after a questionnaire, fiat-only via Convert |
 | num_assets | unknown |
 
 *In plain English: Kraken is a crypto exchange that lists xStocks for trading.*
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+On 18 Aug 2026 Kraken opened 7,000+ US-listed stocks to eligible EEA customers under MiFID II through Payward Europe Digital Solutions (CY) Limited, next to 700+ xStocks in the same account ([Kraken](https://blog.kraken.com/product/equities/announcing-us-listed-stock-trading-for-eea-customers)). EEA clients must pass a questionnaire and can trade xStocks only with fiat via Convert, not on Pro order books or the API ([Kraken support](https://support.kraken.com/articles/xstocks-availability)).
 
 Kraken said on 22 Oct 2026 that its xStocks lineup exceeds 1,000 tokenized instruments ([The Defiant](https://thedefiant.io/news/cefi/kraken-says-its-xstocks-lineup-now-exceeds-1-000), news; not yet confirmed on a Kraken page).
 
@@ -1909,8 +2015,9 @@ Public originals for the facts on this page.
 
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
 - <https://blog.kraken.com/news/backed-acquisition>
+- <https://blog.kraken.com/product/equities/announcing-us-listed-stock-trading-for-eea-customers>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Nasdaq tokenized securities rule
@@ -2352,6 +2459,30 @@ URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-10-nasdaq-payward
 
 - Nasdaq Ventures agreed to invest \$100M in Payward, Kraken's parent ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
 - The partners will build distribution, trading and post-trade infrastructure for Nasdaq Equity Tokens (NETs), linked to xStocks; NETs are expected in Q2 2027 (Nasdaq).
+
+========================================================================
+# 2026-08-18: Kraken opens US stocks and xStocks to EEA customers
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-08-18-kraken-eea-stocks
+
+
+- Kraken launched 7,000+ US stocks for eligible EEA customers under MiFID II via Payward Europe Digital Solutions (CY) Limited, alongside 700+ xStocks ([Kraken](https://blog.kraken.com/product/equities/announcing-us-listed-stock-trading-for-eea-customers)).
+- EEA clients trade xStocks with fiat via Convert after a questionnaire ([Kraken support](https://support.kraken.com/articles/xstocks-availability)).
+
+========================================================================
+# 2026-08-12: Crypto.com launches tokenized stock derivatives in the EEA
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-08-12-crypto-com-tokenized-stocks
+
+
+- Crypto.com launched Tokenized Stocks in its app: price-tracking derivatives on 1,500 US stocks and ETFs, from US\$1, for eligible EEA and other users ([Crypto.com](https://crypto.com/us/company-news/tokenized-stocks-eea-launch)).
+- Holders get no ownership or voting rights; issuer Foris Capital CY Limited; hedging assets custodied at Alpaca ([Crypto.com](https://crypto.com/us/company-news/tokenized-stocks-eea-launch)).
+
+========================================================================
+# 2026-08-12: Bullish trades its own tokenized shares on a GFSC-regulated exchange
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-08-12-bullish-tokenized-equity
+
+
+- Bullish's issuer-sponsored BLSH tokens, recorded at the share registry, traded on Bullish Exchange against a USD stablecoin ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+- Bullish says it received GFSC approval for tokenized securities trading in June 2026 ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
 
 ========================================================================
 # 2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)

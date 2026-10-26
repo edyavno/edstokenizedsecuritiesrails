@@ -12,6 +12,7 @@ sources:
 - https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f
 - https://business.cch.com/srd/34-106402091726.pdf
 - https://dfpi.ca.gov/regulated-industries/digital-financial-assets/digital-financial-assets-law-frequently-asked-questions/digital-financial-assets-law-preparing-for-your-application/
+- https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading
 - https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement
 - https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
 - https://rulebooks.vara.ae/rulebook/virtual-asset-issuance-rulebook
@@ -25,11 +26,11 @@ sources:
 - https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/article-2-scope
 - https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf
 - https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets
+- https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the
 - https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/
 - https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/
 - https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps
 - https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf
-- https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
@@ -41,7 +42,7 @@ description: 'In plain English: Where tokenized securities stand under the rules
 
 *In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
 
-Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 11 jurisdictions are not yet collected.
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 12 jurisdictions are not yet collected.
 
 | Jurisdiction | Status | Main rule or guidance | Last checked |
 |---|---|---|---|
@@ -56,6 +57,7 @@ Each row gives the status and the main rule or regulator guidance, linked to the
 | UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-10-25 |
 | Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-10-25 |
 | British Virgin Islands | Rules in force | [VASP Act 2022 and SIBA (issuer domicile for Ondo Global Markets)](https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022) | 2026-10-25 |
+| Gibraltar | Rules in force | [GFSC-regulated DLT exchange (Bullish) approved for tokenized securities trading](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading) | 2026-10-25 |
 
 **Status key.** *Rules in force*: a rule, order or licence regime that applies now. *Pilot or sandbox*: a time-limited or capped regime. *Regulator guidance*: guidance on how existing securities law applies to tokens. *Proposed*: filed or proposed, not yet approved.
 
@@ -72,6 +74,7 @@ Public originals for the facts on this page.
 - <https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f>
 - <https://business.cch.com/srd/34-106402091726.pdf>
 - <https://dfpi.ca.gov/regulated-industries/digital-financial-assets/digital-financial-assets-law-frequently-asked-questions/digital-financial-assets-law-preparing-for-your-application/>
+- <https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
 - <https://rulebooks.vara.ae/rulebook/virtual-asset-issuance-rulebook>
@@ -85,11 +88,11 @@ Public originals for the facts on this page.
 - <https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/article-2-scope>
 - <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
 - <https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets>
+- <https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the>
 - <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
 - <https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/>
 - <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
-- <https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
