@@ -2521,6 +2521,9 @@
   var SIDE = CFG.position === "bottom-left" ? "an-left" : "an-right";
   function buildUI() {
     var style = el("style", { id: "__an_style", html: CSS_TEXT });
+    // EdsTSR patch: Quartz SPA nav removes every <head> child without
+    // data-persist, which stripped this stylesheet and left the UI unstyled.
+    style.setAttribute("data-persist", "");
     var _nonce = SCRIPT && (SCRIPT.nonce || SCRIPT.getAttribute("nonce"));
     if (_nonce) style.setAttribute("nonce", _nonce);
     document.head.appendChild(style);
