@@ -42,7 +42,7 @@ An open-source Uniswap v4 hook standard for compliant trading of tokenized [[con
 
 A Permissions Adapter holds the real asset and issues a virtual token to PoolManager; PermissionedHooks checks an IAllowlistChecker ([architecture](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture); [source](https://github.com/Uniswap/v4-hooks-public/blob/main/src/permissioned-pools/PermissionedHooks.sol)).
 
-It is the AMM primitive used by the first [[concepts/glossary#tsv|TSV]] notice ([[platforms-venues/okxice-tsv|OKXICE]]).
+It is the [[concepts/glossary#amm-automated-market-maker|AMM]] primitive used by the first [[concepts/glossary#tsv|TSV]] notice ([[platforms-venues/okxice-tsv|OKXICE]]).
 
 ## Sources
 Public originals for the facts on this page.

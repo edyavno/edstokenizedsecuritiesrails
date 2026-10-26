@@ -64,7 +64,7 @@ type: overview
 <img src="/diagrams/overview-desktop.svg" alt="How tokenized securities work in four steps: issue, approve buyers, trade and settle, pay holders; plus native token versus wrapper" style="width:100%;height:auto">
 </picture>
 
-*[See the detailed version](#the-full-picture)*
+*Terms in this diagram: [[concepts/glossary#native-token|native token]], [[concepts/glossary#wrapper|wrapper]], [[concepts/glossary#kyc|KYC]], [[concepts/glossary#atomic-settlement|atomic]], [[concepts/glossary#t1|T+1]], [[concepts/glossary#custodian|custodian]]. [See the detailed version](#the-full-picture)*
 
 ## Why tokenize securities?
 Today, buying a stock or bond goes through a chain of brokers, [[concepts/glossary#custodian|custodians]] and [[concepts/glossary#ccp|clearinghouses]]. Each one keeps its own records and has to reconcile them with the others, which is why settlement takes days and markets close at night. A token puts the asset and its ownership record on one shared ledger, so:
@@ -117,8 +117,10 @@ The same four steps in detail: who does what at each step, the traditional role 
 
 <picture>
 <source media="(max-width: 700px)" srcset="/diagrams/overview-detailed-mobile.svg">
-<img src="/diagrams/overview-detailed-desktop.svg" alt="Detailed diagram of how tokenized securities work. 1 Issue: the issuer and transfer agent create a security token on a shared 24/7 ledger. 2 Approve buyers: an identity allowlist means only KYC'd wallets can hold it. 3 Trade + settle: 3a Match on a trading venue (order book, RFQ or onchain pool); 3b Check the wallet allowlist and pre-funded legs; 3c Settle by atomic DvP, swapping the security token for a cash token in one transaction; 3d Record balances and update the register. 4 Pay holders: dividends, votes and redemptions go to investor wallets. A side panel contrasts native tokens (the token is the register) with wrapped tokens (a 1:1 claim on a share held by a custodian)." style="width:100%;height:auto">
+<img src="/diagrams/overview-detailed-desktop.svg" alt="Detailed diagram of how tokenized securities work. 1 Issue: the issuer and transfer agent create a security token on a shared 24/7 ledger. 2 Approve buyers: an identity allowlist means only KYC'd wallets can hold it. 3 Trade + settle: 3a Match on a trading venue (order book, RFQ or an onchain pool, also called an AMM or automated market maker); 3b Check the wallet allowlist and pre-funded legs; 3c Settle by atomic DvP, swapping the security token for a cash token in one transaction; 3d Record balances and update the register. 4 Pay holders: dividends, votes and redemptions go to investor wallets. A side panel contrasts native tokens (the token is the register) with wrapped tokens (a 1:1 claim on a share held by a custodian)." style="width:100%;height:auto">
 </picture>
+
+*Terms in this diagram: [[concepts/glossary#transfer-agent|transfer agent]], [[concepts/glossary#allowlist|allowlist]], [[concepts/glossary#kyc|KYC]], [[concepts/glossary#ats|ATS]], [[concepts/glossary#rfq|RFQ]], [[concepts/glossary#amm-automated-market-maker|onchain pool (AMM)]], [[concepts/glossary#smart-contract|smart contract]], [[concepts/glossary#prefunding|pre-funded]], [[concepts/glossary#netting|netting]], [[concepts/glossary#atomic-settlement|atomic]], [[concepts/glossary#dvp|DvP]], [[concepts/glossary#stablecoin|stablecoin]], [[concepts/glossary#tokenized-deposit|tokenized deposit]], [[concepts/glossary#t1|T+1]], [[concepts/glossary#ccp|CCP]], [[concepts/glossary#csd|CSD]], [[concepts/glossary#composability|composable]], [[concepts/glossary#custodian|custodian]], [[concepts/glossary#native-token|native]], [[concepts/glossary#wrapper|wrapped]].*
 
 ## The four steps in the diagram
 1. **Issue.** The issuer, or its transfer agent, creates tokens and keeps them in sync with the official register. For wrappers, a custodian holds the underlying shares.
@@ -127,7 +129,7 @@ The same four steps in detail: who does what at each step, the traditional role 
 4. **Pay holders.** Dividends, splits, votes and redemptions run through the token contract or the issuer's agent. See [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] and [[concepts/token-primitives|Token primitives]].
 
 ## Inside step 3: trade and settle
-- **3a Match.** Orders still meet on a familiar venue, such as an exchange or [[concepts/glossary#ats|ATS]] order book or a broker's [[concepts/glossary#rfq|RFQ]], or in an [[concepts/glossary#amm|onchain pool]] or AMM, as in [[infrastructure/uniswap-permissioned-pools|permissioned pools]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]]. Matching can happen off-chain with only settlement on the ledger, or entirely on-chain. Several US models keep the traditional book and tokenize post-trade only: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]] and the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]].
+- **3a Match.** Orders still meet on a familiar venue, such as an exchange or [[concepts/glossary#ats|ATS]] order book or a broker's [[concepts/glossary#rfq|RFQ]], or in an [[concepts/glossary#amm-automated-market-maker|onchain pool]] or AMM, as in [[infrastructure/uniswap-permissioned-pools|permissioned pools]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]]. Matching can happen off-chain with only settlement on the ledger, or entirely on-chain. Several US models keep the traditional book and tokenize post-trade only: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]] and the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]].
 - **3b Check (pre-trade).** The token contract checks that the receiving wallet is eligible ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)). Because on-ledger settlement is usually trade by trade (gross), both legs typically have to be in place up front. Projects that "eliminate principal counterparty risk" do so by requiring "high levels of liquidity, often through [[concepts/glossary#prefunding|prefunding]] on a platform" ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf)), rather than the [[concepts/glossary#netting|netting]] and credit that today's CCPs and brokers provide.
 - **3c Settle.** A [[concepts/glossary#smart-contract|smart contract]] swaps the security token for the cash token in one transaction, so both legs settle or neither does ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). IOSCO describes a range of settlement models. At one end the ledger is only shared books and records, and [[concepts/glossary#settlement-finality|settlement finality]] "remain[s] with the [[concepts/glossary#csd|CSD]]". At the other is DLT-native settlement, with assets and settlement instruments on the same ledger or linked ones ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Finality is still a legal question, not just a technical one: final settlement "is a legally defined moment" ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)).
 - **3d Record (post-trade).** Wallet balances update at once. For [[concepts/glossary#native-token|native tokens]] that is the register update. For wrapped tokens, or where a transfer agent keeps the official register, the books must still be updated or reconciled against the ledger ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/); [IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Regulatory reporting still applies.
@@ -317,10 +319,10 @@ A list of approved wallet addresses. A permissioned token only moves to wallets 
 
 *Related:* [[standards/erc-3643|ERC-3643 (T-REX)]] · [[topics/who-can-buy|Who can buy]]
 
-### AMM
-An automated market maker: a smart contract holding a pool of two assets that prices trades by formula instead of matching buyers and sellers. Also called an onchain pool or liquidity pool. ([BIS CPMI](https://www.bis.org/cpmi/publ/d225.htm))
+### AMM (automated market maker)
+An onchain pool, also called a liquidity pool: a smart contract that holds two assets and sets prices by a formula, so traders swap against the pool instead of being matched with a buyer or seller. ([BIS CPMI](https://www.bis.org/cpmi/publ/d225.htm))
 
-*Related:* [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]] · [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]]
+*Related:* [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]] · [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]] · [[platforms-venues/okxice-tsv|OKXICE TSV]]
 
 ### Atomic settlement
 Both sides of a trade settle in one indivisible step: either everything moves or nothing does. Atomic DvP is the common case. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
@@ -667,7 +669,7 @@ type: concept
 *In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions. This page explains how that works and who objects.*
 
 On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting temporary, conditional section 36(a)(1) relief ([SEC order](https://business.cch.com/srd/34-106402091726.pdf); [press release](https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf)):
-- **Tokenized Securities Venues (TSVs)** operating permissioned [[concepts/glossary#amm|AMM]] liquidity pools are exempt from the definition of "exchange".
+- **Tokenized Securities Venues (TSVs)** operating permissioned [[concepts/glossary#amm-automated-market-maker|AMM]] liquidity pools are exempt from the definition of "exchange".
 - **Covered Firm** liquidity providers are exempt from the definition of "dealer".
 - **Conditions** include U.S. person and OFAC compliance, a 30-day public notice, issuer notice and objection for third-party tokens, same rights as the underlying, public auditable [[concepts/glossary#smart-contract|smart contracts]] on a permissionless ledger, and synchronized halts ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)).
 - **Caps**: Tier 1 cannot exceed 75 symbols and 0.25 percent of prior-month average daily share volume; Tier 2 cannot exceed 250 symbols and 2.5 percent ([SEC order](https://business.cch.com/srd/34-106402091726.pdf); [Skadden](https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes)).
@@ -780,7 +782,7 @@ The building blocks used by tokenized-stock implementations:
 - **Identity-gated transfers**: [[standards/erc-3643|ERC-3643]] (identity registry + compliance), [[standards/erc-1400|ERC-1400]] (transfer validation, partitions), [[standards/solana-token-2022|Token-2022 transfer hooks]].
 - **Plain ERC-20** with offchain eligibility: Robinhood Stock Tokens are standard ERC-20s ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)); Ondo uses ERC-20 on Ethereum/BNB Chain ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)).
 - **[[concepts/glossary#multiplier|Multipliers]] for corporate actions**: build transactions in raw amounts, display raw x multiplier (xStocks, [docs](https://docs.xstocks.fi/developers/multipliers)); [[concepts/glossary#solana|Solana]] scaled UI amount; see [[topics/corporate-actions-and-dividends|corporate actions]].
-- **Permissioned [[concepts/glossary#amm|AMMs]]**: [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]].
+- **Permissioned [[concepts/glossary#amm-automated-market-maker|AMMs]]**: [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]].
 - **[[concepts/glossary#oracle|Oracles]]** for a 24/5 underlying traded 24/7: [[infrastructure/chainlink-equity-feeds|Chainlink]].
 
 ## Sources
@@ -892,7 +894,7 @@ Tokenized stocks trade and settle in several ways (see [[overview|the overview]]
 ## Venue models
 - **Centralized exchanges** list tokens: Kraken trades most xStocks 24/5, with 10 trading 24/7 on Kraken Pro; withdrawn tokens can trade 24/7 on DEXs ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
 - **Onchain DEXs**: [[concepts/glossary#wrapper|wrapped]] tokens trade permissionlessly in DeFi pools.
-- **Tokenized Securities Venues** run permissioned [[concepts/glossary#amm|AMM]] pools under the [[concepts/innovation-exemption|Innovation Exemption]]. Conditions include symbol and volume caps, a 30-day issuer objection window, and trading halts in step with the primary market ([SEC order 34-106402](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)). See [[platforms-venues/okxice-tsv|OKXICE TSV]] and [[infrastructure/uniswap-permissioned-pools|Uniswap permissioned pools]].
+- **Tokenized Securities Venues** run permissioned [[concepts/glossary#amm-automated-market-maker|AMM]] pools under the [[concepts/innovation-exemption|Innovation Exemption]]. Conditions include symbol and volume caps, a 30-day issuer objection window, and trading halts in step with the primary market ([SEC order 34-106402](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)). See [[platforms-venues/okxice-tsv|OKXICE TSV]] and [[infrastructure/uniswap-permissioned-pools|Uniswap permissioned pools]].
 - **[[concepts/glossary#ats|ATS]]**: Figure's blockchain stock settles on Provenance in YLDS ([Figure 424(b)(4)](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm)); see [[issuers/figure-open|Figure OPEN]].
 - **National exchanges** trade tokenized and traditional shares on one order book with equal priority, settled through [[concepts/glossary#dtc|DTC]] ([[platforms-venues/nasdaq-tokenized-securities|Nasdaq]]; [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
@@ -1060,7 +1062,7 @@ Classification follows the [[concepts/legal-taxonomy|SEC staff taxonomy]]. Detai
 | [[issuers/robinhood-stock-tokens\|Robinhood Stock Tokens]] | Synthetic / debt security | Jersey issuer; no rights in underlying |
 | [[issuers/bstocks\|bStocks]] | Synthetic / certificate | ADGM certificates over shares |
 | [[issuers/xstocks-backed\|xStocks]] | Backed tracker | Jersey issuer; multiplier |
-| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Venue (TSV) | Permissioned AMM under Innovation Exemption |
+| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Venue (TSV) | Permissioned [[concepts/glossary#amm-automated-market-maker\|AMM]] under Innovation Exemption |
 | [[concepts/post-trade-reg-nms-model\|Nasdaq / NYSE]] | Venue (exchange) | Same book, DTC settlement |
 
 ## Sources
@@ -1325,7 +1327,7 @@ last_updated: 2026-10-23
 
 Stock Tokens are tokenised debt securities issued by Robinhood Assets (Jersey) Limited under a [base prospectus](https://cdn.robinhood.com/assets/robinhood/legal/rhj_base_prospectus.pdf); they give economic exposure without rights in the underlying ([docs](https://docs.robinhood.com/chain/stock-tokens/); [product page](https://robinhood.com/rhj/stocktokens/)). Separately, EU **Classic** Stock Tokens are MiFID II derivatives ([FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
 
-On Robinhood Chain, trading at launch is via [[concepts/glossary#rfq|RFQ]] plus [[concepts/glossary#amm|AMMs]] and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
+On Robinhood Chain, trading at launch is via [[concepts/glossary#rfq|RFQ]] plus [[concepts/glossary#amm-automated-market-maker|AMMs]] and Lighter, with onchain price feeds ([Robinhood](https://docs.robinhood.com/chain/building-with-stock-tokens/)). Mainnet announcement: [Arbitrum](https://blog.arbitrum.io/robinhood-chain-mainnet/).
 
 ## Adoption
 Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinhood Chain rose 22x from July to September 2026, and that the chain earned over \$50M in fees in its first quarter ([Bitwise](https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026), analysis; summary page only, the full report was not retrieved). Monthly volumes of \$526M (July), \$2.21B (August) and \$11.31B (September) come from [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) citing Bitwise (news; unverified, not on Bitwise's summary page).
@@ -1885,7 +1887,7 @@ An open-source Uniswap v4 hook standard for compliant trading of tokenized [[con
 
 A Permissions Adapter holds the real asset and issues a virtual token to PoolManager; PermissionedHooks checks an IAllowlistChecker ([architecture](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture); [source](https://github.com/Uniswap/v4-hooks-public/blob/main/src/permissioned-pools/PermissionedHooks.sol)).
 
-It is the AMM primitive used by the first [[concepts/glossary#tsv|TSV]] notice ([[platforms-venues/okxice-tsv|OKXICE]]).
+It is the [[concepts/glossary#amm-automated-market-maker|AMM]] primitive used by the first [[concepts/glossary#tsv|TSV]] notice ([[platforms-venues/okxice-tsv|OKXICE]]).
 
 ## Sources
 Public originals for the facts on this page.

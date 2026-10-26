@@ -20,7 +20,7 @@ description: 'In plain English: The SEC now lets a few approved onchain venues t
 *In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions. This page explains how that works and who objects.*
 
 On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting temporary, conditional section 36(a)(1) relief ([SEC order](https://business.cch.com/srd/34-106402091726.pdf); [press release](https://business.cch.com/srd/SECgov_SECIssuesInnovationExemptiontoFacilitatetheTradingofTokenizedNMSStockandRequestforComment091726.pdf)):
-- **Tokenized Securities Venues (TSVs)** operating permissioned [[concepts/glossary#amm|AMM]] liquidity pools are exempt from the definition of "exchange".
+- **Tokenized Securities Venues (TSVs)** operating permissioned [[concepts/glossary#amm-automated-market-maker|AMM]] liquidity pools are exempt from the definition of "exchange".
 - **Covered Firm** liquidity providers are exempt from the definition of "dealer".
 - **Conditions** include U.S. person and OFAC compliance, a 30-day public notice, issuer notice and objection for third-party tokens, same rights as the underlying, public auditable [[concepts/glossary#smart-contract|smart contracts]] on a permissionless ledger, and synchronized halts ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)).
 - **Caps**: Tier 1 cannot exceed 75 symbols and 0.25 percent of prior-month average daily share volume; Tier 2 cannot exceed 250 symbols and 2.5 percent ([SEC order](https://business.cch.com/srd/34-106402091726.pdf); [Skadden](https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes)).

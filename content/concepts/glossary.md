@@ -49,10 +49,10 @@ A list of approved wallet addresses. A permissioned token only moves to wallets 
 
 *Related:* [[standards/erc-3643|ERC-3643 (T-REX)]] · [[topics/who-can-buy|Who can buy]]
 
-### AMM
-An automated market maker: a smart contract holding a pool of two assets that prices trades by formula instead of matching buyers and sellers. Also called an onchain pool or liquidity pool. ([BIS CPMI](https://www.bis.org/cpmi/publ/d225.htm))
+### AMM (automated market maker)
+An onchain pool, also called a liquidity pool: a smart contract that holds two assets and sets prices by a formula, so traders swap against the pool instead of being matched with a buyer or seller. ([BIS CPMI](https://www.bis.org/cpmi/publ/d225.htm))
 
-*Related:* [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]] · [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]]
+*Related:* [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]] · [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]] · [[platforms-venues/okxice-tsv|OKXICE TSV]]
 
 ### Atomic settlement
 Both sides of a trade settle in one indivisible step: either everything moves or nothing does. Atomic DvP is the common case. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))

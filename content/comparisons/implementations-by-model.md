@@ -25,7 +25,7 @@ Classification follows the [[concepts/legal-taxonomy|SEC staff taxonomy]]. Detai
 | [[issuers/robinhood-stock-tokens\|Robinhood Stock Tokens]] | Synthetic / debt security | Jersey issuer; no rights in underlying |
 | [[issuers/bstocks\|bStocks]] | Synthetic / certificate | ADGM certificates over shares |
 | [[issuers/xstocks-backed\|xStocks]] | Backed tracker | Jersey issuer; multiplier |
-| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Venue (TSV) | Permissioned AMM under Innovation Exemption |
+| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Venue (TSV) | Permissioned [[concepts/glossary#amm-automated-market-maker\|AMM]] under Innovation Exemption |
 | [[concepts/post-trade-reg-nms-model\|Nasdaq / NYSE]] | Venue (exchange) | Same book, DTC settlement |
 
 ## Sources
