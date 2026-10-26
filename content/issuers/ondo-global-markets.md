@@ -52,6 +52,13 @@ The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[
 
 [[concepts/glossary#mint|Mint]] and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
 
+## What this means for holders
+- You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
+- Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
+- How minting and [[concepts/glossary#redeem|redemption]] work is set out in [Ondo's docs](https://docs.ondo.finance/ondo-stocks/investing-and-redeeming).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

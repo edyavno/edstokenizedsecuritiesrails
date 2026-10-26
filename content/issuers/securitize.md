@@ -51,6 +51,13 @@ Example: Exodus Class A common stock tokens on Algorand, with Securitize as [[co
 ## Securitize Stocks (8 Oct 2026)
 Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
 
+## What this means for holders
+- Securitize Stocks are UCC Article 8 security entitlements backed 1:1, held through Securitize's broker-dealer, on Solana and settled in USDC ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- Where available, holders can convert to direct registration, i.e. hold the share on the company's register ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- Who can buy is `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

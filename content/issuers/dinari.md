@@ -52,6 +52,13 @@ On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligib
 
 In its input to the SEC Crypto Task Force, Dinari describes tokens as secondary, non-transferable records mirroring authoritative off-chain brokerage books ([SEC](https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf)). US clearing is through Alpaca Securities LLC ([Dinari](https://docs.dinari.com/docs/us)). See [What is a dShare](https://docs.dinari.com/docs/what-is-dshare).
 
+## What this means for holders
+- Eligible US investors can buy dShares since 4 Aug 2026 ([Dinari](https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses)).
+- Dinari describes its tokens as records that mirror its brokerage books, so your claim runs through Dinari as [[concepts/glossary#broker-dealer|broker-dealer]] ([Dinari SEC input](https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf)).
+- Dividends are paid in cash, with [[concepts/glossary#stablecoin|USDC]] support ([Dinari](https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

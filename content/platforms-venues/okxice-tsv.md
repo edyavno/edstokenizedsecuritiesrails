@@ -49,6 +49,13 @@ The first 16 were already on its 19 Oct notice; Arm, Wells Fargo, Moderna, Cisco
 
 Cerebras appears as an objector even though it was not among the 63 symbols in the 4 Oct notice; neither notice says why (possibly an objection filed ahead of a listing; unverified). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)).
 
+## What this means for holders
+- OKXICE is a [[concepts/glossary#tsv|TSV]] under the [[concepts/glossary#innovation-exemption|Innovation Exemption]]: access is controlled through non-transferable access tokens, and trading pairs are [[concepts/glossary#stablecoin|stablecoins]] (USDC, USDG, USDT) ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
+- The venue does not hold your tokens ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
+- Issuers can object to third-party tokens of their stock: 22 had objected by 23 Oct 2026, which can keep those stocks off the venue ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

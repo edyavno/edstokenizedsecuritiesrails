@@ -27,4 +27,4 @@ Example questions an AI agent can answer from this wiki alone. Point the agent a
 
 ## Tips
 - Ask the agent to cite page URLs and `last_updated` dates, and to say `unknown` rather than guess.
-- Data is published with a 30-day delay; check the linked sources for anything time-sensitive.
+- The site updates weekly (as of each Monday); check the linked sources for anything time-sensitive.

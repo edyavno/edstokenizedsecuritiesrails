@@ -58,6 +58,14 @@ A figure of 1,100 assets advertised elsewhere ([Zerion](https://zerion.io/blog/b
 
 Corporate actions use a [[concepts/glossary#multiplier|multiplier]] ([xStocks docs](https://docs.xstocks.fi/developers/multipliers)): dividends are reinvested net of withholding and raise the multiplier ([xStocks docs](https://docs.xstocks.fi/docs/dividends-and-stock-splits)); holders get no voting rights ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)); see [[topics/corporate-actions-and-dividends|corporate actions]]; exchange integration and API: [integration](https://docs.xstocks.fi/docs/exchange-integration), [OpenAPI](https://docs.xstocks.fi/apis/openapi.md).
 
+## What this means for holders
+- You hold a 1:1-backed [[concepts/glossary#wrapper|wrapper]] certificate issued by Backed Assets (Jersey), not the share itself ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+- Dividends and splits are reflected by adjusting the token's [[concepts/glossary#multiplier|multiplier]] ([xStocks docs](https://docs.xstocks.fi/docs/dividends-and-stock-splits)).
+- Not offered in the US, Canada, the UK or Australia ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+- Tokens can be withdrawn to a self-custody [[concepts/glossary#wallet|wallet]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

@@ -44,6 +44,12 @@ description: 'In plain English: WisdomTree tokenizes its registered funds rather
 
 WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
 
+## What this means for holders
+- WisdomTree's tokenized funds are SEC-registered funds; WTGXX, a [[concepts/glossary#money-market-fund|money market fund]], can trade 24/7 with instant settlement under SEC [[concepts/glossary#exemptive-relief|exemptive relief]] ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
+- Who can buy and how [[concepts/glossary#redeem|redemption]] works are `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

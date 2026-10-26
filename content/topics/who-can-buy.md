@@ -25,6 +25,13 @@ Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood) (
 - Issuer-sponsored shares can admit eligible US investors, usually behind KYC and a transfer-agent whitelist. Exodus token holders can only trade with holders who passed the [[concepts/glossary#transfer-agent|transfer agent]]'s AML/KYC and were whitelisted ([Exodus offering circular](https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm)). WisdomTree's WTGXX allows transfers only between verified, whitelisted [[concepts/glossary#wallet|wallets]] ([WisdomTree FAQ](https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/)).
 - Tokenized Securities Venues under the [[concepts/innovation-exemption|Innovation Exemption]] are permissioned: access is limited to approved participants ([SEC order 34-106402](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)).
 
+## What this means for holders
+- Most offshore tokens (xStocks, Ondo, Robinhood, Coinbase, bStocks) exclude US persons; check the issuer page for the exact country list.
+- US routes run through registered firms: Dinari as [[concepts/glossary#broker-dealer|broker-dealer]], Superstate as [[concepts/glossary#transfer-agent|transfer agent]] for native shares, or exchange-listed tokenized shares via the [[concepts/glossary#dtc|DTC]] pilot.
+- Where you can buy is a property of the issuer and the platform together: see [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

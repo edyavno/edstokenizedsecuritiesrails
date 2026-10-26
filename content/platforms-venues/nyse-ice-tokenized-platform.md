@@ -44,6 +44,12 @@ Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 
 
 No technical spec or launch date was found.
 
+## What this means for holders
+- NYSE's rule SR-NYSE-2026-17 follows Nasdaq's and is tied to the [[concepts/glossary#dtc|DTC]] pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)).
+- The planned 24/7 tokenized platform is subject to regulatory approval, so holders cannot use it yet ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

@@ -1,5 +1,5 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-10-25; public data is delayed 30 days. CC BY-NC 4.0.
+> Human-curated, LLM-maintained. Generated 2026-10-25; public data is a weekly snapshot as of 2026-10-19. CC BY-NC 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
@@ -35,19 +35,20 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 ## Explore the wiki
 - **Look up a company:** [[database|Issuer & platform database]] (19 entities)
+- **See what changed:** [[whats-changed|What changed, week by week]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 - **Understand the concepts:** [[concepts/glossary|Glossary]] · [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[concepts/international|International]]
 - **Compare models and standards:** [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]
 - **Use it with an AI agent:** [[agents|Guide for AI agents]] · [[starter-prompts|Starter prompts]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
+- [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
 - [2025-12-02: Kraken agrees to acquire Backed Finance AG](/changelog/2025-12-02-kraken)
-- [2025-06-30: xStocks live on Bybit, Kraken, Solana DeFi](/changelog/2025-06-30-xstocks)
 
-See the full [[changelog/index|changelog]].
+See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
 ## Get the weekly email
 A free weekly email on what changed in tokenized securities. [[subscribe|Subscribe]].
@@ -87,7 +88,8 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Stuck on a word?** Look it up in the [[concepts/glossary|glossary]].
 - **Comparing platforms?** Use the [database](/database) of issuers and venues.
 - **Using an AI assistant?** Start with the [starter prompts](/starter-prompts) or the [guide for agents](/agents).
-- **Following rule changes?** Check the [changelog](/changelog/) or [subscribe](/subscribe) for updates.
+- **Following rule changes?** See [what changed this week](/whats-changed), the [changelog](/changelog/), or [subscribe](/subscribe) for updates.
+- **Which rules apply where?** See [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
 
 ## The one-sentence version
 A tokenized security is an ordinary stock or bond whose ownership record lives on a shared digital ledger, so trading, settling and paying dividends can run automatically.
@@ -216,11 +218,12 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `https://edstokenizedsecuritiesrails.com/changelog/<page>` | Dated change entries |
 | `https://edstokenizedsecuritiesrails.com/overview` | How the pieces fit together, with a diagram |
 | `https://edstokenizedsecuritiesrails.com/database` | One table of all issuers, venues and infrastructure |
+| `https://edstokenizedsecuritiesrails.com/whats-changed` | Weekly headlines with what each change means for holders |
 
 Folder URLs (e.g. `https://edstokenizedsecuritiesrails.com/issuers/`) list their pages. Entity pages open with an **At a glance** box (type, jurisdiction, chain, status, last updated) and end with **Sources**. `unknown` means not yet verified from a public source.
 
 ## Freshness
-Pages appear about 30 days after facts are recorded. Check each page's *last updated* date and confirm time-sensitive facts against the linked source.
+The site updates weekly, as of each Monday 00:00 ET; [[whats-changed|What changed]] lists changes by week. Check each page's *last updated* date and confirm time-sensitive facts against the linked source.
 
 ## How to cite
 Cite the page URL and its last-updated date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)". For a specific fact, prefer the original source linked on the page.
@@ -257,7 +260,7 @@ Example questions an AI agent can answer from this wiki alone. Point the agent a
 
 ## Tips
 - Ask the agent to cite page URLs and `last_updated` dates, and to say `unknown` rather than guess.
-- Data is published with a 30-day delay; check the linked sources for anything time-sensitive.
+- The site updates weekly (as of each Monday); check the linked sources for anything time-sensitive.
 
 ========================================================================
 # Database
@@ -289,12 +292,49 @@ Generated from vault frontmatter on 2026-10-25. Headline fields only; `unknown` 
 | [Zerohash](/infrastructure/zerohash) | Infra | unknown | Tokenization engine (B2B) | unknown | B2B | 2026-10-17 |
 
 ========================================================================
+# What changed
+URL: https://edstokenizedsecuritiesrails.com/whats-changed
+
+
+The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
+
+The site updates weekly: this page shows changes recorded before Monday 19 Oct 2026.
+
+## Get it by email
+A free weekly email with these headlines. [[subscribe|Subscribe]].
+
+## Week of 12 Oct 2026
+- **[Vault seeded with 15 entities](/changelog/2026-10-17-vault)**
+- Database: 68 headline field updates across issuer, venue and token records.
+
+## Week of 15 Jun 2026
+- **[SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)**
+
+## Week of 16 Mar 2026
+- **[SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)**
+  - *What this means for holders:* A tokenized share traded on Nasdaq keeps the same CUSIP, symbol and shareholder rights as the regular share. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq]].
+
+## Week of 23 Feb 2026
+- **[WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)**
+  - *What this means for holders:* WTGXX holders can trade fund shares around the clock with instant settlement, under SEC exemptive relief. See [[issuers/wisdomtree|WisdomTree]].
+
+## Week of 1 Dec 2025
+- **[Kraken agrees to acquire Backed Finance AG](/changelog/2025-12-02-kraken)**
+
+## Week of 30 Jun 2025
+- **[xStocks live on Bybit, Kraken, Solana DeFi](/changelog/2025-06-30-xstocks)**
+  - *What this means for holders:* xStocks are 1:1-backed certificates issued by Backed Assets (Jersey), not shares: no voting rights, and not offered in the US, Canada, UK or Australia. See [[issuers/xstocks-backed|xStocks]].
+
+*Reference information only, not investment advice.*
+
+========================================================================
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 
 
-Public changes, published with a 30-day delay.
+Public changes, updated weekly (snapshot as of Monday 2026-10-19). See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
@@ -310,7 +350,7 @@ type: concept
 
 New to all of this? Start with the [[overview|overview]], then come back here when a word trips you up. Reference information only, not investment advice.
 
-Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [W](#w)
+Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [W](#w)
 
 ## A
 
@@ -395,10 +435,20 @@ A regulated firm that holds assets for someone else. For wrapped tokens, the cus
 
 ## D
 
+### Digital Securities Sandbox
+A UK Bank of England and FCA sandbox, running until January 2029, where firms can issue, trade and settle securities, native or tokenised, on new technology. ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
 ### DLT
 Distributed ledger technology: a shared database copied across many computers. Blockchains are one type. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
 *Related:* [[overview|Tokenized securities: how it fits together]]
+
+### DLT Pilot Regime
+An EU framework that lets approved market infrastructures trade and settle tokenized securities on DLT with some rules relaxed. ([ESMA](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/international|International regimes]]
 
 ### DTC
 The Depository Trust Company, the US central securities depository. It runs a tokenization pilot under an SEC no-action letter. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
@@ -447,6 +497,18 @@ Permission from the SEC to do something an existing rule would otherwise forbid,
 
 *Related:* [[issuers/wisdomtree|WisdomTree tokenized funds]] · [[topics/regulation|Regulation]]
 
+## F
+
+### FINMA
+Switzerland's financial market regulator. It licenses DLT trading facilities under the DLT Act in force since 1 August 2021. ([FINMA](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
+### FSRA (ADGM)
+The Financial Services Regulatory Authority of Abu Dhabi Global Market, a financial free zone in the UAE. bStocks are admitted to its Official List. ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf))
+
+*Related:* [[issuers/bstocks|bStocks]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
 ## I
 
 ### Innovation Exemption
@@ -469,6 +531,16 @@ A blockchain that runs on top of another (usually Ethereum) to make transactions
 *Related:* [[standards/b20|Coinbase B20]]
 
 ## M
+
+### MiCA
+The EU's Markets in Crypto-Assets Regulation. It covers crypto-assets that are not financial instruments, so tokenized shares usually fall under MiFID II instead.
+
+*Related:* [[concepts/international|International regimes]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
+### MiFID II
+The EU's main law for investment firms and trading venues. Tokenized shares and derivatives such as Robinhood's EU stock tokens are covered by it. ([Robinhood EU FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/))
+
+*Related:* [[issuers/robinhood-stock-tokens|Robinhood Stock Tokens]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 
 ### Mint
 To create new tokens. For backed stock tokens, tokens are minted when the matching shares are bought and put in custody. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
@@ -532,6 +604,11 @@ To hand tokens back to the issuer in exchange for the underlying asset or its ca
 Regulation National Market System: SEC rules that link US stock exchanges, including best-price and order-protection rules. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
 
 *Related:* [[concepts/post-trade-reg-nms-model|Post-trade / Reg NMS-inside model]]
+
+### Registrar
+The firm or system that keeps the official list of who owns a security. In the US this is usually the transfer agent.
+
+*Related:* [[topics/legal-structures|Legal structures]] · [[concepts/legal-taxonomy|Legal taxonomy of tokenized securities]]
 
 ### Repo
 A repurchase agreement: a short-term loan where one side sells bonds and agrees to buy them back later at a slightly higher price. ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november))
@@ -624,6 +701,11 @@ Software or hardware that holds the keys controlling tokens. A custodial wallet 
 
 *Related:* [[topics/custody|Custody]]
 
+### Wholesale CBDC
+Central bank money in token form, used only between banks and financial firms for settlement, not by the public. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
+
+*Related:* [[concepts/international|International regimes]]
+
 ### Wrapper
 A token that represents a share held by someone else, rather than being the share itself. See custodial wrapper and synthetic wrapper. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
 
@@ -646,12 +728,17 @@ Public originals for the facts on this page.
 - <https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md>
 - <https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
+- <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
 - <https://solana.com/docs/tokens/extensions>
 - <https://solana.com/docs/tokens/extensions/transfer-hook>
+- <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf>
+- <https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox>
 - <https://www.bis.org/cpmi/publ/d225.htm>
 - <https://www.bis.org/publ/arpdf/ar2025e3.htm>
 - <https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november>
 - <https://www.coinbase.com/tokenize>
+- <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
+- <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
 - <https://www.fsb.org/uploads/P221024-2.pdf>
 - <https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf>
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
@@ -709,7 +796,9 @@ type: concept
 
 **EU [[concepts/glossary#dlt|DLT]] Pilot Regime**: ESMA's 2025 review found low uptake, with only [[concepts/glossary#csd|CSD]] Prague, 21X and 360X authorised; barriers include thresholds, interoperability, central-bank money and legal uncertainty. ESMA recommends making the regime permanent and wider ([ESMA report](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf); [ESMA press](https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent)).
 **Offshore issuer domiciles** in this wiki: Jersey (xStocks, Robinhood), BVI (Ondo), ADGM (bStocks, Coinbase). See [[topics/regulation|regulation]].
-Not yet collected: MiCA/MiFID II detail, UK Digital Securities Sandbox, Swiss DLT Act, Singapore, Hong Kong.
+Not yet collected: MiCA/[[concepts/glossary#mifid-ii|MiFID II]] detail, UK [[concepts/glossary#digital-securities-sandbox|Digital Securities Sandbox]], Swiss DLT Act, Singapore, Hong Kong.
+
+For one table of rules by country, see [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
 
 ## Sources
 Public originals for the facts on this page.
@@ -813,6 +902,13 @@ The token is the share, so corporate actions follow the register (Superstate). E
 ## DTC
 At launch, [[concepts/glossary#dtc|DTC]] pays Treasury distributions in fiat to participants' traditional accounts. Equity and [[concepts/glossary#etf|ETF]] corporate actions on tokens are on the 2027+ roadmap ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
 
+## What this means for holders
+- Wrapped tokens often reflect dividends and splits through a [[concepts/glossary#multiplier|multiplier]] instead of cash; native shares and DTC-based tokens follow the normal share's corporate actions.
+- Voting rights usually stay with the [[concepts/glossary#custodian|custodian]] or issuer for wrapped tokens; check each issuer page.
+- Where a field says `unknown`, the sources so far do not say how that issuer handles it.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -848,6 +944,12 @@ SEC staff will not object to a broker-dealer treating itself as having "physical
 ## Vendors
 [[infrastructure/zerohash|Zerohash]] markets a tokenization engine to brokerages ([Zerohash](https://zerohash.com/industries/brokerages)).
 
+## What this means for holders
+- With a [[concepts/glossary#wrapper|wrapper]], your protection depends on the issuer's [[concepts/glossary#custodian|custodian]] and whether the structure is [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]].
+- Platform custody and token custody are separate questions: a venue can list a token without holding it (e.g. [[platforms-venues/okxice-tsv|OKXICE]]).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -881,6 +983,54 @@ URL: https://edstokenizedsecuritiesrails.com/topics/regulation
 *In plain English: The main US and international rule changes for tokenized securities, in date order.*
 
 Key US milestones: [[concepts/glossary#dtc|DTC]] [[concepts/glossary#no-action-letter|no-action letter]] (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026) ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); WisdomTree's [[concepts/glossary#exemptive-relief|exemptive relief]] for 24/7 fund-share trading (Feb 2026, [WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)). Non-US issuers sit in Jersey, BVI and ADGM ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)).
+
+========================================================================
+# Rules by jurisdiction
+URL: https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction
+type: topic
+
+*In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
+
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 5 of 11 jurisdictions are not yet collected.
+
+| Jurisdiction | Status | Main rule or guidance | Last checked |
+|---|---|---|---|
+| United States (federal) | Rules in force | [SEC Innovation Exemption for tokenized NMS stock (Rel. 34-106402)](https://business.cch.com/srd/34-106402091726.pdf) | 2026-10-25 |
+| United States (states) | Not yet collected | unknown | not yet checked |
+| European Union | Pilot or sandbox | [DLT Pilot Regime (ESMA recommends making it permanent and wider)](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf) | 2026-10-25 |
+| United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox) | 2026-10-25 |
+| Switzerland | Rules in force | [DLT Act (FinMIA Chapter 4a, DLT trading facilities)](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/) | 2026-10-25 |
+| Singapore | Regulator guidance | [MAS Guide on the Tokenisation of Capital Markets Products](https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps) | 2026-10-25 |
+| Hong Kong | Regulator guidance | [SFC circular on tokenised securities-related activities (23EC52)](https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52) | 2026-10-25 |
+| UAE (ADGM) | Not yet collected | unknown (general regime not collected; bStocks certificates are admitted to the FSRA Official List) | not yet checked |
+| UAE (Dubai and federal) | Not yet collected | unknown | not yet checked |
+| Jersey | Not yet collected | unknown (issuer domicile for xStocks and Robinhood Stock Tokens) | not yet checked |
+| British Virgin Islands | Not yet collected | unknown (issuer domicile for Ondo Global Markets) | not yet checked |
+
+**Status key.** *Rules in force*: a rule, order or licence regime that applies now. *Pilot or sandbox*: a time-limited or capped regime. *Regulator guidance*: guidance on how existing securities law applies to tokens. *Proposed*: filed or proposed, not yet approved.
+
+For the detail behind each row, see [[topics/regulation|Regulation]], [[concepts/innovation-exemption|Innovation Exemption]] and [[concepts/international|International]].
+
+*Reference information only, not investment advice or legal advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52>
+- <https://business.cch.com/srd/34-106402091726.pdf>
+- <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
+- <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
+- <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf>
+- <https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox>
+- <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>
+- <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
+- <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
+- <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
+- <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
+- <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
+- <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
+- <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
+- <https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20>
 
 ========================================================================
 # Settlement & matching
@@ -927,6 +1077,13 @@ Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood) (
 - [[concepts/glossary#broker-dealer|Broker-dealer]] model: [[issuers/dinari|Dinari]] documents a US broker-dealer route.
 - Issuer-sponsored shares can admit eligible US investors, usually behind KYC and a transfer-agent whitelist. Exodus token holders can only trade with holders who passed the [[concepts/glossary#transfer-agent|transfer agent]]'s AML/KYC and were whitelisted ([Exodus offering circular](https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm)). WisdomTree's WTGXX allows transfers only between verified, whitelisted [[concepts/glossary#wallet|wallets]] ([WisdomTree FAQ](https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/)).
 - Tokenized Securities Venues under the [[concepts/innovation-exemption|Innovation Exemption]] are permissioned: access is limited to approved participants ([SEC order 34-106402](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)).
+
+## What this means for holders
+- Most offshore tokens (xStocks, Ondo, Robinhood, Coinbase, bStocks) exclude US persons; check the issuer page for the exact country list.
+- US routes run through registered firms: Dinari as [[concepts/glossary#broker-dealer|broker-dealer]], Superstate as [[concepts/glossary#transfer-agent|transfer agent]] for native shares, or exchange-listed tokenized shares via the [[concepts/glossary#dtc|DTC]] pilot.
+- Where you can buy is a property of the issuer and the platform together: see [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1100,6 +1257,13 @@ last_updated: 2026-10-17
 
 bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated [[concepts/glossary#custodian|custodian]], admitted to the FSRA Official List ([Binance](https://www.binance.com/my-MM/square/post/332985202800018)). Each ticker has its own FSRA-approved prospectus, e.g. [NVIDIA bStocks, 11 Jun 2026](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf).
 
+## What this means for holders
+- bStocks are certificates from BTECH Holdings backed 1:1, admitted to the ADGM FSRA Official List ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf)).
+- The offer is made only in ADGM and not to US persons ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf)).
+- How dividends reach holders is `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1137,11 +1301,18 @@ last_updated: 2026-10-17
 
 *In plain English: Coinbase's stock tokens on Base are each backed by a real share held in custody.*
 
-Each [[concepts/glossary#b20|B20]] token on Base is a beneficial claim on a real share in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)). Coinbase holds an FSRA permission in ADGM ([ADGM](https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority)).
+Each [[concepts/glossary#b20|B20]] token on Base is a beneficial claim on a real share in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)). Coinbase holds an [[concepts/glossary#fsra-adgm|FSRA]] permission in ADGM ([ADGM](https://www.adgm.com/media/announcements/coinbase-establishes-its-tokenization-hub-in-abu-dhabi-with-financial-services-permission-from-the-financial-services-regulatory-authority)).
 
 A public read-only API publishes records, [[concepts/glossary#multiplier|multipliers]] and prospectuses ([Base docs](https://docs.base.org/sdks/tokenized-stocks/overview)).
 
 [[concepts/glossary#authorized-participant|Authorized participants]] (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and [[concepts/glossary#custodian|custodian]] ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
+
+## What this means for holders
+- A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
+- Offered outside the US only; dividends are reinvested through a [[concepts/glossary#multiplier|multiplier]] ([Base](https://www.base.org/stocks)).
+- [[concepts/glossary#redeem|Redemption]] terms are set in the issuer documents; check them before relying on redemption ([Base docs](https://docs.base.org/sdks/tokenized-stocks/overview)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1186,6 +1357,13 @@ last_updated: 2026-10-17
 On 4 Aug 2026 Dinari launched 724 dShares, including the full S&P 500, to eligible US investors ([Dinari](https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses)). Dinari Inc. is the [[concepts/glossary#transfer-agent|transfer agent]]; Dinari Securities LLC is the [[concepts/glossary#broker-dealer|broker-dealer]] ([GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/04/3338495/0/en/dinari-inc-opens-platform-licenses-to-u-s-financial-institutions.html)).
 
 In its input to the SEC Crypto Task Force, Dinari describes tokens as secondary, non-transferable records mirroring authoritative off-chain brokerage books ([SEC](https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf)). US clearing is through Alpaca Securities LLC ([Dinari](https://docs.dinari.com/docs/us)). See [What is a dShare](https://docs.dinari.com/docs/what-is-dshare).
+
+## What this means for holders
+- Eligible US investors can buy dShares since 4 Aug 2026 ([Dinari](https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses)).
+- Dinari describes its tokens as records that mirror its brokerage books, so your claim runs through Dinari as [[concepts/glossary#broker-dealer|broker-dealer]] ([Dinari SEC input](https://www.sec.gov/files/ctf-written-input-dinari-inc-040226.pdf)).
+- Dividends are paid in cash, with [[concepts/glossary#stablecoin|USDC]] support ([Dinari](https://dinari.com/blog/dinari-launches-724-tokenized-stocks-available-to-u-s-investors-and-businesses)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1236,6 +1414,12 @@ The prospectus does not state a ticker. Figure's launch announcement uses **FGRS
 
 The Figure announcement page blocked retrieval, so only its headline was checked.
 
+## What this means for holders
+- Figure's Series A Blockchain Common Stock is SEC-registered stock on the Provenance blockchain, convertible 1:1 into Class A common stock ([424(b)(4)](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm)).
+- It is bought with YLDS, Figure's [[concepts/glossary#stablecoin|stablecoin]]-like token, per the [prospectus](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1283,6 +1467,13 @@ Eligibility: [Ondo docs](https://docs.ondo.finance/ondo-stocks/eligibility). [[c
 The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[concepts/glossary#spv|SPV]]; assets are held at U.S. broker-dealers, overcollateralized, with Ankura as security agent ([Ondo](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Tokens are [[concepts/glossary#erc-20|ERC-20]] on [[concepts/glossary#ethereum|Ethereum]] and BNB Chain and [[concepts/glossary#token-2022|Token-2022]] on [[concepts/glossary#solana|Solana]] ([Ondo](https://docs.ondo.finance/ondo-stocks/overview)).
 
 [[concepts/glossary#mint|Mint]] and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
+
+## What this means for holders
+- You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
+- Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
+- How minting and [[concepts/glossary#redeem|redemption]] work is set out in [Ondo's docs](https://docs.ondo.finance/ondo-stocks/investing-and-redeeming).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1332,6 +1523,13 @@ On Robinhood Chain, trading at launch is via [[concepts/glossary#rfq|RFQ]] plus 
 ## Adoption
 Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinhood Chain rose 22x from July to September 2026, and that the chain earned over \$50M in fees in its first quarter ([Bitwise](https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026), analysis; summary page only, the full report was not retrieved). Monthly volumes of \$526M (July), \$2.21B (August) and \$11.31B (September) come from [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) citing Bitwise (news; unverified, not on Bitwise's summary page).
 
+## What this means for holders
+- Robinhood Stock Tokens are tokenised debt securities from Robinhood Assets Jersey: you get economic exposure to the stock, with no rights in the underlying share ([Robinhood](https://robinhood.com/rhj/stocktokens/); [docs](https://docs.robinhood.com/chain/stock-tokens/)).
+- In the EU, Classic Stock Tokens are MiFID II derivative contracts with Robinhood Europe inside Robinhood's app ([Robinhood EU FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
+- Not offered to US persons ([Robinhood](https://robinhood.com/rhj/stocktokens/)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1379,6 +1577,13 @@ Example: Exodus Class A common stock tokens on Algorand, with Securitize as [[co
 ## Securitize Stocks (8 Oct 2026)
 Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
 
+## What this means for holders
+- Securitize Stocks are UCC Article 8 security entitlements backed 1:1, held through Securitize's broker-dealer, on Solana and settled in USDC ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- Where available, holders can convert to direct registration, i.e. hold the share on the company's register ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- Who can buy is `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1423,6 +1628,12 @@ Galaxy (GLXY) Class A common stock is tokenized on [[concepts/glossary#solana|So
 
 Superstate acts as SEC-registered transfer agent and keeps the cap table onchain ([Superstate](https://www.superstate.com/opening-bell)). Galaxy's research describes [[concepts/glossary#allowlist|allowlisted]] self-custody and transfer-agent mechanics ([Galaxy](https://www.galaxy.com/insights/research/tokenized-glxy)); launch exhibit on EDGAR ([SEC](https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm)).
 
+## What this means for holders
+- Tokenized GLXY is the actual Class A share recorded by Superstate as SEC-registered [[concepts/glossary#transfer-agent|transfer agent]]: a [[concepts/glossary#native-token|native token]], not a [[concepts/glossary#wrapper|wrapper]] ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares)).
+- You need [[concepts/glossary#kyc|KYC]] and a self-custody [[concepts/glossary#wallet|wallet]] ([Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1466,6 +1677,12 @@ last_updated: 2026-10-17
 *In plain English: WisdomTree tokenizes its registered funds rather than single stocks.*
 
 WisdomTree tokenizes registered funds, not single stocks; in Feb 2026 it obtained SEC exemptive relief for 24/7 trading of WTGXX ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
+
+## What this means for holders
+- WisdomTree's tokenized funds are SEC-registered funds; WTGXX, a [[concepts/glossary#money-market-fund|money market fund]], can trade 24/7 with instant settlement under SEC [[concepts/glossary#exemptive-relief|exemptive relief]] ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)).
+- Who can buy and how [[concepts/glossary#redeem|redemption]] works are `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1514,6 +1731,14 @@ A figure of 1,100 assets advertised elsewhere ([Zerion](https://zerion.io/blog/b
 
 Corporate actions use a [[concepts/glossary#multiplier|multiplier]] ([xStocks docs](https://docs.xstocks.fi/developers/multipliers)): dividends are reinvested net of withholding and raise the multiplier ([xStocks docs](https://docs.xstocks.fi/docs/dividends-and-stock-splits)); holders get no voting rights ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)); see [[topics/corporate-actions-and-dividends|corporate actions]]; exchange integration and API: [integration](https://docs.xstocks.fi/docs/exchange-integration), [OpenAPI](https://docs.xstocks.fi/apis/openapi.md).
 
+## What this means for holders
+- You hold a 1:1-backed [[concepts/glossary#wrapper|wrapper]] certificate issued by Backed Assets (Jersey), not the share itself ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+- Dividends and splits are reflected by adjusting the token's [[concepts/glossary#multiplier|multiplier]] ([xStocks docs](https://docs.xstocks.fi/docs/dividends-and-stock-splits)).
+- Not offered in the US, Canada, the UK or Australia ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+- Tokens can be withdrawn to a self-custody [[concepts/glossary#wallet|wallet]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1560,6 +1785,12 @@ last_updated: 2026-10-17
 
 Bybit listed xStocks on its spot platform on 30 June 2025 ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 
+## What this means for holders
+- Bybit lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+- Who can buy, withdrawals and fees on Bybit are `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -1597,6 +1828,12 @@ last_updated: 2026-10-17
 *In plain English: Kraken is a crypto exchange that lists xStocks for trading.*
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+## What this means for holders
+- Kraken lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]].
+- Trading is 24/5 and tokens can be withdrawn to a self-custody [[concepts/glossary#wallet|wallet]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1637,6 +1874,12 @@ last_updated: 2026-10-17
 The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during [[concepts/glossary#dtc|DTC]]'s tokenization pilot ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf). The approval keeps tokenized shares on the same book with the same priority, [[concepts/glossary#cusip|CUSIP]], symbol and rights, settling through the DTC pilot; see [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]].
+
+## What this means for holders
+- A tokenized share on Nasdaq trades on the same order book, with the same [[concepts/glossary#cusip|CUSIP]], symbol and shareholder rights as the regular share ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
+- Settlement runs through the [[concepts/glossary#dtc|DTC]] tokenization pilot, so the token is an entitlement recorded via DTC ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1681,6 +1924,12 @@ NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along
 Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and [[concepts/glossary#etf|ETFs]] with instant settlement and [[concepts/glossary#stablecoin|stablecoin]] funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
 
 No technical spec or launch date was found.
+
+## What this means for holders
+- NYSE's rule SR-NYSE-2026-17 follows Nasdaq's and is tied to the [[concepts/glossary#dtc|DTC]] pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)).
+- The planned 24/7 tokenized platform is subject to regulatory approval, so holders cannot use it yet ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1728,6 +1977,13 @@ OKXICE's public notice of 23 Oct 2026 lists **22** issuers that objected: Cerebr
 The first 16 were already on its 19 Oct notice; Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell are new ([OKXICE notice, 19 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf)). CNBC's 21 Oct count of 16 matches the 19 Oct notice ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
 
 Cerebras appears as an objector even though it was not among the 63 symbols in the 4 Oct notice; neither notice says why (possibly an objection filed ahead of a listing; unverified). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)).
+
+## What this means for holders
+- OKXICE is a [[concepts/glossary#tsv|TSV]] under the [[concepts/glossary#innovation-exemption|Innovation Exemption]]: access is controlled through non-transferable access tokens, and trading pairs are [[concepts/glossary#stablecoin|stablecoins]] (USDC, USDG, USDT) ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
+- The venue does not hold your tokens ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
+- Issuers can object to third-party tokens of their stock: 22 had objected by 23 Oct 2026, which can keep those stocks off the venue ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf)).
+
+*Reference information only, not investment advice.*
 
 ## Sources
 Public originals for the facts on this page.
@@ -1934,6 +2190,13 @@ Public originals for the facts on this page.
 - <https://zerohash.com/industries/brokerages>
 
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# 2026-10-17: Vault seeded with 15 entities
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-17-vault
+
+
+Vault seeded with 15 entities.
 
 ========================================================================
 # 2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)

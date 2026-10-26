@@ -40,6 +40,12 @@ description: 'In plain English: Bybit is a crypto exchange that lists xStocks fo
 
 Bybit listed xStocks on its spot platform on 30 June 2025 ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 
+## What this means for holders
+- Bybit lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+- Who can buy, withdrawals and fees on Bybit are `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

@@ -42,6 +42,13 @@ description: 'In plain English: bStocks are certificates backed one-for-one by r
 
 bStocks are certificates issued by BTECH Holdings Ltd, each backed 1:1 by a US share at a regulated [[concepts/glossary#custodian|custodian]], admitted to the FSRA Official List ([Binance](https://www.binance.com/my-MM/square/post/332985202800018)). Each ticker has its own FSRA-approved prospectus, e.g. [NVIDIA bStocks, 11 Jun 2026](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf).
 
+## What this means for holders
+- bStocks are certificates from BTECH Holdings backed 1:1, admitted to the ADGM FSRA Official List ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf)).
+- The offer is made only in ADGM and not to US persons ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf)).
+- How dividends reach holders is `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

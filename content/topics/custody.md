@@ -32,6 +32,12 @@ SEC staff will not object to a broker-dealer treating itself as having "physical
 ## Vendors
 [[infrastructure/zerohash|Zerohash]] markets a tokenization engine to brokerages ([Zerohash](https://zerohash.com/industries/brokerages)).
 
+## What this means for holders
+- With a [[concepts/glossary#wrapper|wrapper]], your protection depends on the issuer's [[concepts/glossary#custodian|custodian]] and whether the structure is [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]].
+- Platform custody and token custody are separate questions: a venue can list a token without holding it (e.g. [[platforms-venues/okxice-tsv|OKXICE]]).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

@@ -18,6 +18,7 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `content/index.md` | Homepage |
 | `content/overview.md` | How the pieces fit together, with a diagram (`content/diagrams/`) |
 | `content/database.md` | One table of all issuers, venues and infrastructure |
+| `content/whats-changed.md` | Weekly headlines with what each change means for holders |
 | `content/starter-prompts.md` | Example questions |
 | `content/llms.txt` | One line per page with a short summary |
 | `content/llms-full.txt` | Every page in one plain-text file |
@@ -36,7 +37,7 @@ Everything else (`quartz/`, `quartz.config.ts`, `quartz.layout.ts`, `package.jso
 - Every fact links inline to a public original (regulator page, filing, issuer documentation or report); each page also lists them under **Sources**.
 
 ## Freshness
-Content is published with a 30-day delay: changelog entries and new pages appear about 30 days after they are recorded. Check `last_updated`, and confirm time-sensitive facts against the linked source.
+The site updates weekly: it carries content as of the most recent Monday 00:00 ET, so changelog entries and new pages appear within about a week of being recorded. `content/whats-changed.md` lists changes by week. Check `last_updated`, and confirm time-sensitive facts against the linked source.
 
 ## How to cite
 Cite the page URL (`https://edstokenizedsecuritiesrails.com/` + the path under `content/` without `.md`) and its `last_updated` date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)". For a specific fact, prefer the original source linked on the page.

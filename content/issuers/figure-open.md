@@ -48,6 +48,12 @@ The prospectus does not state a ticker. Figure's launch announcement uses **FGRS
 
 The Figure announcement page blocked retrieval, so only its headline was checked.
 
+## What this means for holders
+- Figure's Series A Blockchain Common Stock is SEC-registered stock on the Provenance blockchain, convertible 1:1 into Class A common stock ([424(b)(4)](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm)).
+- It is bought with YLDS, Figure's [[concepts/glossary#stablecoin|stablecoin]]-like token, per the [prospectus](https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

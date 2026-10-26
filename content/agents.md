@@ -23,11 +23,12 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `https://edstokenizedsecuritiesrails.com/changelog/<page>` | Dated change entries |
 | `https://edstokenizedsecuritiesrails.com/overview` | How the pieces fit together, with a diagram |
 | `https://edstokenizedsecuritiesrails.com/database` | One table of all issuers, venues and infrastructure |
+| `https://edstokenizedsecuritiesrails.com/whats-changed` | Weekly headlines with what each change means for holders |
 
 Folder URLs (e.g. `https://edstokenizedsecuritiesrails.com/issuers/`) list their pages. Entity pages open with an **At a glance** box (type, jurisdiction, chain, status, last updated) and end with **Sources**. `unknown` means not yet verified from a public source.
 
 ## Freshness
-Pages appear about 30 days after facts are recorded. Check each page's *last updated* date and confirm time-sensitive facts against the linked source.
+The site updates weekly, as of each Monday 00:00 ET; [[whats-changed|What changed]] lists changes by week. Check each page's *last updated* date and confirm time-sensitive facts against the linked source.
 
 ## How to cite
 Cite the page URL and its last-updated date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)". For a specific fact, prefer the original source linked on the page.

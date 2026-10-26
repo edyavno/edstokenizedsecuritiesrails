@@ -46,6 +46,12 @@ Galaxy (GLXY) Class A common stock is tokenized on [[concepts/glossary#solana|So
 
 Superstate acts as SEC-registered transfer agent and keeps the cap table onchain ([Superstate](https://www.superstate.com/opening-bell)). Galaxy's research describes [[concepts/glossary#allowlist|allowlisted]] self-custody and transfer-agent mechanics ([Galaxy](https://www.galaxy.com/insights/research/tokenized-glxy)); launch exhibit on EDGAR ([SEC](https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm)).
 
+## What this means for holders
+- Tokenized GLXY is the actual Class A share recorded by Superstate as SEC-registered [[concepts/glossary#transfer-agent|transfer agent]]: a [[concepts/glossary#native-token|native token]], not a [[concepts/glossary#wrapper|wrapper]] ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares)).
+- You need [[concepts/glossary#kyc|KYC]] and a self-custody [[concepts/glossary#wallet|wallet]] ([Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

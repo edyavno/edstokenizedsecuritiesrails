@@ -32,19 +32,20 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 ## Explore the wiki
 - **Look up a company:** [[database|Issuer & platform database]] (19 entities)
+- **See what changed:** [[whats-changed|What changed, week by week]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 - **Understand the concepts:** [[concepts/glossary|Glossary]] · [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[concepts/international|International]]
 - **Compare models and standards:** [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]
 - **Use it with an AI agent:** [[agents|Guide for AI agents]] · [[starter-prompts|Starter prompts]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
+- [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
 - [2025-12-02: Kraken agrees to acquire Backed Finance AG](/changelog/2025-12-02-kraken)
-- [2025-06-30: xStocks live on Bybit, Kraken, Solana DeFi](/changelog/2025-06-30-xstocks)
 
-See the full [[changelog/index|changelog]].
+See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
 ## Get the weekly email
 A free weekly email on what changed in tokenized securities. [[subscribe|Subscribe]].

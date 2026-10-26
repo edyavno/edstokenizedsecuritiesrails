@@ -30,6 +30,13 @@ The token is the share, so corporate actions follow the register (Superstate). E
 ## DTC
 At launch, [[concepts/glossary#dtc|DTC]] pays Treasury distributions in fiat to participants' traditional accounts. Equity and [[concepts/glossary#etf|ETF]] corporate actions on tokens are on the 2027+ roadmap ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
 
+## What this means for holders
+- Wrapped tokens often reflect dividends and splits through a [[concepts/glossary#multiplier|multiplier]] instead of cash; native shares and DTC-based tokens follow the normal share's corporate actions.
+- Voting rights usually stay with the [[concepts/glossary#custodian|custodian]] or issuer for wrapped tokens; check each issuer page.
+- Where a field says `unknown`, the sources so far do not say how that issuer handles it.
+
+*Reference information only, not investment advice.*
+
 ## Sources
 Public originals for the facts on this page.
 

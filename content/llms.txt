@@ -1,6 +1,6 @@
 # Ed’s Tokenized Securities Rails
 
-> A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. Public data is published with a 30-day delay. Content CC BY-NC 4.0. All pages in one file: https://edstokenizedsecuritiesrails.com/llms-full.txt
+> A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. Public data updates weekly, as of each Monday 00:00 ET. Content CC BY-NC 4.0. All pages in one file: https://edstokenizedsecuritiesrails.com/llms-full.txt
 
 ## Start here
 - [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
@@ -8,7 +8,8 @@
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki on the live site.
 - [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts): Example questions an AI agent can answer from this wiki.
 - [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
-- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, published with a 30-day delay.
+- [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
+- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, updated weekly. See What changed for the week-by-week view.
 
 ## Concepts
 - [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.
@@ -23,6 +24,7 @@
 - [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): In plain English: Who holds the real share, and who controls the token, differs by model. This page shows who keeps what.
 - [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures): In plain English: Tokenized stocks come in a few legal forms. Some are the real share; others are a claim or a note that tracks it.
 - [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation): In plain English: The main US and international rule changes for tokenized securities, in date order.
+- [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
 - [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.
 - [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): In plain English: Whether you can buy a given stock token depends on where you live and how the token is structured.
 
@@ -62,6 +64,7 @@
 - [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 
 ## Changelog entries
+- [2026-10-17: Vault seeded with 15 entities](https://edstokenizedsecuritiesrails.com/changelog/2026-10-17-vault): Vault seeded with 15 entities.
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](https://edstokenizedsecuritiesrails.com/changelog/2026-06-16-sec): SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20).
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](https://edstokenizedsecuritiesrails.com/changelog/2026-03-18-sec): SEC approves Nasdaq tokenized securities rule.
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](https://edstokenizedsecuritiesrails.com/changelog/2026-02-24-wisdomtree): WisdomTree announces 24x7 trading and instant settlement for WTGXX.

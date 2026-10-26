@@ -52,7 +52,8 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Stuck on a word?** Look it up in the [[concepts/glossary|glossary]].
 - **Comparing platforms?** Use the [database](/database) of issuers and venues.
 - **Using an AI assistant?** Start with the [starter prompts](/starter-prompts) or the [guide for agents](/agents).
-- **Following rule changes?** Check the [changelog](/changelog/) or [subscribe](/subscribe) for updates.
+- **Following rule changes?** See [what changed this week](/whats-changed), the [changelog](/changelog/), or [subscribe](/subscribe) for updates.
+- **Which rules apply where?** See [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
 
 ## The one-sentence version
 A tokenized security is an ordinary stock or bond whose ownership record lives on a shared digital ledger, so trading, settling and paying dividends can run automatically.

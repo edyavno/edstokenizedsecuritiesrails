@@ -19,12 +19,17 @@ sources:
 - https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md
 - https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running
 - https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement
+- https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
 - https://solana.com/docs/tokens/extensions
 - https://solana.com/docs/tokens/extensions/transfer-hook
+- https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf
+- https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox
 - https://www.bis.org/cpmi/publ/d225.htm
 - https://www.bis.org/publ/arpdf/ar2025e3.htm
 - https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november
 - https://www.coinbase.com/tokenize
+- https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf
+- https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/
 - https://www.fsb.org/uploads/P221024-2.pdf
 - https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf
 - https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html
@@ -40,7 +45,7 @@ description: 'In plain English: short definitions of the terms this wiki uses, A
 
 New to all of this? Start with the [[overview|overview]], then come back here when a word trips you up. Reference information only, not investment advice.
 
-Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [W](#w)
+Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [W](#w)
 
 ## A
 
@@ -125,10 +130,20 @@ A regulated firm that holds assets for someone else. For wrapped tokens, the cus
 
 ## D
 
+### Digital Securities Sandbox
+A UK Bank of England and FCA sandbox, running until January 2029, where firms can issue, trade and settle securities, native or tokenised, on new technology. ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
 ### DLT
 Distributed ledger technology: a shared database copied across many computers. Blockchains are one type. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
 *Related:* [[overview|Tokenized securities: how it fits together]]
+
+### DLT Pilot Regime
+An EU framework that lets approved market infrastructures trade and settle tokenized securities on DLT with some rules relaxed. ([ESMA](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/international|International regimes]]
 
 ### DTC
 The Depository Trust Company, the US central securities depository. It runs a tokenization pilot under an SEC no-action letter. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
@@ -177,6 +192,18 @@ Permission from the SEC to do something an existing rule would otherwise forbid,
 
 *Related:* [[issuers/wisdomtree|WisdomTree tokenized funds]] · [[topics/regulation|Regulation]]
 
+## F
+
+### FINMA
+Switzerland's financial market regulator. It licenses DLT trading facilities under the DLT Act in force since 1 August 2021. ([FINMA](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/))
+
+*Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
+### FSRA (ADGM)
+The Financial Services Regulatory Authority of Abu Dhabi Global Market, a financial free zone in the UAE. bStocks are admitted to its Official List. ([ADGM prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf))
+
+*Related:* [[issuers/bstocks|bStocks]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
 ## I
 
 ### Innovation Exemption
@@ -199,6 +226,16 @@ A blockchain that runs on top of another (usually Ethereum) to make transactions
 *Related:* [[standards/b20|Coinbase B20]]
 
 ## M
+
+### MiCA
+The EU's Markets in Crypto-Assets Regulation. It covers crypto-assets that are not financial instruments, so tokenized shares usually fall under MiFID II instead.
+
+*Related:* [[concepts/international|International regimes]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
+
+### MiFID II
+The EU's main law for investment firms and trading venues. Tokenized shares and derivatives such as Robinhood's EU stock tokens are covered by it. ([Robinhood EU FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/))
+
+*Related:* [[issuers/robinhood-stock-tokens|Robinhood Stock Tokens]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 
 ### Mint
 To create new tokens. For backed stock tokens, tokens are minted when the matching shares are bought and put in custody. ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks))
@@ -262,6 +299,11 @@ To hand tokens back to the issuer in exchange for the underlying asset or its ca
 Regulation National Market System: SEC rules that link US stock exchanges, including best-price and order-protection rules. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
 
 *Related:* [[concepts/post-trade-reg-nms-model|Post-trade / Reg NMS-inside model]]
+
+### Registrar
+The firm or system that keeps the official list of who owns a security. In the US this is usually the transfer agent.
+
+*Related:* [[topics/legal-structures|Legal structures]] · [[concepts/legal-taxonomy|Legal taxonomy of tokenized securities]]
 
 ### Repo
 A repurchase agreement: a short-term loan where one side sells bonds and agrees to buy them back later at a slightly higher price. ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november))
@@ -354,6 +396,11 @@ Software or hardware that holds the keys controlling tokens. A custodial wallet 
 
 *Related:* [[topics/custody|Custody]]
 
+### Wholesale CBDC
+Central bank money in token form, used only between banks and financial firms for settlement, not by the public. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
+
+*Related:* [[concepts/international|International regimes]]
+
 ### Wrapper
 A token that represents a share held by someone else, rather than being the share itself. See custodial wrapper and synthetic wrapper. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
 
@@ -376,12 +423,17 @@ Public originals for the facts on this page.
 - <https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md>
 - <https://investors.figure.com/news-releases/news-release-details/figure-announces-chain-public-equity-network-open-running>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
+- <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
 - <https://solana.com/docs/tokens/extensions>
 - <https://solana.com/docs/tokens/extensions/transfer-hook>
+- <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf>
+- <https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox>
 - <https://www.bis.org/cpmi/publ/d225.htm>
 - <https://www.bis.org/publ/arpdf/ar2025e3.htm>
 - <https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november>
 - <https://www.coinbase.com/tokenize>
+- <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
+- <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
 - <https://www.fsb.org/uploads/P221024-2.pdf>
 - <https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf>
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
