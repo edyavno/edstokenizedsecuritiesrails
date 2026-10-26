@@ -43,10 +43,10 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 ## Latest changes
 - [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
-- [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
-- [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
-- [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
-- [2025-12-02: Kraken agrees to acquire Backed Finance AG](/changelog/2025-12-02-kraken)
+- [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
+- [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
+- [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
+- [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -305,7 +305,35 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## Week of 12 Oct 2026
 - **[Vault seeded with 15 entities](/changelog/2026-10-17-vault)**
+- **[Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)**
 - Database: 68 headline field updates across issuer, venue and token records.
+
+## Week of 5 Oct 2026
+- **[EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)**
+- **[Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)**
+  - *What this means for holders:* Securitize's tokens are security entitlements, a direct claim on custodied shares. See [[issuers/securitize|Securitize]].
+- **[Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)**
+  - *What this means for holders:* Eligible investors in 30 EEA countries can buy Ondo tokens through a MiFID II platform. See [[issuers/ondo-global-markets|Ondo Global Markets]].
+
+## Week of 28 Sep 2026
+- **[OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)**
+  - *What this means for holders:* Companies can object to OKXICE tokens of their stock. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+
+## Week of 21 Sep 2026
+- **[Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)**
+  - *What this means for holders:* Eligible non-US holders of seven Coinbase stock tokens can borrow USDC against them on Aave V4 on Base. See [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]].
+- **[CFTC staff FAQs allow tokenized permitted investments](/changelog/2026-09-24-cftc-tokenized-collateral-faq)**
+- **[First TSV notice filed with the SEC (TSV LLC)](/changelog/2026-09-23-tsv-llc-notice)**
+
+## Week of 14 Sep 2026
+- **[SEC issues the Innovation Exemption for tokenized NMS stock](/changelog/2026-09-17-sec-innovation-exemption)**
+  - *What this means for holders:* Tokenized US stocks can trade on exempt Tokenized Securities Venues, subject to caps and issuer objection. See [[concepts/innovation-exemption|Innovation Exemption]].
+- **[UK tokenisation feedback; Robinhood plans redemption and voting](/changelog/2026-09-14-fca-robinhood)**
+  - *What this means for holders:* Robinhood Stock Tokens still give price exposure only; in-kind redemption and voting are announced, not available. See [[issuers/robinhood-stock-tokens|Robinhood Stock Tokens]].
+
+## Week of 7 Sep 2026
+- **[Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)**
+  - *What this means for holders:* Nasdaq Equity Tokens are planned, not live; Nasdaq and Payward expect them in Q2 2027. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq tokenized securities]].
 
 ## Week of 15 Jun 2026
 - **[SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)**
@@ -335,6 +363,17 @@ URL: https://edstokenizedsecuritiesrails.com/changelog/index
 Public changes, updated weekly (snapshot as of Monday 2026-10-19). See [[whats-changed|What changed]] for the week-by-week view.
 
 - [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
+- [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
+- [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
+- [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
+- [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
+- [2026-10-04: OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)
+- [2026-09-25: Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)
+- [2026-09-24: CFTC staff FAQs allow tokenized permitted investments](/changelog/2026-09-24-cftc-tokenized-collateral-faq)
+- [2026-09-23: First TSV notice filed with the SEC (TSV LLC)](/changelog/2026-09-23-tsv-llc-notice)
+- [2026-09-17: SEC issues the Innovation Exemption for tokenized NMS stock](/changelog/2026-09-17-sec-innovation-exemption)
+- [2026-09-14: UK tokenisation feedback; Robinhood plans redemption and voting](/changelog/2026-09-14-fca-robinhood)
+- [2026-09-10: Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)
 - [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
 - [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
 - [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
@@ -764,13 +803,16 @@ On 17 Sep 2026 the SEC issued an order (Rel. 34-106402, File 4-927) granting tem
 
 Chairman Atkins framed it as a bridge to durable rulemaking ([statement](https://business.cch.com/srd/SECgov_StatementontheInnovationExemption_ABridgeTowardDurableRulemaking091726.pdf)). Law-firm analyses: [Skadden](https://www.skadden.com/insights/publications/2026/09/sec-innovation-exemption-establishes), [Davis Polk](https://www.davispolk.com/insights/client-update/sec-s-innovation-exemption-opens-path-tokenized-stock-trading), [WilmerHale](https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks).
 
+## TSV notices
+The SEC lists three TSV notices: TSV LLC (23 Sep 2026), OKXICE TSV (4 Oct 2026) and Kephas Corporation d/b/a Perpetuals.com (14 Oct 2026) ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)). None had started trading by 25 Oct 2026 per their notices and the SEC page.
+
 ## Issuer objection
 For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
 
 The contrast CNBC draws: offshore volume is mostly perps and [[concepts/glossary#wrapper|wrapped]] tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
 ## Stablecoin legs
-TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)).
+TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)).
 
 First notice: [[platforms-venues/okxice-tsv|OKXICE TSV]]. Primitive: [[infrastructure/uniswap-permissioned-pools|Uniswap permissioned pools]].
 
@@ -984,6 +1026,10 @@ URL: https://edstokenizedsecuritiesrails.com/topics/regulation
 
 Key US milestones: [[concepts/glossary#dtc|DTC]] [[concepts/glossary#no-action-letter|no-action letter]] (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026) ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); WisdomTree's [[concepts/glossary#exemptive-relief|exemptive relief]] for 24/7 fund-share trading (Feb 2026, [WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)). Non-US issuers sit in Jersey, BVI and ADGM ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)).
 
+Recent changes (Sep to Oct 2026): the SEC's [[concepts/innovation-exemption|Innovation Exemption]] for tokenized NMS stock (17 Sep 2026, [SEC](https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment)); CFTC staff FAQs on tokenized permitted investments (24 Sep 2026, [CFTC](https://www.cftc.gov/PressRoom/PressReleases/9303-26)); the OCC's final GENIUS Act rule, effective 18 Jan 2027 (21 Oct 2026, [OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)); the FCA and Bank of England feedback statement FS26/1 (14 Sep 2026, [FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)); and EU Council agreement on key elements of the market integration package, which would widen the DLT Pilot Regime (9 Oct 2026, [Council](https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/)).
+
+Country-by-country status: [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
+
 ========================================================================
 # Rules by jurisdiction
 URL: https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction
@@ -991,21 +1037,21 @@ type: topic
 
 *In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
 
-Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 5 of 11 jurisdictions are not yet collected.
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 11 jurisdictions are not yet collected.
 
 | Jurisdiction | Status | Main rule or guidance | Last checked |
 |---|---|---|---|
 | United States (federal) | Rules in force | [SEC Innovation Exemption for tokenized NMS stock (Rel. 34-106402)](https://business.cch.com/srd/34-106402091726.pdf) | 2026-10-25 |
-| United States (states) | Not yet collected | unknown | not yet checked |
+| United States (states) | Rules in force | [State securities acts apply to tokenized securities; Wyoming UCC treatment of digital securities](https://www.wyoleg.gov/2019/Enroll/SF0125.pdf) | 2026-10-25 |
 | European Union | Pilot or sandbox | [DLT Pilot Regime (ESMA recommends making it permanent and wider)](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf) | 2026-10-25 |
 | United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox) | 2026-10-25 |
 | Switzerland | Rules in force | [DLT Act (FinMIA Chapter 4a, DLT trading facilities)](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/) | 2026-10-25 |
 | Singapore | Regulator guidance | [MAS Guide on the Tokenisation of Capital Markets Products](https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps) | 2026-10-25 |
 | Hong Kong | Regulator guidance | [SFC circular on tokenised securities-related activities (23EC52)](https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52) | 2026-10-25 |
-| UAE (ADGM) | Not yet collected | unknown (general regime not collected; bStocks certificates are admitted to the FSRA Official List) | not yet checked |
-| UAE (Dubai and federal) | Not yet collected | unknown | not yet checked |
-| Jersey | Not yet collected | unknown (issuer domicile for xStocks and Robinhood Stock Tokens) | not yet checked |
-| British Virgin Islands | Not yet collected | unknown (issuer domicile for Ondo Global Markets) | not yet checked |
+| UAE (ADGM) | Regulator guidance | [FSRA Guidance on Regulation of Digital Securities Activities (digital securities are Securities under FSMR)](https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f) | 2026-10-25 |
+| UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-10-25 |
+| Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-10-25 |
+| British Virgin Islands | Rules in force | [VASP Act 2022 and SIBA (issuer domicile for Ondo Global Markets)](https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022) | 2026-10-25 |
 
 **Status key.** *Rules in force*: a rule, order or licence regime that applies now. *Pilot or sandbox*: a time-limited or capped regime. *Regulator guidance*: guidance on how existing securities law applies to tokens. *Proposed*: filed or proposed, not yet approved.
 
@@ -1017,20 +1063,35 @@ For the detail behind each row, see [[topics/regulation|Regulation]], [[concepts
 Public originals for the facts on this page.
 
 - <https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52>
+- <https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC22>
+- <https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC23>
+- <https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f>
 - <https://business.cch.com/srd/34-106402091726.pdf>
+- <https://dfpi.ca.gov/regulated-industries/digital-financial-assets/digital-financial-assets-law-frequently-asked-questions/digital-financial-assets-law-preparing-for-your-application/>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
+- <https://rulebooks.vara.ae/rulebook/virtual-asset-issuance-rulebook>
+- <https://ssb.texas.gov/texas-securities-act-board-rules>
 - <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---nvidia-bstocks_06_11_2026_16-44-54.pdf>
 - <https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox>
-- <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>
+- <https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022>
+- <https://www.cftc.gov/PressRoom/PressReleases/9303-26>
+- <https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/>
+- <https://www.dfs.ny.gov/apps_and_licensing/virtual_currency_businesses>
+- <https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/article-2-scope>
 - <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
+- <https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets>
 - <https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/>
+- <https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/>
 - <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
+- <https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
 - <https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20>
+- <https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets>
+- <https://www.wyoleg.gov/2019/Enroll/SF0125.pdf>
 
 ========================================================================
 # Settlement & matching
@@ -1307,6 +1368,8 @@ A public read-only API publishes records, [[concepts/glossary#multiplier|multipl
 
 [[concepts/glossary#authorized-participant|Authorized participants]] (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and [[concepts/glossary#custodian|custodian]] ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
 
+Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on Aave V4 on Base ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
+
 ## What this means for holders
 - A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
 - Offered outside the US only; dividends are reinvested through a [[concepts/glossary#multiplier|multiplier]] ([Base](https://www.base.org/stocks)).
@@ -1468,6 +1531,8 @@ The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[
 
 [[concepts/glossary#mint|Mint]] and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
 
+On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized stocks and ETFs for eligible investors in 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
+
 ## What this means for holders
 - You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
 - Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
@@ -1522,6 +1587,8 @@ On Robinhood Chain, trading at launch is via [[concepts/glossary#rfq|RFQ]] plus 
 
 ## Adoption
 Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinhood Chain rose 22x from July to September 2026, and that the chain earned over \$50M in fees in its first quarter ([Bitwise](https://bitwiseinvestments.com/crypto-market-insights/the-bitwise-staking-report-q4-2026), analysis; summary page only, the full report was not retrieved). Monthly volumes of \$526M (July), \$2.21B (August) and \$11.31B (September) come from [CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html) citing Bitwise (news; unverified, not on Bitwise's summary page).
+
+On 14 Sep 2026 Robinhood's CEO said in-kind redemption and voting are coming for Robinhood Stock Tokens; neither was available as of 25 Oct 2026 ([CoinDesk](https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism), news).
 
 ## What this means for holders
 - Robinhood Stock Tokens are tokenised debt securities from Robinhood Assets Jersey: you get economic exposure to the stock, with no rights in the underlying share ([Robinhood](https://robinhood.com/rhj/stocktokens/); [docs](https://docs.robinhood.com/chain/stock-tokens/)).
@@ -1829,6 +1896,8 @@ last_updated: 2026-10-17
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 
+Kraken said on 22 Oct 2026 that its xStocks lineup exceeds 1,000 tokenized instruments ([The Defiant](https://thedefiant.io/news/cefi/kraken-says-its-xstocks-lineup-now-exceeds-1-000), news; not yet confirmed on a Kraken page).
+
 ## What this means for holders
 - Kraken lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]].
 - Trading is 24/5 and tokens can be withdrawn to a self-custody [[concepts/glossary#wallet|wallet]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
@@ -1874,6 +1943,8 @@ last_updated: 2026-10-17
 The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading during [[concepts/glossary#dtc|DTC]]'s tokenization pilot ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf). The approval keeps tokenized shares on the same book with the same priority, [[concepts/glossary#cusip|CUSIP]], symbol and rights, settling through the DTC pilot; see [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]].
+
+On 10 Sep 2026 Nasdaq agreed to invest \$100M in Payward, Kraken's parent, to build Nasdaq Equity Tokens (NETs) linked to xStocks; NETs are expected in Q2 2027 ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
 
 ## What this means for holders
 - A tokenized share on Nasdaq trades on the same order book, with the same [[concepts/glossary#cusip|CUSIP]], symbol and shareholder rights as the regular share ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
@@ -2061,7 +2132,7 @@ last_updated: 2026-10-23
 | structure | Security entitlements recorded on DLT |
 | chains | At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle) |
 | who_can_buy | DTC participants |
-| num_assets | 25 securities at launch (~$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
+| num_assets | 25 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
 *In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.*
 
@@ -2197,6 +2268,90 @@ URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-17-vault
 
 
 Vault seeded with 15 entities.
+
+========================================================================
+# 2026-10-14: Perpetuals.com files a TSV notice
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-14-perpetuals-notice
+
+
+- Kephas Corporation d/b/a Perpetuals.com filed a Tokenized Securities Venue notice on 14 Oct 2026, the third on the SEC's list ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption); [Perpetuals](https://www.perpetuals.com/perpetuals-moves-to-offer-tokenized-u-s-stocks-under-sec-innovation-exemption.html)).
+
+========================================================================
+# 2026-10-09: EU Council agrees key elements of the market integration package
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-09-eu-council-dlt-pilot
+
+
+- The Council agreed key elements of the savings and investments union measures, which include changes to the DLT Pilot Regime; not yet adopted ([Council](https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/)).
+
+========================================================================
+# 2026-10-08: Securitize launches tokenized US stocks on Solana
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-08-securitize-stocks
+
+
+- Securitize launched onchain trading of US stocks as security entitlements through its broker-dealer, with plans for NYSE and OKXICE access once those venues launch ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Launches-Global-Onchain-Trading-of-U-S--Stocks-with-Security-Entitlements/default.aspx); [CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works)).
+
+========================================================================
+# 2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-07-assetera-ondo
+
+
+- Assetera listed 100+ Ondo tokenized US stocks and ETFs for 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
+- Assetera says Ondo Stocks passed \$1B TVL and \$27B cumulative volume since September 2025 (Assetera).
+
+========================================================================
+# 2026-10-04: OKXICE files its TSV notice
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-04-okxice-notice
+
+
+- OKXICE TSV filed its notice with the SEC on 4 Oct 2026 ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption); [OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
+- Design: Uniswap v4 pools with an OKXICE hook, pairs against USDC/USDG/USDT. No trading start date announced.
+
+========================================================================
+# 2026-09-25: Coinbase tokenized stocks accepted as Aave collateral
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-25-aave-coinbase-stocks
+
+
+- Seven Coinbase Tokenized Stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) went live as collateral on Aave V4 on Base, collateral-only ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
+- Prices come from Chainlink 24/5 feeds and are held over weekends (Aave).
+
+========================================================================
+# 2026-09-24: CFTC staff FAQs allow tokenized permitted investments
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-24-cftc-tokenized-collateral-faq
+
+
+- CFTC staff updated FAQs to address investing customer funds in tokenized forms of permitted investments and blockchain recordkeeping ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9303-26)).
+
+========================================================================
+# 2026-09-23: First TSV notice filed with the SEC (TSV LLC)
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-23-tsv-llc-notice
+
+
+- TSV LLC submitted a Tokenized Securities Venue notice to the SEC on 23 Sep 2026 ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)).
+
+========================================================================
+# 2026-09-17: SEC issues the Innovation Exemption for tokenized NMS stock
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-17-sec-innovation-exemption
+
+
+- The SEC issued an order (Rel. 34-106402) exempting Tokenized Securities Venues from the exchange definition and certain liquidity providers from the dealer definition; it expires five years after publication ([SEC](https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment)).
+- Published at 91 FR 60168 on 22 Sep 2026; comments go to File 4-927 ([Federal Register](https://www.federalregister.gov/documents/2026/09/22/2026-19388/order-granting-temporary-conditional-exemptive-relief-pursuant-to-section-36a1-of-the-securities)).
+
+========================================================================
+# 2026-09-14: UK tokenisation feedback; Robinhood plans redemption and voting
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-14-fca-robinhood
+
+
+- FCA and Bank of England published FS26/1 on tokenisation in wholesale markets (123 responses); a joint roadmap is due later in 2026 ([FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)).
+- Robinhood's CEO said in-kind redemption and voting are coming for Robinhood Stock Tokens, after AMC's CEO objected to AMC tokens ([CoinDesk](https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism)).
+- Coinbase's CEO said voting rights are coming to Coinbase tokenized stocks (CoinDesk).
+
+========================================================================
+# 2026-09-10: Nasdaq agrees to invest in Kraken's parent for tokenized equities
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-09-10-nasdaq-payward
+
+
+- Nasdaq Ventures agreed to invest \$100M in Payward, Kraken's parent ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
+- The partners will build distribution, trading and post-trade infrastructure for Nasdaq Equity Tokens (NETs), linked to xStocks; NETs are expected in Q2 2027 (Nasdaq).
 
 ========================================================================
 # 2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)

@@ -40,10 +40,10 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 ## Latest changes
 - [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
-- [2026-06-16: SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)
-- [2026-03-18: SEC approves Nasdaq tokenized securities rule](/changelog/2026-03-18-sec)
-- [2026-02-24: WisdomTree announces 24x7 trading for WTGXX](/changelog/2026-02-24-wisdomtree)
-- [2025-12-02: Kraken agrees to acquire Backed Finance AG](/changelog/2025-12-02-kraken)
+- [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
+- [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
+- [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
+- [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

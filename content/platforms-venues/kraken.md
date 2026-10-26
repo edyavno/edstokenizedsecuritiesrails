@@ -40,6 +40,8 @@ description: 'In plain English: Kraken is a crypto exchange that lists xStocks f
 
 Kraken listed xStocks on 30 June 2025 with 24/5 trading and withdrawals ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
 
+Kraken said on 22 Oct 2026 that its xStocks lineup exceeds 1,000 tokenized instruments ([The Defiant](https://thedefiant.io/news/cefi/kraken-says-its-xstocks-lineup-now-exceeds-1-000), news; not yet confirmed on a Kraken page).
+
 ## What this means for holders
 - Kraken lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]].
 - Trading is 24/5 and tokens can be withdrawn to a self-custody [[concepts/glossary#wallet|wallet]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).

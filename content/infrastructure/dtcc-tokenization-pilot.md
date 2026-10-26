@@ -34,7 +34,7 @@ description: 'In plain English: DTC, the US central securities depository, is te
 | structure | Security entitlements recorded on DLT |
 | chains | At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle) |
 | who_can_buy | DTC participants |
-| num_assets | 25 securities at launch (~$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
+| num_assets | 25 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
 *In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.*
 

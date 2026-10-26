@@ -12,7 +12,35 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## Week of 12 Oct 2026
 - **[Vault seeded with 15 entities](/changelog/2026-10-17-vault)**
+- **[Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)**
 - Database: 68 headline field updates across issuer, venue and token records.
+
+## Week of 5 Oct 2026
+- **[EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)**
+- **[Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)**
+  - *What this means for holders:* Securitize's tokens are security entitlements, a direct claim on custodied shares. See [[issuers/securitize|Securitize]].
+- **[Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)**
+  - *What this means for holders:* Eligible investors in 30 EEA countries can buy Ondo tokens through a MiFID II platform. See [[issuers/ondo-global-markets|Ondo Global Markets]].
+
+## Week of 28 Sep 2026
+- **[OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)**
+  - *What this means for holders:* Companies can object to OKXICE tokens of their stock. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+
+## Week of 21 Sep 2026
+- **[Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)**
+  - *What this means for holders:* Eligible non-US holders of seven Coinbase stock tokens can borrow USDC against them on Aave V4 on Base. See [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]].
+- **[CFTC staff FAQs allow tokenized permitted investments](/changelog/2026-09-24-cftc-tokenized-collateral-faq)**
+- **[First TSV notice filed with the SEC (TSV LLC)](/changelog/2026-09-23-tsv-llc-notice)**
+
+## Week of 14 Sep 2026
+- **[SEC issues the Innovation Exemption for tokenized NMS stock](/changelog/2026-09-17-sec-innovation-exemption)**
+  - *What this means for holders:* Tokenized US stocks can trade on exempt Tokenized Securities Venues, subject to caps and issuer objection. See [[concepts/innovation-exemption|Innovation Exemption]].
+- **[UK tokenisation feedback; Robinhood plans redemption and voting](/changelog/2026-09-14-fca-robinhood)**
+  - *What this means for holders:* Robinhood Stock Tokens still give price exposure only; in-kind redemption and voting are announced, not available. See [[issuers/robinhood-stock-tokens|Robinhood Stock Tokens]].
+
+## Week of 7 Sep 2026
+- **[Nasdaq agrees to invest in Kraken's parent for tokenized equities](/changelog/2026-09-10-nasdaq-payward)**
+  - *What this means for holders:* Nasdaq Equity Tokens are planned, not live; Nasdaq and Payward expect them in Q2 2027. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq tokenized securities]].
 
 ## Week of 15 Jun 2026
 - **[SEC notice: 24X Exchange tokenized trading rule (SR-24X-2026-20)](/changelog/2026-06-16-sec)**

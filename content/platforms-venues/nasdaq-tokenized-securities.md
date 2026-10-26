@@ -42,6 +42,8 @@ The SEC approved Nasdaq's rule on 18 March 2026, enabling tokenized trading duri
 
 Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf). The approval keeps tokenized shares on the same book with the same priority, [[concepts/glossary#cusip|CUSIP]], symbol and rights, settling through the DTC pilot; see [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]].
 
+On 10 Sep 2026 Nasdaq agreed to invest \$100M in Payward, Kraken's parent, to build Nasdaq Equity Tokens (NETs) linked to xStocks; NETs are expected in Q2 2027 ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
+
 ## What this means for holders
 - A tokenized share on Nasdaq trades on the same order book, with the same [[concepts/glossary#cusip|CUSIP]], symbol and shareholder rights as the regular share ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 - Settlement runs through the [[concepts/glossary#dtc|DTC]] tokenization pilot, so the token is an entitlement recorded via DTC ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).

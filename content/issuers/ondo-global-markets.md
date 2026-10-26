@@ -52,6 +52,8 @@ The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[
 
 [[concepts/glossary#mint|Mint]] and redeem use signed quotes through IGMTokenManager ([Ondo API](https://docs.ondo.finance/api-reference/overview)).
 
+On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized stocks and ETFs for eligible investors in 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
+
 ## What this means for holders
 - You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
 - Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
