@@ -39,11 +39,11 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
-- [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
-- [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
-- [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
-- [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
-- [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
+- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)
+- [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
+- [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

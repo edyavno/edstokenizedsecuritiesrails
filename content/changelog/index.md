@@ -3,8 +3,13 @@ title: Changelog
 description: Public changes, updated weekly. See What changed for the week-by-week view.
 ---
 
-Public changes, updated weekly (snapshot as of Monday 2026-10-19). See [[whats-changed|What changed]] for the week-by-week view.
+Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)
+- [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
+- [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 - [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
 - [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
 - [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)

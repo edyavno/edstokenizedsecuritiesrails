@@ -1,5 +1,5 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-10-25; public data is a weekly snapshot as of 2026-10-19. CC BY-NC 4.0.
+> Human-curated, LLM-maintained. Generated 2026-10-26; public data is a weekly snapshot as of 2026-10-26. CC BY-NC 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
@@ -42,11 +42,11 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
-- [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
-- [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
-- [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
-- [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
-- [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
+- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)
+- [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
+- [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -267,7 +267,7 @@ Example questions an AI agent can answer from this wiki alone. Point the agent a
 URL: https://edstokenizedsecuritiesrails.com/database
 
 
-Generated from vault frontmatter on 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.
+Generated from vault frontmatter on 2026-10-26. Headline fields only; `unknown` means not yet verified from a source.
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|
@@ -300,10 +300,21 @@ URL: https://edstokenizedsecuritiesrails.com/whats-changed
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
-The site updates weekly: this page shows changes recorded before Monday 19 Oct 2026.
+The site updates weekly: this page shows changes recorded before Monday 26 Oct 2026.
 
 ## Get it by email
 A free weekly email with these headlines. [[subscribe|Subscribe]].
+
+## Week of 19 Oct 2026
+- **[OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)**
+  - *What this means for holders:* Issuer objections can keep a stock off OKXICE, and 22 issuers had objected by 23 Oct 2026. See [[concepts/innovation-exemption#issuer-objection|Issuer objection]].
+- **[DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)**
+  - *What this means for holders:* Companies can object to a third-party token of their stock on OKXICE; objections can keep a stock off the venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)**
+- **[OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)**
+- **[TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)**
+  - *What this means for holders:* Nothing trades yet; when TSV LLC opens, pools will settle against USDC or SBC on Canton. See [[concepts/innovation-exemption|Innovation Exemption]].
+- Database: 45 headline field updates across issuer, venue and token records.
 
 ## Week of 12 Oct 2026
 - **[Vault seeded with 15 entities](/changelog/2026-10-17-vault)**
@@ -372,8 +383,13 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 
 
-Public changes, updated weekly (snapshot as of Monday 2026-10-19). See [[whats-changed|What changed]] for the week-by-week view.
+Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)
+- [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
+- [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 - [2026-10-17: Vault seeded with 15 entities](/changelog/2026-10-17-vault)
 - [2026-10-14: Perpetuals.com files a TSV notice](/changelog/2026-10-14-perpetuals-notice)
 - [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
@@ -2368,6 +2384,49 @@ Public originals for the facts on this page.
 - <https://zerohash.com/industries/brokerages>
 
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# 2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-25-sources-pass
+
+
+- OKXICE: 22 issuers have objected to tokenized listings, per OKXICE's 23 Oct 2026 public notice (16 on its 19 Oct notice).
+- DTCC Tokenization Service: Day 1 tear sheet (23 Oct 2026) lists 34 securities at launch, up from 25 in the earlier at-a-glance sheet. No go-live release yet.
+- Figure: blockchain stock ticker is FGRS (launched as FGRD, renamed March 2026).
+- xStocks: Kraken lists 131 assets (100 stocks, 27 ETFs, 4 specialist).
+- Robinhood Chain: Bitwise reports average daily Stock Token volume up 22x from July to September 2026.
+- New detail on B20, who can buy, custody, settlement and corporate actions, from SEC, Base, xStocks, Kraken, DTCC, Exodus and WisdomTree primary sources.
+
+========================================================================
+# 2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-23-dtcc-okxice
+
+
+- DTCC Tokenization Service: launch scope added from DTCC's at-a-glance sheet (25 securities, ~\$30T eligible, Canton and DTCC's private Besu network, 24/7 transfers between registered wallets).
+- OKXICE: 16 issuers had objected to tokenized listings by 21 Oct 2026 (CNBC).
+- Robinhood Chain: tokenized stock volume \$526M (Jul) to \$11.31B (Sep), per Bitwise via CNBC.
+
+========================================================================
+# 2026-10-22: Kraken says xStocks lineup exceeds 1,000
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-22-kraken-xstocks-1000
+
+
+- Kraken said its xStocks lineup exceeds 1,000 tokenized instruments, per The Defiant ([The Defiant](https://thedefiant.io/news/cefi/kraken-says-its-xstocks-lineup-now-exceeds-1-000)); not yet confirmed on a Kraken page.
+
+========================================================================
+# 2026-10-21: OCC final rule implementing the GENIUS Act
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-21-occ-genius-rule
+
+
+- The OCC issued its final GENIUS Act rule for payment stablecoin issuers under its jurisdiction, effective 18 Jan 2027, the Act's effective date ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)). Published in the Federal Register on 23 Oct 2026 as FR Doc. 2026-21706, 12 CFR Part 15 ([Federal Register](https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the)).
+- Stablecoins are the cash leg of TSV pools; other regulators' rules are not collected.
+
+========================================================================
+# 2026-10-19: TSV LLC revises its TSV notice
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-19-tsv-llc-revised-notice
+
+
+- TSV LLC published version 1.1 of its notice (19 Oct 2026) and 1.2 (23 Oct 2026): paired assets at commencement are USDC and SBC on Canton; the issuer's transfer agent handles verification and minting; operations have not commenced ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ========================================================================
 # 2026-10-17: Vault seeded with 15 entities
