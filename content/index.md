@@ -6,12 +6,14 @@ description: A human-curated, LLM-maintained, source-linked knowledge base on to
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 ## New to tokenization?
-Here's how the pieces fit together: who keeps the official record, how trades settle against tokenized cash, and how native tokens differ from wrapped ones. Read the full [[overview|overview]].
+Here is the life of a token in four steps, and how a real (native) share differs from a wrapper. Read the full [[overview|overview]].
 
 <a href="/overview" style="display:block;background:none;padding:0"><picture>
 <source media="(max-width: 700px)" srcset="/diagrams/overview-mobile.svg">
-<img src="/diagrams/overview-desktop.svg" alt="How tokenized securities fit together (diagram); see the overview page for a text version" style="width:100%;height:auto">
+<img src="/diagrams/overview-desktop.svg" alt="How tokenized securities work in four steps: issue, approve buyers, trade and settle, pay holders; plus native vs wrapper. See the overview page for a text version" style="width:100%;height:auto">
 </picture></a>
+
+*[See the detailed version](/overview#the-full-picture)*
 
 ## Why tokenize securities?
 Today, buying a stock or bond goes through a chain of brokers, custodians and clearinghouses. Each one keeps its own records and has to reconcile them with the others, which is why settlement takes days and markets close at night. A token puts the asset and its ownership record on one shared ledger, so:
@@ -21,7 +23,7 @@ Today, buying a stock or bond goes through a chain of brokers, custodians and cl
 - **Assets plug into other things.** Tokenized Treasuries can already be posted as collateral for futures and swaps ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9146-25)).
 - **More people get access.** You can own fractions, from anywhere.
 
-It's already real for big institutions: about \$368B a day of repo trades settle on Broadridge's blockchain platform ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). What's been turned into tokens so far is mostly bonds and money market funds; tokenized Treasuries total about \$14.5B as of Oct 2026 ([rwa.xyz](https://app.rwa.xyz/treasuries)). Many stock tokens are wrappers rather than real shares, so check what you actually own.
+It's already real for big institutions, though two common numbers measure different things. About \$368B of repo trades *settle every day* on Broadridge's blockchain platform: that is a daily flow, with the same cash and bonds lent and repaid over and over ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)). Tokenized Treasuries *held* on blockchains total about \$14.5B as of Oct 2026: that is a stock of assets, like an account balance ([rwa.xyz](https://app.rwa.xyz/treasuries)). Most tokenized assets so far are bonds and money market funds ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Many stock tokens are wrappers: a third party holds the real share and gives you a token that tracks it, usually without a vote ([[overview#native-vs-wrapped|native vs wrapper]]).
 
 
 ## Explore the wiki
