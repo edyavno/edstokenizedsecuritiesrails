@@ -4,6 +4,7 @@ date: 2026-09-10
 tags:
 - changelog
 holders: Nasdaq Equity Tokens are planned, not live; Nasdaq and Payward expect them in Q2 2027. See [[platforms-venues/nasdaq-tokenized-securities|Nasdaq tokenized securities]].
+last_checked: '2026-09-10'
 ---
 
 - Nasdaq Ventures agreed to invest \$100M in Payward, Kraken's parent ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).

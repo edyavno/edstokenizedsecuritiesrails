@@ -1,6 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
+last_checked: '2026-10-26'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -15,7 +16,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
   - *What this means for holders:* Issuer objections can keep a stock off OKXICE, and 22 issuers had objected by 23 Oct 2026. See [[concepts/innovation-exemption#issuer-objection|Issuer objection]].
 - **[DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)**
   - *What this means for holders:* Companies can object to a third-party token of their stock on OKXICE; objections can keep a stock off the venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
-- **[Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)**
+- **[Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)**
+  - *What this means for holders:* Unconfirmed, news report only: a news site reports more than 1,000 xStocks on Kraken; Kraken has not confirmed this on its own pages. Check Kraken's xStocks list before relying on it.
 - **[OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)**
 - **[TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)**
   - *What this means for holders:* Nothing trades yet; when TSV LLC opens, pools will settle against USDC or SBC on Canton. See [[concepts/innovation-exemption|Innovation Exemption]].

@@ -1,6 +1,7 @@
 ---
 title: Glossary
 type: concept
+description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
 last_checked: '2026-10-25'
@@ -38,14 +39,16 @@ sources:
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
 - https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers
 - https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/
-description: 'In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.'
+- https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture
+- https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry
+- https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf
 ---
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
 
 New to all of this? Start with the [[overview|overview]], then come back here when a word trips you up. Reference information only, not investment advice.
 
-Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [W](#w)
+Jump to: [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [W](#w)
 
 ## A
 
@@ -102,6 +105,11 @@ A firm registered with the SEC to buy and sell securities for customers (broker)
 A central counterparty, or clearinghouse. It steps between buyer and seller so each side faces it instead of each other, and nets trades to reduce how much cash and stock must move. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
+
+### Compliance hook
+Code that runs on every token transfer or swap and can block it if a rule fails, such as an unverified receiver. Examples: the ERC-3643 compliance contract, Solana transfer hooks and Uniswap v4 permissioned-pool hooks. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643); [Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]] · [[standards/erc-3643|ERC-3643]]
 
 ### Composability
 Tokens on the same chain can plug into other apps, for example being posted as loan collateral, without special integration work. ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/))
@@ -204,7 +212,19 @@ The Financial Services Regulatory Authority of Abu Dhabi Global Market, a financ
 
 *Related:* [[issuers/bstocks|bStocks]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 
+## H
+
+### Hybrid matching
+Trades are matched off chain (for example on an order book) and then settled on chain, instead of being priced and settled by an onchain pool in one step.
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
+
 ## I
+
+### Identity registry
+The ERC-3643 contract that records which wallets belong to verified investors; a transfer only succeeds if the receiver is verified. ([ERC-3643 docs](https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry))
+
+*Related:* [[standards/erc-3643|ERC-3643]]
 
 ### Innovation Exemption
 A temporary, conditional SEC order from 17 Sep 2026 that lets approved onchain venues (TSVs) trade tokenized US stocks. ([SEC order](https://business.cch.com/srd/34-106402091726.pdf))
@@ -342,6 +362,11 @@ A public blockchain known for fast, low-cost transactions. Its Token-2022 progra
 
 *Related:* [[standards/solana-token-2022|Solana Token-2022 extensions]]
 
+### Soulbound token
+A non-transferable token tied to one wallet, used as an access credential. OKXICE's venue notice uses soulbound tokens to control who can trade. ([OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf))
+
+*Related:* [[platforms-venues/okxice-tsv|OKXICE TSV]]
+
 ### SPV
 A special purpose vehicle: a company set up only to hold certain assets or issue certain securities, kept separate from its parent. ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory))
 
@@ -388,6 +413,13 @@ Code that runs automatically on every token transfer, for example to check the r
 Tokenized Securities Venue: an onchain venue approved under the SEC's Innovation Exemption to trade tokenized US stocks. ([SEC order](https://business.cch.com/srd/34-106402091726.pdf))
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]] · [[platforms-venues/okxice-tsv|OKXICE TSV]]
+
+## U
+
+### Unified ledger
+A BIS proposal for one programmable platform holding tokenised central bank reserves, commercial bank money and government bonds, so payments and securities settle together. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
+
+*Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
 ## W
 
@@ -442,3 +474,5 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
 - <https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers>
 - <https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/>
+- <https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture>
+- <https://docs.erc3643.org/erc-3643/smart-contracts-library/onchain-identities/identity-registry>

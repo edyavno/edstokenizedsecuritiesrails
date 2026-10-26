@@ -1,6 +1,7 @@
 ---
 title: 'Tokenized securities: how it fits together'
 type: overview
+description: How tokenized securities fit together (issuance, trading, settlement, custody, regulation) and what is new compared with traditional rails, with a section on who the wiki is for.
 tags:
 - overview
 last_checked: '2026-10-25'
@@ -21,7 +22,6 @@ sources:
 - https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto
 - https://www.mas.gov.sg/news/speeches/2024/tokenisation-in-financial-services-pathways-to-scale
 - https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
-description: For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
 ---
 
 <picture>
@@ -45,7 +45,14 @@ Tokenized Treasuries *held* on blockchains total about \$14.5B as of Oct 2026: t
 
 Many stock tokens are wrappers: a third party holds the real share and gives you a token that tracks it, usually without a vote ([[overview#native-vs-wrapped|native vs wrapper]]).
 
-*For readers who know capital markets (and maybe crypto at a high level) but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.*
+## Who is this for?
+- **Investors** curious about stock tokens: what you actually own, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
+- **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[overview#the-full-picture|the full-picture diagram]] and the topic pages: [[topics/settlement-and-matching|Settlement & matching]], [[topics/custody|Custody]], [[topics/regulation|Regulation]].
+- **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and the [database](/database).
+- **Software engineers and architects:** how tokenized securities systems are built: token contracts and compliance hooks, mint/redeem, onchain venues, atomic settlement, onchain corporate actions, with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
+- **AI agents:** machine-readable via [llms.txt](/llms.txt) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
+
+What it isn't: a broker or investment advice. It's reference information, updated weekly.
 
 ## How to use this wiki
 - **New to this?** Read the "Why" above, then the diagram at the top, then [[topics/who-can-buy|Who can buy]].

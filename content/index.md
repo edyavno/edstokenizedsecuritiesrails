@@ -1,9 +1,19 @@
 ---
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
+last_checked: '2026-10-26'
 ---
 
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
+
+## Who is this for?
+- **Investors** curious about stock tokens: what you actually own, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
+- **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[overview#the-full-picture|the full-picture diagram]] and the topic pages: [[topics/settlement-and-matching|Settlement & matching]], [[topics/custody|Custody]], [[topics/regulation|Regulation]].
+- **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and the [database](/database).
+- **Software engineers and architects:** how tokenized securities systems are built: token contracts and compliance hooks, mint/redeem, onchain venues, atomic settlement, onchain corporate actions, with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
+- **AI agents:** machine-readable via [llms.txt](/llms.txt) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
+
+What it isn't: a broker or investment advice. It's reference information, updated weekly.
 
 ## New to tokenization?
 Here is the life of a token in four steps, and how a real (native) share differs from a wrapper. Read the full [[overview|overview]].
@@ -35,13 +45,14 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **See what changed:** [[whats-changed|What changed, week by week]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 - **Understand the concepts:** [[concepts/glossary|Glossary]] · [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[concepts/international|International]]
 - **Compare models and standards:** [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]
+- **Build with it:** [[build/trading-reference-architecture|Reference architecture for trading]] · [[build/index|Build with this wiki]]
 - **Use it with an AI agent:** [[agents|Guide for AI agents]] · [[starter-prompts|Starter prompts]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
-- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](/changelog/2026-10-22-kraken-xstocks-1000)
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)
 - [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
 - [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 

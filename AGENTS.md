@@ -14,6 +14,7 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `content/concepts/` | Legal and market-structure concepts |
 | `content/topics/` | Cross-cutting explainers (custody, settlement, regulation, ...) |
 | `content/comparisons/` | Side-by-side comparisons of models and precedents |
+| `content/build/` | For engineers: reference architecture and how to build with this wiki |
 | `content/changelog/` | Dated change entries |
 | `content/index.md` | Homepage |
 | `content/overview.md` | How the pieces fit together, with a diagram (`content/diagrams/`) |

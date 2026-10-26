@@ -4,6 +4,7 @@ date: 2026-09-14
 tags:
 - changelog
 holders: Robinhood Stock Tokens still give price exposure only; in-kind redemption and voting are announced, not available. See [[issuers/robinhood-stock-tokens|Robinhood Stock Tokens]].
+last_checked: '2026-09-14'
 ---
 
 - FCA and Bank of England published FS26/1 on tokenisation in wholesale markets (123 responses); a joint roadmap is due later in 2026 ([FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)).

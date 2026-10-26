@@ -4,6 +4,7 @@ date: 2026-08-12
 tags:
 - changelog
 holders: BLSH tokens are real registered shares, but only Bullish's own stock trades this way so far. See [[platforms-venues/bullish|Bullish Exchange]].
+last_checked: '2026-08-12'
 ---
 
 - Bullish's issuer-sponsored BLSH tokens, recorded at the share registry, traded on Bullish Exchange against a USD stablecoin ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).

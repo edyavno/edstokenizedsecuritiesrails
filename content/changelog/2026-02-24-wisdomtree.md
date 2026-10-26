@@ -4,6 +4,7 @@ date: 2026-02-24
 tags:
 - changelog
 holders: WTGXX holders can trade fund shares around the clock with instant settlement, under SEC exemptive relief. See [[issuers/wisdomtree|WisdomTree]].
+last_checked: '2026-02-24'
 description: WisdomTree announces 24x7 trading and instant settlement for WTGXX.
 ---
 

@@ -4,6 +4,7 @@ date: 2026-10-25
 tags:
 - changelog
 holders: Issuer objections can keep a stock off OKXICE, and 22 issuers had objected by 23 Oct 2026. See [[concepts/innovation-exemption#issuer-objection|Issuer objection]].
+last_checked: '2026-10-25'
 ---
 
 - OKXICE: 22 issuers have objected to tokenized listings, per OKXICE's 23 Oct 2026 public notice (16 on its 19 Oct notice).

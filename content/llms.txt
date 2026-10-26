@@ -4,15 +4,20 @@
 
 ## Start here
 - [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): For readers who know capital markets but not how the pieces connect. This page covers what is new compared with traditional rails; the linked pages go deeper.
+- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): How tokenized securities fit together (issuance, trading, settlement, custody, regulation) and what is new compared with traditional rails, with a section on who the wiki is for.
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki on the live site.
 - [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts): Example questions an AI agent can answer from this wiki.
-- [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
+- [Build with this wiki](https://edstokenizedsecuritiesrails.com/build/): How engineers and their AI coding agents can use this wiki as a design reference for tokenized-stock trading systems, starting with the trading reference architecture.
+- [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 - [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
+- [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
+- [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
 - [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, updated weekly. See What changed for the week-by-week view.
 
+## Build
+- [Reference architecture for trading tokenized securities](https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture): End-to-end reference architecture for trading tokenized stocks on tokenized rails: onboarding and allowlisting, onchain or hybrid matching, compliance hooks, atomic DvP, register sync, and oracle and halt controls.
+
 ## Concepts
-- [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.
 - [Innovation Exemption and the onchain-venue (TSV) model](https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption): In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.
 - [International regimes](https://edstokenizedsecuritiesrails.com/concepts/international): In plain English: How rules for tokenized securities differ outside the US, region by region.
 - [Legal taxonomy of tokenized securities](https://edstokenizedsecuritiesrails.com/concepts/legal-taxonomy): In plain English: The SEC sorts tokenized stocks into a few legal types. This page explains each one, because the type decides what you actually own.
@@ -24,7 +29,6 @@
 - [Custody](https://edstokenizedsecuritiesrails.com/topics/custody): In plain English: Who holds the real share, and who controls the token, differs by model. This page shows who keeps what.
 - [Legal structures](https://edstokenizedsecuritiesrails.com/topics/legal-structures): In plain English: Tokenized stocks come in a few legal forms. Some are the real share; others are a claim or a note that tracks it.
 - [Regulation](https://edstokenizedsecuritiesrails.com/topics/regulation): In plain English: The main US and international rule changes for tokenized securities, in date order.
-- [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
 - [Settlement & matching](https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching): In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.
 - [Who can buy](https://edstokenizedsecuritiesrails.com/topics/who-can-buy): In plain English: Whether you can buy a given stock token depends on where you live and how the token is structured.
 
@@ -68,7 +72,7 @@
 ## Changelog entries
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](https://edstokenizedsecuritiesrails.com/changelog/2026-10-25-sources-pass): - OKXICE: 22 issuers have objected to tokenized listings, per OKXICE's 23 Oct 2026 public notice (16 on its 19 Oct notice). - DTCC Tokenization Service: Day 1 tear sheet (23 Oct 2026) lists 34 securities at launch, up f…
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](https://edstokenizedsecuritiesrails.com/changelog/2026-10-23-dtcc-okxice): - DTCC Tokenization Service: launch scope added from DTCC's at-a-glance sheet (25 securities, ~\$30T eligible, Canton and DTCC's private Besu network, 24/7 transfers between registered wallets). - OKXICE: 16 issuers had…
-- [2026-10-22: Kraken says xStocks lineup exceeds 1,000](https://edstokenizedsecuritiesrails.com/changelog/2026-10-22-kraken-xstocks-1000): - Kraken said its xStocks lineup exceeds 1,000 tokenized instruments, per The Defiant (The Defiant); not yet confirmed on a Kraken page.
+- [2026-10-22: Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](https://edstokenizedsecuritiesrails.com/changelog/2026-10-22-kraken-xstocks-1000): - Unconfirmed, news report only. Kraken said its xStocks lineup exceeds 1,000 tokenized instruments, per The Defiant (The Defiant); not yet confirmed on a Kraken page.
 - [2026-10-21: OCC final rule implementing the GENIUS Act](https://edstokenizedsecuritiesrails.com/changelog/2026-10-21-occ-genius-rule): - The OCC issued its final GENIUS Act rule for payment stablecoin issuers under its jurisdiction, effective 18 Jan 2027, the Act's effective date (OCC).
 - [2026-10-19: TSV LLC revises its TSV notice](https://edstokenizedsecuritiesrails.com/changelog/2026-10-19-tsv-llc-revised-notice): - TSV LLC published version 1.1 of its notice (19 Oct 2026) and 1.2 (23 Oct 2026): paired assets at commencement are USDC and SBC on Canton; the issuer's transfer agent handles verification and minting; operations have…
 - [2026-10-17: Vault seeded with 15 entities](https://edstokenizedsecuritiesrails.com/changelog/2026-10-17-vault): Vault seeded with 15 entities.
