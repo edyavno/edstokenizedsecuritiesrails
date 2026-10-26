@@ -1,6 +1,6 @@
 # <img src="quartz/static/icon.svg" alt="" width="44" align="absmiddle"> Ed's Tokenized Securities Rails
 
-![How tokenized securities fit together](content/diagrams/overview-desktop.svg)
+![How tokenized securities work: four steps, plus native vs wrapper](content/diagrams/overview-desktop.svg)
 
 A tokenized security is a security whose ownership record lives on, or is mirrored to, a programmable shared ledger. That lets transfer rules, the cash leg and asset servicing run as code. What's new compared with today's rails:
 - **The token is the register, or mirrors it.** Native tokens are the ownership record; wrapped tokens are claims on shares held by a custodian.
