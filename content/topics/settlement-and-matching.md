@@ -2,8 +2,9 @@
 title: Settlement & matching
 tags:
 - topics
-last_checked: 2026-10-25
+last_checked: 2026-10-28
 sources:
+- https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live
 - https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
@@ -25,11 +26,15 @@ Tokenized stocks trade and settle in several ways (see [[overview|the overview]]
 - **National exchanges** trade tokenized and traditional shares on one order book with equal priority, settled through [[concepts/glossary#dtc|DTC]] ([[platforms-venues/nasdaq-tokenized-securities|Nasdaq]]; [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 ## Post-trade
-DTC's Tokenization Service converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+
+## Liquidity and price risk
+Coinbase Institutional's research team noted that tokenized-stock order books remain thin, with [[concepts/glossary#slippage|slippage]] and volatility significantly higher than in the underlying equity, especially post-market or under stress. It also flagged [[concepts/glossary#oracle|oracle]] errors or lags as a risk to token/collateral equivalence ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization), 10 Jan 2026).
 
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>

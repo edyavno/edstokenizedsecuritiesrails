@@ -11,7 +11,7 @@ who_can_buy: Excludes US persons and several jurisdictions; some require qualifi
 num_assets: 450+ advertised (per Zerion)
 structure_short: Structured notes
 who_can_buy_short: Non-US eligible, KYC
-last_checked: '2026-10-17'
+last_checked: '2026-10-28'
 title: Ondo Global Markets (Ondo Stocks)
 tags:
 - issuers
@@ -21,7 +21,7 @@ chain:
 - BNB Chain
 - Solana
 status: unknown
-last_updated: '2026-10-17'
+last_updated: '2026-10-28'
 description: 'In plain English: Ondo''s stock tokens are notes that track US stocks, backed by shares held at US brokers. They are not the shares themselves.'
 ---
 
@@ -30,7 +30,7 @@ description: 'In plain English: Ondo''s stock tokens are notes that track US sto
 > **Jurisdiction:** British Virgin Islands  
 > **Chain:** Ethereum, BNB Chain, Solana  
 > **Status:** unknown  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-28  
 
 | Field | Value |
 |---|---|
@@ -61,6 +61,9 @@ On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized st
 
 *Reference information only, not investment advice.*
 
+## DTCC ecosystem
+Ondo is named among the collaborators and partners in DTCC's Tokenization Service ecosystem at its 28 Oct 2026 launch ([[infrastructure/dtcc-tokenization-pilot|DTCC]]; [DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -72,4 +75,4 @@ Public originals for the facts on this page.
 - <https://docs.ondo.finance/ondo-stocks/overview>
 - <https://docs.ondo.finance/api-reference/overview>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*

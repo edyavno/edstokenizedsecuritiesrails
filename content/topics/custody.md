@@ -2,8 +2,9 @@
 title: Custody
 tags:
 - topics
-last_checked: 2026-10-25
+last_checked: 2026-10-28
 sources:
+- https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live
 - https://zerion.io/blog/best-tokenized-stock-platforms/
 - https://fensory.com/best/tokenized-stocks-platforms
 - https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers
@@ -24,7 +25,7 @@ Backed models hold the underlying shares with a [[concepts/glossary#custodian|cu
 These replace custody with a transfer-agent register: the token is the ownership record (see [[issuers/securitize|Securitize]], [[issuers/superstate-opening-bell|Superstate]]).
 
 ## DTC tokenized entitlements
-Tokens are backed 1:1 by securities held at [[concepts/glossary#dtc|DTC]], and DTC keeps the official books and records ([[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]; [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
+Tokens are backed 1:1 by securities held at [[concepts/glossary#dtc|DTC]], and DTC keeps the official books and records ([[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]; [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). The service went live on 28 Oct 2026, delivering tokens to participants' wallets of choice ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
 
 ## Broker-dealer custody of tokens
 SEC staff will not object to a broker-dealer treating itself as having "physical possession" of a crypto asset security under Rule 15c3-3(b)(1) if conditions are met, chiefly control of the private keys and safeguards against their theft or loss ([SEC staff statement, 17 Dec 2025](https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers)). This is a staff statement, not a rule.
@@ -41,6 +42,7 @@ SEC staff will not object to a broker-dealer treating itself as having "physical
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
 - <https://fensory.com/best/tokenized-stocks-platforms>
 - <https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers>

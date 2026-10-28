@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-10-27'
+last_checked: '2026-10-28'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -14,6 +14,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 ## Week of 19 Oct 2026
 - **[OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)**
   - *What this means for holders:* Issuer objections can keep a stock off OKXICE, and 22 issuers had objected by 23 Oct 2026. See [[concepts/innovation-exemption#issuer-objection|Issuer objection]].
+- **[Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)**
+  - *What this means for holders:* Issuer-sponsored tokens depend on fast moves out of DTC. See [[issuers/securitize|Securitize]].
 - **[DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)**
   - *What this means for holders:* Companies can object to a third-party token of their stock on OKXICE; objections can keep a stock off the venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
 - **[Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)**
@@ -34,6 +36,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
   - *What this means for holders:* Securitize's tokens are security entitlements, a direct claim on custodied shares. See [[issuers/securitize|Securitize]].
 - **[Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)**
   - *What this means for holders:* Eligible investors in 30 EEA countries can buy Ondo tokens through a MiFID II platform. See [[issuers/ondo-global-markets|Ondo Global Markets]].
+- **[DTC proposes faster direct registration (DRS)](/changelog/2026-10-05-dtc-drs-modernization)**
+  - *What this means for holders:* Moving shares into your own name could take minutes instead of days. See [[infrastructure/dtcc-tokenization-pilot|DTCC]].
 
 ## Week of 28 Sep 2026
 - **[OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)**

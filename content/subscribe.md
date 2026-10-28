@@ -1,6 +1,6 @@
 ---
 title: Subscribe
-last_checked: '2026-10-27'
+last_checked: '2026-10-28'
 description: A free weekly email on what changed in tokenized securities.
 ---
 

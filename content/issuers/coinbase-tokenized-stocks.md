@@ -48,6 +48,16 @@ A public read-only API publishes records, [[concepts/glossary#multiplier|multipl
 
 Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on Aave V4 on Base ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
 
+John D'Agostino, head of strategy at Coinbase Institutional, said the initial offering covers about seven stocks and is planned to grow to 2,000 (a stated plan, not a launched figure) ([TheStreet via Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html), news, 27 Oct 2026).
+
+## Coinbase research view (Jan 2026)
+Coinbase Institutional's research team wrote that tokenized public equities were still under \$1B, versus about \$28B for tokenized Treasuries and private credit ([Coinbase Institutional, Major Trends in Tokenization](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization), 10 Jan 2026). It flagged three risks:
+- **Market depth:** order books for tokenized stocks remain thin; [[concepts/glossary#slippage|slippage]] and volatility can be significantly higher than in the underlying stock, especially post-market or under stress.
+- **[[concepts/glossary#oracle|Oracle]] risk:** off-chain prices must be brought onchain; errors, lags or manipulation can break the equivalence between token and underlying collateral.
+- **Regulatory fragmentation:** jurisdictions differ on who can own what and how secondary transfers work.
+
+The note says that if freely transferable designs are permitted, tokenized stocks could serve as collateral in lending markets; otherwise, with thin books, extended hours don't yet offset lower depth and higher friction ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization)).
+
 ## What this means for holders
 - A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
 - Offered outside the US only; dividends are reinvested through a [[concepts/glossary#multiplier|multiplier]] ([Base](https://www.base.org/stocks)).
@@ -64,5 +74,7 @@ Public originals for the facts on this page.
 - <https://docs.base.org/sdks/tokenized-stocks/overview>
 - <https://blog.base.org/tokenized-stocks>
 - <https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain>
+- <https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization>
+- <https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html>
 
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

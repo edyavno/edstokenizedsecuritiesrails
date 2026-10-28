@@ -4,8 +4,11 @@ type: concept
 description: Industry working group formed by Bullish and Equiniti in Sep 2026 to set standards for issuer-sponsored tokenized securities.
 tags:
 - concepts
-last_checked: '2026-10-27'
+last_checked: '2026-10-28'
 sources:
+- https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live
+- https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change
+- https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf
 - https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 - https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join
 ---
@@ -20,6 +23,8 @@ Bullish and Equiniti formed the Issuer Sponsored Token Coalition on 24 Sep 2026,
 
 Membership is open, non-exclusive and non-binding: joining does not commit a firm to issue, list, provide liquidity or support any product ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 
+Founding members Alpaca, Apex (as Apex Clearing Corporation) and DriveWealth are also among the 20 DTC participants signed for the DTCC Tokenization Service at its 28 Oct 2026 launch ([[infrastructure/dtcc-tokenization-pilot|DTCC]]; [DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
 ## Focus areas
 1. Keep issuer and shareholder rights, including [[concepts/glossary#corporate-action|corporate-action]] entitlements.
 2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks. Example: Securitize's convertible entitlement token, which converts to a registered share once the issuer sponsors tokenization ([[issuers/securitize|Securitize]]).
@@ -27,6 +32,9 @@ Membership is open, non-exclusive and non-binding: joining does not commit a fir
 4. An open ecosystem of issuers, brokers, exchanges, transfer agents, custodians and market makers.
 
 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+
+## Getting shares onto the register
+Issuer-sponsored tokens need shares moved out of [[concepts/glossary#dtc|DTC]]'s nominee [[concepts/glossary#cede-co|Cede & Co.]] and into the holder's own name, via the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]. DTC has proposed cutting DRS processing "from days to minutes", expected 13 Nov 2026 and no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Securitize's comment letter asks DTC to link DRS to its own tokenization service and publish processing times ([[issuers/securitize|Securitize]]; [Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
 
 ## What's next
 Members were due to meet issuers at the New York Stock Exchange on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
@@ -38,5 +46,8 @@ Related: [[platforms-venues/bullish|Bullish]] · [[topics/legal-structures|Legal
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>

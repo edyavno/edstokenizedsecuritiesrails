@@ -1,12 +1,13 @@
 ---
 title: Changelog
-last_checked: '2026-10-27'
+last_checked: '2026-10-28'
 description: Public changes, updated weekly. See What changed for the week-by-week view.
 ---
 
 Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-changed|What changed]] for the week-by-week view.
 
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
 - [2026-10-22: Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)
 - [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
@@ -16,6 +17,7 @@ Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-c
 - [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
 - [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
 - [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
+- [2026-10-05: DTC proposes faster direct registration (DRS)](/changelog/2026-10-05-dtc-drs-modernization)
 - [2026-10-04: OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)
 - [2026-09-25: Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)
 - [2026-09-24: Bullish and Equiniti form the Issuer Sponsored Token Coalition](/changelog/2026-09-24-issuer-sponsored-token-coalition)

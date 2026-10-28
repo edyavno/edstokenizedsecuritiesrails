@@ -1,11 +1,11 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-10-27; public data is a weekly snapshot as of 2026-10-26. CC BY-NC 4.0.
+> Human-curated, LLM-maintained. Generated 2026-10-28; public data is a weekly snapshot as of 2026-10-26. CC BY-NC 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
@@ -54,10 +54,10 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 ## Latest changes
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
 - [2026-10-22: Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)
 - [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
-- [2026-10-19: TSV LLC revises its TSV notice](/changelog/2026-10-19-tsv-llc-revised-notice)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -217,7 +217,7 @@ Public originals for the facts on this page.
 # Guide for AI agents
 URL: https://edstokenizedsecuritiesrails.com/agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
 
@@ -268,7 +268,7 @@ Content is CC BY-NC 4.0: free to use and share with attribution, not for commerc
 # Starter prompts
 URL: https://edstokenizedsecuritiesrails.com/starter-prompts
 description: Example questions an AI agent can answer from this wiki.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 Example questions an AI agent can answer from this wiki alone. Point the agent at `/llms-full.txt` (or clone the site repo) and ask:
 
@@ -331,7 +331,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/glossary
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 type: concept
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
 
@@ -396,14 +396,24 @@ A firm registered with the SEC to buy and sell securities for customers (broker)
 ## C
 
 ### Canton
-A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton. ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html))
+A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)), and DTCC's Tokenization Service runs on it, with CIP-56 as the token standard ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption]]
+
+### CIP-56
+The token standard DTCC's Tokenization Service uses on the Canton Network (it uses ERC-20 on its private Besu network). ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]
 
 ### CCP
 A central counterparty, or clearinghouse. It steps between buyer and seller so each side faces it instead of each other, and nets trades to reduce how much cash and stock must move. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
+
+### Cede & Co.
+DTC's nominee. For most US shares held through brokers, it is the holder on the company's register. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]] · [[concepts/glossary#street-name|Street name]]
 
 ### Compliance hook
 Code that runs on every token transfer or swap and can block it if a rule fails, such as an unverified receiver. Examples: the ERC-3643 compliance contract, Solana transfer hooks and Uniswap v4 permissioned-pool hooks. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643); [Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
@@ -426,7 +436,7 @@ A central securities depository: the institution that holds securities centrally
 *Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]
 
 ### CUSIP
-The 9-character ID code for a US security, like a serial number for a stock or bond. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
+The 9-character ID code for a US security, like a serial number for a stock or bond. DTC-tokenized securities keep the same CUSIP as the book-entry security. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf); [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
 
 *Related:* [[concepts/post-trade-reg-nms-model|Post-trade / Reg NMS-inside model]]
 
@@ -447,6 +457,11 @@ A UK Bank of England and FCA sandbox, running until January 2029, where firms ca
 
 *Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 
+### Direct Registration System (DRS)
+DTC's system for moving shares between its nominee [[concepts/glossary#cede-co|Cede & Co.]] and the holder's own name on the issuer's books, kept by the [[concepts/glossary#transfer-agent|transfer agent]]. DTC has proposed cutting its processing "from days to minutes". ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]] · [[issuers/securitize|Securitize]]
+
 ### DLT
 Distributed ledger technology: a shared database copied across many computers. Blockchains are one type. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
@@ -466,6 +481,11 @@ The Depository Trust Company, the US central securities depository. It runs a to
 The Depository Trust & Clearing Corporation, parent of DTC. It provides clearing and settlement for most US stock trades. ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf))
 
 *Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]
+
+### DWAC
+Deposit/Withdrawal at Custodian: a DTC process for moving shares in and out of DTC through the transfer agent. Securitize asked DTC to modernize it alongside DRS. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]
 
 ### DvP
 Delivery versus payment: the security is delivered only if the payment is made. Onchain, both legs can move in one transaction (atomic DvP). ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
@@ -701,6 +721,11 @@ The point at which a transfer can no longer be reversed and ownership has legall
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
 
+### Slippage
+The gap between the price you expect and the price you actually get, which grows when an order book is thin. Coinbase research flags it as higher for tokenized stocks than for the underlying shares, especially outside market hours. ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization))
+
+*Related:* [[topics/settlement-and-matching|Settlement and matching]] · [[issuers/coinbase-tokenized-stocks|Coinbase Tokenized Stocks]]
+
 ### Smart contract
 A program stored on a blockchain that runs automatically when its conditions are met, for example a swap that only completes if both sides pay. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
@@ -725,6 +750,11 @@ A special purpose vehicle: a company set up only to hold certain assets or issue
 A token designed to keep a steady value, usually one US dollar, backed by cash and short-term government debt. ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/))
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
+
+### Street name
+Holding shares through a broker, with DTC's nominee [[concepts/glossary#cede-co|Cede & Co.]] as the holder on the company's register instead of the investor. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]] · [[topics/legal-structures|Legal structures]]
 
 ### Synthetic wrapper
 A token that is a separate security, such as a note or swap, that tracks a stock's price. It may not be backed one-for-one by real shares. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
@@ -795,6 +825,8 @@ A token that represents a share held by someone else, rather than being the shar
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://app.rwa.xyz/treasuries>
@@ -841,7 +873,7 @@ Public originals for the facts on this page.
 # What changed
 URL: https://edstokenizedsecuritiesrails.com/whats-changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
@@ -853,6 +885,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 ## Week of 19 Oct 2026
 - **[OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)**
   - *What this means for holders:* Issuer objections can keep a stock off OKXICE, and 22 issuers had objected by 23 Oct 2026. See [[concepts/innovation-exemption#issuer-objection|Issuer objection]].
+- **[Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)**
+  - *What this means for holders:* Issuer-sponsored tokens depend on fast moves out of DTC. See [[issuers/securitize|Securitize]].
 - **[DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)**
   - *What this means for holders:* Companies can object to a third-party token of their stock on OKXICE; objections can keep a stock off the venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
 - **[Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)**
@@ -873,6 +907,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
   - *What this means for holders:* Securitize's tokens are security entitlements, a direct claim on custodied shares. See [[issuers/securitize|Securitize]].
 - **[Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)**
   - *What this means for holders:* Eligible investors in 30 EEA countries can buy Ondo tokens through a MiFID II platform. See [[issuers/ondo-global-markets|Ondo Global Markets]].
+- **[DTC proposes faster direct registration (DRS)](/changelog/2026-10-05-dtc-drs-modernization)**
+  - *What this means for holders:* Moving shares into your own name could take minutes instead of days. See [[infrastructure/dtcc-tokenization-pilot|DTCC]].
 
 ## Week of 28 Sep 2026
 - **[OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)**
@@ -997,9 +1033,9 @@ Public originals for the facts on this page.
 # Database
 URL: https://edstokenizedsecuritiesrails.com/database
 description: Headline fields for every published issuer, venue and infrastructure page, in one table.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
-Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.
+Generated from vault frontmatter on 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|
@@ -1008,9 +1044,9 @@ Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` 
 | [Crypto.com Tokenized Stocks](/issuers/crypto-com-tokenized-stocks) | Issuer | Cyprus | Derivative | unknown | EEA and approved regions | 2026-10-25 |
 | [Dinari dShares](/issuers/dinari) | Issuer | United States | Custodial tokenized shares | Ethereum, Avalanche, Arbitrum +1 | US eligible + intl | 2026-10-17 |
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-25 |
-| [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-17 |
+| [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-28 |
 | [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-23 |
-| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-27 |
+| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-28 |
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-10-17 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-10-17 |
 | [xStocks (Backed)](/issuers/xstocks-backed) | Issuer | Jersey | Backed tracker tokens | Solana, Ethereum, TON +1 | Non-US eligible | 2026-10-25 |
@@ -1021,7 +1057,7 @@ Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` 
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
 | [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-27 |
 | [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-10-17 |
-| [DTCC / DTC tokenization pilot](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-23 |
+| [DTCC Tokenization Service (DTS)](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-28 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-10-17 |
 | [Vertalo](/infrastructure/vertalo) | Infra | United States | Transfer agent (B2B) | unknown | B2B | 2026-10-27 |
 | [Zerohash](/infrastructure/zerohash) | Infra | unknown | Tokenization engine (B2B) | unknown | B2B | 2026-10-27 |
@@ -1030,11 +1066,12 @@ Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` 
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 description: Public changes, updated weekly. See What changed for the week-by-week view.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-changed|What changed]] for the week-by-week view.
 
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
+- [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
 - [2026-10-22: Kraken says xStocks lineup exceeds 1,000 (unconfirmed, news report only)](/changelog/2026-10-22-kraken-xstocks-1000)
 - [2026-10-21: OCC final rule implementing the GENIUS Act](/changelog/2026-10-21-occ-genius-rule)
@@ -1044,6 +1081,7 @@ Public changes, updated weekly (snapshot as of Monday 2026-10-26). See [[whats-c
 - [2026-10-09: EU Council agrees key elements of the market integration package](/changelog/2026-10-09-eu-council-dlt-pilot)
 - [2026-10-08: Securitize launches tokenized US stocks on Solana](/changelog/2026-10-08-securitize-stocks)
 - [2026-10-07: Ondo tokenized stocks reach EEA investors via Assetera](/changelog/2026-10-07-assetera-ondo)
+- [2026-10-05: DTC proposes faster direct registration (DRS)](/changelog/2026-10-05-dtc-drs-modernization)
 - [2026-10-04: OKXICE files its TSV notice](/changelog/2026-10-04-okxice-notice)
 - [2026-09-25: Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)
 - [2026-09-24: Bullish and Equiniti form the Issuer Sponsored Token Coalition](/changelog/2026-09-24-issuer-sponsored-token-coalition)
@@ -1267,7 +1305,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/issuer-sponsored-token-coalition
 description: Industry working group formed by Bullish and Equiniti in Sep 2026 to set standards for issuer-sponsored tokenized securities.
 type: concept
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 *In plain English: A group of exchanges, brokers and market firms working on rules and plumbing so companies can put their own shares onchain, with holders keeping the same rights as normal shareholders.*
 
@@ -1279,6 +1317,8 @@ Bullish and Equiniti formed the Issuer Sponsored Token Coalition on 24 Sep 2026,
 
 Membership is open, non-exclusive and non-binding: joining does not commit a firm to issue, list, provide liquidity or support any product ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 
+Founding members Alpaca, Apex (as Apex Clearing Corporation) and DriveWealth are also among the 20 DTC participants signed for the DTCC Tokenization Service at its 28 Oct 2026 launch ([[infrastructure/dtcc-tokenization-pilot|DTCC]]; [DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
 ## Focus areas
 1. Keep issuer and shareholder rights, including [[concepts/glossary#corporate-action|corporate-action]] entitlements.
 2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks. Example: Securitize's convertible entitlement token, which converts to a registered share once the issuer sponsors tokenization ([[issuers/securitize|Securitize]]).
@@ -1286,6 +1326,9 @@ Membership is open, non-exclusive and non-binding: joining does not commit a fir
 4. An open ecosystem of issuers, brokers, exchanges, transfer agents, custodians and market makers.
 
 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+
+## Getting shares onto the register
+Issuer-sponsored tokens need shares moved out of [[concepts/glossary#dtc|DTC]]'s nominee [[concepts/glossary#cede-co|Cede & Co.]] and into the holder's own name, via the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]. DTC has proposed cutting DRS processing "from days to minutes", expected 13 Nov 2026 and no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Securitize's comment letter asks DTC to link DRS to its own tokenization service and publish processing times ([[issuers/securitize|Securitize]]; [Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
 
 ## What's next
 Members were due to meet issuers at the New York Stock Exchange on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
@@ -1297,6 +1340,9 @@ Related: [[platforms-venues/bullish|Bullish]] · [[topics/legal-structures|Legal
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
 
@@ -1428,7 +1474,7 @@ Public originals for the facts on this page.
 # Custody
 URL: https://edstokenizedsecuritiesrails.com/topics/custody
 description: In plain English: Who holds the real share, and who controls the token, differs by model. This page shows who keeps what.
-last_checked: 2026-10-25
+last_checked: 2026-10-28
 
 *In plain English: Who holds the real share, and who controls the token, differs by model. This page shows who keeps what.*
 
@@ -1441,7 +1487,7 @@ Backed models hold the underlying shares with a [[concepts/glossary#custodian|cu
 These replace custody with a transfer-agent register: the token is the ownership record (see [[issuers/securitize|Securitize]], [[issuers/superstate-opening-bell|Superstate]]).
 
 ## DTC tokenized entitlements
-Tokens are backed 1:1 by securities held at [[concepts/glossary#dtc|DTC]], and DTC keeps the official books and records ([[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]; [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
+Tokens are backed 1:1 by securities held at [[concepts/glossary#dtc|DTC]], and DTC keeps the official books and records ([[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]; [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). The service went live on 28 Oct 2026, delivering tokens to participants' wallets of choice ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
 
 ## Broker-dealer custody of tokens
 SEC staff will not object to a broker-dealer treating itself as having "physical possession" of a crypto asset security under Rule 15c3-3(b)(1) if conditions are met, chiefly control of the private keys and safeguards against their theft or loss ([SEC staff statement, 17 Dec 2025](https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers)). This is a staff statement, not a rule.
@@ -1458,6 +1504,7 @@ SEC staff will not object to a broker-dealer treating itself as having "physical
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
 - <https://fensory.com/best/tokenized-stocks-platforms>
 - <https://www.sec.gov/newsroom/speeches-statements/trading-markets-121725-statement-custody-crypto-asset-securities-broker-dealers>
@@ -1469,7 +1516,7 @@ Public originals for the facts on this page.
 # Legal structures
 URL: https://edstokenizedsecuritiesrails.com/topics/legal-structures
 description: In plain English: Tokenized stocks come in a few legal forms. Some are the real share; others are a claim or a note that tracks it.
-last_checked: 2026-10-27
+last_checked: 2026-10-28
 
 *In plain English: Tokenized stocks come in a few legal forms. Some are the real share; others are a claim or a note that tracks it.*
 
@@ -1481,7 +1528,7 @@ Tokenized stocks fall into distinct legal models ([Zerion](https://zerion.io/blo
 - **Same security, tokenized form** inside the US market structure (Nasdaq / [[concepts/glossary#dtc|DTC]] pilot, [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 Rights differ: backing does not automatically confer shareholder rights.
 
-In the [[concepts/glossary#issuer-sponsored-token|issuer-sponsored]] model the token is tied to the company's official shareholder register, so voting, dividend and corporate-action rights carry over; wrapped and synthetic tokens only track the share. Since Sep 2026 the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] has pushed this model ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+In the [[concepts/glossary#issuer-sponsored-token|issuer-sponsored]] model the token is tied to the company's official shareholder register, so voting, dividend and corporate-action rights carry over; wrapped and synthetic tokens only track the share. Most US shares sit in [[concepts/glossary#street-name|street name]], registered to DTC's nominee [[concepts/glossary#cede-co|Cede & Co.]]; moving them into the holder's own name runs through the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]], which DTC has proposed to speed up "from days to minutes" ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Since Sep 2026 the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] has pushed this model ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 
 ========================================================================
 # Regulation
@@ -1501,7 +1548,7 @@ Country-by-country status: [[topics/rules-by-jurisdiction|Rules by jurisdiction]
 # Settlement & matching
 URL: https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching
 description: In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.
-last_checked: 2026-10-25
+last_checked: 2026-10-28
 
 *In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.*
 
@@ -1515,11 +1562,15 @@ Tokenized stocks trade and settle in several ways (see [[overview|the overview]]
 - **National exchanges** trade tokenized and traditional shares on one order book with equal priority, settled through [[concepts/glossary#dtc|DTC]] ([[platforms-venues/nasdaq-tokenized-securities|Nasdaq]]; [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 ## Post-trade
-DTC's Tokenization Service converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+
+## Liquidity and price risk
+Coinbase Institutional's research team noted that tokenized-stock order books remain thin, with [[concepts/glossary#slippage|slippage]] and volatility significantly higher than in the underlying equity, especially post-market or under stress. It also flagged [[concepts/glossary#oracle|oracle]] errors or lags as a risk to token/collateral equivalence ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization), 10 Jan 2026).
 
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
@@ -1792,6 +1843,16 @@ A public read-only API publishes records, [[concepts/glossary#multiplier|multipl
 
 Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on Aave V4 on Base ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
 
+John D'Agostino, head of strategy at Coinbase Institutional, said the initial offering covers about seven stocks and is planned to grow to 2,000 (a stated plan, not a launched figure) ([TheStreet via Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html), news, 27 Oct 2026).
+
+## Coinbase research view (Jan 2026)
+Coinbase Institutional's research team wrote that tokenized public equities were still under \$1B, versus about \$28B for tokenized Treasuries and private credit ([Coinbase Institutional, Major Trends in Tokenization](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization), 10 Jan 2026). It flagged three risks:
+- **Market depth:** order books for tokenized stocks remain thin; [[concepts/glossary#slippage|slippage]] and volatility can be significantly higher than in the underlying stock, especially post-market or under stress.
+- **[[concepts/glossary#oracle|Oracle]] risk:** off-chain prices must be brought onchain; errors, lags or manipulation can break the equivalence between token and underlying collateral.
+- **Regulatory fragmentation:** jurisdictions differ on who can own what and how secondary transfers work.
+
+The note says that if freely transferable designs are permitted, tokenized stocks could serve as collateral in lending markets; otherwise, with thin books, extended hours don't yet offset lower depth and higher friction ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization)).
+
 ## What this means for holders
 - A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
 - Offered outside the US only; dividends are reinvested through a [[concepts/glossary#multiplier|multiplier]] ([Base](https://www.base.org/stocks)).
@@ -1808,6 +1869,8 @@ Public originals for the facts on this page.
 - <https://docs.base.org/sdks/tokenized-stocks/overview>
 - <https://blog.base.org/tokenized-stocks>
 - <https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain>
+- <https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization>
+- <https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html>
 
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
 
@@ -1974,15 +2037,15 @@ type: issuer
 jurisdiction: British Virgin Islands
 chain: Ethereum, BNB Chain, Solana
 status: unknown
-last_updated: 2026-10-17
-last_checked: 2026-10-17
+last_updated: 2026-10-28
+last_checked: 2026-10-28
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** British Virgin Islands  
 > **Chain:** Ethereum, BNB Chain, Solana  
 > **Status:** unknown  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-28  
 
 | Field | Value |
 |---|---|
@@ -2013,6 +2076,9 @@ On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized st
 
 *Reference information only, not investment advice.*
 
+## DTCC ecosystem
+Ondo is named among the collaborators and partners in DTCC's Tokenization Service ecosystem at its 28 Oct 2026 launch ([[infrastructure/dtcc-tokenization-pilot|DTCC]]; [DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
 ## Sources
 Public originals for the facts on this page.
 
@@ -2024,7 +2090,7 @@ Public originals for the facts on this page.
 - <https://docs.ondo.finance/ondo-stocks/overview>
 - <https://docs.ondo.finance/api-reference/overview>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Robinhood Stock Tokens
@@ -2094,15 +2160,15 @@ type: issuer
 jurisdiction: unknown
 chain: Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)
 status: live (Securitize Stocks launched 2026-10-08)
-last_updated: 2026-10-27
-last_checked: 2026-10-27
+last_updated: 2026-10-28
+last_checked: 2026-10-28
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** unknown  
 > **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)  
 > **Status:** live (Securitize Stocks launched 2026-10-08)  
-> **Last updated:** 2026-10-27  
+> **Last updated:** 2026-10-28  
 
 | Field | Value |
 |---|---|
@@ -2129,9 +2195,21 @@ Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concept
 
 *Reference information only, not investment advice.*
 
+## DTC direct-registration comment letter (25 Oct 2026)
+Securitize's issuer-sponsored tokens (ISTs) record the investor, not [[concepts/glossary#cede-co|Cede & Co.]], as the registered holder on the issuer's books ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)). To turn an existing brokerage position into an IST, the shares must first leave [[concepts/glossary#dtc|DTC]] through the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]], which today can take several days ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)). Securitize supports DTC's proposal to cut DRS processing "from days to minutes" ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)) but asked the SEC for more ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)):
+- One instruction that burns a DTC-tokenized position and starts the DRS withdrawal, with a real-time completion message to the transfer agent ("Instant Burn-and-Notify").
+- Published DRS processing targets and operating hours, reporting of actual times by stage, and the same modernization for [[concepts/glossary#dwac|DWAC]].
+- A timing expectation for brokers to submit customer withdrawal requests, or letting the transfer agent start one on the investor's documented authorization.
+- An equally fast path back to [[concepts/glossary#street-name|street name]].
+- The tokenization link live by the commercial launch of DTCC's tokenization service, or a published timeline or follow-on filing within three months.
+
+See [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]. Context: Brett Redfearn's [LinkedIn post](https://www.linkedin.com/pulse/time-dtc-modernization-now-brett-w-redfearn-a3tse) (28 Oct 2026, opinion).
+
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html>
 - <https://securitize.io/press-releases/exodus-begins-trading-on-securitize-markets>
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
@@ -2139,7 +2217,7 @@ Public originals for the facts on this page.
 - <https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/>
 - <https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works>
 
-*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Superstate Opening Bell
@@ -2658,32 +2736,32 @@ Public originals for the facts on this page.
 *Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
-# DTCC / DTC tokenization pilot
+# DTCC Tokenization Service (DTS)
 URL: https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot
 description: In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.
 type: infrastructure
 jurisdiction: United States
 chain: At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)
 status: pilot (SEC no-action letter 2025-12-11)
-last_updated: 2026-10-23
-last_checked: 2026-10-23
+last_updated: 2026-10-28
+last_checked: 2026-10-28
 
 > [!info] At a glance
 > **Type:** infrastructure  
 > **Jurisdiction:** United States  
 > **Chain:** At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)  
 > **Status:** pilot (SEC no-action letter 2025-12-11)  
-> **Last updated:** 2026-10-23  
+> **Last updated:** 2026-10-28  
 
 | Field | Value |
 |---|---|
-| name | DTCC / DTC tokenization pilot |
+| name | DTCC Tokenization Service (DTS) |
 | jurisdiction | United States |
-| product_name | DTC Tokenization Service (Tokenized Entitlements) |
+| product_name | DTCC Tokenization Service (DTS; Tokenized Entitlements) |
 | structure | Security entitlements recorded on DLT |
 | chains | At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle) |
-| who_can_buy | DTC participants |
-| num_assets | 25 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
+| who_can_buy | DTC participants (20 signed at launch, 28 Oct 2026) |
+| num_assets | 34 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
 *In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.*
 
@@ -2691,12 +2769,23 @@ DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter ([SEC
 
 ## DTC no-action letter (11 Dec 2025)
 Staff relief lets DTC participants record security entitlements on [[concepts/glossary#dlt|DLT]] ("Tokenized Entitlements") for Russell 1000 stocks, major-index [[concepts/glossary#etf|ETFs]] and Treasuries; tokens have no collateral or settlement value for Net Debit Cap / Collateral Monitor ([SEC NAL](https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf); [Mayer Brown](https://www.mayerbrown.com/-/media/files/perspectives-events/publications/2025/12/sec-staff-no-action-relief-for-dtc-pilot-provides-a-pathway-for-tokenized-securities.pdf)). The letter is withdrawn three years from the date DTC launches the service ([SEC NAL](https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf)).
+## Live (28 Oct 2026)
+DTC launched the DTCC Tokenization Service (DTS) on 28 Oct 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). Tokenized security entitlements convert between traditional and tokenized form and go to users' wallets of choice, keeping the ownership rights, investor protections and economic entitlements of the traditional securities ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
+- **Participants:** 20 DTC participants have signed agreements: Alpaca, Apex Clearing Corporation, Barclays, Bank of America, BNP Paribas, Brown Brothers Harriman, Citadel Securities, Citi, Clear Street, DriveWealth, Edward Jones, Fidelity Investments, Interchange Clearing, J.P. Morgan, Marex, Mirae Asset Securities (USA) Inc., Morgan Stanley, State Street, UBS and Velocity Capital LLC. More will be onboarded on a rolling basis ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+- **Networks:** Canton Network and DTCC's private Besu network today, with more networks in 2027 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+- **Ecosystem:** collaborators and partners include BitGo Bank & Trust, Blockdaemon, Broadridge, DFNS, DRW, Fireblocks, HIFI, Kaleido, Matter Labs, [[issuers/ondo-global-markets|Ondo]], Prometheum Capital, Talos, Taurus, Temple Digital Group, Tradeweb, Transcend and Virtu ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+- **Design input:** more than 150 firms in the DTC Digital Assets Solutions Industry Working Group ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+- **Scale:** DTC has more than \$114T in assets under custody ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+
+Scope at launch follows the Day 1 tear sheet below (raw/104).
+
 ## Progress
-DTCC said the service was designed with feedback from more than 50 firms, with limited production trades planned for July 2026 and launch in October 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service)). About 40 firms took part in live production trades ([DTCC](https://www.dtcc.com/digital-assets/tokenization/live-production-trades); [DTCC press](https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality)).
+DTCC said the service was designed with feedback from more than 50 firms, with limited production trades planned for July 2026 and launch in October 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-advances-development-of-new-tokenization-service)). About 40 firms took part in live production trades; the 28 Oct go-live release says "more than 30 firms" completed the initial limited-production trades ([DTCC](https://www.dtcc.com/digital-assets/tokenization/live-production-trades); [DTCC press](https://www.dtcc.com/news/2026/july/15/dtcc-turns-tokenization-into-reality)).
 
 On 23 Oct 2026 DTCC posted a Day 1 product tear sheet and an online user guide to its Learning Center ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
 
-As of 25 Oct 2026, no DTCC go-live press release was found; The Block (8 Oct 2026) reported launch was expected that month ([The Block](https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839), secondary).
+Before launch, no go-live date was public; The Block (8 Oct 2026) reported launch was expected that month ([The Block](https://www.theblock.co/newsletters/tokenization-briefing/2026-10-08-dtcc-brings-tokenization-us-markets-417839), secondary).
 
 ## Scope at launch (Oct 2026)
 DTCC's Day 1 tear sheet (23 Oct 2026) says **34** securities are available to tokenize at launch ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)); its earlier at-a-glance sheet said 25 ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)), and DTCC does not explain the change.
@@ -2711,13 +2800,22 @@ Roadmap for 2027 and beyond (indicative): equity/ETF corporate actions, a consol
 
 Firm counts differ by source and stage: more than 50 firms gave design feedback and about 40 took part in live production trades (DTCC); Crypto Briefing's "more than 30" is secondary and is not used here.
 
+## DRS modernization (SR-DTC-2026-012)
+DTC filed on 29 Sep 2026 to modernize the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]], which moves shares between [[concepts/glossary#cede-co|Cede & Co.]] and the holder's own name on the issuer's books; the SEC published notice on 5 Oct 2026 (Release 34-106552) ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). The aim is to cut processing "from days to minutes" by retiring legacy terminal and batch-file methods, offering DRS through DTC's SPA screens plus API and MQ messaging, automating the Deliver Order after a transfer agent approves a deposit, and adding status tracking and an audit trail ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Only a DTC participant can start a withdrawal ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). DTC expects to implement on 13 Nov 2026, and no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)).
+
+Securitize's 25 Oct comment letter notes the filing does not mention DTC's tokenization service, and asks for a one-step burn-and-withdraw instruction, published processing times, [[concepts/glossary#dwac|DWAC]] modernization, a broker timing expectation, and a fast return to [[concepts/glossary#street-name|street name]] ([[issuers/securitize|Securitize]]; [Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
+
 ## Watch
-- Go-live: DTCC says October 2026 but gives no date; "end of October" comes from Digital Asset's CEO via [CantonNews](https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap) (news). Check for a DTCC go-live release after 2026-10-31.
-- First named users: none named yet in DTCC materials. Record them when announced.
+- Go-live: done, 28 Oct 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). Next: new participants, added securities beyond the launch 34, and 2027 networks (Stellar, Arc).
+- DRS modernization: confirm whether it went live 13 Nov 2026 or the later date in a DTC Important Notice, whether the SEC approved SR-DTC-2026-012, and whether DTC responds to the Securitize letter ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)).
+- First named users: 20 participants named 28 Oct 2026 (see Live). Watch for which ones actually tokenize client positions.
 
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live>
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20>
@@ -2731,7 +2829,7 @@ Public originals for the facts on this page.
 - <https://cryptobriefing.com/dtcc-tokenization-service-launch-october/>
 - <https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap>
 
-*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Uniswap v4 permissioned pools
@@ -2876,6 +2974,13 @@ last_checked: 2026-10-25
 - New detail on B20, who can buy, custody, settlement and corporate actions, from SEC, Base, xStocks, Kraken, DTCC, Exodus and WisdomTree primary sources.
 
 ========================================================================
+# 2026-10-25: Securitize asks DTC to link direct registration to its tokenization service
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-25-securitize-drs-comment
+last_checked: 2026-10-25
+
+- [[issuers/securitize|Securitize]] backed DTC's [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]] upgrade but asked for a one-step burn-and-withdraw from DTC tokens, published processing times, [[concepts/glossary#dwac|DWAC]] modernization, a broker timing expectation and a fast return to [[concepts/glossary#street-name|street name]] ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
+
+========================================================================
 # 2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume
 URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-23-dtcc-okxice
 last_checked: 2026-10-23
@@ -2942,6 +3047,13 @@ last_checked: 2026-10-07
 
 - Assetera listed 100+ Ondo tokenized US stocks and ETFs for 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
 - Assetera says Ondo Stocks passed \$1B TVL and \$27B cumulative volume since September 2025 (Assetera).
+
+========================================================================
+# 2026-10-05: DTC proposes faster direct registration (DRS)
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-05-dtc-drs-modernization
+last_checked: 2026-10-05
+
+- DTC filed SR-DTC-2026-012 to modernize the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]], cutting processing "from days to minutes"; expected 13 Nov 2026, no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)).
 
 ========================================================================
 # 2026-10-04: OKXICE files its TSV notice

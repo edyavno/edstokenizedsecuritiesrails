@@ -4,8 +4,10 @@ type: concept
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
-last_checked: '2026-10-27'
+last_checked: '2026-10-28'
 sources:
+- https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change
+- https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf
 - https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html
 - https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 - https://app.rwa.xyz/treasuries
@@ -113,14 +115,24 @@ A firm registered with the SEC to buy and sell securities for customers (broker)
 ## C
 
 ### Canton
-A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton. ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html))
+A permissioned blockchain network built for financial institutions, with privacy between parties. TSV LLC plans to run its tokenized stock venue on Canton ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)), and DTCC's Tokenization Service runs on it, with CIP-56 as the token standard ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption]]
+
+### CIP-56
+The token standard DTCC's Tokenization Service uses on the Canton Network (it uses ERC-20 on its private Besu network). ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]]
 
 ### CCP
 A central counterparty, or clearinghouse. It steps between buyer and seller so each side faces it instead of each other, and nets trades to reduce how much cash and stock must move. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
+
+### Cede & Co.
+DTC's nominee. For most US shares held through brokers, it is the holder on the company's register. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]] · [[concepts/glossary#street-name|Street name]]
 
 ### Compliance hook
 Code that runs on every token transfer or swap and can block it if a rule fails, such as an unverified receiver. Examples: the ERC-3643 compliance contract, Solana transfer hooks and Uniswap v4 permissioned-pool hooks. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643); [Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
@@ -143,7 +155,7 @@ A central securities depository: the institution that holds securities centrally
 *Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]
 
 ### CUSIP
-The 9-character ID code for a US security, like a serial number for a stock or bond. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf))
+The 9-character ID code for a US security, like a serial number for a stock or bond. DTC-tokenized securities keep the same CUSIP as the book-entry security. ([SEC Nasdaq approval](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf); [DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
 
 *Related:* [[concepts/post-trade-reg-nms-model|Post-trade / Reg NMS-inside model]]
 
@@ -164,6 +176,11 @@ A UK Bank of England and FCA sandbox, running until January 2029, where firms ca
 
 *Related:* [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 
+### Direct Registration System (DRS)
+DTC's system for moving shares between its nominee [[concepts/glossary#cede-co|Cede & Co.]] and the holder's own name on the issuer's books, kept by the [[concepts/glossary#transfer-agent|transfer agent]]. DTC has proposed cutting its processing "from days to minutes". ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change))
+
+*Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]] · [[issuers/securitize|Securitize]]
+
 ### DLT
 Distributed ledger technology: a shared database copied across many computers. Blockchains are one type. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
@@ -183,6 +200,11 @@ The Depository Trust Company, the US central securities depository. It runs a to
 The Depository Trust & Clearing Corporation, parent of DTC. It provides clearing and settlement for most US stock trades. ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf))
 
 *Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]
+
+### DWAC
+Deposit/Withdrawal at Custodian: a DTC process for moving shares in and out of DTC through the transfer agent. Securitize asked DTC to modernize it alongside DRS. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]
 
 ### DvP
 Delivery versus payment: the security is delivered only if the payment is made. Onchain, both legs can move in one transaction (atomic DvP). ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
@@ -418,6 +440,11 @@ The point at which a transfer can no longer be reversed and ownership has legall
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
 
+### Slippage
+The gap between the price you expect and the price you actually get, which grows when an order book is thin. Coinbase research flags it as higher for tokenized stocks than for the underlying shares, especially outside market hours. ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization))
+
+*Related:* [[topics/settlement-and-matching|Settlement and matching]] · [[issuers/coinbase-tokenized-stocks|Coinbase Tokenized Stocks]]
+
 ### Smart contract
 A program stored on a blockchain that runs automatically when its conditions are met, for example a swap that only completes if both sides pay. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
@@ -442,6 +469,11 @@ A special purpose vehicle: a company set up only to hold certain assets or issue
 A token designed to keep a steady value, usually one US dollar, backed by cash and short-term government debt. ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/))
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
+
+### Street name
+Holding shares through a broker, with DTC's nominee [[concepts/glossary#cede-co|Cede & Co.]] as the holder on the company's register instead of the investor. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
+
+*Related:* [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]] · [[topics/legal-structures|Legal structures]]
 
 ### Synthetic wrapper
 A token that is a separate security, such as a note or swap, that tracks a stock's price. It may not be backed one-for-one by real shares. ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities))
@@ -512,6 +544,8 @@ A token that represents a share held by someone else, rather than being the shar
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
+- <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://app.rwa.xyz/treasuries>
