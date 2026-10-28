@@ -4,8 +4,9 @@ type: concept
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
-last_checked: '2026-10-26'
+last_checked: '2026-10-27'
 sources:
+- https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 - https://app.rwa.xyz/treasuries
 - https://blog.base.org/tokenized-stocks
 - https://business.cch.com/srd/34-106402091726.pdf
@@ -189,6 +190,11 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 
 ## E
 
+### Entitlement token
+A term the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] uses for an emerging kind of token framework it wants issuer-sponsored securities to work with. Bullish does not define it; this entry will be filled in when a primary source does. ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+
+*Related:* [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
+
 ### ERC-1400
 A draft Ethereum standard suite for security tokens, with transfer checks, documents and forced transfers. ([Spec](https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md))
 
@@ -254,6 +260,11 @@ The ERC-3643 contract that records which wallets belong to verified investors; a
 A temporary, conditional SEC order from 17 Sep 2026 that lets approved onchain venues (TSVs) trade tokenized US stocks. ([SEC order](https://business.cch.com/srd/34-106402091726.pdf))
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption and the onchain-venue (TSV) model]]
+
+### Issuer-sponsored token
+A tokenized share that the issuing company itself sponsors, tied directly to its official shareholder register so holders keep ownership rights, votes and corporate-action entitlements. ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+
+*Related:* [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] · [[topics/legal-structures|Legal structures]]
 
 ## K
 
@@ -451,7 +462,7 @@ A bank deposit represented as a token. It is a claim on a regulated bank, unlike
 ### Transfer agent
 The firm a company appoints to keep its official register of shareholders and record transfers. ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf))
 
-*Related:* [[topics/custody|Custody]] · [[issuers/superstate-opening-bell|Superstate Opening Bell]]
+*Related:* [[topics/custody|Custody]] · [[issuers/superstate-opening-bell|Superstate Opening Bell]] · [[infrastructure/vertalo|Vertalo]]
 
 ### Transfer hook
 Code that runs automatically on every token transfer, for example to check the receiving wallet is allowed. ([Solana](https://solana.com/docs/tokens/extensions/transfer-hook))
@@ -495,6 +506,7 @@ A token that represents a share held by someone else, rather than being the shar
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://app.rwa.xyz/treasuries>
 - <https://blog.base.org/tokenized-stocks>
 - <https://business.cch.com/srd/34-106402091726.pdf>

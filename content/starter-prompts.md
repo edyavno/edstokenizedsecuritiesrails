@@ -1,7 +1,7 @@
 ---
 title: Starter prompts
 description: Example questions an AI agent can answer from this wiki.
-last_checked: '2026-10-26'
+last_checked: '2026-10-27'
 ---
 
 Example questions an AI agent can answer from this wiki alone. Point the agent at `/llms-full.txt` (or clone the site repo) and ask:

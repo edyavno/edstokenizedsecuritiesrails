@@ -1,7 +1,7 @@
 ---
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-last_checked: '2026-10-26'
+last_checked: '2026-10-27'
 ---
 
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
@@ -41,7 +41,7 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 
 
 ## Explore the wiki
-- **Look up a company:** [[database|Issuer & platform database]] (21 entities)
+- **Look up a company:** [[database|Issuer & platform database]] (22 entities)
 - **See what changed:** [[whats-changed|What changed, week by week]] · [[topics/rules-by-jurisdiction|Rules by jurisdiction]]
 - **Understand the concepts:** [[concepts/glossary|Glossary]] · [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[concepts/international|International]]
 - **Compare models and standards:** [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]

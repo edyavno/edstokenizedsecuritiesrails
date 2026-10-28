@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-10-26'
+last_checked: '2026-10-27'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -42,6 +42,8 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 ## Week of 21 Sep 2026
 - **[Coinbase tokenized stocks accepted as Aave collateral](/changelog/2026-09-25-aave-coinbase-stocks)**
   - *What this means for holders:* Eligible non-US holders of seven Coinbase stock tokens can borrow USDC against them on Aave V4 on Base. See [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]].
+- **[Bullish and Equiniti form the Issuer Sponsored Token Coalition](/changelog/2026-09-24-issuer-sponsored-token-coalition)**
+  - *What this means for holders:* A new industry group backs tokens tied to the company's own shareholder register, so holders keep voting and dividend rights. See [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]].
 - **[CFTC staff FAQs allow tokenized permitted investments](/changelog/2026-09-24-cftc-tokenized-collateral-faq)**
 - **[First TSV notice filed with the SEC (TSV LLC)](/changelog/2026-09-23-tsv-llc-notice)**
 

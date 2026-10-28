@@ -3,7 +3,7 @@ title: Innovation Exemption and the onchain-venue (TSV) model
 type: concept
 tags:
 - concepts
-last_checked: '2026-10-23'
+last_checked: '2026-10-27'
 sources:
 - https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html
 - https://business.cch.com/srd/34-106402091726.pdf
@@ -14,6 +14,7 @@ sources:
 - https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks
 - https://didalabs.com/tokenized-stock-objection/
 - https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm
+- https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 description: 'In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.'
 ---
 
@@ -36,6 +37,9 @@ For third-party tokens, the issuer gets notice and can object during the 30-day 
 
 The contrast CNBC draws: offshore volume is mostly perps and [[concepts/glossary#wrapper|wrapped]] tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
+## Industry response
+A week after the order, Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], citing the requirement that venues verify a token gives holders the same rights as the traditional share ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
 ## Stablecoin legs
 TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html); [Federal Register](https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the), FR Doc. 2026-21706).
 
@@ -53,3 +57,4 @@ Public originals for the facts on this page.
 - <https://www.wilmerhale.com/en/insights/client-alerts/20261005-the-innovation-exemption-arrives-sec-clears-a-conditional-path-for-onchain-trading-of-tokenized-nms-stocks>
 - <https://didalabs.com/tokenized-stock-objection/>
 - <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>
+- <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>

@@ -2,7 +2,7 @@
 title: Corporate actions & dividends
 tags:
 - topics
-last_checked: 2026-10-25
+last_checked: 2026-10-27
 sources:
 - https://zerion.io/blog/best-tokenized-stock-platforms/
 - https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks
@@ -11,6 +11,7 @@ sources:
 - https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html
 - https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm
 - https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/
+- https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join
 description: 'In plain English: How dividends, stock splits and votes reach you depends on how the token is built. This page compares the approaches.'
 ---
 
@@ -26,6 +27,8 @@ How a dividend or split reaches a token holder depends on the model (see [[overv
 
 ## Issuer-sponsored and fund tokens
 The token is the share, so corporate actions follow the register (Superstate). Exodus's tokens carry no economic rights of their own; those attach to the Class A share ([Exodus offering circular](https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm)). WisdomTree's WTGXX accrues income daily and pays monthly in cash or [[concepts/glossary#stablecoin|stablecoin]], or reinvests it ([WisdomTree FAQ](https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/)).
+
+[[infrastructure/vertalo|Vertalo]], a [[concepts/glossary#transfer-agent|transfer agent]] in the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], says [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]] work because the shareholder records and the token agree, and that agreement drives corporate actions ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)).
 
 ## DTC
 At launch, [[concepts/glossary#dtc|DTC]] pays Treasury distributions in fiat to participants' traditional accounts. Equity and [[concepts/glossary#etf|ETF]] corporate actions on tokens are on the 2027+ roadmap ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)).
@@ -47,3 +50,4 @@ Public originals for the facts on this page.
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 - <https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm>
 - <https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/>
+- <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
