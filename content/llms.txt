@@ -12,7 +12,7 @@
 - [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
 - [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
 - [Database](https://edstokenizedsecuritiesrails.com/database): Headline fields for every published issuer, venue and infrastructure page, in one table.
-- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, updated weekly. See What changed for the week-by-week view.
+- [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 
 ## Build
 - [Reference architecture for trading tokenized securities](https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture): End-to-end reference architecture for trading tokenized stocks on tokenized rails: onboarding and allowlisting, onchain or hybrid matching, compliance hooks, atomic DvP, register sync, and oracle and halt controls.
@@ -72,6 +72,8 @@
 - [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 
 ## Changelog entries
+- [2026-10-28: DTCC Tokenization Service goes live](https://edstokenizedsecuritiesrails.com/changelog/2026-10-28-dtcc-tokenization-service-live): - DTC launched the DTCC Tokenization Service with 20 signed DTC participants, on Canton and DTCC's private Besu network; more networks in 2027 (DTCC). - Day 1 scope: 34 securities, 1:1 backed by DTC holdings, conversion…
+- [2026-10-26: QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](https://edstokenizedsecuritiesrails.com/changelog/2026-10-26-coalition-new-members): - Qube Research & Technologies (QRT), Vertalo and zerohash joined the Issuer Sponsored Token Coalition (Bullish). - Members were due to meet issuers at the NYSE on 27 Oct 2026.
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](https://edstokenizedsecuritiesrails.com/changelog/2026-10-25-sources-pass): - OKXICE: 22 issuers have objected to tokenized listings, per OKXICE's 23 Oct 2026 public notice (16 on its 19 Oct notice). - DTCC Tokenization Service: Day 1 tear sheet (23 Oct 2026) lists 34 securities at launch, up f…
 - [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](https://edstokenizedsecuritiesrails.com/changelog/2026-10-25-securitize-drs-comment): - Securitize backed DTC's Direct Registration System (DRS) upgrade but asked for a one-step burn-and-withdraw from DTC tokens, published processing times, DWAC modernization, a broker timing expectation and a fast retur…
 - [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](https://edstokenizedsecuritiesrails.com/changelog/2026-10-23-dtcc-okxice): - DTCC Tokenization Service: launch scope added from DTCC's at-a-glance sheet (25 securities, ~\$30T eligible, Canton and DTCC's private Besu network, 24/7 transfers between registered wallets). - OKXICE: 16 issuers had…

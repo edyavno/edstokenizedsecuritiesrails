@@ -6,10 +6,17 @@ last_checked: '2026-10-28'
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
-The site updates weekly: this page shows changes recorded before Monday 26 Oct 2026.
+Grouped by week (weeks start Monday), newest first. Every publish shows every change recorded so far, including the current week.
 
 ## Get it by email
 A free weekly email with these headlines. [[subscribe|Subscribe]].
+
+## This week (in progress)
+- **[DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)**
+  - *What this means for holders:* Large brokers can now turn shares held at DTC into tokens and back, same CUSIP and same rights. See [[infrastructure/dtcc-tokenization-pilot|DTCC]].
+- **[QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)**
+  - *What this means for holders:* More firms, including a transfer agent, now back issuer-sponsored tokens. See [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]].
+- Database: 5 headline field updates across issuer, venue and token records.
 
 ## Week of 19 Oct 2026
 - **[OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)**
