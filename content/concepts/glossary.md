@@ -6,6 +6,7 @@ tags:
 - concepts
 last_checked: '2026-10-27'
 sources:
+- https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html
 - https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 - https://app.rwa.xyz/treasuries
 - https://blog.base.org/tokenized-stocks
@@ -191,9 +192,9 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 ## E
 
 ### Entitlement token
-A term the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] uses for an emerging kind of token framework it wants issuer-sponsored securities to work with. Bullish does not define it; this entry will be filled in when a primary source does. ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
 
-*Related:* [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
+*Related:* [[issuers/securitize|Securitize]] · [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
 
 ### ERC-1400
 A draft Ethereum standard suite for security tokens, with transfer checks, documents and forced transfers. ([Spec](https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md))
@@ -407,6 +408,11 @@ Real-world asset: a traditional asset such as a bond, fund or stock represented 
 
 ## S
 
+### Security entitlement
+The legal right, under UCC Article 8, of someone who holds a security through a broker or custodian rather than directly on the company's register. Securitize Stocks are security entitlements backed 1:1 by shares. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
+
+*Related:* [[issuers/securitize|Securitize]] · [[topics/legal-structures|Legal structures]]
+
 ### Settlement finality
 The point at which a transfer can no longer be reversed and ownership has legally changed. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
 
@@ -506,6 +512,7 @@ A token that represents a share held by someone else, rather than being the shar
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://app.rwa.xyz/treasuries>
 - <https://blog.base.org/tokenized-stocks>

@@ -10,7 +10,7 @@ description: 'In plain English: Tokenized stocks come in a few legal forms. Some
 
 Tokenized stocks fall into distinct legal models ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)):
 - **Debt security / certificate** backed by shares (Robinhood, bStocks, xStocks).
-- **Beneficial claim** on custodied shares (Coinbase [[concepts/glossary#b20|B20]]).
+- **Beneficial claim** on custodied shares (Coinbase [[concepts/glossary#b20|B20]]; Securitize Stocks as [[concepts/glossary#security-entitlement|security entitlements]], convertible to registered shares).
 - **Issuer-sponsored shares** recorded by a [[concepts/glossary#transfer-agent|transfer agent]] (Securitize, Superstate Opening Bell).
 - **Blockchain-native equity** (Figure FGRS).
 - **Same security, tokenized form** inside the US market structure (Nasdaq / [[concepts/glossary#dtc|DTC]] pilot, [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).

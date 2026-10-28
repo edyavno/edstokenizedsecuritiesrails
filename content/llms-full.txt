@@ -475,9 +475,9 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 ## E
 
 ### Entitlement token
-A term the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] uses for an emerging kind of token framework it wants issuer-sponsored securities to work with. Bullish does not define it; this entry will be filled in when a primary source does. ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities))
+A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
 
-*Related:* [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
+*Related:* [[issuers/securitize|Securitize]] · [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
 
 ### ERC-1400
 A draft Ethereum standard suite for security tokens, with transfer checks, documents and forced transfers. ([Spec](https://github.com/SecurityTokenStandard/EIP-Spec/blob/master/eip/eip-1400.md))
@@ -691,6 +691,11 @@ Real-world asset: a traditional asset such as a bond, fund or stock represented 
 
 ## S
 
+### Security entitlement
+The legal right, under UCC Article 8, of someone who holds a security through a broker or custodian rather than directly on the company's register. Securitize Stocks are security entitlements backed 1:1 by shares. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
+
+*Related:* [[issuers/securitize|Securitize]] · [[topics/legal-structures|Legal structures]]
+
 ### Settlement finality
 The point at which a transfer can no longer be reversed and ownership has legally changed. ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm))
 
@@ -790,6 +795,7 @@ A token that represents a share held by someone else, rather than being the shar
 ## Sources
 Public originals for the facts on this page.
 
+- <https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://app.rwa.xyz/treasuries>
 - <https://blog.base.org/tokenized-stocks>
@@ -1004,7 +1010,7 @@ Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` 
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-25 |
 | [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-17 |
 | [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-23 |
-| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-17 |
+| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-27 |
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-10-17 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-10-17 |
 | [xStocks (Backed)](/issuers/xstocks-backed) | Issuer | Jersey | Backed tracker tokens | Solana, Ethereum, TON +1 | Non-US eligible | 2026-10-25 |
@@ -1013,7 +1019,7 @@ Generated from vault frontmatter on 2026-10-27. Headline fields only; `unknown` 
 | [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-25 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-10-17 |
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
-| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-25 |
+| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-27 |
 | [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-10-17 |
 | [DTCC / DTC tokenization pilot](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-23 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-10-17 |
@@ -1275,7 +1281,7 @@ Membership is open, non-exclusive and non-binding: joining does not commit a fir
 
 ## Focus areas
 1. Keep issuer and shareholder rights, including [[concepts/glossary#corporate-action|corporate-action]] entitlements.
-2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks.
+2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks. Example: Securitize's convertible entitlement token, which converts to a registered share once the issuer sponsors tokenization ([[issuers/securitize|Securitize]]).
 3. Infrastructure for issuance, transfer, settlement, custody and trading.
 4. An open ecosystem of issuers, brokers, exchanges, transfer agents, custodians and market makers.
 
@@ -1469,7 +1475,7 @@ last_checked: 2026-10-27
 
 Tokenized stocks fall into distinct legal models ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)):
 - **Debt security / certificate** backed by shares (Robinhood, bStocks, xStocks).
-- **Beneficial claim** on custodied shares (Coinbase [[concepts/glossary#b20|B20]]).
+- **Beneficial claim** on custodied shares (Coinbase [[concepts/glossary#b20|B20]]; Securitize Stocks as [[concepts/glossary#security-entitlement|security entitlements]], convertible to registered shares).
 - **Issuer-sponsored shares** recorded by a [[concepts/glossary#transfer-agent|transfer agent]] (Securitize, Superstate Opening Bell).
 - **Blockchain-native equity** (Figure FGRS).
 - **Same security, tokenized form** inside the US market structure (Nasdaq / [[concepts/glossary#dtc|DTC]] pilot, [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
@@ -2088,15 +2094,15 @@ type: issuer
 jurisdiction: unknown
 chain: Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)
 status: live (Securitize Stocks launched 2026-10-08)
-last_updated: 2026-10-17
-last_checked: 2026-10-17
+last_updated: 2026-10-27
+last_checked: 2026-10-27
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** unknown  
 > **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)  
 > **Status:** live (Securitize Stocks launched 2026-10-08)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-27  
 
 | Field | Value |
 |---|---|
@@ -2113,12 +2119,13 @@ last_checked: 2026-10-17
 Example: Exodus Class A common stock tokens on Algorand, with Securitize as [[concepts/glossary#transfer-agent|transfer agent]] ([PR Newswire](https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html)); trading began on Securitize Markets in March 2022 ([Securitize](https://securitize.io/press-releases/exodus-begins-trading-on-securitize-markets)).
 
 ## Securitize Stocks (8 Oct 2026)
-Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
+Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
 
 ## What this means for holders
 - Securitize Stocks are UCC Article 8 security entitlements backed 1:1, held through Securitize's broker-dealer, on Solana and settled in USDC ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 - Where available, holders can convert to direct registration, i.e. hold the share on the company's register ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
-- Who can buy is `unknown` in the sources so far.
+- Eligible investors in the US, EU and other permitted jurisdictions, subject to local rules ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- The shares backing the tokens are not lent out ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 
 *Reference information only, not investment advice.*
 
@@ -2132,7 +2139,7 @@ Public originals for the facts on this page.
 - <https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/>
 - <https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Superstate Opening Bell
@@ -2556,15 +2563,15 @@ type: venue
 jurisdiction: United States (TSV Exemption)
 chain: unknown
 status: TSV notice published 2026-10-04
-last_updated: 2026-10-25
-last_checked: 2026-10-25
+last_updated: 2026-10-27
+last_checked: 2026-10-27
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States (TSV Exemption)  
 > **Chain:** unknown  
 > **Status:** TSV notice published 2026-10-04  
-> **Last updated:** 2026-10-25  
+> **Last updated:** 2026-10-27  
 
 | Field | Value |
 |---|---|
@@ -2580,12 +2587,12 @@ last_checked: 2026-10-25
 
 The first public [[concepts/glossary#tsv|TSV]] notice under the [[concepts/innovation-exemption|Innovation Exemption]], dated 4 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). Design per the notice: Uniswap v4 pools with an OKXICE TSV hook, access via soulbound tokens, pairs against USDC/USDG/USDT, no order book and no custody; it describes admin-key governance.
 
-The notice lists 63 symbols ([Dida Labs](https://didalabs.com/tokenized-stock-objection/), analysis). Dida Labs notes Cerebras is not among the 63 ([Dida Labs](https://didalabs.com/tokenized-stock-objection/)); OKXICE's own notices list it as an objector (see below). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
+The notice lists 63 symbols for 62 companies, since Alphabet has two share classes (GOOG and GOOGL) (counted from the [OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf), raw/04). Cerebras is not among them; OKXICE's own notices list it as an objector (see below). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
 
 ## Issuer objections
 OKXICE's public notice of 23 Oct 2026 lists **22** issuers that objected: Cerebras (CBRS), AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom, UnitedHealth, Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald's, Western Digital, Alphabet (GOOG/GOOGL), Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell ([OKXICE notice, 23 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf)).
 
-The first 16 were already on its 19 Oct notice; Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell are new ([OKXICE notice, 19 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf)). CNBC's 21 Oct count of 16 matches the 19 Oct notice ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
+The first 16 were already on its 19 Oct notice; Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell are new ([OKXICE notice, 19 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf)). Wells Fargo and Arm were not on the 4 Oct list, so not every objection removes a listed stock (raw/04; raw/106). CNBC's 21 Oct count of 16 matches the 19 Oct notice ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
 
 Cerebras appears as an objector even though it was not among the 63 symbols in the 4 Oct notice; neither notice says why (possibly an objection filed ahead of a listing; unverified). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)).
 
@@ -2605,7 +2612,7 @@ Public originals for the facts on this page.
 - <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
 
-*Last checked 2026-10-25. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Chainlink tokenized equity feeds

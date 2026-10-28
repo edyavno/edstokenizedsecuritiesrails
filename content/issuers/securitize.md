@@ -12,7 +12,7 @@ who_can_buy: unknown
 num_assets: 12 companies at launch (CoinDesk)
 structure_short: Security entitlements + issuer shares
 who_can_buy_short: Issuer-specific
-last_checked: '2026-10-17'
+last_checked: '2026-10-27'
 title: Securitize (issuer-sponsored shares)
 tags:
 - issuers
@@ -23,7 +23,7 @@ chain:
 - Solana (per Zerion, secondary)
 - Avalanche (per Zerion, secondary)
 status: live (Securitize Stocks launched 2026-10-08)
-last_updated: '2026-10-17'
+last_updated: '2026-10-27'
 description: 'In plain English: Securitize acts as transfer agent and tokenization platform for funds and companies that issue tokens.'
 ---
 
@@ -32,7 +32,7 @@ description: 'In plain English: Securitize acts as transfer agent and tokenizati
 > **Jurisdiction:** unknown  
 > **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)  
 > **Status:** live (Securitize Stocks launched 2026-10-08)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-10-27  
 
 | Field | Value |
 |---|---|
@@ -49,12 +49,13 @@ description: 'In plain English: Securitize acts as transfer agent and tokenizati
 Example: Exodus Class A common stock tokens on Algorand, with Securitize as [[concepts/glossary#transfer-agent|transfer agent]] ([PR Newswire](https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html)); trading began on Securitize Markets in March 2022 ([Securitize](https://securitize.io/press-releases/exodus-begins-trading-on-securitize-markets)).
 
 ## Securitize Stocks (8 Oct 2026)
-Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
+Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; NYSE and OKXICE venues planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news).
 
 ## What this means for holders
 - Securitize Stocks are UCC Article 8 security entitlements backed 1:1, held through Securitize's broker-dealer, on Solana and settled in USDC ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 - Where available, holders can convert to direct registration, i.e. hold the share on the company's register ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
-- Who can buy is `unknown` in the sources so far.
+- Eligible investors in the US, EU and other permitted jurisdictions, subject to local rules ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
+- The shares backing the tokens are not lent out ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 
 *Reference information only, not investment advice.*
 
@@ -68,4 +69,4 @@ Public originals for the facts on this page.
 - <https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/>
 - <https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*

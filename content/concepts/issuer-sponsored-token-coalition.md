@@ -22,7 +22,7 @@ Membership is open, non-exclusive and non-binding: joining does not commit a fir
 
 ## Focus areas
 1. Keep issuer and shareholder rights, including [[concepts/glossary#corporate-action|corporate-action]] entitlements.
-2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks.
+2. Interoperability across traditional clearing and settlement, blockchains, [[concepts/glossary#wrapper|wrapped]]-token models and emerging [[concepts/glossary#entitlement-token|entitlement-token]] frameworks. Example: Securitize's convertible entitlement token, which converts to a registered share once the issuer sponsors tokenization ([[issuers/securitize|Securitize]]).
 3. Infrastructure for issuance, transfer, settlement, custody and trading.
 4. An open ecosystem of issuers, brokers, exchanges, transfer agents, custodians and market makers.
 
