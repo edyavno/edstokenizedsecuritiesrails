@@ -3,7 +3,7 @@ title: Innovation Exemption and the onchain-venue (TSV) model
 type: concept
 tags:
 - concepts
-last_checked: '2026-10-27'
+last_checked: '2026-10-29'
 sources:
 - https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html
 - https://business.cch.com/srd/34-106402091726.pdf
@@ -15,6 +15,10 @@ sources:
 - https://didalabs.com/tokenized-stock-objection/
 - https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm
 - https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
+- https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf
+- https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf
+- https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption
+- https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf
 description: 'In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.'
 ---
 
@@ -33,12 +37,19 @@ Chairman Atkins framed it as a bridge to durable rulemaking ([statement](https:/
 The SEC lists three TSV notices: TSV LLC (23 Sep 2026), OKXICE TSV (4 Oct 2026) and Kephas Corporation d/b/a Perpetuals.com (14 Oct 2026) ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)). None had started trading by 25 Oct 2026 per their notices and the SEC page. TSV LLC revised its notice on 19 Oct (v1.1) and 23 Oct 2026 (v1.2): it will run on Canton with USDC and SBC as paired assets at commencement, and the issuer's transfer agent handles participant verification and minting ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ## Issuer objection
-For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
+For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news). By OKXICE's 28 Oct notice the count was 38, including JPMorgan, Coca-Cola, Walmart and Eli Lilly ([OKXICE notice, 28 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf)).
+
+How the opt-out works for issuers, per Nasdaq's FAQ ([Nasdaq](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption), last updated 29 Sep 2026): the TSV must send notice to the address of the issuer's principal executive offices on its Exchange Act reports; the issuer has 30 calendar days from receipt to object; the objection goes directly to that venue, and Nasdaq can't file it for them. Notices and [[concepts/glossary#opt-out-issuer-objection|opt-outs]] are per TSV, with no blanket opt-out. Nasdaq says it intends to opt Nasdaq, Inc. out of TSVs, and warns that TSVs don't have to show best prices or report trades until 10 minutes after they happen.
 
 The contrast CNBC draws: offshore volume is mostly perps and [[concepts/glossary#wrapper|wrapped]] tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
 ## Industry response
 A week after the order, Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], citing the requirement that venues verify a token gives holders the same rights as the traditional share ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
+## Comment file (4-927)
+Better Markets, an investor advocacy nonprofit, filed a 13-page letter on 22 Oct 2026. It calls TSVs and the dealer exemption the largest rewrite of secondary equity trading rules since [[concepts/glossary#reg-nms|Reg NMS]], argues such changes need APA notice-and-comment rulemaking (with cost-benefit analysis) rather than an order, and urges the SEC to withdraw or rescind the order. It also asks that third-party tokens require the issuer's affirmative consent instead of an opt-out ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf), raw/155).
+
+SIFMA, the broker-dealer and asset manager trade group, filed an initial letter on 19 Oct 2026 (signed by CEO Kenneth Bentsen). Unlike Better Markets it does not ask for withdrawal; it asks the SEC to amend the order and answer operational questions. Its asks: trading of third-party tokens only with the issuer's affirmative consent (opt-in); failing that, an official SEC- or FINRA-run portal listing TSVs, their notices and issuer elections, a 90-day objection period from confirmed receipt, and a single universal issuer opt-out; and the right to object at any time, even after trading starts. It also asks about surveillance (CAT, ISG), volume limits across venues, beneficial ownership and corporate actions, and says it would support the SEC giving venues more time before they begin operating ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf), raw/158).
 
 ## Stablecoin legs
 TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html); [Federal Register](https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the), FR Doc. 2026-21706).
@@ -58,3 +69,6 @@ Public originals for the facts on this page.
 - <https://didalabs.com/tokenized-stock-objection/>
 - <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
+- <https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf>
+- <https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption>
+- <https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf>

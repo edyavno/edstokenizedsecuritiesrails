@@ -1,11 +1,11 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-10-28; public data is a weekly snapshot as of 2026-10-26. CC BY-NC 4.0.
+> Human-curated, LLM-maintained. Generated 2026-10-29; public data is a weekly snapshot as of 2026-10-26. CC BY-NC 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
@@ -53,11 +53,11 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
+- [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
+- [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
+- [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
 - [2026-10-28: DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)
 - [2026-10-26: QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)
-- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
-- [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)
-- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -217,7 +217,7 @@ Public originals for the facts on this page.
 # Guide for AI agents
 URL: https://edstokenizedsecuritiesrails.com/agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
 
@@ -268,7 +268,7 @@ Content is CC BY-NC 4.0: free to use and share with attribution, not for commerc
 # Starter prompts
 URL: https://edstokenizedsecuritiesrails.com/starter-prompts
 description: Example questions an AI agent can answer from this wiki.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
 Example questions an AI agent can answer from this wiki alone. Point the agent at `/llms-full.txt` (or clone the site repo) and ask:
 
@@ -645,6 +645,11 @@ Onchain means recorded and executed on the blockchain itself; offchain means han
 
 *Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
+### Opt-out (issuer objection)
+Under the Innovation Exemption, a company's right to stop a venue (TSV) from trading a third-party token of its stock. It has 30 calendar days from the venue's notice to object, directly to that venue. Each objection covers only that venue; there is no blanket opt-out. ([Nasdaq FAQ](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[platforms-venues/okxice-tsv|OKXICE TSV]]
+
 ### Oracle
 A service that feeds outside data into a blockchain so smart contracts can use it. For tokenized stocks that means a reference price plus market status (open, closed or halted), so a venue can stop trading when the primary market stops. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
 
@@ -873,7 +878,7 @@ Public originals for the facts on this page.
 # What changed
 URL: https://edstokenizedsecuritiesrails.com/whats-changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
@@ -883,6 +888,12 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)**
+  - *What this means for holders:* Wall Street's main trade group wants companies to opt in before third-party tokens of their stock can trade. See [[concepts/innovation-exemption|Innovation Exemption]].
+- **[Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)**
+  - *What this means for holders:* On Robinhood Chain you can now swap some Robinhood Stock Tokens for the matching Ondo token, which Ondo redeems 24/7, including weekends. See [[issuers/ondo-global-markets|Ondo]].
+- **[OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)**
+  - *What this means for holders:* More big companies, including JPMorgan, Coca-Cola and Walmart, have blocked third-party tokens of their stock on OKXICE. An objection only covers one venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
 - **[DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)**
   - *What this means for holders:* Large brokers can now turn shares held at DTC into tokens and back, same CUSIP and same rights. See [[infrastructure/dtcc-tokenization-pilot|DTCC]].
 - **[QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)**
@@ -1040,9 +1051,9 @@ Public originals for the facts on this page.
 # Database
 URL: https://edstokenizedsecuritiesrails.com/database
 description: Headline fields for every published issuer, venue and infrastructure page, in one table.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
-Generated from vault frontmatter on 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.
+Generated from vault frontmatter on 2026-10-29. Headline fields only; `unknown` means not yet verified from a source.
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|
@@ -1051,8 +1062,8 @@ Generated from vault frontmatter on 2026-10-28. Headline fields only; `unknown` 
 | [Crypto.com Tokenized Stocks](/issuers/crypto-com-tokenized-stocks) | Issuer | Cyprus | Derivative | unknown | EEA and approved regions | 2026-10-25 |
 | [Dinari dShares](/issuers/dinari) | Issuer | United States | Custodial tokenized shares | Ethereum, Avalanche, Arbitrum +1 | US eligible + intl | 2026-10-17 |
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-25 |
-| [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-28 |
-| [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-23 |
+| [Ondo Global Markets (Ondo Stocks)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US eligible, KYC | 2026-10-29 |
+| [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-10-29 |
 | [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-10-28 |
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-10-17 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-10-17 |
@@ -1062,7 +1073,7 @@ Generated from vault frontmatter on 2026-10-28. Headline fields only; `unknown` 
 | [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-25 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-10-17 |
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
-| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-27 |
+| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-29 |
 | [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-10-17 |
 | [DTCC Tokenization Service (DTS)](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-28 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-10-17 |
@@ -1073,10 +1084,13 @@ Generated from vault frontmatter on 2026-10-28. Headline fields only; `unknown` 
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
-last_checked: 2026-10-28
+last_checked: 2026-10-29
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
+- [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
+- [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
 - [2026-10-28: DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)
 - [2026-10-26: QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)
 - [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
@@ -1245,7 +1259,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption
 description: In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.
 type: concept
-last_checked: 2026-10-27
+last_checked: 2026-10-29
 
 *In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions. This page explains how that works and who objects.*
 
@@ -1262,12 +1276,19 @@ Chairman Atkins framed it as a bridge to durable rulemaking ([statement](https:/
 The SEC lists three TSV notices: TSV LLC (23 Sep 2026), OKXICE TSV (4 Oct 2026) and Kephas Corporation d/b/a Perpetuals.com (14 Oct 2026) ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)). None had started trading by 25 Oct 2026 per their notices and the SEC page. TSV LLC revised its notice on 19 Oct (v1.1) and 23 Oct 2026 (v1.2): it will run on Canton with USDC and SBC as paired assets at commencement, and the issuer's transfer agent handles participant verification and minting ([TSV LLC](https://www.tokenizedstockvenue.com/notice.html)).
 
 ## Issuer objection
-For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
+For third-party tokens, the issuer gets notice and can object during the 30-day window ([SEC order](https://business.cch.com/srd/34-106402091726.pdf)). Explainer applied to the first notice: [Dida Labs](https://didalabs.com/tokenized-stock-objection/) (analysis). First test: by 21 Oct 2026, 16 issuers, including Goldman Sachs, Microsoft, Alphabet and McDonald's, had objected to OKXICE listings ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news). By OKXICE's 28 Oct notice the count was 38, including JPMorgan, Coca-Cola, Walmart and Eli Lilly ([OKXICE notice, 28 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf)).
+
+How the opt-out works for issuers, per Nasdaq's FAQ ([Nasdaq](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption), last updated 29 Sep 2026): the TSV must send notice to the address of the issuer's principal executive offices on its Exchange Act reports; the issuer has 30 calendar days from receipt to object; the objection goes directly to that venue, and Nasdaq can't file it for them. Notices and [[concepts/glossary#opt-out-issuer-objection|opt-outs]] are per TSV, with no blanket opt-out. Nasdaq says it intends to opt Nasdaq, Inc. out of TSVs, and warns that TSVs don't have to show best prices or report trades until 10 minutes after they happen.
 
 The contrast CNBC draws: offshore volume is mostly perps and [[concepts/glossary#wrapper|wrapped]] tokens that never needed issuer permission, while the US path gives issuers a say ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). See [[platforms-venues/okxice-tsv]].
 
 ## Industry response
 A week after the order, Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], citing the requirement that venues verify a token gives holders the same rights as the traditional share ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
+## Comment file (4-927)
+Better Markets, an investor advocacy nonprofit, filed a 13-page letter on 22 Oct 2026. It calls TSVs and the dealer exemption the largest rewrite of secondary equity trading rules since [[concepts/glossary#reg-nms|Reg NMS]], argues such changes need APA notice-and-comment rulemaking (with cost-benefit analysis) rather than an order, and urges the SEC to withdraw or rescind the order. It also asks that third-party tokens require the issuer's affirmative consent instead of an opt-out ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf), raw/155).
+
+SIFMA, the broker-dealer and asset manager trade group, filed an initial letter on 19 Oct 2026 (signed by CEO Kenneth Bentsen). Unlike Better Markets it does not ask for withdrawal; it asks the SEC to amend the order and answer operational questions. Its asks: trading of third-party tokens only with the issuer's affirmative consent (opt-in); failing that, an official SEC- or FINRA-run portal listing TSVs, their notices and issuer elections, a 90-day objection period from confirmed receipt, and a single universal issuer opt-out; and the right to object at any time, even after trading starts. It also asks about surveillance (CAT, ISG), volume limits across venues, beneficial ownership and corporate actions, and says it would support the SEC giving venues more time before they begin operating ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf), raw/158).
 
 ## Stablecoin legs
 TSV pools pair against payment [[concepts/glossary#stablecoin|stablecoins]]; the GENIUS Act (S.1582, P.L. 119-27) defines permitted payment stablecoins and 1:1 reserves ([GENIUS Act](https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm)). The Act takes effect on 18 Jan 2027; the OCC's final rule for issuers under its jurisdiction takes effect the same day ([OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html); [Federal Register](https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the), FR Doc. 2026-21706).
@@ -1287,6 +1308,9 @@ Public originals for the facts on this page.
 - <https://didalabs.com/tokenized-stock-objection/>
 - <https://www.congress.gov/119/bills/s1582/BILLS-119s1582enr.htm>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
+- <https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf>
+- <https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption>
+- <https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf>
 
 ========================================================================
 # International regimes
@@ -1543,13 +1567,13 @@ In the [[concepts/glossary#issuer-sponsored-token|issuer-sponsored]] model the t
 # Regulation
 URL: https://edstokenizedsecuritiesrails.com/topics/regulation
 description: In plain English: The main US and international rule changes for tokenized securities, in date order.
-last_checked: 2026-10-17
+last_checked: 2026-10-29
 
 *In plain English: The main US and international rule changes for tokenized securities, in date order.*
 
 Key US milestones: [[concepts/glossary#dtc|DTC]] [[concepts/glossary#no-action-letter|no-action letter]] (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026) ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); WisdomTree's [[concepts/glossary#exemptive-relief|exemptive relief]] for 24/7 fund-share trading (Feb 2026, [WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)). Non-US issuers sit in Jersey, BVI and ADGM ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)).
 
-Recent changes (Sep to Oct 2026): the SEC's [[concepts/innovation-exemption|Innovation Exemption]] for tokenized NMS stock (17 Sep 2026, [SEC](https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment)); CFTC staff FAQs on tokenized permitted investments (24 Sep 2026, [CFTC](https://www.cftc.gov/PressRoom/PressReleases/9303-26)); the OCC's final GENIUS Act rule, effective 18 Jan 2027 (21 Oct 2026, [OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)); the FCA and Bank of England feedback statement FS26/1 (14 Sep 2026, [FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)); and EU Council agreement on key elements of the market integration package, which would widen the DLT Pilot Regime (9 Oct 2026, [Council](https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/)).
+Recent changes (Sep to Oct 2026): the SEC's [[concepts/innovation-exemption|Innovation Exemption]] for tokenized NMS stock (17 Sep 2026, [SEC](https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment)), which Better Markets' 22 Oct comment letter urges the SEC to withdraw in favor of notice-and-comment rulemaking ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf)), while SIFMA's 19 Oct letter asks for amendments such as issuer opt-in consent and a 90-day objection period ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf)); CFTC staff FAQs on tokenized permitted investments (24 Sep 2026, [CFTC](https://www.cftc.gov/PressRoom/PressReleases/9303-26)); the OCC's final GENIUS Act rule, effective 18 Jan 2027 (21 Oct 2026, [OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)); the FCA and Bank of England feedback statement FS26/1 (14 Sep 2026, [FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)); and EU Council agreement on key elements of the market integration package, which would widen the DLT Pilot Regime (9 Oct 2026, [Council](https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/)).
 
 Country-by-country status: [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
 
@@ -2046,15 +2070,15 @@ type: issuer
 jurisdiction: British Virgin Islands
 chain: Ethereum, BNB Chain, Solana
 status: unknown
-last_updated: 2026-10-28
-last_checked: 2026-10-28
+last_updated: 2026-10-29
+last_checked: 2026-10-29
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** British Virgin Islands  
 > **Chain:** Ethereum, BNB Chain, Solana  
 > **Status:** unknown  
-> **Last updated:** 2026-10-28  
+> **Last updated:** 2026-10-29  
 
 | Field | Value |
 |---|---|
@@ -2078,6 +2102,8 @@ The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[
 
 On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized stocks and ETFs for eligible investors in 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
 
+On 27 Oct 2026 Ondo put 15 Ondo Stocks on [[issuers/robinhood-stock-tokens|Robinhood Chain]] via the Ondo Bridge (minting and redemption stay on Ethereum and BNB Chain). 11 of them, including NVDAon, SPYon, TSLAon and QQQon, sit in Uniswap v4 StablePair pools against the matching Robinhood Stock Token, with dynamic LP fees when the pair drifts from its expected rate. Ondo pitches this as a weekend supply and exit route while Robinhood's mint and redeem window is closed. Ondo also says it has \$1.3B in total value locked and over 450,000 cumulative holders (issuer claims) ([Ondo](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap)).
+
 ## What this means for holders
 - You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
 - Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
@@ -2098,8 +2124,9 @@ Public originals for the facts on this page.
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
 - <https://docs.ondo.finance/ondo-stocks/overview>
 - <https://docs.ondo.finance/api-reference/overview>
+- <https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap>
 
-*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-29. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Robinhood Stock Tokens
@@ -2109,15 +2136,15 @@ type: issuer
 jurisdiction: Jersey
 chain: Robinhood Chain
 status: live
-last_updated: 2026-10-23
-last_checked: 2026-10-23
+last_updated: 2026-10-29
+last_checked: 2026-10-29
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** Jersey  
 > **Chain:** Robinhood Chain  
 > **Status:** live  
-> **Last updated:** 2026-10-23  
+> **Last updated:** 2026-10-29  
 
 | Field | Value |
 |---|---|
@@ -2140,6 +2167,8 @@ Bitwise's Q4 2026 staking report says average daily Stock Token volume on Robinh
 
 On 14 Sep 2026 Robinhood's CEO said in-kind redemption and voting are coming for Robinhood Stock Tokens; neither was available as of 25 Oct 2026 ([CoinDesk](https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism), news).
 
+Since 27 Oct 2026, 11 Robinhood Stock Tokens (e.g. NVDArh) have Uniswap v4 StablePair pools against the matching [[issuers/ondo-global-markets|Ondo]] token on Robinhood Chain. Ondo notes that when Robinhood's mint and redeem window is closed, Stock Tokens keep trading onchain but supply can't expand and holders can't redeem, which can cause price gaps; the pools give an exit through Ondo's 24/7 redemption ([Ondo](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap), issuer blog).
+
 ## What this means for holders
 - Robinhood Stock Tokens are tokenised debt securities from Robinhood Assets Jersey: you get economic exposure to the stock, with no rights in the underlying share ([Robinhood](https://robinhood.com/rhj/stocktokens/); [docs](https://docs.robinhood.com/chain/stock-tokens/)).
 - In the EU, Classic Stock Tokens are MiFID II derivative contracts with Robinhood Europe inside Robinhood's app ([Robinhood EU FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
@@ -2158,8 +2187,9 @@ Public originals for the facts on this page.
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
 - <https://docs.robinhood.com/chain/building-with-stock-tokens/>
 - <https://blog.arbitrum.io/robinhood-chain-mainnet/>
+- <https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap>
 
-*Last checked 2026-10-23. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-29. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Securitize (issuer-sponsored shares)
@@ -2650,15 +2680,15 @@ type: venue
 jurisdiction: United States (TSV Exemption)
 chain: unknown
 status: TSV notice published 2026-10-04
-last_updated: 2026-10-27
-last_checked: 2026-10-27
+last_updated: 2026-10-29
+last_checked: 2026-10-29
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States (TSV Exemption)  
 > **Chain:** unknown  
 > **Status:** TSV notice published 2026-10-04  
-> **Last updated:** 2026-10-27  
+> **Last updated:** 2026-10-29  
 
 | Field | Value |
 |---|---|
@@ -2677,16 +2707,18 @@ The first public [[concepts/glossary#tsv|TSV]] notice under the [[concepts/innov
 The notice lists 63 symbols for 62 companies, since Alphabet has two share classes (GOOG and GOOGL) (counted from the [OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf), raw/04). Cerebras is not among them; OKXICE's own notices list it as an objector (see below). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
 
 ## Issuer objections
+OKXICE's public notice of 28 Oct 2026 lists **38** issuers that objected, up from 22 on 23 Oct. New since 23 Oct: IBM, IonQ, Oracle, Intel, JPMorgan, AMD, Applied Materials, Coca-Cola, Adobe, Dell, Sandisk, Eli Lilly, Carnival, Arcos Dorados, Walmart and Cigna. The notice still gives no trading start date ([OKXICE notice, 28 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf), raw/154).
+
 OKXICE's public notice of 23 Oct 2026 lists **22** issuers that objected: Cerebras (CBRS), AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom, UnitedHealth, Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald's, Western Digital, Alphabet (GOOG/GOOGL), Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell ([OKXICE notice, 23 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf)).
 
 The first 16 were already on its 19 Oct notice; Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell are new ([OKXICE notice, 19 Oct](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf)). Wells Fargo and Arm were not on the 4 Oct list, so not every objection removes a listed stock (raw/04; raw/106). CNBC's 21 Oct count of 16 matches the 19 Oct notice ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html), news).
 
-Cerebras appears as an objector even though it was not among the 63 symbols in the 4 Oct notice; neither notice says why (possibly an objection filed ahead of a listing; unverified). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)).
+Cerebras appears as an objector even though it was not among the 63 symbols in the 4 Oct notice; neither notice says why (possibly an objection filed ahead of a listing; unverified). Under the [[concepts/innovation-exemption|Innovation Exemption]] the venue must notify each issuer and wait 30 days after receipt before trading ([CNBC](https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html)). Per Nasdaq's issuer FAQ, objections go directly to the venue that sent the notice and count only for that venue; there is no blanket opt-out across all TSVs ([Nasdaq FAQ](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption), raw/156).
 
 ## What this means for holders
 - OKXICE is a [[concepts/glossary#tsv|TSV]] under the [[concepts/glossary#innovation-exemption|Innovation Exemption]]: access is controlled through non-transferable access tokens, and trading pairs are [[concepts/glossary#stablecoin|stablecoins]] (USDC, USDG, USDT) ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
 - The venue does not hold your tokens ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)).
-- Issuers can object to third-party tokens of their stock: 22 had objected by 23 Oct 2026, which can keep those stocks off the venue ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf)).
+- Issuers can object to third-party tokens of their stock: 38 had objected by 28 Oct 2026, which can keep those stocks off the venue ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf)).
 
 *Reference information only, not investment advice.*
 
@@ -2698,8 +2730,9 @@ Public originals for the facts on this page.
 - <https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/>
 - <https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
+- <https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption>
 
-*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-29. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Chainlink tokenized equity feeds
@@ -2782,6 +2815,7 @@ Staff relief lets DTC participants record security entitlements on [[concepts/gl
 DTC launched the DTCC Tokenization Service (DTS) on 28 Oct 2026 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). Tokenized security entitlements convert between traditional and tokenized form and go to users' wallets of choice, keeping the ownership rights, investor protections and economic entitlements of the traditional securities ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
 
 - **Participants:** 20 DTC participants have signed agreements: Alpaca, Apex Clearing Corporation, Barclays, Bank of America, BNP Paribas, Brown Brothers Harriman, Citadel Securities, Citi, Clear Street, DriveWealth, Edward Jones, Fidelity Investments, Interchange Clearing, J.P. Morgan, Marex, Mirae Asset Securities (USA) Inc., Morgan Stanley, State Street, UBS and Velocity Capital LLC. More will be onboarded on a rolling basis ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
+  - Participant Interchange Clearing runs execution, clearing and custody on one real-time platform with direct DTC and NSCC links ([Interchange](https://www.interchange.com/blog/interchange-clearing-to-access-the-dtcc-tokenization-service)).
 - **Networks:** Canton Network and DTCC's private Besu network today, with more networks in 2027 ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
 - **Ecosystem:** collaborators and partners include BitGo Bank & Trust, Blockdaemon, Broadridge, DFNS, DRW, Fireblocks, HIFI, Kaleido, Matter Labs, [[issuers/ondo-global-markets|Ondo]], Prometheum Capital, Talos, Taurus, Temple Digital Group, Tradeweb, Transcend and Virtu ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
 - **Design input:** more than 150 firms in the DTC Digital Assets Solutions Industry Working Group ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)).
@@ -2969,6 +3003,29 @@ Public originals for the facts on this page.
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
 
 *Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# 2026-10-29: SIFMA's comment letter on the Innovation Exemption
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-sifma-comment-letter
+last_checked: 2026-10-29
+
+- SIFMA (19 Oct 2026) asks the SEC to amend the order: issuer opt-in consent for third-party tokens or, failing that, a 90-day objection period, a universal opt-out and an official TSV portal ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf)).
+
+========================================================================
+# 2026-10-29: Ondo Stocks live on Robinhood Chain
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-ondo-stocks-robinhood-chain
+last_checked: 2026-10-29
+
+- Ondo bridged 15 Ondo Stocks to Robinhood Chain on 27 Oct 2026; 11 have Uniswap v4 StablePair pools against the matching Robinhood Stock Token ([Ondo](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap)).
+
+========================================================================
+# 2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-okxice-38-objectors-opt-out
+last_checked: 2026-10-29
+
+- OKXICE TSV: 38 issuers have objected as of its 28 Oct notice, up from 22 on 23 Oct; new names include JPMorgan, AMD, Coca-Cola, Dell, Eli Lilly and Walmart. Still no trading start date ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf)).
+- Innovation Exemption: issuers have 30 calendar days from a venue's notice to object, directly to that venue; opt-outs are per venue with no blanket option. Nasdaq says it intends to opt itself out of TSVs ([Nasdaq FAQ](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption)).
+- Comment file 4-927: Better Markets calls the order the biggest rewrite of equity trading rules since Reg NMS and urges the SEC to withdraw it and use notice-and-comment rulemaking ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf)).
 
 ========================================================================
 # 2026-10-28: DTCC Tokenization Service goes live

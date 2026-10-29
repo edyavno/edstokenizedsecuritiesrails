@@ -1,7 +1,7 @@
 ---
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-last_checked: '2026-10-28'
+last_checked: '2026-10-29'
 ---
 
 A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
@@ -50,11 +50,11 @@ Many stock tokens are wrappers: a third party holds the real share and gives you
 - **Dig into a topic:** [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] · [[topics/who-can-buy|Who can buy]]
 
 ## Latest changes
+- [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
+- [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
+- [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
 - [2026-10-28: DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)
 - [2026-10-26: QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)
-- [2026-10-25: OKXICE objectors now 22; DTCC launch scope 34; Figure ticker FGRS; B20 spec](/changelog/2026-10-25-sources-pass)
-- [2026-10-25: Securitize asks DTC to link direct registration to its tokenization service](/changelog/2026-10-25-securitize-drs-comment)
-- [2026-10-23: DTCC launch scope; OKXICE issuer objections; Robinhood Chain volume](/changelog/2026-10-23-dtcc-okxice)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

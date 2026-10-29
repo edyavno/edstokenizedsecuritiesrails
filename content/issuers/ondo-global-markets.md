@@ -11,7 +11,7 @@ who_can_buy: Excludes US persons and several jurisdictions; some require qualifi
 num_assets: 450+ advertised (per Zerion)
 structure_short: Structured notes
 who_can_buy_short: Non-US eligible, KYC
-last_checked: '2026-10-28'
+last_checked: '2026-10-29'
 title: Ondo Global Markets (Ondo Stocks)
 tags:
 - issuers
@@ -21,7 +21,7 @@ chain:
 - BNB Chain
 - Solana
 status: unknown
-last_updated: '2026-10-28'
+last_updated: '2026-10-29'
 description: 'In plain English: Ondo''s stock tokens are notes that track US stocks, backed by shares held at US brokers. They are not the shares themselves.'
 ---
 
@@ -30,7 +30,7 @@ description: 'In plain English: Ondo''s stock tokens are notes that track US sto
 > **Jurisdiction:** British Virgin Islands  
 > **Chain:** Ethereum, BNB Chain, Solana  
 > **Status:** unknown  
-> **Last updated:** 2026-10-28  
+> **Last updated:** 2026-10-29  
 
 | Field | Value |
 |---|---|
@@ -54,6 +54,8 @@ The issuer is a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[
 
 On 7 Oct 2026 Assetera, an Austrian MiFID II firm, listed 100+ Ondo tokenized stocks and ETFs for eligible investors in 30 EEA countries, widening to 450+ through Q4 2026 ([Assetera](https://www.assetera.com/media/assetera-x-ondo)).
 
+On 27 Oct 2026 Ondo put 15 Ondo Stocks on [[issuers/robinhood-stock-tokens|Robinhood Chain]] via the Ondo Bridge (minting and redemption stay on Ethereum and BNB Chain). 11 of them, including NVDAon, SPYon, TSLAon and QQQon, sit in Uniswap v4 StablePair pools against the matching Robinhood Stock Token, with dynamic LP fees when the pair drifts from its expected rate. Ondo pitches this as a weekend supply and exit route while Robinhood's mint and redeem window is closed. Ondo also says it has \$1.3B in total value locked and over 450,000 cumulative holders (issuer claims) ([Ondo](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap)).
+
 ## What this means for holders
 - You hold a structured note from a BVI [[concepts/glossary#spv|SPV]], described as [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] and overcollateralized by assets held at US [[concepts/glossary#broker-dealer|broker-dealers]] ([Ondo docs](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)).
 - Not offered to US persons; buying requires [[concepts/glossary#kyc|KYC]] ([eligibility](https://docs.ondo.finance/ondo-stocks/eligibility)).
@@ -74,5 +76,6 @@ Public originals for the facts on this page.
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
 - <https://docs.ondo.finance/ondo-stocks/overview>
 - <https://docs.ondo.finance/api-reference/overview>
+- <https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap>
 
-*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-10-29. Headline fields only; `unknown` means not yet verified from a source.*

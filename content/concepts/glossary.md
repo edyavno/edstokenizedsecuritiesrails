@@ -364,6 +364,11 @@ Onchain means recorded and executed on the blockchain itself; offchain means han
 
 *Related:* [[build/trading-reference-architecture|Reference architecture for trading]]
 
+### Opt-out (issuer objection)
+Under the Innovation Exemption, a company's right to stop a venue (TSV) from trading a third-party token of its stock. It has 30 calendar days from the venue's notice to object, directly to that venue. Each objection covers only that venue; there is no blanket opt-out. ([Nasdaq FAQ](https://www.nasdaq.com/docs/listings/faq-sec-innovation-exemption))
+
+*Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[platforms-venues/okxice-tsv|OKXICE TSV]]
+
 ### Oracle
 A service that feeds outside data into a blockchain so smart contracts can use it. For tokenized stocks that means a reference price plus market status (open, closed or halted), so a venue can stop trading when the primary market stops. ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds))
 

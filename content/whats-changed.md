@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-10-28'
+last_checked: '2026-10-29'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -12,6 +12,12 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)**
+  - *What this means for holders:* Wall Street's main trade group wants companies to opt in before third-party tokens of their stock can trade. See [[concepts/innovation-exemption|Innovation Exemption]].
+- **[Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)**
+  - *What this means for holders:* On Robinhood Chain you can now swap some Robinhood Stock Tokens for the matching Ondo token, which Ondo redeems 24/7, including weekends. See [[issuers/ondo-global-markets|Ondo]].
+- **[OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)**
+  - *What this means for holders:* More big companies, including JPMorgan, Coca-Cola and Walmart, have blocked third-party tokens of their stock on OKXICE. An objection only covers one venue. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
 - **[DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)**
   - *What this means for holders:* Large brokers can now turn shares held at DTC into tokens and back, same CUSIP and same rights. See [[infrastructure/dtcc-tokenization-pilot|DTCC]].
 - **[QRT, Vertalo and zerohash join the Issuer Sponsored Token Coalition](/changelog/2026-10-26-coalition-new-members)**
