@@ -1,11 +1,12 @@
 ---
 title: Changelog
-last_checked: '2026-10-29'
+last_checked: '2026-10-30'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-30: New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)
 - [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
 - [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
 - [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)

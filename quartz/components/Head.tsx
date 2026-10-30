@@ -5,12 +5,14 @@ import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
 import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
+import { canonicalUrl, jsonLd, robotsContent } from "./seo"
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
     fileData,
     externalResources,
     ctx,
+    tree,
   }: QuartzComponentProps) => {
     const titleSuffix = cfg.pageTitleSuffix ?? ""
     const title =
@@ -88,6 +90,23 @@ export default (() => {
         <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-touch-icon.png")} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        <meta name="robots" content={robotsContent()} />
+        {fileData.slug !== "404" && <link rel="canonical" href={canonicalUrl(fileData.slug!)} />}
+        {fileData.slug !== "404" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: jsonLd({
+                slug: fileData.slug!,
+                title,
+                description,
+                siteName: cfg.pageTitle,
+                modified: (fileData.frontmatter as any)?.last_checked,
+                tree,
+              }),
+            }}
+          />
+        )}
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

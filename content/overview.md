@@ -1,10 +1,10 @@
 ---
 title: 'Tokenized securities: how it fits together'
 type: overview
-description: How tokenized securities fit together (issuance, trading, settlement, custody, regulation) and what is new compared with traditional rails, with a section on who the wiki is for.
+description: How tokenized securities fit together (issuance, trading, settlement, custody, regulation), why tokenize, and what is new compared with traditional rails.
 tags:
 - overview
-last_checked: '2026-10-25'
+last_checked: '2026-10-30'
 sources:
 - https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf
 - https://www.fsb.org/uploads/P221024-2.pdf
@@ -31,6 +31,9 @@ sources:
 
 *Terms in this diagram: [[concepts/glossary#native-token|native token]], [[concepts/glossary#wrapper|wrapper]], [[concepts/glossary#kyc|KYC]], [[concepts/glossary#atomic-settlement|atomic]], [[concepts/glossary#t1|T+1]], [[concepts/glossary#custodian|custodian]]. [See the detailed version](#the-full-picture)*
 
+## What is a tokenized security?
+A tokenized security is an ordinary stock or bond whose ownership record lives on a shared digital ledger, so trading, settling and paying dividends can run automatically.
+
 ## Why tokenize securities?
 Today, buying a stock or bond goes through a chain of brokers, [[concepts/glossary#custodian|custodians]] and [[concepts/glossary#ccp|clearinghouses]]. Each one keeps its own records and has to reconcile them with the others, which is why settlement takes days and markets close at night. A token puts the asset and its ownership record on one shared ledger, so:
 
@@ -44,26 +47,6 @@ It's already real for big institutions, though two common numbers measure differ
 Tokenized Treasuries *held* on blockchains total about \$14.5B as of Oct 2026: that is a stock of assets, like an account balance ([rwa.xyz](https://app.rwa.xyz/treasuries)). Most tokenized assets so far are bonds and [[concepts/glossary#money-market-fund|money market funds]] ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
 
 Many stock tokens are wrappers: a third party holds the real share and gives you a token that tracks it, usually without a vote ([[overview#native-vs-wrapped|native vs wrapper]]).
-
-## Who is this for?
-- **Investors** curious about stock tokens: what you actually own, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
-- **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[overview#the-full-picture|the full-picture diagram]] and the topic pages: [[topics/settlement-and-matching|Settlement & matching]], [[topics/custody|Custody]], [[topics/regulation|Regulation]].
-- **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and the [database](/database).
-- **Software engineers and architects:** how tokenized securities systems are built: token contracts and [[concepts/glossary#compliance-hook|compliance hooks]], [[concepts/glossary#mint|mint]]/[[concepts/glossary#redeem|redeem]], onchain venues, [[concepts/glossary#atomic-settlement|atomic settlement]], onchain [[concepts/glossary#corporate-action|corporate actions]], with the standards and trade-offs behind each. Use it with your AI coding agents as a design reference for building or improving these systems, especially trading. Start with the [[build/trading-reference-architecture|reference architecture for trading]] and [[build/index|Build with this wiki]].
-- **AI agents:** machine-readable via [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) and the [agents guide](/agents), with sources on every fact, weekly updates and stable page anchors.
-
-What it isn't: a broker or investment advice. It's reference information, updated weekly.
-
-## How to use this wiki
-- **New to this?** Read the "Why" above, then the diagram at the top, then [[topics/who-can-buy|Who can buy]].
-- **Stuck on a word?** Look it up in the [[concepts/glossary|glossary]].
-- **Comparing platforms?** Use the [database](/database) of issuers and venues.
-- **Using an AI assistant?** Start with the [starter prompts](/starter-prompts) or the [guide for agents](/agents).
-- **Following rule changes?** See [what changed this week](/whats-changed), the [changelog](/changelog/), or [subscribe](/subscribe) for updates.
-- **Which rules apply where?** See [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
-
-## The one-sentence version
-A tokenized security is an ordinary stock or bond whose ownership record lives on a shared digital ledger, so trading, settling and paying dividends can run automatically.
 
 ## What's actually different from today's rails
 - **One shared record instead of many copies.** Today the official list of who owns a share sits with a [[concepts/glossary#transfer-agent|transfer agent]] or central depository, and every bank and broker in between keeps its own copy that has to be checked against the others. With tokens, everyone works from the same ledger, and the token balance can be the official record. The BIS says this joins "messaging, reconciliation and asset transfer into a single, seamless operation" ([BIS AER 2025, ch. III](https://www.bis.org/publ/arpdf/ar2025e3.htm)). A transfer agent often stays involved for regulatory reasons ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).

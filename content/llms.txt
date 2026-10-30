@@ -2,11 +2,16 @@
 
 > A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. Public data updates weekly, as of each Monday 00:00 ET. Content CC BY-NC 4.0. All pages in one file: https://edstokenizedsecuritiesrails.com/llms-full.txt
 
+- What: issuers, legal structures, custody, chains, venues, settlement and regulation for tokenized stocks and bonds, with a source on every fact.
+- Why: one place to check how tokenized securities really work, without hype; `unknown` marks anything not yet verified.
+- How: start at https://edstokenizedsecuritiesrails.com/overview, look up companies at https://edstokenizedsecuritiesrails.com/database, or use the copy-paste prompts at https://edstokenizedsecuritiesrails.com/starter-prompts/.
+
 ## Start here
-- [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure.
-- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): How tokenized securities fit together (issuance, trading, settlement, custody, regulation) and what is new compared with traditional rails, with a section on who the wiki is for.
+- [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): Tokenized securities, explained with sources: a human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
+- [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): How tokenized securities fit together (issuance, trading, settlement, custody, regulation), why tokenize, and what is new compared with traditional rails.
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki on the live site.
-- [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts): Example questions an AI agent can answer from this wiki.
+- [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts/): Copy-paste questions an AI assistant can answer from this wiki, plus prompts for AI coding agents.
+- [Prompts for coding agents](https://edstokenizedsecuritiesrails.com/starter-prompts/coding-agents): Copy-paste prompts for AI coding agents building tokenized-securities systems, each telling the agent to cite pages of this wiki.
 - [Build with this wiki](https://edstokenizedsecuritiesrails.com/build/): How engineers and their AI coding agents can use this wiki as a design reference for tokenized-stock trading systems, starting with the trading reference architecture.
 - [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 - [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
@@ -72,6 +77,7 @@
 - [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 
 ## Changelog entries
+- [2026-10-30: New front page and a starter-prompts hub](https://edstokenizedsecuritiesrails.com/changelog/2026-10-30-front-page-and-starter-prompts): - The front page now gives short answers to what the wiki is, who it's for and why tokenize, with three copy-paste prompts and one "How to use this wiki" section.
 - [2026-10-29: SIFMA's comment letter on the Innovation Exemption](https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-sifma-comment-letter): - SIFMA (19 Oct 2026) asks the SEC to amend the order: issuer opt-in consent for third-party tokens or, failing that, a 90-day objection period, a universal opt-out and an official TSV portal (SIFMA).
 - [2026-10-29: Ondo Stocks live on Robinhood Chain](https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-ondo-stocks-robinhood-chain): - Ondo bridged 15 Ondo Stocks to Robinhood Chain on 27 Oct 2026; 11 have Uniswap v4 StablePair pools against the matching Robinhood Stock Token (Ondo).
 - [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](https://edstokenizedsecuritiesrails.com/changelog/2026-10-29-okxice-38-objectors-opt-out): - OKXICE TSV: 38 issuers have objected as of its 28 Oct notice, up from 22 on 23 Oct; new names include JPMorgan, AMD, Coca-Cola, Dell, Eli Lilly and Walmart.

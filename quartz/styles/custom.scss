@@ -12,3 +12,30 @@ article table td:last-child, article table th:last-child { white-space: nowrap; 
 body[data-slug="database"] .sidebar.right { display: none !important; }
 @media (min-width: 1200px) { body[data-slug="database"] article .table-container { width: calc(100% + 320px); } }
 body[data-slug="database"] article table { font-size: 0.8rem; }
+
+// ---- Front page (content comes from vault home.md; this is decoration only) ----
+body[data-slug="index"] {
+  .article-title { display: none; } // home.md carries its own H1 hero
+  article > h1:first-of-type { font-size: 2.4rem; line-height: 1.15; margin-bottom: 0.4rem; }
+  article > h1:first-of-type + p { font-size: 1.15rem; color: var(--darkgray); max-width: 46rem; }
+  // first bullet list = hero buttons
+  article > h1:first-of-type ~ ul:first-of-type {
+    list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.2rem 0 1.6rem;
+    li { margin: 0; }
+    li::before { content: none; }
+    a { display: inline-block; padding: 0.55rem 1rem; border-radius: 8px; border: 1px solid var(--secondary);
+        font-weight: 600; text-decoration: none; background: transparent; }
+    li:first-child a { background: var(--secondary); color: var(--light); }
+    a:hover { filter: brightness(1.1); }
+  }
+  // overview diagram as a small linked thumbnail
+  a:has(> img[src*="overview-desktop"]) { display: inline-block; }
+  img[src*="overview-desktop"] { max-width: 320px; width: 100%; border: 1px solid var(--lightgray);
+        border-radius: 8px; padding: 6px; transition: box-shadow 0.15s; }
+  img[src*="overview-desktop"]:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+}
+
+// Copy-paste prompts: wrap long lines so the whole prompt is visible
+body[data-slug="index"], body[data-slug^="starter-prompts"] {
+  pre > code[data-language="text"], pre > code:not([data-language]) { white-space: pre-wrap; word-break: break-word; }
+}

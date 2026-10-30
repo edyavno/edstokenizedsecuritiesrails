@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-10-29'
+last_checked: '2026-10-30'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -12,6 +12,8 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)**
+  - *What this means for holders:* No change to any facts. The site is easier to start with: a short front page, one place for copy-paste prompts, and the overview now covers only how it fits together.
 - **[SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)**
   - *What this means for holders:* Wall Street's main trade group wants companies to opt in before third-party tokens of their stock can trade. See [[concepts/innovation-exemption|Innovation Exemption]].
 - **[Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)**

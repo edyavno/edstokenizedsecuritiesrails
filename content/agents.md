@@ -1,7 +1,7 @@
 ---
 title: Guide for AI agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: '2026-10-29'
+last_checked: '2026-10-30'
 ---
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
@@ -9,7 +9,7 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 ## Fast ways in
 - [`https://edstokenizedsecuritiesrails.com/llms.txt`](https://edstokenizedsecuritiesrails.com/llms.txt): one line per page with a short summary.
 - [`https://edstokenizedsecuritiesrails.com/llms-full.txt`](https://edstokenizedsecuritiesrails.com/llms-full.txt): every page in one plain-text file.
-- [[starter-prompts|Starter prompts]]: example questions this wiki can answer.
+- [[starter-prompts/index|Starter prompts]]: example questions this wiki can answer, plus [[starter-prompts/coding-agents|prompts for coding agents]].
 
 ## URL patterns
 | URL | What it holds |
@@ -34,7 +34,7 @@ The site updates weekly, as of each Monday 00:00 ET; [[whats-changed|What change
 
 ## How to cite
 - Cite the page URL and its last-updated (`last_checked`) date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)".
-- Link to a heading for a specific point. Headings are stable anchors: lowercase, spaces become hyphens, e.g. `https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture#rules-that-must-always-hold` or `https://edstokenizedsecuritiesrails.com/concepts/glossary#dvp`.
+- Link to a heading for a specific point. Headings are stable anchors: lowercase, spaces become hyphens, e.g. `https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture#key-rules` or `https://edstokenizedsecuritiesrails.com/concepts/glossary#dvp`.
 - For a specific fact, cite the original source linked on the page (regulator, filing, standard, issuer docs), not only the wiki.
 - If the page says `unknown`, report it as unknown; do not fill it in from elsewhere.
 - Changelog entries marked *unconfirmed, news report only* are single news reports; say so when you use them.

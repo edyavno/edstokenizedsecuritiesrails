@@ -4,7 +4,7 @@ type: build
 description: How engineers and their AI coding agents can use this wiki as a design reference for tokenized-stock trading systems, starting with the trading reference architecture.
 tags:
 - build
-last_checked: '2026-10-25'
+last_checked: '2026-10-30'
 sources:
 - https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
 - https://eips.ethereum.org/EIPS/eip-3643
@@ -20,9 +20,8 @@ sources:
 - [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) for a page index, [llms-full.txt](/llms-full.txt) for everything in one file, and the [guide for AI agents](/agents) for how to cite.
 - Ask it to cite the wiki page and the original source (SEC order, EIP), and to say "unknown" rather than guess.
 
-## Starter prompts
-- "Using /build/trading-reference-architecture, review my settlement flow and flag any way one leg could settle without the other."
-- "Compare onchain and hybrid matching for my venue using /build/trading-reference-architecture. Cite the sources."
+## Prompts for your coding agent
+Copy-paste prompts for design, implementation and review are in [[starter-prompts/coding-agents|Prompts for coding agents]].
 
 ## Related
 [[overview|Overview]] · [[topics/settlement-and-matching|Settlement & matching]] · [[concepts/token-primitives|Token primitives]] · [[concepts/glossary|Glossary]]
