@@ -7,7 +7,7 @@
 - How: start at https://edstokenizedsecuritiesrails.com/overview, look up companies at https://edstokenizedsecuritiesrails.com/database, or use the copy-paste prompts at https://edstokenizedsecuritiesrails.com/starter-prompts/.
 
 ## Start here
-- [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): Tokenized securities, explained with sources: a human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
+- [Ed’s Tokenized Securities Rails](https://edstokenizedsecuritiesrails.com/): A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 - [Tokenized securities: how it fits together](https://edstokenizedsecuritiesrails.com/overview): How tokenized securities fit together (issuance, trading, settlement, custody, regulation), why tokenize, and what is new compared with traditional rails.
 - [Guide for AI agents](https://edstokenizedsecuritiesrails.com/agents): How AI agents should read, query and cite this wiki on the live site.
 - [Starter prompts](https://edstokenizedsecuritiesrails.com/starter-prompts/): Copy-paste questions an AI assistant can answer from this wiki, plus prompts for AI coding agents.

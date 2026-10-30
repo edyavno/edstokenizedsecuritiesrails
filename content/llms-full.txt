@@ -4,13 +4,15 @@
 ========================================================================
 # Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
-description: Tokenized securities, explained with sources: a human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
+description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
 last_checked: 2026-10-30
 
-# Tokenized securities, explained with sources.
+# Ed’s Tokenized Securities Rails
 
-A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**: issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
+A human-curated, LLM-maintained, source-linked knowledge base on **tokenized securities infrastructure**
+
+Issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 - [Start with the overview](/overview)
 - [Try a starter prompt](/starter-prompts/)
