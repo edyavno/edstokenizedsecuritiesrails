@@ -16,8 +16,15 @@ body[data-slug="database"] article table { font-size: 0.8rem; }
 // ---- Front page (content comes from vault home.md; this is decoration only) ----
 body[data-slug="index"] {
   .article-title { display: none; } // home.md carries its own H1 hero
-  article > h1:first-of-type { font-size: 2.4rem; line-height: 1.15; margin-bottom: 0.4rem; }
-  article > h1:first-of-type + p { font-size: 1.15rem; color: var(--darkgray); max-width: 46rem; }
+  // visually hidden H1 (site name) for SEO/accessibility
+  article > h1:first-of-type { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .toc li:has(> a[href="#eds-tokenized-securities-rails"]) { display: none; }
+  // hero lead: Edward's line
+  article > h1:first-of-type + p { font-family: var(--headerFont); font-size: 1.5em; line-height: 1.3;
+    font-weight: 400; color: var(--dark); max-width: none; margin: 0.5rem 0 0.5rem;
+    strong { font-weight: 700; color: var(--dark); } }
+  article > h1:first-of-type + p + p { font-size: 0.95rem; color: var(--gray); margin-top: 0; }
   // first bullet list = hero buttons
   article > h1:first-of-type ~ ul:first-of-type {
     list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.2rem 0 1.6rem;
