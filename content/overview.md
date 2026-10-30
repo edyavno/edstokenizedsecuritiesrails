@@ -27,7 +27,7 @@ sources:
 <figure class="explainer-video">
 <video controls preload="none" playsinline poster="/diagrams/explainer/edstsr-explainer-poster.jpg" width="1920" height="1080" style="width:100%;height:auto" aria-label="54-second explainer video: how tokenized securities work">
 <source src="/diagrams/explainer/edstsr-explainer.mp4" type="video/mp4">
-<track kind="captions" src="/diagrams/explainer/edstsr-explainer.vtt" srclang="en" label="English" default>
+<track kind="captions" src="/diagrams/explainer/edstsr-explainer.vtt" srclang="en" label="English">
 </video>
 <figcaption>Explainer video (54 s, captions on): how tokenized securities work, from issuing a token to one trade, end to end.</figcaption>
 </figure>
