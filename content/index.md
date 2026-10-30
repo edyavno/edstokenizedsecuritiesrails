@@ -12,8 +12,8 @@ A human-curated, LLM-maintained, source-linked knowledge base on **tokenized sec
 Issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 - [Start with the overview](/overview)
-- [Try a starter prompt](/starter-prompts/)
-- [Browse the database](/database)
+- [Try a starter prompt](/starter-prompts)
+- [Browse issuers, venues & infrastructure](/database)
 
 ## What is this wiki?
 A reference on how stocks and bonds move onto blockchains: who issues the tokens, what you legally own, where they trade, how they settle and which rules apply. It's reference information, updated weekly. What it isn't: a broker or investment advice.
@@ -38,7 +38,7 @@ A reference on how stocks and bonds move onto blockchains: who issues the tokens
 The full case, and the catches, are in [[overview#why-tokenize-securities|the overview]].
 
 ## Try it with your AI
-Point your AI assistant at this wiki and paste a prompt. More in [[starter-prompts/index|Starter prompts]].
+Point your AI assistant at this wiki and paste a prompt. More in [[starter-prompts|Starter prompts]].
 
 ```text
 Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and say "unknown" rather than guess. Compare bStocks, xStocks and Robinhood Stock Tokens by legal structure, jurisdiction and who can buy.
@@ -57,15 +57,15 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 - **Looking up a company?** [[database|Issuer & platform database]] (22 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
-- **Using an AI agent?** [[starter-prompts/index|Starter prompts]] · [[starter-prompts/coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
+- **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
+- [2026-10-30: All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)
 - [2026-10-30: New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)
+- [2026-10-30: Explainer video and illustrated trade diagram added](/changelog/2026-10-30-explainer-video-and-trade-diagram)
 - [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
 - [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
-- [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
-- [2026-10-28: DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

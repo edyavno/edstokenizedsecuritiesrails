@@ -1,0 +1,227 @@
+{
+ "generated": "2026-10-30",
+ "source": "https://edstokenizedsecuritiesrails.com/database",
+ "license": "CC BY-NC 4.0",
+ "records": [
+  {
+   "name": "bStocks",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/bstocks",
+   "jurisdiction": "Abu Dhabi Global Market",
+   "structure": "Certificates over Shares (FSMR Sch.1 para 92); beneficial interest, not direct share ownership",
+   "chains": "BNB Smart Chain",
+   "who_can_buy": "Offer made only in ADGM; not to US persons (Reg S)",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "Coinbase Tokenized Stocks",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/coinbase-tokenized-stocks",
+   "jurisdiction": "Abu Dhabi Global Market (FSRA-authorized, per Coinbase via Zerion)",
+   "structure": "Beneficial claim on backing shares",
+   "chains": "Base",
+   "who_can_buy": "Eligible jurisdictions outside the US; offered under Regulation S",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "Crypto.com Tokenized Stocks",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/crypto-com-tokenized-stocks",
+   "jurisdiction": "Cyprus (EEA offering); other approved jurisdictions",
+   "structure": "Derivative tracking the price of the underlying",
+   "chains": "unknown",
+   "who_can_buy": "Eligible users in the EEA and other approved jurisdictions",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "Dinari dShares",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/dinari",
+   "jurisdiction": "United States (+85 jurisdictions per Fensory)",
+   "structure": "Tokens backed by custodied securities; jurisdiction-specific rights",
+   "chains": "Ethereum, Avalanche, Arbitrum, Base, (Sei, Solana announced)",
+   "who_can_buy": "Eligible US investors (since 2026-08-04); international per Fensory (secondary)",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "Figure OPEN",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/figure-open",
+   "jurisdiction": "United States",
+   "structure": "Blockchain-native equity",
+   "chains": "Provenance",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "Ondo Global Markets (Ondo Stocks)",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/ondo-global-markets",
+   "jurisdiction": "British Virgin Islands",
+   "structure": "Structured notes giving economic exposure; no shareholder voting/information rights",
+   "chains": "Ethereum, BNB Chain, Solana",
+   "who_can_buy": "Excludes US persons and several jurisdictions; some require qualified/professional status",
+   "last_checked": "2026-10-29"
+  },
+  {
+   "name": "Robinhood Stock Tokens",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/robinhood-stock-tokens",
+   "jurisdiction": "Jersey",
+   "structure": "Debt securities",
+   "chains": "Robinhood Chain",
+   "who_can_buy": "Not US, Canada, UK, Switzerland; other restrictions apply",
+   "last_checked": "2026-10-29"
+  },
+  {
+   "name": "Securitize (issuer-sponsored shares)",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/securitize",
+   "jurisdiction": "unknown",
+   "structure": "Securitize Stocks: UCC Article 8 security entitlements, 1:1 backed, via Securitize's broker-dealer; also issuer-sponsored shares",
+   "chains": "Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-28"
+  },
+  {
+   "name": "Superstate Opening Bell",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/superstate-opening-bell",
+   "jurisdiction": "unknown",
+   "structure": "Actual company shares (e.g. Galaxy Class A common)",
+   "chains": "Ethereum, Solana",
+   "who_can_buy": "KYC-verified investors in self-custody wallets",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "WisdomTree tokenized funds",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/wisdomtree",
+   "jurisdiction": "United States",
+   "structure": "Tokenized registered fund shares (FUNDS, not single stocks)",
+   "chains": "Solana, others (multi-chain)",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "xStocks (Backed)",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/xstocks-backed",
+   "jurisdiction": "Jersey",
+   "structure": "Tokenized certificates/tracker tokens backed by custodied securities",
+   "chains": "Solana, Ethereum, TON, Ink, (Tron, Mantle, BNB Chain announced as coming, Dec 2025)",
+   "who_can_buy": "Eligible non-US persons; excluded in US, UK, Canada, Australia and sanctioned jurisdictions",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "Bullish Exchange",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/bullish",
+   "jurisdiction": "Gibraltar",
+   "structure": "Issuer-sponsored shares recorded at the registry level",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-27"
+  },
+  {
+   "name": "Bybit",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/bybit",
+   "jurisdiction": "unknown",
+   "structure": "unknown",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "Kraken",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/kraken",
+   "jurisdiction": "unknown",
+   "structure": "unknown",
+   "chains": "unknown",
+   "who_can_buy": "Eligible non-US clients; EEA clients after a questionnaire, fiat-only via Convert",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "Nasdaq tokenized securities rule",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/nasdaq-tokenized-securities",
+   "jurisdiction": "United States",
+   "structure": "Same security, tokenized form; same CUSIP/ticker/rights, same order book",
+   "chains": "unknown",
+   "who_can_buy": "DTC Pilot eligible participants",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "NYSE / ICE tokenized securities",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/nyse-ice-tokenized-platform",
+   "jurisdiction": "United States",
+   "structure": "Same security, tokenized form (DTC pilot); planned 24/7 venue",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "OKXICE TSV",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/okxice-tsv",
+   "jurisdiction": "United States (TSV Exemption)",
+   "structure": "Permissioned AMM (Uniswap v4 hook)",
+   "chains": "unknown",
+   "who_can_buy": "Holders of access soulbound tokens; U.S. person conditions per order",
+   "last_checked": "2026-10-29"
+  },
+  {
+   "name": "Chainlink tokenized equity feeds",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds",
+   "jurisdiction": "unknown",
+   "structure": "Oracle",
+   "chains": "unknown",
+   "who_can_buy": "n/a",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "DTCC Tokenization Service (DTS)",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot",
+   "jurisdiction": "United States",
+   "structure": "Security entitlements recorded on DLT",
+   "chains": "At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)",
+   "who_can_buy": "DTC participants (20 signed at launch, 28 Oct 2026)",
+   "last_checked": "2026-10-28"
+  },
+  {
+   "name": "Uniswap v4 permissioned pools",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools",
+   "jurisdiction": "unknown",
+   "structure": "Permissioned AMM hook",
+   "chains": "unknown",
+   "who_can_buy": "Allowlisted addresses (issuer-defined)",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "name": "Vertalo",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/vertalo",
+   "jurisdiction": "United States",
+   "structure": "SEC-registered transfer agent",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-27"
+  },
+  {
+   "name": "Zerohash",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/zerohash",
+   "jurisdiction": "unknown",
+   "structure": "B2B infrastructure for compliant digital securities",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-10-27"
+  }
+ ]
+}

@@ -9,7 +9,7 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 ## Fast ways in
 - [`https://edstokenizedsecuritiesrails.com/llms.txt`](https://edstokenizedsecuritiesrails.com/llms.txt): one line per page with a short summary.
 - [`https://edstokenizedsecuritiesrails.com/llms-full.txt`](https://edstokenizedsecuritiesrails.com/llms-full.txt): every page in one plain-text file.
-- [[starter-prompts/index|Starter prompts]]: example questions this wiki can answer, plus [[starter-prompts/coding-agents|prompts for coding agents]].
+- [[starter-prompts|Starter prompts]]: example questions this wiki can answer, plus [[starter-prompts#prompts-for-coding-agents|prompts for coding agents]].
 
 ## URL patterns
 | URL | What it holds |

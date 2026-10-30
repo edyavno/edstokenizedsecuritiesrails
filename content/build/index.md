@@ -21,7 +21,7 @@ sources:
 - Ask it to cite the wiki page and the original source (SEC order, EIP), and to say "unknown" rather than guess.
 
 ## Prompts for your coding agent
-Copy-paste prompts for design, implementation and review are in [[starter-prompts/coding-agents|Prompts for coding agents]].
+Copy-paste prompts for design, implementation and review are in [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]].
 
 ## Related
 [[overview|Overview]] · [[topics/settlement-and-matching|Settlement & matching]] · [[concepts/token-primitives|Token primitives]] · [[concepts/glossary|Glossary]]

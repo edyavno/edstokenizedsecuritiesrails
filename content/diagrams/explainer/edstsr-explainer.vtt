@@ -1,0 +1,54 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.000
+Tokenized securities, explained
+
+2
+00:00:03.000 --> 00:00:09.000
+1 Issue. Native: the token is the share. Wrapper: a custodian holds the share; the token is a claim on it. A wrapper is a claim on the share, not the share.
+
+3
+00:00:09.000 --> 00:00:13.500
+2 Approve buyers. KYC, then the allowlist. Only KYC-checked investors.
+
+4
+00:00:13.500 --> 00:00:21.000
+One shared ledger. Issuer / TA, KYC provider, identity registry, token contract, venue, oracle, wallet holder and cash issuer (stablecoin or tokenized deposit) all write to it. Everyone works from the same record.
+
+5
+00:00:21.000 --> 00:00:26.500
+Rules travel with the token. Identity registry and compliance checks: an approved wallet receives, an unchecked wallet is refused. Permissioned tokens can refuse unchecked wallets.
+
+6
+00:00:26.500 --> 00:00:29.500
+Always open. The ledger never closes. An always-on ledger doesn't make 24/7 trading automatic.
+
+7
+00:00:29.500 --> 00:00:32.500
+One trade, end to end. Order: order book, RFQ or onchain pool.
+
+8
+00:00:32.500 --> 00:00:36.000
+Match: onchain or offchain. The venue asks the oracle: open? Price fresh? Halted or stale: order rejected.
+
+9
+00:00:36.000 --> 00:00:39.500
+Check: both wallets eligible. Both legs usually prefunded. That costs liquidity.
+
+10
+00:00:39.500 --> 00:00:43.500
+Swap: token and cash swap at once. One transaction: both legs settle, or neither does.
+
+11
+00:00:43.500 --> 00:00:47.000
+Record: balances update at once. Native: that's the register. Wrapped: reconcile the books.
+
+12
+00:00:47.000 --> 00:00:50.000
+4 Pay holders: dividends, votes, redemptions.
+
+13
+00:00:50.000 --> 00:00:54.000
+Adoption is early. Finality is a legal question. Reference information only. Not investment advice.
+

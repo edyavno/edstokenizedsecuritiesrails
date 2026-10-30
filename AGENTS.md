@@ -18,9 +18,9 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `content/changelog/` | Dated change entries |
 | `content/index.md` | Homepage (from `home.md` in the vault) |
 | `content/overview.md` | How the pieces fit together, with a diagram (`content/diagrams/`) |
-| `content/database.md` | One table of all issuers, venues and infrastructure |
+| `content/database.md` | One table of all issuers, venues and infrastructure (also `database.csv`, `database.json`) |
 | `content/whats-changed.md` | Weekly headlines with what each change means for holders |
-| `content/starter-prompts/` | Copy-paste prompts: research questions and prompts for coding agents |
+| `content/starter-prompts.md` | Copy-paste prompts: research questions, then prompts for coding agents |
 | `content/llms.txt` | One line per page with a short summary |
 | `content/llms-full.txt` | Every page in one plain-text file |
 
@@ -47,4 +47,4 @@ Cite the page URL (`https://edstokenizedsecuritiesrails.com/` + the path under `
 Content is CC BY-NC 4.0: free to use and share with attribution, not for commercial use. Reference information only; not investment advice. Content: `LICENSE-CONTENT`. Code (Quartz and site config): MIT, `LICENSE.txt`.
 
 ## Example questions
-See `content/starter-prompts/` (https://edstokenizedsecuritiesrails.com/starter-prompts/).
+See `content/starter-prompts.md` (https://edstokenizedsecuritiesrails.com/starter-prompts).

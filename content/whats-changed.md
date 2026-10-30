@@ -12,8 +12,12 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)**
+  - *What this means for holders:* No change to any facts. Prompts are now on one page, and the database can be downloaded as CSV or JSON.
 - **[New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)**
   - *What this means for holders:* No change to any facts. The site is easier to start with: a short front page, one place for copy-paste prompts, and the overview now covers only how it fits together.
+- **[Explainer video and illustrated trade diagram added](/changelog/2026-10-30-explainer-video-and-trade-diagram)**
+  - *What this means for holders:* No change to any facts. Explainer video and illustrated trade diagram added.
 - **[SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)**
   - *What this means for holders:* Wall Street's main trade group wants companies to opt in before third-party tokens of their stock can trade. See [[concepts/innovation-exemption|Innovation Exemption]].
 - **[Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)**

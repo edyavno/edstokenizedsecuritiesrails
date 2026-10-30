@@ -15,8 +15,8 @@ A human-curated, LLM-maintained, source-linked knowledge base on **tokenized sec
 Issuers, legal structures, custody, chains, venues, settlement and regulation. Every fact links to a source; unverified fields say `unknown`.
 
 - [Start with the overview](/overview)
-- [Try a starter prompt](/starter-prompts/)
-- [Browse the database](/database)
+- [Try a starter prompt](/starter-prompts)
+- [Browse issuers, venues & infrastructure](/database)
 
 ## What is this wiki?
 A reference on how stocks and bonds move onto blockchains: who issues the tokens, what you legally own, where they trade, how they settle and which rules apply. It's reference information, updated weekly. What it isn't: a broker or investment advice.
@@ -41,7 +41,7 @@ A reference on how stocks and bonds move onto blockchains: who issues the tokens
 The full case, and the catches, are in [[overview#why-tokenize-securities|the overview]].
 
 ## Try it with your AI
-Point your AI assistant at this wiki and paste a prompt. More in [[starter-prompts/index|Starter prompts]].
+Point your AI assistant at this wiki and paste a prompt. More in [[starter-prompts|Starter prompts]].
 
 ```text
 Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and say "unknown" rather than guess. Compare bStocks, xStocks and Robinhood Stock Tokens by legal structure, jurisdiction and who can buy.
@@ -60,15 +60,15 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 - **Looking up a company?** [[database|Issuer & platform database]] (22 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
-- **Using an AI agent?** [[starter-prompts/index|Starter prompts]] · [[starter-prompts/coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
+- **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
+- [2026-10-30: All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)
 - [2026-10-30: New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)
+- [2026-10-30: Explainer video and illustrated trade diagram added](/changelog/2026-10-30-explainer-video-and-trade-diagram)
 - [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
 - [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
-- [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
-- [2026-10-28: DTCC Tokenization Service goes live](/changelog/2026-10-28-dtcc-tokenization-service-live)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -83,6 +83,16 @@ URL: https://edstokenizedsecuritiesrails.com/overview
 description: How tokenized securities fit together (issuance, trading, settlement, custody, regulation), why tokenize, and what is new compared with traditional rails.
 type: overview
 last_checked: 2026-10-30
+
+<figure class="explainer-video">
+<video controls preload="none" playsinline poster="/diagrams/explainer/edstsr-explainer-poster.jpg" width="1920" height="1080" style="width:100%;height:auto" aria-label="54-second explainer video: how tokenized securities work">
+<source src="/diagrams/explainer/edstsr-explainer.mp4" type="video/mp4">
+<track kind="captions" src="/diagrams/explainer/edstsr-explainer.vtt" srclang="en" label="English" default>
+</video>
+<figcaption>Explainer video (54 s, captions on): how tokenized securities work, from issuing a token to one trade, end to end.</figcaption>
+</figure>
+
+*Video summary: a token is issued (native, or a wrapper that is a claim on a custodied share), only KYC-checked investors on the allowlist can buy, everyone works from one shared ledger, and a trade goes order, match, check, atomic swap, record. [Read the transcript (captions file)](/diagrams/explainer/edstsr-explainer.vtt) or see the [[#text-version-of-the-diagram|text version of the diagram]].*
 
 <picture>
 <source media="(max-width: 700px)" srcset="/diagrams/overview-mobile.svg">
@@ -145,6 +155,10 @@ The same four steps in detail: who does what at each step, the traditional role 
 4. **Pay holders.** Dividends, splits, votes and redemptions run through the token contract or the issuer's agent. See [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] and [[concepts/token-primitives|Token primitives]].
 
 ## Inside step 3: trade and settle
+<a href="/diagrams/explainer/ledger-and-trade-tall.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/explainer/ledger-and-trade-tall-1000.webp" alt="Tokenized securities, explained. One shared ledger: issuer / TA, KYC provider, identity registry, token contract, venue, oracle, wallet holder and cash issuer (stablecoin or tokenized deposit) all connect to it; everyone works from the same record. One trade, end to end. Order: an investor's wallet sends an order to a venue: order book, RFQ or onchain pool. Match: onchain or offchain match; the venue asks the oracle: open? Price fresh? Halted or stale: order rejected. Check: seller (token) and buyer (cash) wallets are both checked against the allowlist: both wallets eligible. Both legs usually prefunded. That costs liquidity. Swap: token and cash swap at once inside a locked contract between seller and buyer. One transaction: both legs settle, or neither does. Record: the ledger updates the register and the register reconciles with the ledger. Balances update at once. Native: that's the register. Wrapped: reconcile the books. Reference information only. Not investment advice." width="1000" height="2797" loading="lazy" style="width:100%;max-width:560px;height:auto"></a>
+
+*Illustrated: the shared ledger and one trade, end to end. Tap the image for full size.*
+
 - **3a Match.** Orders still meet on a familiar venue, such as an exchange or [[concepts/glossary#ats|ATS]] order book or a broker's [[concepts/glossary#rfq|RFQ]], or in an [[concepts/glossary#amm-automated-market-maker|onchain pool]] or AMM, as in [[infrastructure/uniswap-permissioned-pools|permissioned pools]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]]. Matching can happen off-chain with only settlement on the ledger, or entirely on-chain. Several US models keep the traditional book and tokenize post-trade only: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]] and the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]].
 - **3b Check (pre-trade).** The token contract checks that the receiving wallet is eligible ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)). Because on-ledger settlement is usually trade by trade (gross), both legs typically have to be in place up front. Projects that "eliminate principal counterparty risk" do so by requiring "high levels of liquidity, often through [[concepts/glossary#prefunding|prefunding]] on a platform" ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf)), rather than the [[concepts/glossary#netting|netting]] and credit that today's CCPs and brokers provide.
 - **3c Settle.** A [[concepts/glossary#smart-contract|smart contract]] swaps the security token for the cash token in one transaction, so both legs settle or neither does ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). IOSCO describes a range of settlement models. At one end the ledger is only shared books and records, and [[concepts/glossary#settlement-finality|settlement finality]] "remain[s] with the [[concepts/glossary#csd|CSD]]". At the other is DLT-native settlement, with assets and settlement instruments on the same ledger or linked ones ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Finality is still a legal question, not just a technical one: final settlement "is a legally defined moment" ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)).
@@ -218,7 +232,7 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 ## Fast ways in
 - [`https://edstokenizedsecuritiesrails.com/llms.txt`](https://edstokenizedsecuritiesrails.com/llms.txt): one line per page with a short summary.
 - [`https://edstokenizedsecuritiesrails.com/llms-full.txt`](https://edstokenizedsecuritiesrails.com/llms-full.txt): every page in one plain-text file.
-- [[starter-prompts/index|Starter prompts]]: example questions this wiki can answer, plus [[starter-prompts/coding-agents|prompts for coding agents]].
+- [[starter-prompts|Starter prompts]]: example questions this wiki can answer, plus [[starter-prompts#prompts-for-coding-agents|prompts for coding agents]].
 
 ## URL patterns
 | URL | What it holds |
@@ -260,21 +274,24 @@ Content is CC BY-NC 4.0: free to use and share with attribution, not for commerc
 
 ========================================================================
 # Starter prompts
-URL: https://edstokenizedsecuritiesrails.com/starter-prompts/index
-description: Copy-paste questions an AI assistant can answer from this wiki, plus prompts for AI coding agents.
+URL: https://edstokenizedsecuritiesrails.com/starter-prompts
+description: Copy-paste prompts for AI assistants: research questions answerable from this wiki, then prompts for AI coding agents building tokenized-securities systems.
 type: hub
 last_checked: 2026-10-30
 
-Copy a prompt into your AI assistant. Each one is answerable from this wiki alone.
+Copy a prompt into your AI assistant. Research prompts come first; [[#prompts-for-coding-agents|prompts for coding agents]] are further down.
 
-**Building software?** See [[starter-prompts/coding-agents|Prompts for coding agents]].
+## Research prompts
+Each one is answerable from this wiki alone.
 
-## Start every session with
+**Building software?** Jump to [[#prompts-for-coding-agents|Prompts for coding agents]].
+
+### Start every session with
 ```text
 Read https://edstokenizedsecuritiesrails.com/llms-full.txt (or clone the site repo). Cite page URLs and last-updated dates, and say "unknown" rather than guess.
 ```
 
-## Structures and rights
+### Structures and rights
 ```text
 Which issuers offer native shares on the issuer's register, and which offer wrapped or derivative tokens? Cite the page for each.
 ```
@@ -287,7 +304,7 @@ Compare bStocks, xStocks and Robinhood Stock Tokens by legal structure, jurisdic
 What rights does a holder of a Dinari dShare have compared with a Superstate Opening Bell holder?
 ```
 
-## Venues and settlement
+### Venues and settlement
 ```text
 How does Nasdaq's approved tokenized securities rule keep tokenized and traditional shares on the same order book?
 ```
@@ -300,7 +317,7 @@ What does the DTC no-action letter allow, and which venue rules reference the DT
 Summarize the OKXICE TSV design under the Innovation Exemption: access, pairs and custody.
 ```
 
-## Standards and infrastructure
+### Standards and infrastructure
 ```text
 Compare ERC-3643, ERC-1400 and Solana Token-2022 on how they enforce transfer restrictions.
 ```
@@ -313,7 +330,7 @@ How do Chainlink tokenized equity feeds handle stock splits and multipliers?
 How do Uniswap v4 permissioned pools enforce issuer allowlists?
 ```
 
-## Regulation and markets
+### Regulation and markets
 ```text
 Which entities are US-regulated versus offered only outside the US? Build a table with jurisdiction and status.
 ```
@@ -326,25 +343,20 @@ What does the SEC staff statement on tokenized securities say about issuer-spons
 How are dividends and corporate actions handled across issuers? Note any that are `unknown`.
 ```
 
-## Tips
+### Tips
 - Ask the agent to cite page URLs and `last_checked` dates, and to say `unknown` rather than guess.
 - The site updates weekly; check the linked sources for anything time-sensitive.
 
-========================================================================
-# Prompts for coding agents
-URL: https://edstokenizedsecuritiesrails.com/starter-prompts/coding-agents
-description: Copy-paste prompts for AI coding agents building tokenized-securities systems, each telling the agent to cite pages of this wiki.
-type: hub
-last_checked: 2026-10-30
-
+## Prompts for coding agents
+Copy-paste prompts for AI coding agents building tokenized-securities systems. Each tells the agent to cite pages of this wiki. See also [[build/index|Build with this wiki]].
 *In plain English: ready-made prompts for AI coding agents. Each tells the agent to read this wiki first and cite the pages it relies on. A design reference, not legal advice.*
 
-## Start every session with
+### Start every session with
 ```text
 Read https://edstokenizedsecuritiesrails.com/llms.txt and /build/ before answering. Cite wiki page URLs with headings and last-updated dates, cite the original source for any rule, and say "unknown" rather than guess.
 ```
 
-## Design
+### Design
 **Permissioned onchain pool under the SEC exemption**
 ```text
 Design a permissioned AMM pool for tokenized US stocks that meets the SEC Innovation Exemption venue conditions (credentialed participants, issuer notice and objection, public contracts, halt mirroring, tier caps). Use /concepts/innovation-exemption and /build/trading-reference-architecture. For each condition, name the component that enforces it and cite the SEC order.
@@ -356,7 +368,7 @@ Using /build/trading-reference-architecture, propose an architecture for [my use
 ```
 
 
-## Implement
+### Implement
 **ERC-3643 compliance module**
 ```text
 Add an ERC-3643 compliance module that limits [rule, e.g. holders per country]. Follow /standards/erc-3643. Implement canTransfer, transferred, created and destroyed, and write property tests for key rule 1 (only allowlisted wallets receive the token) in /build/trading-reference-architecture#key-rules.
@@ -373,7 +385,7 @@ Implement a halt controller that pauses a pool when the primary exchange halts a
 ```
 
 
-## Review
+### Review
 **Settlement flow review**
 ```text
 Review this settlement flow against /topics/settlement-and-matching and /build/trading-reference-architecture#key-rules. List every way a leg could settle without the other, and what prefunding it needs.
@@ -388,9 +400,6 @@ Review my mint and redeem service against /build/trading-reference-architecture 
 ```text
 List every admin key in my design and what it can do, using /topics/custody and /standards/erc-3643. Flag any single key that can move investor tokens.
 ```
-
-
-See also [[starter-prompts/index|Starter prompts]] for research questions and [[build/index|Build with this wiki]].
 
 ========================================================================
 # Build with this wiki
@@ -409,7 +418,7 @@ last_checked: 2026-10-30
 - Ask it to cite the wiki page and the original source (SEC order, EIP), and to say "unknown" rather than guess.
 
 ## Prompts for your coding agent
-Copy-paste prompts for design, implementation and review are in [[starter-prompts/coding-agents|Prompts for coding agents]].
+Copy-paste prompts for design, implementation and review are in [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]].
 
 ## Related
 [[overview|Overview]] · [[topics/settlement-and-matching|Settlement & matching]] · [[concepts/token-primitives|Token primitives]] · [[concepts/glossary|Glossary]]
@@ -983,8 +992,12 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)**
+  - *What this means for holders:* No change to any facts. Prompts are now on one page, and the database can be downloaded as CSV or JSON.
 - **[New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)**
   - *What this means for holders:* No change to any facts. The site is easier to start with: a short front page, one place for copy-paste prompts, and the overview now covers only how it fits together.
+- **[Explainer video and illustrated trade diagram added](/changelog/2026-10-30-explainer-video-and-trade-diagram)**
+  - *What this means for holders:* No change to any facts. Explainer video and illustrated trade diagram added.
 - **[SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)**
   - *What this means for holders:* Wall Street's main trade group wants companies to opt in before third-party tokens of their stock can trade. See [[concepts/innovation-exemption|Innovation Exemption]].
 - **[Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)**
@@ -1145,12 +1158,16 @@ Public originals for the facts on this page.
 - <https://www.wyoleg.gov/2019/Enroll/SF0125.pdf>
 
 ========================================================================
-# Database
+# Database of tokenized-securities issuers, venues and infrastructure
 URL: https://edstokenizedsecuritiesrails.com/database
-description: Headline fields for every published issuer, venue and infrastructure page, in one table.
+description: One table of the 22 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
 last_checked: 2026-10-30
 
-Generated from vault frontmatter on 2026-10-30. Headline fields only; `unknown` means not yet verified from a source.
+**What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 22 records in total, made up of 11 token issuers, 6 trading venues and exchange rules, and 5 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
+
+**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-10-30.
+
+**Download:** [CSV](/database.csv) · [JSON](/database.json) (full field text, CC BY-NC 4.0).
 
 | Name | Type | Jurisdiction | Structure | Chains | Who can buy | Checked |
 |---|---|---|---|---|---|---|
@@ -1185,7 +1202,9 @@ last_checked: 2026-10-30
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-10-30: All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)
 - [2026-10-30: New front page and a starter-prompts hub](/changelog/2026-10-30-front-page-and-starter-prompts)
+- [2026-10-30: Explainer video and illustrated trade diagram added](/changelog/2026-10-30-explainer-video-and-trade-diagram)
 - [2026-10-29: SIFMA's comment letter on the Innovation Exemption](/changelog/2026-10-29-sifma-comment-letter)
 - [2026-10-29: Ondo Stocks live on Robinhood Chain](/changelog/2026-10-29-ondo-stocks-robinhood-chain)
 - [2026-10-29: OKXICE objections reach 38; how issuer opt-outs work; Better Markets letter](/changelog/2026-10-29-okxice-38-objectors-opt-out)
@@ -1225,9 +1244,13 @@ Public changes, every entry in the vault as of each publish. See [[whats-changed
 URL: https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture
 description: End-to-end reference architecture for trading tokenized stocks on tokenized rails: onboarding and allowlisting, onchain or hybrid matching, compliance hooks, atomic DvP, register sync, and oracle and halt controls.
 type: build
-last_checked: 2026-10-25
+last_checked: 2026-10-30
 
 *In plain English: an overview of how a tokenized-stock trading system fits together, from letting an investor in, through the trade, to updating the official record. Deeper pages on each part will be added as the roadmap ships.*
+
+<a href="/diagrams/explainer/ledger-and-trade-wide.png" title="Open full size"><img src="/diagrams/explainer/ledger-and-trade-wide.png" alt="The shared ledger and one trade, end to end. One shared ledger: issuer / TA, KYC provider, identity registry, token contract, venue, oracle, wallet holder and cash issuer (stablecoin or tokenized deposit) all connect to the same ledger; everyone works from the same record. One trade in five steps: Order: order book, RFQ or onchain pool. Match: oracle: open? price fresh? Halted: rejected. Check: both wallets eligible; both legs usually prefunded. Atomic swap: token and cash swap at once: both legs or neither. Record: balances update at once; native: the register; wrapped: reconcile. Reference information only. Not investment advice." width="1920" height="1080" loading="lazy" style="width:100%;height:auto"></a>
+
+*Illustrated overview: the shared ledger and one trade, end to end. The text diagrams below give the detail.*
 
 ## End-to-end components
 ```mermaid
@@ -3103,13 +3126,29 @@ Public originals for the facts on this page.
 *Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
+# 2026-10-30: All starter prompts on one page; database downloads
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-30-one-prompts-page-and-database-downloads
+last_checked: 2026-10-30
+
+- [[starter-prompts|Starter prompts]] is now one page: research prompts first, then [[starter-prompts#prompts-for-coding-agents|prompts for coding agents]]. Old links redirect.
+- The [[database|database]] page now says what it holds, where the data comes from, and offers CSV and JSON downloads.
+
+========================================================================
 # 2026-10-30: New front page and a starter-prompts hub
 URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-30-front-page-and-starter-prompts
 last_checked: 2026-10-30
 
 - The front page now gives short answers to what the wiki is, who it's for and why tokenize, with three copy-paste prompts and one "How to use this wiki" section. See the [[overview|overview]] for the full explanation.
-- [[starter-prompts/index|Starter prompts]] is now one hub with research questions and 8 new [[starter-prompts/coding-agents|prompts for coding agents]]. Each prompt has a copy button.
+- [[starter-prompts|Starter prompts]] is now one hub with research questions and 8 new [[starter-prompts#prompts-for-coding-agents|prompts for coding agents]]. Each prompt has a copy button.
 - The [[overview|overview]] now covers only how tokenized securities fit together. "Who is this for?" and "How to use this wiki" moved to the front page.
+
+========================================================================
+# 2026-10-30: Explainer video and illustrated trade diagram added
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-10-30-explainer-video-and-trade-diagram
+last_checked: 2026-10-30
+
+- Explainer video and illustrated trade diagram added. The [[overview|overview]] now opens with a 54-second captioned explainer video and shows an illustrated, tap-to-enlarge diagram of one trade in "Inside step 3".
+- The [[build/trading-reference-architecture|reference architecture for trading]] now opens with a wide illustrated diagram of the shared ledger and one trade, end to end. The text diagrams stay.
 
 ========================================================================
 # 2026-10-29: SIFMA's comment letter on the Innovation Exemption

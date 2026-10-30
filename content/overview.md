@@ -24,6 +24,16 @@ sources:
 - https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
 ---
 
+<figure class="explainer-video">
+<video controls preload="none" playsinline poster="/diagrams/explainer/edstsr-explainer-poster.jpg" width="1920" height="1080" style="width:100%;height:auto" aria-label="54-second explainer video: how tokenized securities work">
+<source src="/diagrams/explainer/edstsr-explainer.mp4" type="video/mp4">
+<track kind="captions" src="/diagrams/explainer/edstsr-explainer.vtt" srclang="en" label="English" default>
+</video>
+<figcaption>Explainer video (54 s, captions on): how tokenized securities work, from issuing a token to one trade, end to end.</figcaption>
+</figure>
+
+*Video summary: a token is issued (native, or a wrapper that is a claim on a custodied share), only KYC-checked investors on the allowlist can buy, everyone works from one shared ledger, and a trade goes order, match, check, atomic swap, record. [Read the transcript (captions file)](/diagrams/explainer/edstsr-explainer.vtt) or see the [[#text-version-of-the-diagram|text version of the diagram]].*
+
 <picture>
 <source media="(max-width: 700px)" srcset="/diagrams/overview-mobile.svg">
 <img src="/diagrams/overview-desktop.svg" alt="How tokenized securities work in four steps: issue, approve buyers, trade and settle, pay holders; plus native token versus wrapper" style="width:100%;height:auto">
@@ -85,6 +95,10 @@ The same four steps in detail: who does what at each step, the traditional role 
 4. **Pay holders.** Dividends, splits, votes and redemptions run through the token contract or the issuer's agent. See [[topics/corporate-actions-and-dividends|Corporate actions & dividends]] and [[concepts/token-primitives|Token primitives]].
 
 ## Inside step 3: trade and settle
+<a href="/diagrams/explainer/ledger-and-trade-tall.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/explainer/ledger-and-trade-tall-1000.webp" alt="Tokenized securities, explained. One shared ledger: issuer / TA, KYC provider, identity registry, token contract, venue, oracle, wallet holder and cash issuer (stablecoin or tokenized deposit) all connect to it; everyone works from the same record. One trade, end to end. Order: an investor's wallet sends an order to a venue: order book, RFQ or onchain pool. Match: onchain or offchain match; the venue asks the oracle: open? Price fresh? Halted or stale: order rejected. Check: seller (token) and buyer (cash) wallets are both checked against the allowlist: both wallets eligible. Both legs usually prefunded. That costs liquidity. Swap: token and cash swap at once inside a locked contract between seller and buyer. One transaction: both legs settle, or neither does. Record: the ledger updates the register and the register reconciles with the ledger. Balances update at once. Native: that's the register. Wrapped: reconcile the books. Reference information only. Not investment advice." width="1000" height="2797" loading="lazy" style="width:100%;max-width:560px;height:auto"></a>
+
+*Illustrated: the shared ledger and one trade, end to end. Tap the image for full size.*
+
 - **3a Match.** Orders still meet on a familiar venue, such as an exchange or [[concepts/glossary#ats|ATS]] order book or a broker's [[concepts/glossary#rfq|RFQ]], or in an [[concepts/glossary#amm-automated-market-maker|onchain pool]] or AMM, as in [[infrastructure/uniswap-permissioned-pools|permissioned pools]] and the [[concepts/innovation-exemption|onchain-venue (TSV) model]]. Matching can happen off-chain with only settlement on the ledger, or entirely on-chain. Several US models keep the traditional book and tokenize post-trade only: see the [[concepts/post-trade-reg-nms-model|post-trade / Reg NMS model]] and the [[infrastructure/dtcc-tokenization-pilot|DTC tokenization pilot]].
 - **3b Check (pre-trade).** The token contract checks that the receiving wallet is eligible ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)). Because on-ledger settlement is usually trade by trade (gross), both legs typically have to be in place up front. Projects that "eliminate principal counterparty risk" do so by requiring "high levels of liquidity, often through [[concepts/glossary#prefunding|prefunding]] on a platform" ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf)), rather than the [[concepts/glossary#netting|netting]] and credit that today's CCPs and brokers provide.
 - **3c Settle.** A [[concepts/glossary#smart-contract|smart contract]] swaps the security token for the cash token in one transaction, so both legs settle or neither does ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). IOSCO describes a range of settlement models. At one end the ledger is only shared books and records, and [[concepts/glossary#settlement-finality|settlement finality]] "remain[s] with the [[concepts/glossary#csd|CSD]]". At the other is DLT-native settlement, with assets and settlement instruments on the same ledger or linked ones ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). Finality is still a legal question, not just a technical one: final settlement "is a legally defined moment" ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)).

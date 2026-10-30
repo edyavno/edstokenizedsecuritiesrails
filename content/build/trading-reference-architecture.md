@@ -4,7 +4,7 @@ type: build
 description: 'End-to-end reference architecture for trading tokenized stocks on tokenized rails: onboarding and allowlisting, onchain or hybrid matching, compliance hooks, atomic DvP, register sync, and oracle and halt controls.'
 tags:
 - build
-last_checked: '2026-10-25'
+last_checked: '2026-10-30'
 sources:
 - https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
 - https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture
@@ -18,6 +18,10 @@ sources:
 ---
 
 *In plain English: an overview of how a tokenized-stock trading system fits together, from letting an investor in, through the trade, to updating the official record. Deeper pages on each part will be added as the roadmap ships.*
+
+<a href="/diagrams/explainer/ledger-and-trade-wide.png" title="Open full size"><img src="/diagrams/explainer/ledger-and-trade-wide.png" alt="The shared ledger and one trade, end to end. One shared ledger: issuer / TA, KYC provider, identity registry, token contract, venue, oracle, wallet holder and cash issuer (stablecoin or tokenized deposit) all connect to the same ledger; everyone works from the same record. One trade in five steps: Order: order book, RFQ or onchain pool. Match: oracle: open? price fresh? Halted: rejected. Check: both wallets eligible; both legs usually prefunded. Atomic swap: token and cash swap at once: both legs or neither. Record: balances update at once; native: the register; wrapped: reconcile. Reference information only. Not investment advice." width="1920" height="1080" loading="lazy" style="width:100%;height:auto"></a>
+
+*Illustrated overview: the shared ledger and one trade, end to end. The text diagrams below give the detail.*
 
 ## End-to-end components
 ```mermaid
