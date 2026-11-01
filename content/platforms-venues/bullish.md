@@ -1,0 +1,67 @@
+---
+name: Bullish Exchange
+jurisdiction: Gibraltar
+product_name: Tokenized BLSH shares
+structure: Issuer-sponsored shares recorded at the registry level
+chains: unknown
+who_can_buy: unknown
+num_assets: 1 (BLSH) at launch
+structure_short: Venue (CEX), direct shares
+who_can_buy_short: unknown
+last_checked: '2026-10-30'
+title: Bullish Exchange
+tags:
+- platforms-venues
+type: venue
+chain: unknown
+status: live (first trades 2026-08-12)
+last_updated: '2026-10-30'
+description: 'In plain English: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.'
+---
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** Gibraltar  
+> **Chain:** unknown  
+> **Status:** live (first trades 2026-08-12)  
+> **Last updated:** 2026-10-30  
+
+| Field | Value |
+|---|---|
+| name | Bullish Exchange |
+| jurisdiction | Gibraltar |
+| product_name | Tokenized BLSH shares |
+| structure | Issuer-sponsored shares recorded at the registry level |
+| chains | unknown |
+| who_can_buy | unknown |
+| num_assets | 1 (BLSH) at launch |
+
+*In plain English: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.*
+
+On 12 Aug 2026 market participants traded Bullish's tokenized BLSH shares on Bullish Exchange, settled against a USD stablecoin; Bullish says this was the first tokenized equity traded on a Gibraltar Financial Services Commission (GFSC) regulated digital asset exchange ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)). Bullish says it received GFSC approval for tokenized securities trading in June 2026 (not confirmed on a GFSC page), and the registry side depends on its pending acquisition of Equiniti ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+
+On 24 Sep 2026 Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] to set standards for [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]]. Bullish expects its \$4.2B Equiniti acquisition, agreed in May 2026, to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
+## Why it matters
+- **The register.** Bullish is buying Equiniti, a transfer agent that keeps companies' official shareholder records, for \$4.2B. The deal is expected to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)). Once it closes, Bullish will own the business that records who holds the shares.
+- **The model the rules favor.** The SEC's [[concepts/innovation-exemption|Innovation Exemption]] requires a tokenized stock to carry the same rights as the share, and lets issuers object to tokens made without them ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)). Through the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], Bullish pushes tokens issued by the company itself and tied to its register ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+- **No objection problem.** Third-party tokens can be blocked: 50 issuers had objected to [[platforms-venues/okxice-tsv|OKXICE]] by 30 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.30.pdf)). Issuer-sponsored tokens skip that step.
+- **First live example.** Canton Strategic Holdings (CNTN) is sponsoring its own token on [[platforms-venues/tsv-llc|TSV LLC]], with Fairmint as transfer agent ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm); [TSV notice](https://www.tokenizedstockvenue.com/notice.html)). That deal doesn't involve the coalition.
+- **Nothing issued yet that we've found.** We haven't found any security issued through the coalition so far. It's a non-binding working group ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+- *Analysis, not reported fact:* if issuer-sponsored tokens catch on, Bullish could earn twice, from register and tokenization work through Equiniti and from trading on its exchange. Bullish hasn't said this.
+
+## What this means for holders
+- The tokens are issuer-sponsored and recorded at the share registry, so holders own shares directly, not a wrapper or derivative ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+- Only BLSH trades this way so far; trading runs 24/7 with near-instant settlement ([Bullish](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading)).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading>
+- <https://www.sec.gov/Archives/edgar/data/1872195/000143774926027408/blsh20260812_6k.htm>
+- <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
+- <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
+
+*Last checked 2026-10-30. Headline fields only; `unknown` means not yet verified from a source.*

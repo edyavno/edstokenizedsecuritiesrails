@@ -1,0 +1,67 @@
+---
+name: Superstate Opening Bell
+jurisdiction: unknown
+product_name: Tokenized company shares (e.g. GLXY)
+structure: Actual company shares (e.g. Galaxy Class A common)
+chains:
+- Ethereum
+- Solana
+who_can_buy: KYC-verified investors in self-custody wallets
+num_assets: 3 on RWA.xyz
+structure_short: Issuer shares, TA record
+who_can_buy_short: KYC'd investors
+last_checked: '2026-10-17'
+title: Superstate Opening Bell
+tags:
+- issuers
+type: issuer
+chain:
+- Ethereum
+- Solana
+status: live
+last_updated: '2026-10-17'
+description: 'In plain English: Superstate''s Opening Bell puts real company shares on a blockchain, with Superstate keeping the official shareholder register.'
+---
+
+> [!info] At a glance
+> **Type:** issuer  
+> **Jurisdiction:** unknown  
+> **Chain:** Ethereum, Solana  
+> **Status:** live  
+> **Last updated:** 2026-10-17  
+
+| Field | Value |
+|---|---|
+| name | Superstate Opening Bell |
+| jurisdiction | unknown |
+| product_name | Tokenized company shares (e.g. GLXY) |
+| structure | Actual company shares (e.g. Galaxy Class A common) |
+| chains | Ethereum, Solana |
+| who_can_buy | KYC-verified investors in self-custody wallets |
+| num_assets | 3 on RWA.xyz |
+
+*In plain English: Superstate's Opening Bell puts real company shares on a blockchain, with Superstate keeping the official shareholder register.*
+
+Galaxy (GLXY) Class A common stock is tokenized on [[concepts/glossary#solana|Solana]] via Opening Bell; Superstate, an SEC-registered [[concepts/glossary#transfer-agent|transfer agent]], updates ownership records ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares); [Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+
+Superstate acts as SEC-registered transfer agent and keeps the cap table onchain ([Superstate](https://www.superstate.com/opening-bell)). Galaxy's research describes [[concepts/glossary#allowlist|allowlisted]] self-custody and transfer-agent mechanics ([Galaxy](https://www.galaxy.com/insights/research/tokenized-glxy)); launch exhibit on EDGAR ([SEC](https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm)).
+
+## What this means for holders
+- Tokenized GLXY is the actual Class A share recorded by Superstate as SEC-registered [[concepts/glossary#transfer-agent|transfer agent]]: a [[concepts/glossary#native-token|native token]], not a [[concepts/glossary#wrapper|wrapper]] ([Galaxy](https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares)).
+- You need [[concepts/glossary#kyc|KYC]] and a self-custody [[concepts/glossary#wallet|wallet]] ([Superstate docs](https://docs.superstate.com/investors/tokenized-equities)).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://www.galaxy.com/newsroom/galaxy-superstate-launch-glxy-tokenized-public-shares>
+- <https://investor.galaxy.com/ir-resources/tokenized-glxy-shares>
+- <https://docs.superstate.com/investors/tokenized-equities>
+- <https://app.rwa.xyz/stocks>
+- <https://zerion.io/blog/best-tokenized-stock-platforms/>
+- <https://www.superstate.com/opening-bell>
+- <https://www.galaxy.com/insights/research/tokenized-glxy>
+- <https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*

@@ -1,0 +1,15 @@
+Content license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Applies to: all wiki content, meaning the Markdown pages and other written content in content/
+(including diagrams, database.csv, database.json, llms.txt and llms-full.txt).
+
+You may share and adapt this content for any purpose, including commercially, as long as you give
+credit, link to the license and say if you made changes.
+
+Attribution: Edward Yavno, Ed's Tokenized Securities Rails, https://edstokenizedsecuritiesrails.com
+
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by/4.0/
+
+Code (Quartz, site config and tooling) is licensed separately under MIT; see LICENSE.txt.
+Reference information only. Not investment advice.

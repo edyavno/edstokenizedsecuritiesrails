@@ -1,0 +1,55 @@
+---
+name: Bybit
+jurisdiction: unknown
+product_name: xStocks spot listing
+structure: unknown
+chains: unknown
+who_can_buy: unknown
+num_assets: unknown
+structure_short: Venue (CEX)
+who_can_buy_short: unknown
+last_checked: '2026-10-17'
+title: Bybit
+tags:
+- platforms-venues
+type: venue
+chain: unknown
+status: live (xStocks listed 2025-06-30)
+last_updated: '2026-10-17'
+description: 'In plain English: Bybit is a crypto exchange that lists xStocks for trading.'
+---
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** unknown  
+> **Chain:** unknown  
+> **Status:** live (xStocks listed 2025-06-30)  
+> **Last updated:** 2026-10-17  
+
+| Field | Value |
+|---|---|
+| name | Bybit |
+| jurisdiction | unknown |
+| product_name | xStocks spot listing |
+| structure | unknown |
+| chains | unknown |
+| who_can_buy | unknown |
+| num_assets | unknown |
+
+*In plain English: Bybit is a crypto exchange that lists xStocks for trading.*
+
+Bybit listed xStocks on its spot platform on 30 June 2025 ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+
+## What this means for holders
+- Bybit lists xStocks, so what you hold is an xStock with Backed's terms: see [[issuers/xstocks-backed|xStocks]] ([PR Newswire](https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html)).
+- Who can buy, withdrawals and fees on Bybit are `unknown` in the sources so far.
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
+- <https://zerion.io/blog/best-tokenized-stock-platforms/>
+
+*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
