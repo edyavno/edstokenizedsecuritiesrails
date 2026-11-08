@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-11-01'
+last_checked: '2026-11-02'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -12,6 +12,15 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)**
+- **[Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)**
+- **[NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)**
+- **[South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)**
+- **[ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)**
+- **[Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)**
+- Database: 2 headline field updates across issuer, venue and token records.
+
+## Week of 26 Oct 2026
 - **[IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)**
 - **[DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)**
 - **[Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)**

@@ -4,7 +4,7 @@ type: concept
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
-last_checked: '2026-10-30'
+last_checked: '2026-11-02'
 sources:
 - https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change
 - https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf
@@ -51,6 +51,8 @@ sources:
 - https://llmstxt.org/
 - https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf
 - https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html
+- https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d
+- https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf
 ---
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
@@ -215,7 +217,7 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 ## E
 
 ### Entitlement token
-A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
+A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)) Not the same as the tokens from DTC's Tokenization Service, which represent participants' entitlements to securities held at [[concepts/glossary#dtc|DTC]] and move only between DTC-approved wallets ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). SIFMA uses "security entitlement token" more broadly for any token a custodian uses to record a customer's holding; it says the token is not itself a security, but moving it moves the security ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
 
 *Related:* [[issuers/securitize|Securitize]] · [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
 
@@ -599,3 +601,5 @@ Public originals for the facts on this page.
 - <https://llmstxt.org/>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
+- <https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf>

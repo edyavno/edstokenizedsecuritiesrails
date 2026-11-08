@@ -3,7 +3,7 @@ title: Innovation Exemption and the onchain-venue (TSV) model
 type: concept
 tags:
 - concepts
-last_checked: '2026-10-30'
+last_checked: '2026-11-02'
 sources:
 - https://www.cnbc.com/2026/10/21/tokenized-stocks-us-companies-object.html
 - https://business.cch.com/srd/34-106402091726.pdf
@@ -24,6 +24,7 @@ sources:
 - https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf
 - https://www.sec.gov/comments/4-927/4927-1107499-3908312.pdf
 - https://www.sec.gov/comments/4-927/4927-1096319-3852226.pdf
+- https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf
 description: 'In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.'
 ---
 
@@ -53,6 +54,8 @@ A week after the order, Bullish and Equiniti formed the [[concepts/issuer-sponso
 
 ## Comment file (4-927)
 Better Markets, an investor advocacy nonprofit, filed a 13-page letter on 22 Oct 2026. It calls TSVs and the dealer exemption the largest rewrite of secondary equity trading rules since [[concepts/glossary#reg-nms|Reg NMS]], argues such changes need APA notice-and-comment rulemaking (with cost-benefit analysis) rather than an order, and urges the SEC to withdraw or rescind the order. It also asks that third-party tokens require the issuer's affirmative consent instead of an opt-out ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf), raw/155).
+
+Before the order, at a 27 Jan 2026 SEC Crypto Task Force meeting with Citadel and JPMorgan, SIFMA warned that broad exemptions for tokenized trading could weaken investor protection and said an innovation exemption is no substitute for notice-and-comment rulemaking ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
 
 SIFMA, the broker-dealer and asset manager trade group, filed an initial letter on 19 Oct 2026 (signed by CEO Kenneth Bentsen). Unlike Better Markets it does not ask for withdrawal; it asks the SEC to amend the order and answer operational questions. Its asks: trading of third-party tokens only with the issuer's affirmative consent (opt-in); failing that, an official SEC- or FINRA-run portal listing TSVs, their notices and issuer elections, a 90-day objection period from confirmed receipt, and a single universal issuer opt-out; and the right to object at any time, even after trading starts. It also asks about surveillance (CAT, ISG), volume limits across venues, beneficial ownership and corporate actions, and says it would support the SEC giving venues more time before they begin operating ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf), raw/158).
 
@@ -88,3 +91,4 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf>
 - <https://www.sec.gov/comments/4-927/4927-1107499-3908312.pdf>
 - <https://www.sec.gov/comments/4-927/4927-1096319-3852226.pdf>
+- <https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf>

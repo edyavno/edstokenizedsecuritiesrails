@@ -15,7 +15,7 @@
 - [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 - [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
 - [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
-- [Database of tokenized-securities issuers, venues and infrastructure](https://edstokenizedsecuritiesrails.com/database): One table of the 23 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
+- [Database of tokenized-securities issuers, venues and infrastructure](https://edstokenizedsecuritiesrails.com/database): One table of the 25 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
 - [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 
 ## Build
@@ -70,13 +70,21 @@
 - [TSV LLC](https://edstokenizedsecuritiesrails.com/platforms-venues/tsv-llc): In plain English: TSV LLC is a planned onchain venue on Canton under the SEC's Innovation Exemption.
 
 ## Infrastructure
+- [Broadridge](https://edstokenizedsecuritiesrails.com/infrastructure/broadridge): In plain English: Broadridge runs most shareholder voting in the US, and plans to let holders of tokenized NYSE shares vote from their wallets.
 - [Chainlink tokenized equity feeds](https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds): In plain English: Chainlink supplies stock prices to blockchains so apps can value stock tokens, including outside market hours.
 - [DTCC Tokenization Service (DTS)](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot): In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.
+- [tZERO](https://edstokenizedsecuritiesrails.com/infrastructure/tzero): In plain English: tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE's approved token record-keepers.
 - [Uniswap v4 permissioned pools](https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools): In plain English: Uniswap's permissioned pools let only approved wallets trade a token, so regulated assets can use onchain pools.
 - [Vertalo](https://edstokenizedsecuritiesrails.com/infrastructure/vertalo): In plain English: Vertalo keeps companies' official shareholder records and links tokens to them, so token holders get dividends and votes.
 - [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 
 ## Changelog entries
+- [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-source-fixes): holders: DTC's token conversions run Monday to Friday, 2 a.m.-6 p.m. ET; once converted, tokens can move any time between approved wallets.
+- [2026-11-02: Australia's central bank consults on settling tokenised assets](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-rba-rits-tokenised-settlement): holders: No direct effect on holders yet; this is about how banks and platforms might settle tokenised trades in central bank money in Australia.
+- [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-nyse-transfer-agent-network): NYSE now has six transfer agent partners for issuer-sponsored tokens on its planned tokenized securities platform: Broadridge, Computershare, Equiniti and…
+- [2026-11-02: South Korea's tokenized securities regime added](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-korea-tokenized-securities-rules): holders: Korea will treat security tokens as securities from 4 Feb 2027, starting with institutional funds and bonds and some fractional products, with a…
+- [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-esm-pontes-bond): holders: A first large European public-sector bond settled on a blockchain platform in central bank money, a sign that wholesale settlement is moving from…
+- [2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B](https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-bitquery-market-size-estimate): holders: About 41% of tokenized stocks by value sit with Binance's bStocks, most of it in Binance's own wallets, per a third-party estimate.
 - [2026-10-31: IMF publishes the first official data on tokenized-stock trading](https://edstokenizedsecuritiesrails.com/changelog/2026-10-31-imf-gfsr-scaling-tokenization): holders: Tokenized stocks track the real share closely, but more than half of trading happens while US markets are closed, so prices can move before the…
 - [2026-10-31: DTCC firm counts clarified](https://edstokenizedsecuritiesrails.com/changelog/2026-10-31-dtcc-firm-counts): holders: No change for holders; this fixes how the page reports how many firms tested DTCC's service.
 - [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](https://edstokenizedsecuritiesrails.com/changelog/2026-10-31-boe-tokenised-collateral-ccps): holders: No direct change for token holders yet; it could make tokenised bonds and funds more usable as margin in UK clearing over time.

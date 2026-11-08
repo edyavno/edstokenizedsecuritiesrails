@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01",
+ "generated": "2026-11-02",
  "source": "https://edstokenizedsecuritiesrails.com/database",
  "license": "CC BY 4.0",
  "records": [
@@ -161,7 +161,7 @@
    "structure": "Same security, tokenized form (DTC pilot); planned 24/7 venue",
    "chains": "unknown",
    "who_can_buy": "unknown",
-   "last_checked": "2026-10-17"
+   "last_checked": "2026-11-02"
   },
   {
    "name": "OKXICE TSV",
@@ -184,6 +184,16 @@
    "last_checked": "2026-10-30"
   },
   {
+   "name": "Broadridge",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/broadridge",
+   "jurisdiction": "United States",
+   "structure": "Proxy voting, transfer agency and tokenization infrastructure",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-11-02"
+  },
+  {
    "name": "Chainlink tokenized equity feeds",
    "type": "Infra",
    "url": "https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds",
@@ -201,7 +211,17 @@
    "structure": "Security entitlements recorded on DLT",
    "chains": "At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)",
    "who_can_buy": "DTC participants (20 signed at launch, 28 Oct 2026)",
-   "last_checked": "2026-10-28"
+   "last_checked": "2026-11-02"
+  },
+  {
+   "name": "tZERO",
+   "type": "Infra",
+   "url": "https://edstokenizedsecuritiesrails.com/infrastructure/tzero",
+   "jurisdiction": "United States",
+   "structure": "Digital transfer agent and broker-dealer infrastructure",
+   "chains": "unknown",
+   "who_can_buy": "unknown",
+   "last_checked": "2026-11-02"
   },
   {
    "name": "Uniswap v4 permissioned pools",
@@ -221,7 +241,7 @@
    "structure": "SEC-registered transfer agent",
    "chains": "unknown",
    "who_can_buy": "unknown",
-   "last_checked": "2026-10-27"
+   "last_checked": "2026-11-02"
   },
   {
    "name": "Zerohash",

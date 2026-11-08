@@ -2,7 +2,7 @@
 title: Settlement & matching
 tags:
 - topics
-last_checked: 2026-10-31
+last_checked: '2026-11-02'
 sources:
 - https://www.bankofengland.co.uk/paper/2026/cp/supervisory-expectations-for-ccps-seeking-to-accept-tokenised-collateral
 - https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live
@@ -12,6 +12,9 @@ sources:
 - https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html
 - https://support.kraken.com/articles/xstocks-faq
 - https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm
+- https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d
+- https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764
+- https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf
 description: 'In plain English: How tokenized stock trades get matched and settled, and how that differs from today''s next-day settlement.'
 ---
 
@@ -27,7 +30,11 @@ Tokenized stocks trade and settle in several ways (see [[overview|the overview]]
 - **National exchanges** trade tokenized and traditional shares on one order book with equal priority, settled through [[concepts/glossary#dtc|DTC]] ([[platforms-venues/nasdaq-tokenized-securities|Nasdaq]]; [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 ## Post-trade
-DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, targeting 15 minutes or less ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). DTC's participant notice says conversion orders run Monday to Friday, 2 a.m.-6 p.m. ET, and tokens then move 24/7 between allowed listed [[concepts/glossary#wallet|wallets]] on supported networks ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). On-chain netting and digital cash are on the 2027+ roadmap.
+
+In Europe, the ESM settled a €1bn DLT bond through the Eurosystem's Pontes platform on 26 Oct 2026, with the bond on Clearstream's D7 and the cash leg in central bank money in T2 ([Deutsche Börse release](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764)).
+
+Central banks are weighing how to link token platforms to their payment systems. The Reserve Bank of Australia's Sep 2026 consultation lays out three [[concepts/glossary#dvp|DvP]] models: lock the asset, then pay in the central bank system (used by Australia's Austraclear and CHESS today); lock the central bank money, then move the asset (used in property settlement); or lock both through a synchronisation operator (as the Bank of England and Bundesbank have considered). It picks none ([RBA consultation paper](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)).
 
 ## Collateral and clearing
 The Bank of England's 29 Oct 2026 consultation says UK [[concepts/glossary#ccp|CCPs]] can already accept tokenised forms of eligible collateral (cash, bonds and other instruments, gold) under existing rules. Its draft expectations cover liquidity, valuation and interoperability, settlement finality, credit and concentration risk, operational resilience, and custody. Liquidity must be judged separately from the underlying asset, since trading hours and conversion can affect a forced sale. It also asks about wider collateral such as stablecoins and tokenised money market funds. Closes 12 Feb 2027 ([Bank of England CP](https://www.bankofengland.co.uk/paper/2026/cp/supervisory-expectations-for-ccps-seeking-to-accept-tokenised-collateral)).
@@ -46,3 +53,6 @@ Public originals for the facts on this page.
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 - <https://support.kraken.com/articles/xstocks-faq>
 - <https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
+- <https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764>
+- <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
