@@ -2,7 +2,7 @@
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: '2026-11-02'
+last_checked: '2026-11-08'
 ---
 
 # Ed’s Tokenized Securities Rails

@@ -1,6 +1,6 @@
 ---
 title: Changelog
-last_checked: '2026-11-02'
+last_checked: '2026-11-08'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 

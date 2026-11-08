@@ -1,12 +1,12 @@
 ---
 title: Database of tokenized-securities issuers, venues and infrastructure
 description: One table of the 25 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
-last_checked: '2026-11-02'
+last_checked: '2026-11-08'
 ---
 
 **What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 25 records in total, made up of 11 token issuers, 7 trading venues and exchange rules, and 7 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
 
-**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-02.
+**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-08.
 
 **Download:** [CSV](/database.csv) · [JSON](/database.json) (full field text, CC BY 4.0).
 
