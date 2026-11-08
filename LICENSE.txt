@@ -3,10 +3,6 @@ MIT License
 Copyright (c) 2021 jackyzha0 (Quartz)
 Copyright (c) 2026 Edward Yavno (site configuration and tooling)
 
-This MIT license covers the code in this repository (Quartz, quartz.config.ts,
-quartz.layout.ts, components, plugins, styles and scripts). It does not cover
-the wiki content in content/, which is CC BY 4.0; see LICENSE-CONTENT.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

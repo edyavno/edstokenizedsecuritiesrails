@@ -21,6 +21,5 @@ Rendered with [Quartz v4](https://quartz.jzhao.xyz). The application, styles, fu
 
 ## License
 - Content (`content/`: wiki pages, Markdown, diagrams, data files): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Free to reuse and adapt, including commercially, with credit: "Edward Yavno, Ed's Tokenized Securities Rails". See `LICENSE-CONTENT`.
-- Historical code remains under MIT; its notice is retained in `LICENSE.txt`. Application code is maintained separately.
 
 Reference information only. Not investment advice.
