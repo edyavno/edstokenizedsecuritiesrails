@@ -17,8 +17,6 @@ Site: https://edstokenizedsecuritiesrails.com · Machine-readable index: [`conte
 ## How it works
 `content/` is generated from a private source-of-truth vault by a publish script. Public pages carry headline fields and readable summaries; changes appear with a delay. Do not edit `content/` by hand.
 
-Rendered with [Quartz v4](https://quartz.jzhao.xyz). The application, styles, functions and build/deployment tooling are maintained separately; this repository contains the approved content edition, not a runnable application.
-
 ## License
 - Content (`content/`: wiki pages, Markdown, diagrams, data files): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Free to reuse and adapt, including commercially, with credit: "Edward Yavno, Ed's Tokenized Securities Rails". See `LICENSE-CONTENT`.
 

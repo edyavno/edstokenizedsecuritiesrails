@@ -24,8 +24,6 @@ Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-lin
 | `content/llms.txt` | One line per page with a short summary |
 | `content/llms-full.txt` | Every page in one plain-text file |
 
-Everything else (`quartz/`, `quartz.config.ts`, `quartz.layout.ts`, `package.json`, `node_modules/`, `public/`, `docs/`) is the Quartz static-site engine that renders `content/` into the website. You can ignore it.
-
 ## Working with the wiki locally
 - Start with `content/llms.txt` to see every page and its summary, or load `content/llms-full.txt` to get everything at once.
 - Search with grep or ripgrep, e.g. `rg -i "transfer agent" content/`, then read the matching files.
@@ -44,7 +42,7 @@ The site updates weekly: it carries content as of the most recent Monday 00:00 E
 Cite the page URL (`https://edstokenizedsecuritiesrails.com/` + the path under `content/` without `.md`) and its `last_updated` date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)". For a specific fact, prefer the original source linked on the page.
 
 ## Licence
-Content is CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Code (Quartz, site config and tooling) is MIT. Reference information only; not investment advice. Content: `LICENSE-CONTENT`. Code: `LICENSE.txt`.
+Content is CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Reference information only; not investment advice. Content: `LICENSE-CONTENT`.
 
 ## Example questions
 See `content/starter-prompts.md` (https://edstokenizedsecuritiesrails.com/starter-prompts).
