@@ -1,7 +1,7 @@
 ---
 title: Guide for AI agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: '2026-11-02'
+last_checked: '2026-11-08'
 ---
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.

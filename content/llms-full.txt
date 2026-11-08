@@ -1,12 +1,12 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-11-02; public data is a weekly snapshot as of 2026-11-02. CC BY 4.0.
+> Human-curated, LLM-maintained. Generated 2026-11-08; public data is a weekly snapshot as of 2026-11-02. CC BY 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: 2026-11-02
+last_checked: 2026-11-08
 
 # Ed’s Tokenized Securities Rails
 
@@ -253,7 +253,7 @@ Public originals for the facts on this page.
 # Guide for AI agents
 URL: https://edstokenizedsecuritiesrails.com/agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: 2026-11-02
+last_checked: 2026-11-08
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
 
@@ -1018,7 +1018,7 @@ Public originals for the facts on this page.
 # What changed
 URL: https://edstokenizedsecuritiesrails.com/whats-changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: 2026-11-02
+last_checked: 2026-11-08
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
@@ -1221,11 +1221,11 @@ Public originals for the facts on this page.
 # Database of tokenized-securities issuers, venues and infrastructure
 URL: https://edstokenizedsecuritiesrails.com/database
 description: One table of the 25 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
-last_checked: 2026-11-02
+last_checked: 2026-11-08
 
 **What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 25 records in total, made up of 11 token issuers, 7 trading venues and exchange rules, and 7 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
 
-**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-02.
+**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-08.
 
 **Download:** [CSV](/database.csv) · [JSON](/database.json) (full field text, CC BY 4.0).
 
@@ -1261,7 +1261,7 @@ last_checked: 2026-11-02
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
-last_checked: 2026-11-02
+last_checked: 2026-11-08
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
