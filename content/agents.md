@@ -47,4 +47,4 @@ The site updates weekly, as of each Monday 00:00 ET; [[whats-changed|What change
 See [[build/index|Build with this wiki]] and the [[build/trading-reference-architecture|reference architecture for trading]].
 
 ## Licence
-Content is CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Code (Quartz, site config and tooling) is MIT. Reference information only; not investment advice.
+Content is CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Reference information only; not investment advice.
