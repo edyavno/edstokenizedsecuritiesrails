@@ -1,12 +1,12 @@
 # Ed’s Tokenized Securities Rails (all public pages)
-> Human-curated, LLM-maintained. Generated 2026-11-01; public data is a weekly snapshot as of 2026-10-26. CC BY 4.0.
+> Human-curated, LLM-maintained. Generated 2026-11-02; public data is a weekly snapshot as of 2026-11-02. CC BY 4.0.
 
 ========================================================================
 # Ed’s Tokenized Securities Rails
 URL: https://edstokenizedsecuritiesrails.com/index
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: 2026-11-01
+last_checked: 2026-11-02
 
 # Ed’s Tokenized Securities Rails
 
@@ -57,18 +57,18 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 
 ## How to use this wiki
 - **New to this?** [[overview|Overview]] → [[concepts/glossary|Glossary]] → [[topics/who-can-buy|Who can buy]]
-- **Looking up a company?** [[database|Issuer & platform database]] (23 entities)
+- **Looking up a company?** [[database|Issuer & platform database]] (25 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 - **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
-- [2026-10-31: IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)
-- [2026-10-31: DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)
-- [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)
-- [2026-10-30: All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)
-- [2026-10-30: 50 companies now object to OKXICE stock tokens](/changelog/2026-10-30-okxice-50-objectors)
+- [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)
+- [2026-11-02: Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)
+- [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)
+- [2026-11-02: South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)
+- [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -253,7 +253,7 @@ Public originals for the facts on this page.
 # Guide for AI agents
 URL: https://edstokenizedsecuritiesrails.com/agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: 2026-11-01
+last_checked: 2026-11-02
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
 
@@ -463,7 +463,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/glossary
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 type: concept
-last_checked: 2026-10-30
+last_checked: 2026-11-02
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
 
@@ -627,7 +627,7 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 ## E
 
 ### Entitlement token
-A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html))
+A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)) Not the same as the tokens from DTC's Tokenization Service, which represent participants' entitlements to securities held at [[concepts/glossary#dtc|DTC]] and move only between DTC-approved wallets ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). SIFMA uses "security entitlement token" more broadly for any token a custodian uses to record a customer's holding; it says the token is not itself a security, but moving it moves the security ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
 
 *Related:* [[issuers/securitize|Securitize]] · [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
 
@@ -1011,12 +1011,14 @@ Public originals for the facts on this page.
 - <https://llmstxt.org/>
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
+- <https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf>
 
 ========================================================================
 # What changed
 URL: https://edstokenizedsecuritiesrails.com/whats-changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: 2026-11-01
+last_checked: 2026-11-02
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
@@ -1026,6 +1028,15 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)**
+- **[Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)**
+- **[NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)**
+- **[South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)**
+- **[ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)**
+- **[Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)**
+- Database: 2 headline field updates across issuer, venue and token records.
+
+## Week of 26 Oct 2026
 - **[IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)**
 - **[DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)**
 - **[Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)**
@@ -1138,26 +1149,28 @@ A free weekly email with these headlines. [[subscribe|Subscribe]].
 URL: https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction
 description: In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
 type: topic
-last_checked: 2026-10-25
+last_checked: 2026-11-02
 
 *In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
 
-Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 0 of 12 jurisdictions are not yet collected.
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 1 of 14 jurisdictions are not yet collected.
 
 | Jurisdiction | Status | Main rule or guidance | Last checked |
 |---|---|---|---|
-| United States (federal) | Rules in force | [SEC Innovation Exemption for tokenized NMS stock (Rel. 34-106402)](https://business.cch.com/srd/34-106402091726.pdf) | 2026-10-25 |
-| United States (states) | Rules in force | [State securities acts apply to tokenized securities; Wyoming UCC treatment of digital securities](https://www.wyoleg.gov/2019/Enroll/SF0125.pdf) | 2026-10-25 |
-| European Union | Pilot or sandbox | [DLT Pilot Regime (ESMA recommends making it permanent and wider)](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf) | 2026-10-25 |
-| United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox) | 2026-10-25 |
-| Switzerland | Rules in force | [DLT Act (FinMIA Chapter 4a, DLT trading facilities)](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/) | 2026-10-25 |
-| Singapore | Regulator guidance | [MAS Guide on the Tokenisation of Capital Markets Products](https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps) | 2026-10-25 |
-| Hong Kong | Regulator guidance | [SFC circular on tokenised securities-related activities (23EC52)](https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52) | 2026-10-25 |
-| UAE (ADGM) | Regulator guidance | [FSRA Guidance on Regulation of Digital Securities Activities (digital securities are Securities under FSMR)](https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f) | 2026-10-25 |
-| UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-10-25 |
-| Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-10-25 |
-| British Virgin Islands | Rules in force | [VASP Act 2022 and SIBA (issuer domicile for Ondo Global Markets)](https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022) | 2026-10-25 |
-| Gibraltar | Rules in force | [GFSC-regulated DLT exchange (Bullish) approved for tokenized securities trading](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading) | 2026-10-25 |
+| United States (federal) | Rules in force | [SEC Innovation Exemption for tokenized NMS stock (Rel. 34-106402)](https://business.cch.com/srd/34-106402091726.pdf) | 2026-11-02 |
+| United States (states) | Rules in force | [State securities acts apply to tokenized securities; Wyoming UCC treatment of digital securities](https://www.wyoleg.gov/2019/Enroll/SF0125.pdf) | 2026-11-02 |
+| European Union | Pilot or sandbox | [DLT Pilot Regime (ESMA recommends making it permanent and wider)](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf) | 2026-11-02 |
+| United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox) | 2026-11-02 |
+| Switzerland | Rules in force | [DLT Act (FinMIA Chapter 4a, DLT trading facilities)](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/) | 2026-11-02 |
+| Singapore | Regulator guidance | [MAS Guide on the Tokenisation of Capital Markets Products](https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps) | 2026-11-02 |
+| South Korea | Proposed | [Revised Electronic Registration Act and FSCMA (tokenized securities), effective 4 Feb 2027](https://fsc.go.kr/eng/pr010101/87834) | 2026-11-02 |
+| Australia | Not yet collected | [No tokenization rule collected; RBA consultation on RITS settlement for tokenised assets (closed 30 Oct 2026)](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf) | not yet checked |
+| Hong Kong | Regulator guidance | [SFC circular on tokenised securities-related activities (23EC52)](https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52) | 2026-11-02 |
+| UAE (ADGM) | Regulator guidance | [FSRA Guidance on Regulation of Digital Securities Activities (digital securities are Securities under FSMR)](https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f) | 2026-11-02 |
+| UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-11-02 |
+| Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-11-02 |
+| British Virgin Islands | Rules in force | [VASP Act 2022 and SIBA (issuer domicile for Ondo Global Markets)](https://www.bvifsc.vg/news/industry-updates/virtual-assets-service-providers-act-2022) | 2026-11-02 |
+| Gibraltar | Rules in force | [GFSC-regulated DLT exchange (Bullish) approved for tokenized securities trading](https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading) | 2026-11-02 |
 
 **Status key.** *Rules in force*: a rule, order or licence regime that applies now. *Pilot or sandbox*: a time-limited or capped regime. *Regulator guidance*: guidance on how existing securities law applies to tokens. *Proposed*: filed or proposed, not yet approved.
 
@@ -1174,6 +1187,8 @@ Public originals for the facts on this page.
 - <https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f>
 - <https://business.cch.com/srd/34-106402091726.pdf>
 - <https://dfpi.ca.gov/regulated-industries/digital-financial-assets/digital-financial-assets-law-frequently-asked-questions/digital-financial-assets-law-preparing-for-your-application/>
+- <https://fsc.go.kr/eng/pr010101/87653>
+- <https://fsc.go.kr/eng/pr010101/87834>
 - <https://investors.bullish.com/news-releases/news-release-details/bullish-launches-tokenized-equity-trading>
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
@@ -1194,6 +1209,7 @@ Public originals for the facts on this page.
 - <https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/>
 - <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
+- <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
@@ -1204,12 +1220,12 @@ Public originals for the facts on this page.
 ========================================================================
 # Database of tokenized-securities issuers, venues and infrastructure
 URL: https://edstokenizedsecuritiesrails.com/database
-description: One table of the 23 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
-last_checked: 2026-11-01
+description: One table of the 25 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
+last_checked: 2026-11-02
 
-**What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 23 records in total, made up of 11 token issuers, 7 trading venues and exchange rules, and 5 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
+**What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 25 records in total, made up of 11 token issuers, 7 trading venues and exchange rules, and 7 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
 
-**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-01.
+**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-02.
 
 **Download:** [CSV](/database.csv) · [JSON](/database.json) (full field text, CC BY 4.0).
 
@@ -1230,23 +1246,31 @@ last_checked: 2026-11-01
 | [Bybit](/platforms-venues/bybit) | Venue/rule | unknown | Venue (CEX) | unknown | unknown | 2026-10-17 |
 | [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-10-25 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-10-17 |
-| [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-10-17 |
+| [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | unknown | unknown | 2026-11-02 |
 | [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | unknown | SBT-gated | 2026-10-31 |
 | [TSV LLC](/platforms-venues/tsv-llc) | Venue/rule | United States | TSV, permissioned AMM | Canton | Approved participants | 2026-10-30 |
+| [Broadridge](/infrastructure/broadridge) | Infra | United States | Governance + transfer agent… | unknown | B2B | 2026-11-02 |
 | [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-10-17 |
-| [DTCC Tokenization Service (DTS)](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-10-28 |
+| [DTCC Tokenization Service (DTS)](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-11-02 |
+| [tZERO](/infrastructure/tzero) | Infra | United States | Transfer agent + broker-deale… | unknown | B2B | 2026-11-02 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-10-17 |
-| [Vertalo](/infrastructure/vertalo) | Infra | United States | Transfer agent (B2B) | unknown | B2B | 2026-10-27 |
+| [Vertalo](/infrastructure/vertalo) | Infra | United States | Transfer agent (B2B) | unknown | B2B | 2026-11-02 |
 | [Zerohash](/infrastructure/zerohash) | Infra | unknown | Tokenization engine (B2B) | unknown | B2B | 2026-10-27 |
 
 ========================================================================
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
-last_checked: 2026-11-01
+last_checked: 2026-11-02
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)
+- [2026-11-02: Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)
+- [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)
+- [2026-11-02: South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)
+- [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)
+- [2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)
 - [2026-10-31: IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)
 - [2026-10-31: DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)
 - [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)
@@ -1432,7 +1456,7 @@ Public originals for the facts on this page.
 URL: https://edstokenizedsecuritiesrails.com/concepts/innovation-exemption
 description: In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions.
 type: concept
-last_checked: 2026-10-30
+last_checked: 2026-11-02
 
 *In plain English: The SEC now lets a few approved onchain venues trade tokens of US stocks, for a limited time and under conditions. This page explains how that works and who objects.*
 
@@ -1460,6 +1484,8 @@ A week after the order, Bullish and Equiniti formed the [[concepts/issuer-sponso
 
 ## Comment file (4-927)
 Better Markets, an investor advocacy nonprofit, filed a 13-page letter on 22 Oct 2026. It calls TSVs and the dealer exemption the largest rewrite of secondary equity trading rules since [[concepts/glossary#reg-nms|Reg NMS]], argues such changes need APA notice-and-comment rulemaking (with cost-benefit analysis) rather than an order, and urges the SEC to withdraw or rescind the order. It also asks that third-party tokens require the issuer's affirmative consent instead of an opt-out ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf), raw/155).
+
+Before the order, at a 27 Jan 2026 SEC Crypto Task Force meeting with Citadel and JPMorgan, SIFMA warned that broad exemptions for tokenized trading could weaken investor protection and said an innovation exemption is no substitute for notice-and-comment rulemaking ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
 
 SIFMA, the broker-dealer and asset manager trade group, filed an initial letter on 19 Oct 2026 (signed by CEO Kenneth Bentsen). Unlike Better Markets it does not ask for withdrawal; it asks the SEC to amend the order and answer operational questions. Its asks: trading of third-party tokens only with the issuer's affirmative consent (opt-in); failing that, an official SEC- or FINRA-run portal listing TSVs, their notices and issuer elections, a 90-day objection period from confirmed receipt, and a single universal issuer opt-out; and the right to object at any time, even after trading starts. It also asks about surveillance (CAT, ISG), volume limits across venues, beneficial ownership and corporate actions, and says it would support the SEC giving venues more time before they begin operating ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf), raw/158).
 
@@ -1495,18 +1521,22 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf>
 - <https://www.sec.gov/comments/4-927/4927-1107499-3908312.pdf>
 - <https://www.sec.gov/comments/4-927/4927-1096319-3852226.pdf>
+- <https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf>
 
 ========================================================================
 # International regimes
 URL: https://edstokenizedsecuritiesrails.com/concepts/international
 description: In plain English: How rules for tokenized securities differ outside the US, region by region.
 type: concept
-last_checked: 2026-10-31
+last_checked: 2026-11-02
 
 *In plain English: How rules for tokenized securities differ outside the US, region by region.*
 
 **EU [[concepts/glossary#dlt|DLT]] Pilot Regime**: ESMA's 2025 review found low uptake, with only [[concepts/glossary#csd|CSD]] Prague, 21X and 360X authorised; barriers include thresholds, interoperability, central-bank money and legal uncertainty. ESMA recommends making the regime permanent and wider ([ESMA report](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf); [ESMA press](https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent)).
 **UK tokenised collateral at CCPs**: on 29 Oct 2026 the Bank of England consulted on draft supervisory expectations for clearing houses (CCPs) that want to accept tokenised versions of collateral they can already take. It says current rules are no barrier and creates no new regime; the token must still be valued, moved and sold when needed, including in stress. Responses close 12 Feb 2027 ([Bank of England CP](https://www.bankofengland.co.uk/paper/2026/cp/supervisory-expectations-for-ccps-seeking-to-accept-tokenised-collateral)).
+**EU central bank money settlement (Pontes)**: on 26 Oct 2026 the European Stability Mechanism (ESM) settled a €1bn digital benchmark bond through Pontes, the Eurosystem platform that settles DLT trades in central bank money (live since 21 Sep 2026). Clearstream ran the bond on its D7 DLT platform with the cash leg paid in TARGET (T2); the Bundesbank was issuing and paying agent. The bond can move to traditional settlement via T2S and is expected to be eligible as Eurosystem and Eurex collateral ([Deutsche Börse release](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764)).
+**South Korea**: revised securities laws recognise security tokens as securities from 4 Feb 2027. The FSC's Sep 2026 roadmap starts with institutional money market funds and bonds, unlisted stocks via trusts and public fractional securities, then all public securities, then stablecoin-linked on-chain payments ([FSC roadmap](https://fsc.go.kr/eng/pr010101/87653)). Draft rules (comments to 11 Nov 2026) require ledgers shared by two or more account managers plus the central depository KSD, let issuers run customer accounts with KRW4bn of equity, and cap retail buying at KRW100m net a year per OTC exchange ([FSC draft rules](https://fsc.go.kr/eng/pr010101/87834)).
+**Australia**: the Reserve Bank of Australia consulted (3 Sep to 30 Oct 2026) on how its settlement system RITS could support tokenised markets: linking token platforms to RITS for [[concepts/glossary#dvp|DvP]], at-par exchange of tokenised money, reserve access for [[concepts/glossary#stablecoin|stablecoin]] issuers, and tokenised reserves. It sets out asset-lock, reserves-lock and combined-lock models without choosing one. This is a payments paper, not a securities rule ([RBA consultation paper](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)).
 **Offshore issuer domiciles** in this wiki: Jersey (xStocks, Robinhood), BVI (Ondo), ADGM (bStocks, Coinbase). See [[topics/regulation|regulation]].
 Not yet collected: MiCA/[[concepts/glossary#mifid-ii|MiFID II]] detail, UK [[concepts/glossary#digital-securities-sandbox|Digital Securities Sandbox]], Swiss DLT Act, Singapore, Hong Kong.
 
@@ -1518,13 +1548,17 @@ Public originals for the facts on this page.
 - <https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf>
 - <https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent>
 - <https://www.bankofengland.co.uk/paper/2026/cp/supervisory-expectations-for-ccps-seeking-to-accept-tokenised-collateral>
+- <https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764>
+- <https://fsc.go.kr/eng/pr010101/87653>
+- <https://fsc.go.kr/eng/pr010101/87834>
+- <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
 
 ========================================================================
 # Issuer Sponsored Token Coalition
 URL: https://edstokenizedsecuritiesrails.com/concepts/issuer-sponsored-token-coalition
 description: Industry working group formed by Bullish and Equiniti in Sep 2026 to set standards for issuer-sponsored tokenized securities.
 type: concept
-last_checked: 2026-10-28
+last_checked: 2026-11-02
 
 *In plain English: A group of exchanges, brokers and market firms working on rules and plumbing so companies can put their own shares onchain, with holders keeping the same rights as normal shareholders.*
 
@@ -1550,7 +1584,9 @@ Founding members Alpaca, Apex (as Apex Clearing Corporation) and DriveWealth are
 Issuer-sponsored tokens need shares moved out of [[concepts/glossary#dtc|DTC]]'s nominee [[concepts/glossary#cede-co|Cede & Co.]] and into the holder's own name, via the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]. DTC has proposed cutting DRS processing "from days to minutes", expected 13 Nov 2026 and no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Securitize's comment letter asks DTC to link DRS to its own tokenization service and publish processing times ([[issuers/securitize|Securitize]]; [Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
 
 ## What's next
-Members were due to meet issuers at the New York Stock Exchange on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+Bullish and Equiniti hosted an issuer briefing in the NYSE Boardroom on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). The agenda compared issuer-sponsored, infrastructure-sponsored and third-party token models and covered shareholder rights, the official ownership record, corporate actions and a US regulatory update. Equiniti's stated position is that the transfer agent stays the legal record of ownership and the blockchain is a representation layer, not the system of record ([Equiniti](https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/); [Equiniti event overview](https://equiniti.com/media/n0woocck/equiniti_x_bullish_nyse_event_overview.pdf)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
+Founding member Equiniti also joined NYSE's network of transfer agents for issuer-sponsored tokens on 2 Nov 2026, alongside Broadridge, Computershare, Superstate, Securitize and tZERO ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
 
 Why Bullish is backing this: see [[platforms-venues/bullish#why-it-matters|Bullish: Why it matters]].
 
@@ -1566,6 +1602,9 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
+- <https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/>
+- <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
+- <https://equiniti.com/media/n0woocck/equiniti_x_bullish_nyse_event_overview.pdf>
 
 ========================================================================
 # Legal taxonomy of tokenized securities
@@ -1755,21 +1794,25 @@ In the [[concepts/glossary#issuer-sponsored-token|issuer-sponsored]] model the t
 # Regulation
 URL: https://edstokenizedsecuritiesrails.com/topics/regulation
 description: In plain English: The main US and international rule changes for tokenized securities, in date order.
-last_checked: 2026-10-29
+last_checked: 2026-11-02
 
 *In plain English: The main US and international rule changes for tokenized securities, in date order.*
 
 Key US milestones: [[concepts/glossary#dtc|DTC]] [[concepts/glossary#no-action-letter|no-action letter]] (11 Dec 2025) and SEC approval of Nasdaq's tokenized trading rule (18 Mar 2026) ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); WisdomTree's [[concepts/glossary#exemptive-relief|exemptive relief]] for 24/7 fund-share trading (Feb 2026, [WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement)). Non-US issuers sit in Jersey, BVI and ADGM ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/)).
 
+Earlier input: at a 27 Jan 2026 SEC Crypto Task Force meeting, SIFMA (with Citadel and JPMorgan) argued for rulemaking over broad exemptions and split tokenized securities into three models: native (issued by the issuer and its [[concepts/glossary#transfer-agent|transfer agent]]), wrapped (an ADR-like token that is a separate security) and security entitlement tokens (a custodian's record of a customer's holding) ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
+
 Recent changes (Sep to Oct 2026): the SEC's [[concepts/innovation-exemption|Innovation Exemption]] for tokenized NMS stock (17 Sep 2026, [SEC](https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment)), which Better Markets' 22 Oct comment letter urges the SEC to withdraw in favor of notice-and-comment rulemaking ([Better Markets](https://bettermarkets.org/wp-content/uploads/2026/10/Better-Markets-Comment-Letter-SEC-Innovation-Exemption.pdf)), while SIFMA's 19 Oct letter asks for amendments such as issuer opt-in consent and a 90-day objection period ([SIFMA](https://www.sifma.org/wp-content/uploads/2026/10/SIFMA-Innovation-Exemption-Initial-Letter-10-19-2026.pdf)), Solana Policy Institute's 22 Oct letter backs the order and asks the SEC to define "public, permissionless" ledgers by who controls them ([Solana Policy Institute](https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf)), and Malinova and Park (23 Oct) argue the volume caps block arbitrage and raise trading costs ([Malinova and Park](https://www.sec.gov/comments/4-927/4927-1107499-3908312.pdf)); CFTC staff FAQs on tokenized permitted investments (24 Sep 2026, [CFTC](https://www.cftc.gov/PressRoom/PressReleases/9303-26)); the OCC's final GENIUS Act rule, effective 18 Jan 2027 (21 Oct 2026, [OCC](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)); the FCA and Bank of England feedback statement FS26/1 (14 Sep 2026, [FCA](https://www.fca.org.uk/publications/feedback-statements/fs26-1-tokenisation-wholesale-markets)); and EU Council agreement on key elements of the market integration package, which would widen the DLT Pilot Regime (9 Oct 2026, [Council](https://www.consilium.europa.eu/en/press/press-releases/2026/10/09/savings-and-investments-union-council-agrees-key-elements-of-crucial-measures-to-deepen-eu-capital-markets/)).
 
 Country-by-country status: [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
+
+Outside the US (Sep to Nov 2026): South Korea published its tokenization roadmap (4 Sep 2026, [FSC](https://fsc.go.kr/eng/pr010101/87653)) and draft rules for the regime that starts 4 Feb 2027, with comments open to 11 Nov 2026 ([FSC](https://fsc.go.kr/eng/pr010101/87834)); the Reserve Bank of Australia consulted on settling tokenised assets in central bank money (3 Sep 2026, [RBA](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)). See [[concepts/international|International regimes]].
 
 ========================================================================
 # Settlement & matching
 URL: https://edstokenizedsecuritiesrails.com/topics/settlement-and-matching
 description: In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.
-last_checked: 2026-10-31
+last_checked: 2026-11-02
 
 *In plain English: How tokenized stock trades get matched and settled, and how that differs from today's next-day settlement.*
 
@@ -1783,7 +1826,11 @@ Tokenized stocks trade and settle in several ways (see [[overview|the overview]]
 - **National exchanges** trade tokenized and traditional shares on one order book with equal priority, settled through [[concepts/glossary#dtc|DTC]] ([[platforms-venues/nasdaq-tokenized-securities|Nasdaq]]; [SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 
 ## Post-trade
-DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less. Tokens then move peer-to-peer 24/7 between registered [[concepts/glossary#wallet|wallets]] ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). On-chain netting and digital cash are on the 2027+ roadmap.
+DTC's Tokenization Service went live on 28 Oct 2026 with 20 signed participants ([DTCC](https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live)). It converts book-entry positions into tokens and back, targeting 15 minutes or less ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html)). DTC's participant notice says conversion orders run Monday to Friday, 2 a.m.-6 p.m. ET, and tokens then move 24/7 between allowed listed [[concepts/glossary#wallet|wallets]] on supported networks ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). On-chain netting and digital cash are on the 2027+ roadmap.
+
+In Europe, the ESM settled a €1bn DLT bond through the Eurosystem's Pontes platform on 26 Oct 2026, with the bond on Clearstream's D7 and the cash leg in central bank money in T2 ([Deutsche Börse release](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764)).
+
+Central banks are weighing how to link token platforms to their payment systems. The Reserve Bank of Australia's Sep 2026 consultation lays out three [[concepts/glossary#dvp|DvP]] models: lock the asset, then pay in the central bank system (used by Australia's Austraclear and CHESS today); lock the central bank money, then move the asset (used in property settlement); or lock both through a synchronisation operator (as the Bank of England and Bundesbank have considered). It picks none ([RBA consultation paper](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)).
 
 ## Collateral and clearing
 The Bank of England's 29 Oct 2026 consultation says UK [[concepts/glossary#ccp|CCPs]] can already accept tokenised forms of eligible collateral (cash, bonds and other instruments, gold) under existing rules. Its draft expectations cover liquidity, valuation and interoperability, settlement finality, credit and concentration risk, operational resilience, and custody. Liquidity must be judged separately from the underlying asset, since trading hours and conversion can affect a forced sale. It also asks about wider collateral such as stablecoins and tokenised money market funds. Closes 12 Feb 2027 ([Bank of England CP](https://www.bankofengland.co.uk/paper/2026/cp/supervisory-expectations-for-ccps-seeking-to-accept-tokenised-collateral)).
@@ -1802,12 +1849,15 @@ Public originals for the facts on this page.
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 - <https://support.kraken.com/articles/xstocks-faq>
 - <https://www.sec.gov/Archives/edgar/data/2064124/000162828026008786/figure-blockchain424b4.htm>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
+- <https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764>
+- <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
 
 ========================================================================
 # Who can buy
 URL: https://edstokenizedsecuritiesrails.com/topics/who-can-buy
 description: In plain English: Whether you can buy a given stock token depends on where you live and how the token is structured.
-last_checked: 2026-10-25
+last_checked: 2026-11-02
 
 *In plain English: Whether you can buy a given stock token depends on where you live and how the token is structured.*
 
@@ -1815,6 +1865,8 @@ Who can hold a tokenized stock depends on the structure (see [[overview|the over
 
 ## Offshore wrapped tokens
 Most offshore products exclude US persons (xStocks, Ondo, Coinbase, Robinhood) ([Zerion](https://zerion.io/blog/best-tokenized-stock-platforms/), secondary; [Fensory](https://fensory.com/best/tokenized-stocks-platforms), secondary). [[issuers/xstocks-backed|xStocks]] are offered to eligible non-US clients in 110+ countries and are not available in the US, Canada, the UK or Australia ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq)).
+
+**Market size (third-party estimate):** blockchain data firm Bitquery estimates \$3.2B of tokenized stocks from six large issuers were held outside issuer wallets on 31 Oct 2026, up from \$585M at end-2025. Binance's bStocks were about 41% (\$1.31B), most of it in Binance's own wallets; excluding exchange wallets, Ondo led at \$848M. Counting tokens minted but not sold would give \$48.7B, which Bitquery excludes. This is Bitquery's on-chain estimate, not an issuer or regulator figure ([Bitquery](https://bitquery.io/investigations/tokenized-stocks-market-size)).
 
 ## US routes
 - [[concepts/glossary#broker-dealer|Broker-dealer]] model: [[issuers/dinari|Dinari]] documents a US broker-dealer route.
@@ -1837,6 +1889,7 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf>
 - <https://dataspanapi.wisdomtree.com/pdr/documents/WEBSITE_FUND_DETAILS/WDT/US/EN-US/WTGXX_3/>
 - <https://www.sec.gov/Archives/edgar/data/1821534/000114036121012255/nt10013846x18_253g2.htm>
+- <https://bitquery.io/investigations/tokenized-stocks-market-size>
 
 ========================================================================
 # Coinbase B20
@@ -2424,6 +2477,9 @@ Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concept
 - Eligible investors in the US, EU and other permitted jurisdictions, subject to local rules ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 - The shares backing the tokens are not lent out ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 
+## NYSE digital transfer agent
+On 24 Mar 2026 NYSE named Securitize the first digital transfer agent eligible to mint blockchain-native securities for corporate or ETF issuers on its planned tokenized securities platform, with Securitize Markets expected to join as a broker-dealer ([ICE](https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx)). By 2 Nov 2026 NYSE had five more transfer agent partners ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]).
+
 *Reference information only, not investment advice.*
 
 ## DTC direct-registration comment letter (25 Oct 2026)
@@ -2439,6 +2495,7 @@ See [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]. Co
 ## Sources
 Public originals for the facts on this page.
 
+- <https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx>
 - <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
 - <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html>
@@ -2650,7 +2707,7 @@ On 12 Aug 2026 market participants traded Bullish's tokenized BLSH shares on Bul
 On 24 Sep 2026 Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] to set standards for [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]]. Bullish expects its \$4.2B Equiniti acquisition, agreed in May 2026, to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 
 ## Why it matters
-- **The register.** Bullish is buying Equiniti, a transfer agent that keeps companies' official shareholder records, for \$4.2B. The deal is expected to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)). Once it closes, Bullish will own the business that records who holds the shares.
+- **The register.** Bullish is buying Equiniti, a transfer agent that keeps companies' official shareholder records, for \$4.2B. The deal is expected to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)). Once it closes, Bullish will own the business that records who holds the shares. Equiniti is also one of NYSE's transfer agent partners for issuer-sponsored tokens as of 2 Nov 2026, so it backs a rival venue too ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
 - **The model the rules favor.** The SEC's [[concepts/innovation-exemption|Innovation Exemption]] requires a tokenized stock to carry the same rights as the share, and lets issuers object to tokens made without them ([SEC order](https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf)). Through the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]], Bullish pushes tokens issued by the company itself and tied to its register ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 - **No objection problem.** Third-party tokens can be blocked: 50 issuers had objected to [[platforms-venues/okxice-tsv|OKXICE]] by 30 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.30.pdf)). Issuer-sponsored tokens skip that step.
 - **First live example.** Canton Strategic Holdings (CNTN) is sponsoring its own token on [[platforms-venues/tsv-llc|TSV LLC]], with Fairmint as transfer agent ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm); [TSV notice](https://www.tokenizedstockvenue.com/notice.html)). That deal doesn't involve the coalition.
@@ -2830,15 +2887,15 @@ type: venue
 jurisdiction: United States
 chain: unknown
 status: rule filed; platform in development
-last_updated: 2026-10-17
-last_checked: 2026-10-17
+last_updated: 2026-11-02
+last_checked: 2026-11-02
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States  
 > **Chain:** unknown  
 > **Status:** rule filed; platform in development  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-02  
 
 | Field | Value |
 |---|---|
@@ -2856,10 +2913,22 @@ NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along
 
 Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and [[concepts/glossary#etf|ETFs]] with instant settlement and [[concepts/glossary#stablecoin|stablecoin]] funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
 
-No technical spec or launch date was found.
+No technical spec or launch date was found. As of 2 Nov 2026 the platform is still awaiting regulatory approval ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+
+## Transfer agent partners
+For [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]], the company's [[concepts/glossary#transfer-agent|transfer agent]] mints the token and keeps the official record, so NYSE is lining up approved "digital transfer agents". As of 2 Nov 2026 there are six:
+
+- **Securitize** (24 Mar 2026): first digital transfer agent eligible to mint blockchain-native securities for corporate or ETF issuers, and design partner for NYSE's digital transfer agent standards. Securitize Markets is expected to be a broker-dealer on the platform ([ICE](https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx)). See [[issuers/securitize|Securitize]].
+- **tZERO** (31 Aug 2026): design partner for transfer agent and broker-dealer infrastructure, expected to be designated an approved digital transfer agent once requirements are met. ICE is also investing in tZERO and licensing its blockchain patents ([tZERO](https://www.tzero.com/news/tzero-and-ice-agree-to-collaborate-on-infrastructure-for-public-tokenized-securities-markets)). See [[infrastructure/tzero|tZERO]].
+- **Broadridge, Computershare, Equiniti and Superstate** (2 Nov 2026) joined the network ([NYSE on LinkedIn](https://www.linkedin.com/posts/for-more-than-two-centuries-the-nyse-has-ugcPost-7523072207032619009-W2YY/); [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)). Per NYSE, Broadridge, Computershare and Equiniti together serve nearly 5,000 listed companies, including almost 99% of the S&P 500 ([Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)). Equiniti is being bought by [[platforms-venues/bullish|Bullish]] and co-founded the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]].
+
+Broadridge will also run on-chain shareholder voting for the platform: governance smart contracts tie tokens to meeting agendas, voting rules and results, and holders vote through supported wallets, broker apps or ProxyVote ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)). See [[infrastructure/broadridge|Broadridge]].
+
+No release from NYSE or ICE on the 2 Nov additions was on ICE's press page as of 2 Nov 2026; the partner list comes from NYSE's own post and press coverage.
 
 ## What this means for holders
 - NYSE's rule SR-NYSE-2026-17 follows Nasdaq's and is tied to the [[concepts/glossary#dtc|DTC]] pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)).
+- If your company's shares are tokenized through one of NYSE's six digital transfer agents, the token is meant to carry the same votes and dividends as a regular share, and Broadridge plans to handle on-chain voting ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx); [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
 - The planned 24/7 tokenized platform is subject to regulatory approval, so holders cannot use it yet ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
 
 *Reference information only, not investment advice.*
@@ -2869,8 +2938,12 @@ Public originals for the facts on this page.
 
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
 - <https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/>
+- <https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx>
+- <https://www.tzero.com/news/tzero-and-ice-agree-to-collaborate-on-infrastructure-for-public-tokenized-securities-markets>
+- <https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx>
+- <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # OKXICE TSV
@@ -2999,6 +3072,55 @@ Public originals for the facts on this page.
 *Last checked 2026-10-30. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
+# Broadridge
+URL: https://edstokenizedsecuritiesrails.com/infrastructure/broadridge
+description: In plain English: Broadridge runs most shareholder voting in the US, and plans to let holders of tokenized NYSE shares vote from their wallets.
+type: infrastructure
+jurisdiction: United States
+chain: unknown
+status: NYSE partner announced 2 Nov 2026; platform awaiting approval
+last_updated: 2026-11-02
+last_checked: 2026-11-02
+
+> [!info] At a glance
+> **Type:** infrastructure  
+> **Jurisdiction:** United States  
+> **Chain:** unknown  
+> **Status:** NYSE partner announced 2 Nov 2026; platform awaiting approval  
+> **Last updated:** 2026-11-02  
+
+| Field | Value |
+|---|---|
+| name | Broadridge |
+| jurisdiction | United States |
+| product_name | On-chain governance, digital transfer agency, DLX / Distributed Ledger Repo |
+| structure | Proxy voting, transfer agency and tokenization infrastructure |
+| chains | unknown |
+| who_can_buy | unknown |
+| num_assets | unknown |
+
+*In plain English: Broadridge runs most shareholder voting in the US, and plans to let holders of tokenized NYSE shares vote from their wallets.*
+
+On 2 Nov 2026 Broadridge said it will bring on-chain shareholder governance and digital [[concepts/glossary#transfer-agent|transfer agency]] to NYSE's tokenized securities platform once it launches after regulatory approval ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+
+- **Voting:** governance smart contracts link tokens to meeting agendas, voting rules and verifiable results. Proxy materials go out and wallets are checked against verified voting entitlements. Holders vote through supported wallets, broker apps or ProxyVote ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+- **Transfer agency:** NYSE-listed issuers can tokenize their stock through Broadridge's digital transfer agency, alongside its traditional transfer agency and proxy services ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+- **Scope:** Broadridge says its governance platform serves issuer-listed tokens, synthetic securities issued outside the US, and third-party tokenized shares in the US ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+- **DLX and DLR:** DLX is its tokenization platform. Its Distributed Ledger Repo settles over \$360B a day, by Broadridge's count ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
+
+It is one of six NYSE transfer agent partners as of 2 Nov 2026 ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx>
+- <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
+
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
 # Chainlink tokenized equity feeds
 URL: https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds
 description: In plain English: Chainlink supplies stock prices to blockchains so apps can value stock tokens, including outside market hours.
@@ -3049,15 +3171,15 @@ type: infrastructure
 jurisdiction: United States
 chain: At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)
 status: pilot (SEC no-action letter 2025-12-11)
-last_updated: 2026-10-28
-last_checked: 2026-10-28
+last_updated: 2026-11-02
+last_checked: 2026-11-02
 
 > [!info] At a glance
 > **Type:** infrastructure  
 > **Jurisdiction:** United States  
 > **Chain:** At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)  
 > **Status:** pilot (SEC no-action letter 2025-12-11)  
-> **Last updated:** 2026-10-28  
+> **Last updated:** 2026-11-02  
 
 | Field | Value |
 |---|---|
@@ -3101,7 +3223,7 @@ Other launch terms in the at-a-glance sheet, unchanged in the tear sheet:  about
 
 Live at launch: Canton Network (CIP-56) and Besu, DTCC's private network ([[concepts/glossary#erc-20|ERC-20]]); Stellar and Circle's Arc are anticipated in 2027 ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Eligible assets start with select large-cap Russell 1000 equities, select ETFs and a select set of Treasury bills, notes and bonds ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
 
-Conversion orders run 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less; tokens carry transfer restrictions; official books and records stay with DTC; Treasury distributions and maturities pay in fiat to participants' traditional accounts ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
+Conversion orders run Monday to Friday, 2 a.m.-6 p.m. ET ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)), targeting 15 minutes or less; tokens carry transfer restrictions; official books and records stay with DTC; Treasury distributions and maturities pay in fiat to participants' traditional accounts ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
 
 Roadmap for 2027 and beyond (indicative): equity/ETF corporate actions, a consolidated stock record, on-chain [[concepts/glossary#netting|netting]] and digital cash ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Coverage: [Crypto Briefing](https://cryptobriefing.com/dtcc-tokenization-service-launch-october/) (news).
 
@@ -3135,8 +3257,55 @@ Public originals for the facts on this page.
 - <https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf>
 - <https://cryptobriefing.com/dtcc-tokenization-service-launch-october/>
 - <https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
 
-*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# tZERO
+URL: https://edstokenizedsecuritiesrails.com/infrastructure/tzero
+description: In plain English: tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE's approved token record-keepers.
+type: infrastructure
+jurisdiction: United States
+chain: unknown
+status: NYSE design partner (MOU, Aug 2026); approval pending
+last_updated: 2026-11-02
+last_checked: 2026-11-02
+
+> [!info] At a glance
+> **Type:** infrastructure  
+> **Jurisdiction:** United States  
+> **Chain:** unknown  
+> **Status:** NYSE design partner (MOU, Aug 2026); approval pending  
+> **Last updated:** 2026-11-02  
+
+| Field | Value |
+|---|---|
+| name | tZERO |
+| jurisdiction | United States |
+| product_name | Tokenized securities infrastructure (transfer agent and broker-dealer) |
+| structure | Digital transfer agent and broker-dealer infrastructure |
+| chains | unknown |
+| who_can_buy | unknown |
+| num_assets | unknown |
+
+*In plain English: tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE's approved token record-keepers.*
+
+On 31 Aug 2026 tZERO and ICE signed an MOU making tZERO a design partner for the [[concepts/glossary#transfer-agent|transfer agent]] and broker-dealer infrastructure of NYSE's planned tokenized securities platform. Once regulatory, technology and operational requirements are met, tZERO is expected to be designated an approved digital transfer agent and subscriber ([tZERO](https://www.tzero.com/news/tzero-and-ice-agree-to-collaborate-on-infrastructure-for-public-tokenized-securities-markets)).
+
+ICE is also investing in tZERO's latest funding round (amount not disclosed) and gets a licence to tZERO's blockchain patent portfolio, 23 patent families and 103 patents covering compliance-aware transfers, upgradeable smart contracts and corporate-action handling. The two will look at using tZERO tokenized assets as collateral at ICE's clearing houses ([tZERO](https://www.tzero.com/news/tzero-and-ice-agree-to-collaborate-on-infrastructure-for-public-tokenized-securities-markets)).
+
+It is one of six NYSE transfer agent partners as of 2 Nov 2026 ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://www.tzero.com/news/tzero-and-ice-agree-to-collaborate-on-infrastructure-for-public-tokenized-securities-markets>
+- <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
+
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Uniswap v4 permissioned pools
@@ -3191,15 +3360,15 @@ type: infrastructure
 jurisdiction: United States
 chain: unknown
 status: operating (platform since 2019)
-last_updated: 2026-10-27
-last_checked: 2026-10-27
+last_updated: 2026-11-02
+last_checked: 2026-11-02
 
 > [!info] At a glance
 > **Type:** infrastructure  
 > **Jurisdiction:** United States  
 > **Chain:** unknown  
 > **Status:** operating (platform since 2019)  
-> **Last updated:** 2026-10-27  
+> **Last updated:** 2026-11-02  
 
 | Field | Value |
 |---|---|
@@ -3213,7 +3382,7 @@ last_checked: 2026-10-27
 
 *In plain English: Vertalo keeps companies' official shareholder records and links tokens to them, so token holders get dividends and votes.*
 
-Vertalo is an SEC-registered [[concepts/glossary#transfer-agent|transfer agent]] whose platform links tokenized securities to the shareholder records that carry a holder's dividends and votes ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). It launched its platform in 2019 and is led by founder and CEO Dave Hendricks ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)).
+Vertalo is an SEC-registered [[concepts/glossary#transfer-agent|transfer agent]] whose platform links tokenized securities to the shareholder records that carry a holder's dividends and votes ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). It launched its platform in 2019 and is led by founder and CEO Dave Hendricks ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). Its registration is on SEC EDGAR as Vertalo, Inc. /TA/, filed on Form TA-1 in Nov 2019, with an annual Form TA-2 last filed in Jul 2026 ([SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793379); [TA-1](https://www.sec.gov/Archives/edgar/data/1793379/000173809119000002/0001738091-19-000002-index.htm); [TA-2](https://www.sec.gov/Archives/edgar/data/1793379/000179337926000001/0001793379-26-000001-index.htm)).
 
 On 26 Oct 2026 it joined the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]. Hendricks said [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]] work because the shareholder records and the token agree, and that this agreement drives routine [[concepts/glossary#corporate-action|corporate actions]] ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)).
 
@@ -3223,8 +3392,11 @@ On 26 Oct 2026 it joined the [[concepts/issuer-sponsored-token-coalition|Issuer 
 Public originals for the facts on this page.
 
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
+- <https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793379>
+- <https://www.sec.gov/Archives/edgar/data/1793379/000173809119000002/0001738091-19-000002-index.htm>
+- <https://www.sec.gov/Archives/edgar/data/1793379/000179337926000001/0001793379-26-000001-index.htm>
 
-*Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Zerohash
@@ -3267,6 +3439,67 @@ Public originals for the facts on this page.
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
 
 *Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# 2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-source-fixes
+description: holders: DTC's token conversions run Monday to Friday, 2 a.m.-6 p.m. ET; once converted, tokens can move any time between approved wallets.
+last_checked: 2026-11-02
+
+holders: DTC's token conversions run Monday to Friday, 2 a.m.-6 p.m. ET; once converted, tokens can move any time between approved wallets.
+
+- Vertalo's transfer-agent registration now cites SEC EDGAR (Form TA-1, Nov 2019) ([SEC](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001793379)). See [[infrastructure/vertalo|Vertalo]].
+- The coalition's 27 Oct NYSE issuer briefing is now reported as held, with its agenda ([Equiniti](https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/)). See [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]].
+- DTC conversion hours now cite DTC's participant notice DAS-001 ([DTC](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). See [[infrastructure/dtcc-tokenization-pilot|DTCC Tokenization Service]].
+- Added SIFMA's three token models from a 27 Jan 2026 SEC Crypto Task Force meeting, and a glossary note separating Securitize's entitlement token from DTC's tokens ([SEC](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)). See [[topics/regulation|Regulation]] and [[concepts/glossary#entitlement-token|Entitlement token]].
+
+========================================================================
+# 2026-11-02: Australia's central bank consults on settling tokenised assets
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-rba-rits-tokenised-settlement
+description: holders: No direct effect on holders yet; this is about how banks and platforms might settle tokenised trades in central bank money in Australia.
+last_checked: 2026-11-02
+
+holders: No direct effect on holders yet; this is about how banks and platforms might settle tokenised trades in central bank money in Australia.
+
+- Australia added as a jurisdiction (no securities rule collected). The Reserve Bank of Australia's consultation (3 Sep to 30 Oct 2026) sets out ways to link token platforms to its RITS settlement system for delivery versus payment, without choosing one ([RBA](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)). See [[topics/settlement-and-matching|Settlement & matching]] and [[concepts/international|International regimes]].
+
+========================================================================
+# 2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-nyse-transfer-agent-network
+description: NYSE now has six transfer agent partners for issuer-sponsored tokens on its planned tokenized securities platform: Broadridge, Computershare, Equiniti and…
+last_checked: 2026-11-02
+
+NYSE now has six transfer agent partners for issuer-sponsored tokens on its planned tokenized securities platform: Broadridge, Computershare, Equiniti and Superstate join Securitize and tZERO. Per NYSE, the first three serve almost 99% of the S&P 500. Broadridge will also run on-chain shareholder voting. The platform still needs regulatory approval ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx); [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)). See [[platforms-venues/nyse-ice-tokenized-platform|NYSE / ICE]], [[infrastructure/broadridge|Broadridge]] and [[infrastructure/tzero|tZERO]].
+
+========================================================================
+# 2026-11-02: South Korea's tokenized securities regime added
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-korea-tokenized-securities-rules
+description: holders: Korea will treat security tokens as securities from 4 Feb 2027, starting with institutional funds and bonds and some fractional products, with a…
+last_checked: 2026-11-02
+
+holders: Korea will treat security tokens as securities from 4 Feb 2027, starting with institutional funds and bonds and some fractional products, with a KRW100m yearly cap for retail buyers on each OTC exchange.
+
+- South Korea added as a jurisdiction. The FSC's roadmap (4 Sep 2026) sets three phases from Feb 2027 ([FSC](https://fsc.go.kr/eng/pr010101/87653)); its draft rules (1 Oct 2026, comments to 11 Nov) cover shared ledgers with KSD, issuer account managers and retail caps ([FSC](https://fsc.go.kr/eng/pr010101/87834)). See [[concepts/international|International regimes]], [[topics/rules-by-jurisdiction|Rules by jurisdiction]] and [[topics/regulation|Regulation]].
+
+========================================================================
+# 2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-esm-pontes-bond
+description: holders: A first large European public-sector bond settled on a blockchain platform in central bank money, a sign that wholesale settlement is moving from…
+last_checked: 2026-11-02
+
+holders: A first large European public-sector bond settled on a blockchain platform in central bank money, a sign that wholesale settlement is moving from pilots to live use.
+
+- On 26 Oct 2026 the ESM settled a €1bn digital benchmark bond through Pontes, with Clearstream's D7 and the Bundesbank as issuing and paying agent ([Deutsche Börse](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/ESM-is-first-European-supranational-issuer-to-settle-DLT-based-bond-issuance-on-Eurosystem-s-Pontes-platform-with-Bundesbank-and-Clearstream-5660764)). See [[topics/settlement-and-matching|Settlement & matching]] and [[concepts/international|International regimes]].
+
+========================================================================
+# 2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-02-bitquery-market-size-estimate
+description: holders: About 41% of tokenized stocks by value sit with Binance's bStocks, most of it in Binance's own wallets, per a third-party estimate.
+last_checked: 2026-11-02
+
+holders: About 41% of tokenized stocks by value sit with Binance's bStocks, most of it in Binance's own wallets, per a third-party estimate.
+
+- Bitquery, a blockchain data firm, estimates \$3.2B of tokenized stocks outstanding on 31 Oct 2026 across six issuers, up from \$585M at end-2025. This is a third-party estimate, not an issuer or regulator figure ([Bitquery](https://bitquery.io/investigations/tokenized-stocks-market-size)). See [[topics/who-can-buy|Who can buy]].
 
 ========================================================================
 # 2026-10-31: IMF publishes the first official data on tokenized-stock trading

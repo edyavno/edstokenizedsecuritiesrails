@@ -8,14 +8,14 @@ who_can_buy: DTC participants (20 signed at launch, 28 Oct 2026)
 num_assets: '34 securities at launch (~$30T eligible): select Russell 1000 equities, ETFs, Treasuries'
 structure_short: Depository pilot
 who_can_buy_short: DTC participants
-last_checked: '2026-10-28'
+last_checked: '2026-11-02'
 title: DTCC Tokenization Service (DTS)
 tags:
 - infrastructure
 type: infrastructure
 chain: 'At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)'
 status: pilot (SEC no-action letter 2025-12-11)
-last_updated: '2026-10-28'
+last_updated: '2026-11-02'
 description: 'In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: DTC, the US central securities depository, is te
 > **Jurisdiction:** United States  
 > **Chain:** At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle)  
 > **Status:** pilot (SEC no-action letter 2025-12-11)  
-> **Last updated:** 2026-10-28  
+> **Last updated:** 2026-11-02  
 
 | Field | Value |
 |---|---|
@@ -68,7 +68,7 @@ Other launch terms in the at-a-glance sheet, unchanged in the tear sheet:  about
 
 Live at launch: Canton Network (CIP-56) and Besu, DTCC's private network ([[concepts/glossary#erc-20|ERC-20]]); Stellar and Circle's Arc are anticipated in 2027 ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Eligible assets start with select large-cap Russell 1000 equities, select ETFs and a select set of Treasury bills, notes and bonds ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
 
-Conversion orders run 2 a.m.-6 p.m. ET on business days, targeting 15 minutes or less; tokens carry transfer restrictions; official books and records stay with DTC; Treasury distributions and maturities pay in fiat to participants' traditional accounts ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
+Conversion orders run Monday to Friday, 2 a.m.-6 p.m. ET ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)), targeting 15 minutes or less; tokens carry transfer restrictions; official books and records stay with DTC; Treasury distributions and maturities pay in fiat to participants' traditional accounts ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)).
 
 Roadmap for 2027 and beyond (indicative): equity/ETF corporate actions, a consolidated stock record, on-chain [[concepts/glossary#netting|netting]] and digital cash ([DTCC](https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf)). Coverage: [Crypto Briefing](https://cryptobriefing.com/dtcc-tokenization-service-launch-october/) (news).
 
@@ -102,5 +102,6 @@ Public originals for the facts on this page.
 - <https://communications.dtcc.com/rs/669-QIL-921/images/DTCC%20Tokenization%20Service%20At-a-Glance.pdf>
 - <https://cryptobriefing.com/dtcc-tokenization-service-launch-october/>
 - <https://cantonnews.org/dtcc-details-its-tokenization-service-canton-live-at-launch-25-securities-and-a-2027-roadmap>
+- <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
 
-*Last checked 2026-10-28. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*

@@ -4,13 +4,16 @@ type: concept
 description: Industry working group formed by Bullish and Equiniti in Sep 2026 to set standards for issuer-sponsored tokenized securities.
 tags:
 - concepts
-last_checked: '2026-10-28'
+last_checked: '2026-11-02'
 sources:
 - https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live
 - https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change
 - https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf
 - https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities
 - https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join
+- https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/
+- https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/
+- https://equiniti.com/media/n0woocck/equiniti_x_bullish_nyse_event_overview.pdf
 ---
 
 *In plain English: A group of exchanges, brokers and market firms working on rules and plumbing so companies can put their own shares onchain, with holders keeping the same rights as normal shareholders.*
@@ -37,7 +40,9 @@ Founding members Alpaca, Apex (as Apex Clearing Corporation) and DriveWealth are
 Issuer-sponsored tokens need shares moved out of [[concepts/glossary#dtc|DTC]]'s nominee [[concepts/glossary#cede-co|Cede & Co.]] and into the holder's own name, via the [[concepts/glossary#direct-registration-system-drs|Direct Registration System (DRS)]]. DTC has proposed cutting DRS processing "from days to minutes", expected 13 Nov 2026 and no later than January 2027 ([SEC notice](https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change)). Securitize's comment letter asks DTC to link DRS to its own tokenization service and publish processing times ([[issuers/securitize|Securitize]]; [Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf)).
 
 ## What's next
-Members were due to meet issuers at the New York Stock Exchange on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+Bullish and Equiniti hosted an issuer briefing in the NYSE Boardroom on 27 Oct 2026 ([Bullish](https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join)). The agenda compared issuer-sponsored, infrastructure-sponsored and third-party token models and covered shareholder rights, the official ownership record, corporate actions and a US regulatory update. Equiniti's stated position is that the transfer agent stays the legal record of ownership and the blockchain is a representation layer, not the system of record ([Equiniti](https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/); [Equiniti event overview](https://equiniti.com/media/n0woocck/equiniti_x_bullish_nyse_event_overview.pdf)). More members and initiatives were promised "in the coming weeks" ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
+
+Founding member Equiniti also joined NYSE's network of transfer agents for issuer-sponsored tokens on 2 Nov 2026, alongside Broadridge, Computershare, Superstate, Securitize and tZERO ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
 
 Why Bullish is backing this: see [[platforms-venues/bullish#why-it-matters|Bullish: Why it matters]].
 
@@ -53,3 +58,6 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities>
 - <https://www.bullish.com/us/news-insights/issuer-sponsored-token-coalition-gains-momentum-as-qrt-vertalo-and-zerohash-join>
+- <https://equiniti.com/us/public/transfer-agent-services/equiniti-x-tokenization/>
+- <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
+- <https://equiniti.com/media/n0woocck/equiniti_x_bullish_nyse_event_overview.pdf>

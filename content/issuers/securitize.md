@@ -57,6 +57,9 @@ Launched stocks as UCC Article 8 security entitlements, 1:1 backed, on [[concept
 - Eligible investors in the US, EU and other permitted jurisdictions, subject to local rules ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 - The shares backing the tokens are not lent out ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)).
 
+## NYSE digital transfer agent
+On 24 Mar 2026 NYSE named Securitize the first digital transfer agent eligible to mint blockchain-native securities for corporate or ETF issuers on its planned tokenized securities platform, with Securitize Markets expected to join as a broker-dealer ([ICE](https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx)). By 2 Nov 2026 NYSE had five more transfer agent partners ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]).
+
 *Reference information only, not investment advice.*
 
 ## DTC direct-registration comment letter (25 Oct 2026)
@@ -72,6 +75,7 @@ See [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]]. Co
 ## Sources
 Public originals for the facts on this page.
 
+- <https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx>
 - <https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change>
 - <https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf>
 - <https://www.prnewswire.com/news-releases/exodus-issues-security-token-on-algorand-expanding-access-to-the-growing-digital-security-ecosystem-301304582.html>

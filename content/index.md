@@ -2,7 +2,7 @@
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: '2026-11-01'
+last_checked: '2026-11-02'
 ---
 
 # Ed’s Tokenized Securities Rails
@@ -54,18 +54,18 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 
 ## How to use this wiki
 - **New to this?** [[overview|Overview]] → [[concepts/glossary|Glossary]] → [[topics/who-can-buy|Who can buy]]
-- **Looking up a company?** [[database|Issuer & platform database]] (23 entities)
+- **Looking up a company?** [[database|Issuer & platform database]] (25 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 - **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
-- [2026-10-31: IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)
-- [2026-10-31: DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)
-- [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)
-- [2026-10-30: All starter prompts on one page; database downloads](/changelog/2026-10-30-one-prompts-page-and-database-downloads)
-- [2026-10-30: 50 companies now object to OKXICE stock tokens](/changelog/2026-10-30-okxice-50-objectors)
+- [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)
+- [2026-11-02: Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)
+- [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)
+- [2026-11-02: South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)
+- [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

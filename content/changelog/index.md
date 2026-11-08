@@ -1,11 +1,17 @@
 ---
 title: Changelog
-last_checked: '2026-11-01'
+last_checked: '2026-11-02'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)
+- [2026-11-02: Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)
+- [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)
+- [2026-11-02: South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)
+- [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)
+- [2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)
 - [2026-10-31: IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)
 - [2026-10-31: DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)
 - [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)
