@@ -8,23 +8,23 @@ who_can_buy: Approved Canton parties verified by the issuer's transfer agent plu
 num_assets: 1 named (CNTN) in notice v1.3
 structure_short: TSV, permissioned AMM
 who_can_buy_short: Approved participants
-last_checked: '2026-10-30'
+last_checked: '2026-11-09'
 title: TSV LLC
 tags:
 - platforms-venues
 type: venue
 chain: Canton
-status: TSV notice v1.3 published 2026-10-29; not yet operating
-last_updated: '2026-10-30'
-description: 'In plain English: TSV LLC is a planned onchain venue on Canton under the SEC''s Innovation Exemption.'
+status: Operating; first trades (CNTN) executed 2026-11-04
+last_updated: '2026-11-09'
+description: 'In plain English: TSV LLC is an onchain venue on Canton under the SEC''s Innovation Exemption.'
 ---
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States (TSV Exemption)  
 > **Chain:** Canton  
-> **Status:** TSV notice v1.3 published 2026-10-29; not yet operating  
-> **Last updated:** 2026-10-30  
+> **Status:** Operating; first trades (CNTN) executed 2026-11-04  
+> **Last updated:** 2026-11-09  
 
 | Field | Value |
 |---|---|
@@ -36,7 +36,7 @@ description: 'In plain English: TSV LLC is a planned onchain venue on Canton und
 | who_can_buy | Approved Canton parties verified by the issuer's transfer agent plus TSV LLC screening |
 | num_assets | 1 named (CNTN) in notice v1.3 |
 
-*In plain English: TSV LLC is a planned onchain venue on Canton under the SEC's Innovation Exemption. Its first stock is Canton Strategic Holdings, tokenized by the company's own transfer agent.*
+*In plain English: TSV LLC is an onchain venue on Canton under the SEC's Innovation Exemption. Its first stock is Canton Strategic Holdings, tokenized by the company's own transfer agent; the first trades happened on 4 Nov 2026.*
 
 TSV LLC (organized in Puerto Rico) filed the first [[concepts/glossary#tsv|TSV]] notice under the [[concepts/innovation-exemption|Innovation Exemption]] on 23 Sep 2026 ([SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption), raw/117). Founders: Ali Abrar (CEO) and Ryan Trinkle ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm), raw/161).
 
@@ -52,13 +52,24 @@ Version 1.3 of the notice (29 Oct 2026) names tokenized Canton Strategic Holding
 
 CNTN's press release (filed with its 8-K, 29 Oct 2026) says Fairmint will issue the tokenized shares, keep the official onchain ownership record and run compliance on every transfer; holders would get the same rights as holders of CNTN on Nasdaq; trading is expected "as early as Monday, November 2" ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm), raw/161). Fairmint TA LLC's SEC transfer-agent file number is 084-06901 ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm)). The notice itself still said on 29 Oct that operations had not commenced and no assets were available for trading ([TSV LLC notice v1.3](https://www.tokenizedstockvenue.com/notice.html)).
 
+## First trades (4 Nov 2026)
+CNTN announced the first trades of its issuer-sponsored tokenized common stock on TSV LLC on 4 Nov 2026, through a permissioned pool on the Tradecraft AMM, settled atomically on Canton ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html), raw/181):
+- **Seller:** Five North, an existing shareholder, which asked for its shares to be registered in tokenized form. [[infrastructure/fairmint|Fairmint]], for the company, recorded them with Five North's verified Loop Wallet, "moving its position from a broker-dealer account onto the Company's onchain shareholder register" ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
+- **Buyer:** DRW Cumberland. **Liquidity provider:** Flowdesk Liquidity Solutions LLC, in the pool ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
+- **Size and price:** not disclosed ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
+- **Who does what:** Fairmint TA LLC, the company's SEC-registered transfer agent, keeps the official onchain ownership record, runs the allow list of verified holders and wallets and applies transfer controls; TSV LLC operates the venue; Tradecraft (Obsidian Software) is the AMM software ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html); [Fairmint](https://www.fairmint.com/blog/fairmint-brings-public-equity-onchain-with-canton-strategic-holdings/)).
+- **Claims, attributed:** the company and TSV call these the first trades of their kind under the Innovation Exemption, and say holders "receive the same rights and privileges as those holding the Company's stock via Nasdaq" ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
+- TSV is designed for 24/7 availability, subject to required stoppages, maintenance, risk controls and volume limits ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
+
+How the register side works, step by step: [[build/trading-reference-architecture#issuer-sponsored-register-permissions-and-recovery|Issuer-sponsored register]].
+
 ## Notice versions
 - v1.0, 23 Sep 2026: initial notice. v1.1, 19 Oct: affiliate, liquidity, verification, paired assets and other changes. v1.2, 23 Oct: ledger disclosures. v1.3, 29 Oct: names CNTN and Fairmint TA LLC ([TSV LLC notice v1.3](https://www.tokenizedstockvenue.com/notice.html)). Earlier text: raw/143 (v1.2).
 
 ## What this means for holders
 - Tokenized CNTN would be issued by the company's own transfer agent, and the press release says it carries the same rights as Nasdaq-held shares ([CNTN 8-K](https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm)).
 - Only approved, verified participants can trade, against USDC or SBC stablecoins ([TSV LLC notice v1.3](https://www.tokenizedstockvenue.com/notice.html)).
-- As of 29 Oct 2026 nothing trades yet; the start date is the company's expectation, not a confirmed launch ([TSV LLC notice v1.3](https://www.tokenizedstockvenue.com/notice.html)).
+- Trading started on 4 Nov 2026 with CNTN; only transfer-agent-verified, allowlisted holders can trade, and trades settle atomically ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)).
 - Reference information only, not investment advice.
 
 ## Sources
@@ -67,5 +78,6 @@ Public originals for the facts on this page.
 - <https://www.tokenizedstockvenue.com/notice.html>
 - <https://www.sec.gov/Archives/edgar/data/1861657/000149315226049196/ex99-1.htm>
 - <https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption>
+- <https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html>
 
-*Last checked 2026-10-30. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-09. Headline fields only; `unknown` means not yet verified from a source.*

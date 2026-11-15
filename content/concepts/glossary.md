@@ -4,7 +4,7 @@ type: concept
 description: Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 tags:
 - concepts
-last_checked: '2026-11-02'
+last_checked: '2026-11-13'
 sources:
 - https://www.federalregister.gov/documents/2026/10/05/2026-20301/self-regulatory-organizations-the-depository-trust-company-notice-of-filing-of-proposed-rule-change
 - https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf
@@ -53,6 +53,10 @@ sources:
 - https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html
 - https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d
 - https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf
+- https://support.kraken.com/articles/xstocks-faq
+- https://learn.backpack.exchange/blog/tokenized-nvidia-nvda
+- https://api.coinbase.com/v1/tokenized-stocks
+- https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed
 ---
 
 *In plain English: short definitions of the terms this wiki uses, A to Z. Each one links to a source and to the pages that go deeper.*
@@ -122,6 +126,11 @@ A permissioned blockchain network built for financial institutions, with privacy
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption]]
 
+### Central limit order book (CLOB)
+An order book that lists buy and sell orders by price and time and matches them as they cross. An onchain CLOB does this in a smart contract, so matching and settlement can happen in the same transaction. ([21X](https://21x.eu/smart-contracts-and-the-role-of-regulated-market-infrastructures/))
+
+*Related:* [[build/trading-reference-architecture#how-venues-match-and-settle|How venues match and settle]] · [[platforms-venues/21x|21X]]
+
 ### CIP-56
 The token standard DTCC's Tokenization Service uses on the Canton Network (it uses ERC-20 on its private Besu network). ([DTCC tear sheet](https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html))
 
@@ -136,6 +145,11 @@ A central counterparty, or clearinghouse. It steps between buyer and seller so e
 DTC's nominee. For most US shares held through brokers, it is the holder on the company's register. ([Securitize letter](https://www.sec.gov/comments/SR-DTC-2026-012/srdtc2026012-1108719-3924407.pdf))
 
 *Related:* [[infrastructure/dtcc-tokenization-pilot|DTCC / DTC tokenization pilot]] · [[concepts/glossary#street-name|Street name]]
+
+### Co-transfer agent
+A transfer agent that keeps part of a security's records, such as one form of holding, under an agreement with the issuer, while another agent keeps the master file. Fairmint has proposed using co-transfer agents per trading venue; that is a proposal, not current practice. ([Fairmint SEC letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1120639-3987647.pdf))
+
+*Related:* [[build/trading-reference-architecture#proposed-by-fairmint-not-current-law-or-production|Fairmint proposal]] · [[concepts/glossary#transfer-agent|Transfer agent]]
 
 ### Compliance hook
 Code that runs on every token transfer or swap and can block it if a rule fails, such as an unverified receiver. Examples: the ERC-3643 compliance contract, Solana transfer hooks and Uniswap v4 permissioned-pool hooks. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643); [Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
@@ -217,7 +231,7 @@ Delivery versus payment: the security is delivered only if the payment is made. 
 ## E
 
 ### Entitlement token
-A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)) Not the same as the tokens from DTC's Tokenization Service, which represent participants' entitlements to securities held at [[concepts/glossary#dtc|DTC]] and move only between DTC-approved wallets ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). SIFMA uses "security entitlement token" more broadly for any token a custodian uses to record a customer's holding; it says the token is not itself a security, but moving it moves the security ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
+A token that is a [[concepts/glossary#security-entitlement|security entitlement]] to a share held by a broker or custodian, backed 1:1. Securitize's version is a convertible entitlement token (CET): when the company adopts issuer-sponsored tokenization, holders can convert it into a share recorded on the company's register. ([Securitize](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)) A 13 Nov 2026 Securitize article also uses CET for custodial entitlement token: a security entitlement to a real share held through a broker-dealer and custody structure, designed so it can later convert into an issuer-sponsored token while keeping the same onchain identity ([Securitize](https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed), raw/302). Not the same as the tokens from DTC's Tokenization Service, which represent participants' entitlements to securities held at [[concepts/glossary#dtc|DTC]] and move only between DTC-approved wallets ([DTC notice DAS-001](https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d)). SIFMA uses "security entitlement token" more broadly for any token a custodian uses to record a customer's holding; it says the token is not itself a security, but moving it moves the security ([SEC memo](https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf)).
 
 *Related:* [[issuers/securitize|Securitize]] · [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]]
 
@@ -245,6 +259,11 @@ An exchange-traded fund: a fund whose shares trade on an exchange like a stock. 
 A public blockchain that runs smart contracts. Many token standards (ERC-20, ERC-3643) were written for it. ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643))
 
 *Related:* [[concepts/token-primitives|Token primitives]]
+
+### Exclusive control
+The term in the SEC's proposed transfer agent rules for a recordkeeping agent's authority over the master securityholder file. Commenters disagree on what it should require; Fairmint, for example, asks for a functional test (sole power to record, correct, freeze, reverse and produce the record). ([Fairmint SEC letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1120639-3987647.pdf); [Coinbase SEC letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1119719-3983946.pdf))
+
+*Related:* [[topics/regulation|Regulation]] · [[build/trading-reference-architecture#holder-rights-and-compliance-controls|Holder rights and compliance controls]]
 
 ### Exemptive relief
 Permission from the SEC to do something an existing rule would otherwise forbid, usually with conditions. ([WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement))
@@ -312,6 +331,11 @@ A plain-text index of a website written for AI models: one line per page with a 
 *Related:* [[build/index|Build with this wiki]]
 
 ## M
+
+### Master securityholder file
+The official list of a company's registered holders, kept by its recordkeeping transfer agent. It can already be kept onchain; how onchain and offchain files should work together is debated in comment letters on the SEC's transfer agent proposal. ([Nasdaq SEC letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1122619-3995826.pdf))
+
+*Related:* [[concepts/glossary#transfer-agent|Transfer agent]] · [[build/trading-reference-architecture#issuer-sponsored-register-permissions-and-recovery|Issuer-sponsored register]]
 
 ### MiCA
 The EU's Markets in Crypto-Assets Regulation. It covers crypto-assets that are not financial instruments, so tokenized shares usually fall under MiFID II instead.
@@ -388,6 +412,11 @@ A blockchain where only approved operators run nodes and only approved parties j
 An AMM pool that only allowlisted wallets can trade in; a hook checks eligibility on every swap. It is the model the SEC's Innovation Exemption covers for TSVs. ([Uniswap](https://developers.uniswap.org/docs/protocols/v4-hooks/permissioned-pools/architecture))
 
 *Related:* [[concepts/innovation-exemption|Innovation Exemption]] · [[build/trading-reference-architecture|Reference architecture for trading]]
+
+### Perpetual future
+A derivative with no expiry that tracks a price through periodic funding payments between long and short traders. A stock perp gives price exposure only: no share, vote or dividend. ([Hyperliquid docs](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals); [trade.xyz docs](https://docs.trade.xyz/architecture))
+
+*Related:* [[platforms-venues/hyperliquid-equity-perps|Equity perps]] · [[concepts/glossary#synthetic-wrapper|Synthetic wrapper]]
 
 ### Prefunding
 Putting the full cash and the full securities in place before a trade, because atomic settlement leaves no time to borrow or net. It costs liquidity. ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf))
@@ -500,6 +529,11 @@ Trade date plus one business day: the current US settlement cycle for most stock
 
 *Related:* [[topics/settlement-and-matching|Settlement & matching]]
 
+### Ticker suffix
+A short ending some issuers add to a stock's usual ticker so the token can be told apart from the cash equity and from other tokens on the same stock, such as `x` on an [[issuers/xstocks-backed|xStock]] (for example NVDAx) or `on` on an [[issuers/ondo-global-markets|Ondo]] token (for example TSLAon). Not every issuer uses a suffix: some tokens keep the cash-equity ticker and are distinguished by the token name and the contract address. The same listed stock can have several tokens, with different issuers and different rights, so a display ticker alone is not enough; match the contract address. ([Ondo overview](https://docs.ondo.finance/ondo-stocks/overview), raw/262; [Kraken xStocks FAQ](https://support.kraken.com/articles/xstocks-faq), raw/261; [Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks), raw/264; [Backpack listings](https://learn.backpack.exchange/blog/tokenized-nvidia-nvda), raw/267)
+
+*Related:* [[comparisons/implementations-by-model|Implementations by model]] · [[concepts/legal-taxonomy|Legal taxonomy]]
+
 ### Token-2022
 Solana's newer token program, with add-ons such as transfer hooks and frozen-by-default accounts that support permissioned tokens. ([Solana](https://solana.com/docs/tokens/extensions))
 
@@ -603,3 +637,7 @@ Public originals for the facts on this page.
 - <https://dtcclearning.com/documents/dtcc-digital-assets/digital-asset-solutions/tokenization-service/5699-dtcc-tokenization-service-product-tear-sheet-and-high-level-roadmap/file.html>
 - <https://files.dtcc.com/download/assets/DAS-001/8a31d732d2d311f1a30ef632b7f70f6d>
 - <https://www.sec.gov/files/ctf-memo-sifma-cahill-gordon-reindel-llp-citadel-llc-jpmorgan-chase-co-012726.pdf>
+- <https://support.kraken.com/articles/xstocks-faq>
+- <https://learn.backpack.exchange/blog/tokenized-nvidia-nvda>
+- <https://api.coinbase.com/v1/tokenized-stocks>
+- <https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed>

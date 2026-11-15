@@ -8,14 +8,14 @@ who_can_buy: unknown
 num_assets: unknown
 structure_short: Venue (CEX)
 who_can_buy_short: unknown
-last_checked: '2026-10-17'
+last_checked: '2026-11-12'
 title: Bybit
 tags:
 - platforms-venues
 type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
-last_updated: '2026-10-17'
+last_updated: '2026-11-12'
 description: 'In plain English: Bybit is a crypto exchange that lists xStocks for trading.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: Bybit is a crypto exchange that lists xStocks fo
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live (xStocks listed 2025-06-30)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-12  
 
 | Field | Value |
 |---|---|
@@ -52,4 +52,4 @@ Public originals for the facts on this page.
 - <https://www.prnewswire.com/news-releases/backeds-xstocks-go-live-today-on-bybit-kraken-and-solana-defi-302494374.html>
 - <https://zerion.io/blog/best-tokenized-stock-platforms/>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-12. Headline fields only; `unknown` means not yet verified from a source.*

@@ -9,7 +9,7 @@ who_can_buy: Eligible jurisdictions outside the US; offered under Regulation S
 num_assets: 58 prospectuses listed on coinbase.com/tokenize (2026-10-17)
 structure_short: Beneficial claim, 1:1
 who_can_buy_short: Non-US (Reg S)
-last_checked: '2026-10-17'
+last_checked: '2026-11-09'
 title: Coinbase Tokenized Stocks
 tags:
 - issuers
@@ -17,7 +17,7 @@ type: issuer
 chain:
 - Base
 status: live
-last_updated: '2026-10-17'
+last_updated: '2026-11-09'
 description: 'In plain English: Coinbase''s stock tokens on Base are each backed by a real share held in custody.'
 ---
 
@@ -26,7 +26,7 @@ description: 'In plain English: Coinbase''s stock tokens on Base are each backed
 > **Jurisdiction:** Abu Dhabi Global Market (FSRA-authorized, per Coinbase via Zerion)  
 > **Chain:** Base  
 > **Status:** live  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-09  
 
 | Field | Value |
 |---|---|
@@ -46,6 +46,8 @@ A public read-only API publishes records, [[concepts/glossary#multiplier|multipl
 
 [[concepts/glossary#authorized-participant|Authorized participants]] (institutional market makers) buy the shares, which go to Alpaca, a regulated broker and [[concepts/glossary#custodian|custodian]] ([Base](https://blog.base.org/tokenized-stocks); [CoinDesk](https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain), news). Token format: [[standards/b20|B20]].
 
+On Alpaca's Instant Tokenization Network (ITN), "coinbase" is one of the issuer values an authorized participant can name in a mint request; Alpaca moves the shares from the AP's account to the issuer's Alpaca account, and the issuer mints the tokens to the AP's wallet ([Alpaca mint API](https://docs.alpaca.markets/us/reference/posttokenizationmintbroker); [Alpaca issuer guide](https://docs.alpaca.markets/us/docs/tokenization-guide-for-issuer)). The API value shows Coinbase is set up as an ITN issuer; it is not by itself a statement about Coinbase's custody terms. See [[build/trading-reference-architecture#primary-market-mint-and-redeem-broker-custodied-model|mint and redeem, step by step]].
+
 Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on Aave V4 on Base ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
 
 John D'Agostino, head of strategy at Coinbase Institutional, said the initial offering covers about seven stocks and is planned to grow to 2,000 (a stated plan, not a launched figure) ([TheStreet via Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html), news, 27 Oct 2026).
@@ -57,6 +59,9 @@ Coinbase Institutional's research team wrote that tokenized public equities were
 - **Regulatory fragmentation:** jurisdictions differ on who can own what and how secondary transfers work.
 
 The note says that if freely transferable designs are permitted, tokenized stocks could serve as collateral in lending markets; otherwise, with thin books, extended hours don't yet offset lower depth and higher friction ([Coinbase Institutional](https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization)).
+
+## Coinbase's SEC comment letter (3 Nov 2026)
+In its letter on the SEC's proposed transfer agent rules (File S7-2026-30), Coinbase argues that a third-party tokenizer does not become a transfer agent just by issuing tokens that reference a security; that holders should be identifiable by wallet address "without a mandatory name and physical mailing address"; and that a blockchain record can itself be the master securityholder file ([Coinbase letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1119719-3983946.pdf), raw/189). This is advocacy, not law; see [[topics/regulation|Regulation]].
 
 ## What this means for holders
 - A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
@@ -76,5 +81,7 @@ Public originals for the facts on this page.
 - <https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain>
 - <https://www.coinbase.com/institutional/research-insights/research/market-intelligence/major-trends-in-tokenization>
 - <https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html>
+- <https://docs.alpaca.markets/us/docs/tokenization-guide-for-issuer>
+- <https://www.sec.gov/comments/S7-2026-30/s7202630-1119719-3983946.pdf>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-09. Headline fields only; `unknown` means not yet verified from a source.*

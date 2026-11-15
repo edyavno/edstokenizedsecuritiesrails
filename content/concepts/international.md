@@ -3,7 +3,7 @@ title: International regimes
 type: concept
 tags:
 - concepts
-last_checked: '2026-11-02'
+last_checked: '2026-11-13'
 sources:
 - https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf
 - https://www.esma.europa.eu/press-news/esma-news/esma-suggests-amendments-dlt-pilot-regime-make-it-permanent
@@ -12,6 +12,15 @@ sources:
 - https://fsc.go.kr/eng/pr010101/87653
 - https://fsc.go.kr/eng/pr010101/87834
 - https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf
+- https://21x.eu/21x-ag-and-layerzero-deliver-institutional-grade-onchain-trading-pilot-on-private-permissioned-deployment-of-zero/
+- https://group.boerse-stuttgart.com/en/seturion-blog/boerse-stuttgart-group-obtains-dlt-tss-license-and-lays-regulatory-basis-for-seturion/
+- https://www.dfsa.ae/news/dfsa-launches-scaling-tokenisation-road-ahead
+- https://about.amundi.com/article/amundi-extends-tokenisation-index-investing
+- https://www.esma.europa.eu/press-news/esma-news/eu-seeks-nominations-stakeholder-group-tokenisation-standards-finance
+- https://www.bma.bm/viewPDF/documents/2026-11-06-14-04-05-Stakeholder-Letter---Feedback-on-the-Consultation-Paper-on-Asset-Tokenisation.pdf
+- https://www.fsa.go.jp/singi/digital_2026/shiryo/261020/jimukyoku.pdf
+- https://www.fsa.go.jp/singi/digital_2026/index.html
+- https://www.centralbank.ie/docs/default-source/publications/discussion-papers/discussion-paper-12/feedback-statement-discussion-paper12.pdf?sfvrsn=b6b0741a_16
 description: 'In plain English: How rules for tokenized securities differ outside the US, region by region.'
 ---
 
@@ -23,6 +32,13 @@ description: 'In plain English: How rules for tokenized securities differ outsid
 **South Korea**: revised securities laws recognise security tokens as securities from 4 Feb 2027. The FSC's Sep 2026 roadmap starts with institutional money market funds and bonds, unlisted stocks via trusts and public fractional securities, then all public securities, then stablecoin-linked on-chain payments ([FSC roadmap](https://fsc.go.kr/eng/pr010101/87653)). Draft rules (comments to 11 Nov 2026) require ledgers shared by two or more account managers plus the central depository KSD, let issuers run customer accounts with KRW4bn of equity, and cap retail buying at KRW100m net a year per OTC exchange ([FSC draft rules](https://fsc.go.kr/eng/pr010101/87834)).
 **Australia**: the Reserve Bank of Australia consulted (3 Sep to 30 Oct 2026) on how its settlement system RITS could support tokenised markets: linking token platforms to RITS for [[concepts/glossary#dvp|DvP]], at-par exchange of tokenised money, reserve access for [[concepts/glossary#stablecoin|stablecoin]] issuers, and tokenised reserves. It sets out asset-lock, reserves-lock and combined-lock models without choosing one. This is a payments paper, not a securities rule ([RBA consultation paper](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf)).
 **Offshore issuer domiciles** in this wiki: Jersey (xStocks, Robinhood), BVI (Ondo), ADGM (bStocks, Coinbase). See [[topics/regulation|regulation]].
+**EU DLT Pilot Regime venues (Oct to Nov 2026)**: 21X AG, which describes itself as the first venue licensed under the Pilot Regime to run both trading and settlement, ran a month-long pilot of its fully onchain order book with LayerZero on a private Zero instance; it reports 10,000 order matches per second (company-reported, [21X](https://21x.eu/21x-ag-and-layerzero-deliver-institutional-grade-onchain-trading-pilot-on-private-permissioned-deployment-of-zero/)); see [[platforms-venues/21x|21X]]. On 20 Oct 2026 Boerse Stuttgart Group obtained a DLT trading and settlement system licence from BaFin for Seturion, which lets connected venues offer tokenized assets without their own DLT licence ([Boerse Stuttgart](https://group.boerse-stuttgart.com/en/seturion-blog/boerse-stuttgart-group-obtains-dlt-tss-license-and-lays-regulatory-basis-for-seturion/)); see [[platforms-venues/seturion|Seturion]].
+**Dubai (DFSA)**: on 5 Nov 2026 the DFSA published a white paper, *Scaling Tokenisation: The Road Ahead*, on custody, digital settlement, interoperability and cross-border coordination; it says it is not a consultation, policy statement or guidance ([DFSA](https://www.dfsa.ae/news/dfsa-launches-scaling-tokenisation-road-ahead)).
+**EU funds (Amundi)**: on 5 Nov 2026 Amundi announced a tokenised share class of a flagship European equity index fund on public Ethereum, built with CACEIS's tokenisation technology and kept within the fund's existing operating model ([Amundi](https://about.amundi.com/article/amundi-extends-tokenisation-index-investing)).
+**EU Tokenisation Standards Group**: on 9 Nov 2026 the ECB, the European Commission and ESMA called for nominations to a new industry-chaired European Tokenisation Standards Group, with the three authorities as observers, to develop common standards for an interconnected tokenised financial ecosystem and a framework to monitor compliance. Applications are due 27 Nov 2026 ([ESMA](https://www.esma.europa.eu/press-news/esma-news/eu-seeks-nominations-stakeholder-group-tokenisation-standards-finance), raw/242).
+**Ireland (Central Bank of Ireland, DP12 feedback):** in November 2026 the Central Bank of Ireland published a Feedback Statement to Discussion Paper 12 on DLT and tokenisation, with five priority areas led by central bank money settlement and the collateral framework, placed alongside EU reforms (including proposed DLT Pilot Regime changes and replacing the Settlement Finality Directive with a regulation) and the Eurosystem's Pontes and Appia work ([Central Bank of Ireland](https://www.centralbank.ie/docs/default-source/publications/discussion-papers/discussion-paper-12/feedback-statement-discussion-paper12.pdf?sfvrsn=b6b0741a_16), raw/295).
+**Bermuda**: on 6 Nov 2026 the Bermuda Monetary Authority published a stakeholder letter on its April 2026 asset-tokenisation consultation. It intends to amend existing laws rather than create a separate tokenisation regime, with a single harmonised definition of "tokenised investment" in the Investment Business Act 2003, cross-referenced by the funds, fund administration, DABA and DAIA acts; both "digital twin" and "native token" models recognised, with model-specific expectations; and three functional roles retained (Primary Tokeniser, Secondary Offeror, Custodian). It will not prescribe a chain or token standard. Guidance is to cover cross-chain and bridging risk. The Authority noted feedback that autonomous protocols and non-custodial software should not be treated as Secondary Offerors solely because they facilitate transactions. Legislation, guidance and a transition roadmap are still to come ([BMA](https://www.bma.bm/viewPDF/documents/2026-11-06-14-04-05-Stakeholder-Letter---Feedback-on-the-Consultation-Paper-on-Asset-Tokenisation.pdf), raw/293).
+**Japan**: the Financial Services Agency has convened a FY2026 study group on digital and decentralised finance, under an "on-chain finance" forum that targets an interim summary and public-private roadmap in early 2027. Topics include stablecoins and tokenised deposits, security tokens (including tokenised stocks and MMFs), DEX/DeFi and wallet providers, the book-entry transfer system, and faster securities settlement. The 20 Oct 2026 secretariat deck says on-chain trading of book-entry securities (JGBs, corporate bonds, investment trusts, stocks and the like) has not been realised in Japan, while domestic tokenisation has begun to broaden from a focus on real-estate securitisation products. It cites a Nomura, Daiwa and three-megabank on-chain DvP pilot, and a "Tokenised Stocks / Tokenised Law WG" set up in November 2025 through the Digital Asset Co-Creation Consortium, whose secretariat is Progmat, Inc. Official agendas record hearings from Nomura Holdings and Securitize Japan (20 Oct 2026) and from JPYC, SBI VC Trade and the Japanese Bankers Association (2 Nov 2026). This is an agenda, not rules ([FSA deck](https://www.fsa.go.jp/singi/digital_2026/shiryo/261020/jimukyoku.pdf), raw/294; [study group page](https://www.fsa.go.jp/singi/digital_2026/index.html)).
 Not yet collected: MiCA/[[concepts/glossary#mifid-ii|MiFID II]] detail, UK [[concepts/glossary#digital-securities-sandbox|Digital Securities Sandbox]], Swiss DLT Act, Singapore, Hong Kong.
 
 For one table of rules by country, see [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
@@ -37,3 +53,12 @@ Public originals for the facts on this page.
 - <https://fsc.go.kr/eng/pr010101/87653>
 - <https://fsc.go.kr/eng/pr010101/87834>
 - <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
+- <https://21x.eu/21x-ag-and-layerzero-deliver-institutional-grade-onchain-trading-pilot-on-private-permissioned-deployment-of-zero/>
+- <https://group.boerse-stuttgart.com/en/seturion-blog/boerse-stuttgart-group-obtains-dlt-tss-license-and-lays-regulatory-basis-for-seturion/>
+- <https://www.dfsa.ae/news/dfsa-launches-scaling-tokenisation-road-ahead>
+- <https://about.amundi.com/article/amundi-extends-tokenisation-index-investing>
+- <https://www.esma.europa.eu/press-news/esma-news/eu-seeks-nominations-stakeholder-group-tokenisation-standards-finance>
+- <https://www.bma.bm/viewPDF/documents/2026-11-06-14-04-05-Stakeholder-Letter---Feedback-on-the-Consultation-Paper-on-Asset-Tokenisation.pdf>
+- <https://www.fsa.go.jp/singi/digital_2026/shiryo/261020/jimukyoku.pdf>
+- <https://www.fsa.go.jp/singi/digital_2026/index.html>
+- <https://www.centralbank.ie/docs/default-source/publications/discussion-papers/discussion-paper-12/feedback-statement-discussion-paper12.pdf?sfvrsn=b6b0741a_16>

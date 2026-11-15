@@ -10,7 +10,7 @@ who_can_buy: KYC-verified investors in self-custody wallets
 num_assets: 3 on RWA.xyz
 structure_short: Issuer shares, TA record
 who_can_buy_short: KYC'd investors
-last_checked: '2026-10-17'
+last_checked: '2026-11-12'
 title: Superstate Opening Bell
 tags:
 - issuers
@@ -19,7 +19,7 @@ chain:
 - Ethereum
 - Solana
 status: live
-last_updated: '2026-10-17'
+last_updated: '2026-11-12'
 description: 'In plain English: Superstate''s Opening Bell puts real company shares on a blockchain, with Superstate keeping the official shareholder register.'
 ---
 
@@ -28,7 +28,7 @@ description: 'In plain English: Superstate''s Opening Bell puts real company sha
 > **Jurisdiction:** unknown  
 > **Chain:** Ethereum, Solana  
 > **Status:** live  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-12  
 
 | Field | Value |
 |---|---|
@@ -64,4 +64,4 @@ Public originals for the facts on this page.
 - <https://www.galaxy.com/insights/research/tokenized-glxy>
 - <https://www.sec.gov/Archives/edgar/data/1859392/000185939225000052/galaxyxsuperstateoblaunchf.htm>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-12. Headline fields only; `unknown` means not yet verified from a source.*

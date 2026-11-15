@@ -8,14 +8,14 @@ who_can_buy: unknown
 num_assets: unknown
 structure_short: Governance + transfer agent (B2B)
 who_can_buy_short: B2B
-last_checked: '2026-11-02'
+last_checked: '2026-11-09'
 title: Broadridge
 tags:
 - infrastructure
 type: infrastructure
 chain: unknown
 status: NYSE partner announced 2 Nov 2026; platform awaiting approval
-last_updated: '2026-11-02'
+last_updated: '2026-11-09'
 description: 'In plain English: Broadridge runs most shareholder voting in the US, and plans to let holders of tokenized NYSE shares vote from their wallets.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: Broadridge runs most shareholder voting in the U
 > **Jurisdiction:** United States  
 > **Chain:** unknown  
 > **Status:** NYSE partner announced 2 Nov 2026; platform awaiting approval  
-> **Last updated:** 2026-11-02  
+> **Last updated:** 2026-11-09  
 
 | Field | Value |
 |---|---|
@@ -45,6 +45,8 @@ On 2 Nov 2026 Broadridge said it will bring on-chain shareholder governance and 
 - **Scope:** Broadridge says its governance platform serves issuer-listed tokens, synthetic securities issued outside the US, and third-party tokenized shares in the US ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
 - **DLX and DLR:** DLX is its tokenization platform. Its Distributed Ledger Repo settles over \$360B a day, by Broadridge's count ([Broadridge](https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx)).
 
+**Dinari dShares (5 Nov 2026):** Broadridge brought proxy voting to [[issuers/dinari|Dinari]]'s custodial dShares: eligible holders vote the underlying shares through Broadridge's proxy infrastructure, and their votes are counted in the formal shareholder vote alongside traditional shareholders ([Broadridge](https://www.broadridge.com/press-release/2026/broadridge-brings-proxy-voting-to-dinaris-dshares-tokenized-us-equities), raw/194). Wallet login to vote directly is a future step. Broadridge calls its onchain proxy voting "the first platform in the U.S. to support all models of tokenization, including custodial tokenized securities and issuer-sponsored tokens" (Broadridge's claim, not independently checked). Comparison of voting paths: [[build/trading-reference-architecture#holder-rights-and-compliance-controls|Holder rights and compliance controls]].
+
 It is one of six NYSE transfer agent partners as of 2 Nov 2026 ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]).
 
 *Reference information only, not investment advice.*
@@ -54,5 +56,6 @@ Public originals for the facts on this page.
 
 - <https://www.broadridge-ir.com/news/news-details/2026/Broadridge-to-Bring-OnChain-Governance-and-Digital-Transfer-Agency-to-New-York-Stock-Exchange-Tokenized-Securities-Platform/default.aspx>
 - <https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/>
+- <https://www.broadridge.com/press-release/2026/broadridge-brings-proxy-voting-to-dinaris-dshares-tokenized-us-equities>
 
-*Last checked 2026-11-02. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-09. Headline fields only; `unknown` means not yet verified from a source.*
