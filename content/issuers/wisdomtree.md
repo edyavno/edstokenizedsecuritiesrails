@@ -10,7 +10,7 @@ who_can_buy: unknown
 num_assets: 6 on RWA.xyz stocks view
 structure_short: 'FUNDS: tokenized ''40 Act'
 who_can_buy_short: Retail+inst. via apps
-last_checked: '2026-10-17'
+last_checked: '2026-11-12'
 title: WisdomTree tokenized funds
 tags:
 - issuers
@@ -19,7 +19,7 @@ chain:
 - Solana
 - others (multi-chain)
 status: live (tokenized registered funds)
-last_updated: '2026-10-17'
+last_updated: '2026-11-12'
 description: 'In plain English: WisdomTree tokenizes its registered funds rather than single stocks.'
 ---
 
@@ -28,7 +28,7 @@ description: 'In plain English: WisdomTree tokenizes its registered funds rather
 > **Jurisdiction:** United States  
 > **Chain:** Solana, others (multi-chain)  
 > **Status:** live (tokenized registered funds)  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-12  
 
 | Field | Value |
 |---|---|
@@ -57,4 +57,4 @@ Public originals for the facts on this page.
 - <https://ir.wisdomtree.com/news-events/press-releases/detail/777/wisdomtree-to-launch-247-trading-and-instant-settlement>
 - <https://app.rwa.xyz/stocks>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-12. Headline fields only; `unknown` means not yet verified from a source.*

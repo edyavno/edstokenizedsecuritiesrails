@@ -3,7 +3,7 @@ title: Post-trade / Reg NMS-inside model
 type: concept
 tags:
 - concepts
-last_checked: '2026-10-17'
+last_checked: '2026-11-12'
 sources:
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf

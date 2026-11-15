@@ -1,17 +1,47 @@
 ---
 title: Changelog
-last_checked: '2026-11-08'
+last_checked: '2026-11-15'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-14: DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)
+- [2026-11-13: Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)
+- [2026-11-13: NYSE Avalanche interviews — Blaugrund on planned features, Ava Labs claims on testing and a dedicated L1](/changelog/2026-11-13-nyse-avalanche-interviews)
+- [2026-11-13: Transfer-agent comments, in-kind redemption, new jurisdictions, and catalog updates](/changelog/2026-11-13-friday-ingestion)
+- [2026-11-13: Alpaca CEO describes a planned prime brokerage business and a mid-October SPV-wrapped market-size estimate](/changelog/2026-11-13-alpaca-prime-brokerage)
+- [2026-11-12: Further bStocks Official List admissions, 12 June–28 October 2026](/changelog/2026-11-12-bstocks-official-list-admissions)
+- [2026-11-12: Audience-question FAQs, ticker-suffix guide, custodian table, and off-hours pricing pattern](/changelog/2026-11-12-audience-question-faqs)
+- [2026-11-11: Reported trading volume by venue](/changelog/2026-11-11-reported-trading-volume-by-venue)
+- [2026-11-11: Reference architecture — Formation Token-2022 hook, oracle-free AMM halt, Orca router, and Ondo Bridge FCAT verifier](/changelog/2026-11-11-ref-arch-formation-ondo-patterns)
+- [2026-11-11: OKXICE TSV announced launch beginning 23 November](/changelog/2026-11-11-okxice-nov-23-launch)
+- [2026-11-11: Formation TSV notice, Kimber broker-dealer, Ondo Bridge FCAT, Uniswap TSV post, EU standards group, xStocks UK/EU](/changelog/2026-11-11-formation-kimber-ondo-uniswap-etsg-xstocks)
+- [2026-11-10: Note on the holder's claim in wrapped xStocks vs DTC Tokenized Entitlements](/changelog/2026-11-10-wrapped-vs-mirrored-claim)
+- [2026-11-10: Implementations table now says what a holder can redeem into](/changelog/2026-11-10-redeem-into-column)
+- [2026-11-10: Ondo Stocks page updated (legal model, eligibility, dividends, registry count)](/changelog/2026-11-10-ondo-stocks-page-update)
+- [2026-11-10: Four ways a stock token can be built, plus a front-page pointer to what you can redeem into](/changelog/2026-11-10-four-models-and-redeem-pointer)
+- [2026-11-09: New pages on Seturion, Prometheum, equity perps and venue designs](/changelog/2026-11-09-venue-architecture-pages)
+- [2026-11-09: NYSE picks Avalanche as the settlement ledger for its planned tokenized platform](/changelog/2026-11-09-nyse-avalanche-settlement-ledger)
+- [2026-11-09: Bullish appoints Stacey Cunningham as President](/changelog/2026-11-09-bullish-cunningham-president)
+- [2026-11-09: How Alpaca's tokenization network mints and redeems stock tokens](/changelog/2026-11-09-alpaca-itn-mint-redeem)
+- [2026-11-06: Three tokenized routes announced for Anthropic's IPO, none of them shares](/changelog/2026-11-06-anthropic-ipo-tokenized-exposure)
+- [2026-11-05: Nasdaq, Coinbase and Fairmint comment on the SEC's transfer agent proposal](/changelog/2026-11-05-transfer-agent-comment-letters)
+- [2026-11-05: 67 companies have objected to OKXICE tokens of their stock](/changelog/2026-11-05-okxice-objections-67)
+- [2026-11-05: Groma opens a Uniswap permissioned pool for a real-estate token](/changelog/2026-11-05-groma-uniswap-permissioned-pool)
+- [2026-11-05: Dubai regulator publishes a tokenisation white paper](/changelog/2026-11-05-dfsa-tokenisation-white-paper)
+- [2026-11-05: Digital Asset adds OpenAssets as a DA Registry partner](/changelog/2026-11-05-da-registry-openassets)
+- [2026-11-05: Broadridge brings proxy voting to Dinari dShares](/changelog/2026-11-05-broadridge-dinari-proxy-voting)
+- [2026-11-05: Amundi tokenises an equity index fund share class](/changelog/2026-11-05-amundi-tokenised-index-share-class)
+- [2026-11-04: First tokenized CNTN trades on TSV LLC](/changelog/2026-11-04-first-tokenized-cntn-trades-tsv)
+- [2026-11-04: Backpack Securities tokenized stocks usable as Kamino collateral](/changelog/2026-11-04-backpack-kamino-collateral)
+- [2026-11-04: 21X and LayerZero report an onchain order book pilot](/changelog/2026-11-04-21x-onchain-order-book-pilot)
 - [2026-11-02: Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)
 - [2026-11-02: Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)
 - [2026-11-02: NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)
 - [2026-11-02: South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)
 - [2026-11-02: ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)
-- [2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)
+- [2026-11-02: Third-party estimate puts tokenized stocks at $3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)
 - [2026-10-31: IMF publishes the first official data on tokenized-stock trading](/changelog/2026-10-31-imf-gfsr-scaling-tokenization)
 - [2026-10-31: DTCC firm counts clarified](/changelog/2026-10-31-dtcc-firm-counts)
 - [2026-10-31: Bank of England consults on tokenised collateral at clearing houses](/changelog/2026-10-31-boe-tokenised-collateral-ccps)

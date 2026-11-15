@@ -1,5 +1,5 @@
 ---
-title: '2026-11-02: Third-party estimate puts tokenized stocks at \$3.2B'
+title: '2026-11-02: Third-party estimate puts tokenized stocks at $3.2B'
 date: 2026-11-02
 tags:
 - changelog

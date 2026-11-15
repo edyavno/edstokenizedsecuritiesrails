@@ -8,14 +8,14 @@ who_can_buy: DTC Pilot eligible participants
 num_assets: Russell 1000 constituents + certain ETPs
 structure_short: Same security, tokenized form
 who_can_buy_short: DTC pilot participants
-last_checked: '2026-10-17'
+last_checked: '2026-11-09'
 title: Nasdaq tokenized securities rule
 tags:
 - platforms-venues
 type: venue
 chain: unknown
 status: rule approved by SEC 2026-03-18
-last_updated: '2026-10-17'
+last_updated: '2026-11-09'
 description: 'In plain English: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC''s pilot.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: Nasdaq can now trade tokenized versions of the s
 > **Jurisdiction:** United States  
 > **Chain:** unknown  
 > **Status:** rule approved by SEC 2026-03-18  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-09  
 
 | Field | Value |
 |---|---|
@@ -44,6 +44,9 @@ Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq
 
 On 10 Sep 2026 Nasdaq agreed to invest \$100M in Payward, Kraken's parent, to build Nasdaq Equity Tokens (NETs) linked to xStocks; NETs are expected in Q2 2027 ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
 
+## Comment letter on transfer agent rules (5 Nov 2026)
+In its letter on the SEC's proposed transfer agent rules (File S7-2026-30), Nasdaq asks the SEC to require interoperability among onchain and offchain master securityholder files, tokenized and non-tokenized settlement rails, and the national clearance and settlement system, and to require fungibility at the recordkeeping layer, consistent with the trading-layer fungibility in its tokenization plans ([Nasdaq letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1122619-3995826.pdf), raw/188). It also argues issuers should be able to choose the transfer agent that keeps the master file separately from tokenization agents, custodians and venues. This is advocacy, not law; see [[topics/regulation|Regulation]].
+
 ## What this means for holders
 - A tokenized share on Nasdaq trades on the same order book, with the same [[concepts/glossary#cusip|CUSIP]], symbol and shareholder rights as the regular share ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
 - Settlement runs through the [[concepts/glossary#dtc|DTC]] tokenization pilot, so the token is an entitlement recorded via DTC ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).
@@ -57,5 +60,6 @@ Public originals for the facts on this page.
 - <https://www.govinfo.gov/content/pkg/FR-2026-03-23/html/2026-05563.htm>
 - <https://www.reuters.com/legal/government/nasdaq-receives-sec-nod-trading-tokenized-securities-2026-03-18/>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf>
+- <https://www.sec.gov/comments/S7-2026-30/s7202630-1122619-3995826.pdf>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-09. Headline fields only; `unknown` means not yet verified from a source.*

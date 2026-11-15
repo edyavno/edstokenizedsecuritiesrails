@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-11-08'
+last_checked: '2026-11-15'
 ---
 
 The week's changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -12,12 +12,50 @@ Grouped by week (weeks start Monday), newest first. Every publish shows every ch
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
 ## This week (in progress)
+- **[DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)**
+- **[Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)**
+- **[NYSE Avalanche interviews — Blaugrund on planned features, Ava Labs claims on testing and a dedicated L1](/changelog/2026-11-13-nyse-avalanche-interviews)**
+- **[Transfer-agent comments, in-kind redemption, new jurisdictions, and catalog updates](/changelog/2026-11-13-friday-ingestion)**
+- **[Alpaca CEO describes a planned prime brokerage business and a mid-October SPV-wrapped market-size estimate](/changelog/2026-11-13-alpaca-prime-brokerage)**
+- **[Further bStocks Official List admissions, 12 June–28 October 2026](/changelog/2026-11-12-bstocks-official-list-admissions)**
+- **[Audience-question FAQs, ticker-suffix guide, custodian table, and off-hours pricing pattern](/changelog/2026-11-12-audience-question-faqs)**
+- **[Reported trading volume by venue](/changelog/2026-11-11-reported-trading-volume-by-venue)**
+- **[Reference architecture — Formation Token-2022 hook, oracle-free AMM halt, Orca router, and Ondo Bridge FCAT verifier](/changelog/2026-11-11-ref-arch-formation-ondo-patterns)**
+- **[OKXICE TSV announced launch beginning 23 November](/changelog/2026-11-11-okxice-nov-23-launch)**
+- **[Formation TSV notice, Kimber broker-dealer, Ondo Bridge FCAT, Uniswap TSV post, EU standards group, xStocks UK/EU](/changelog/2026-11-11-formation-kimber-ondo-uniswap-etsg-xstocks)**
+- **[Note on the holder's claim in wrapped xStocks vs DTC Tokenized Entitlements](/changelog/2026-11-10-wrapped-vs-mirrored-claim)**
+- **[Implementations table now says what a holder can redeem into](/changelog/2026-11-10-redeem-into-column)**
+- **[Ondo Stocks page updated (legal model, eligibility, dividends, registry count)](/changelog/2026-11-10-ondo-stocks-page-update)**
+- **[Four ways a stock token can be built, plus a front-page pointer to what you can redeem into](/changelog/2026-11-10-four-models-and-redeem-pointer)**
+- **[New pages on Seturion, Prometheum, equity perps and venue designs](/changelog/2026-11-09-venue-architecture-pages)**
+- **[NYSE picks Avalanche as the settlement ledger for its planned tokenized platform](/changelog/2026-11-09-nyse-avalanche-settlement-ledger)**
+- **[Bullish appoints Stacey Cunningham as President](/changelog/2026-11-09-bullish-cunningham-president)**
+- **[How Alpaca's tokenization network mints and redeems stock tokens](/changelog/2026-11-09-alpaca-itn-mint-redeem)**
+- Database: 55 headline field updates across issuer, venue and token records.
+
+## Week of 2 Nov 2026
+- **[Three tokenized routes announced for Anthropic's IPO, none of them shares](/changelog/2026-11-06-anthropic-ipo-tokenized-exposure)**
+  - *What this means for holders:* Each route is a different legal product (note, custodial dShare, tracker certificate), not an Anthropic share.
+- **[Nasdaq, Coinbase and Fairmint comment on the SEC's transfer agent proposal](/changelog/2026-11-05-transfer-agent-comment-letters)**
+- **[67 companies have objected to OKXICE tokens of their stock](/changelog/2026-11-05-okxice-objections-67)**
+  - *What this means for holders:* Tokens of objecting companies' stock can be kept off OKXICE; no trading start date yet.
+- **[Groma opens a Uniswap permissioned pool for a real-estate token](/changelog/2026-11-05-groma-uniswap-permissioned-pool)**
+- **[Dubai regulator publishes a tokenisation white paper](/changelog/2026-11-05-dfsa-tokenisation-white-paper)**
+- **[Digital Asset adds OpenAssets as a DA Registry partner](/changelog/2026-11-05-da-registry-openassets)**
+- **[Broadridge brings proxy voting to Dinari dShares](/changelog/2026-11-05-broadridge-dinari-proxy-voting)**
+  - *What this means for holders:* Eligible dShare holders can vote the underlying shares through Broadridge's proxy process; voting directly from a wallet is a future step.
+- **[Amundi tokenises an equity index fund share class](/changelog/2026-11-05-amundi-tokenised-index-share-class)**
+- **[First tokenized CNTN trades on TSV LLC](/changelog/2026-11-04-first-tokenized-cntn-trades-tsv)**
+  - *What this means for holders:* Only transfer-agent-verified, allowlisted holders can hold or trade tokenized CNTN; trades settle atomically, and the company says holders keep the same rights as Nasdaq holders.
+- **[Backpack Securities tokenized stocks usable as Kamino collateral](/changelog/2026-11-04-backpack-kamino-collateral)**
+  - *What this means for holders:* Backpack tokens are separate 1:1 tokens over Article 8 entitlements; borrowing against them carries liquidation risk, including when markets are closed.
+- **[21X and LayerZero report an onchain order book pilot](/changelog/2026-11-04-21x-onchain-order-book-pilot)**
 - **[Source fixes for Vertalo, the NYSE briefing, DTC hours and the SIFMA token models](/changelog/2026-11-02-source-fixes)**
 - **[Australia's central bank consults on settling tokenised assets](/changelog/2026-11-02-rba-rits-tokenised-settlement)**
 - **[NYSE adds Broadridge, Computershare, Equiniti and Superstate as transfer agent partners](/changelog/2026-11-02-nyse-transfer-agent-network)**
 - **[South Korea's tokenized securities regime added](/changelog/2026-11-02-korea-tokenized-securities-rules)**
 - **[ESM settles a €1bn DLT bond on the Eurosystem's Pontes](/changelog/2026-11-02-esm-pontes-bond)**
-- **[Third-party estimate puts tokenized stocks at \$3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)**
+- **[Third-party estimate puts tokenized stocks at $3.2B](/changelog/2026-11-02-bitquery-market-size-estimate)**
 - Database: 2 headline field updates across issuer, venue and token records.
 
 ## Week of 26 Oct 2026

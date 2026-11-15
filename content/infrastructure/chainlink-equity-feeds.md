@@ -8,14 +8,14 @@ who_can_buy: n/a
 num_assets: unknown
 structure_short: Oracle / price feeds
 who_can_buy_short: n/a
-last_checked: '2026-10-17'
+last_checked: '2026-11-12'
 title: Chainlink tokenized equity feeds
 tags:
 - infrastructure
 type: infrastructure
 chain: unknown
 status: live
-last_updated: '2026-10-17'
+last_updated: '2026-11-12'
 description: 'In plain English: Chainlink supplies stock prices to blockchains so apps can value stock tokens, including outside market hours.'
 ---
 
@@ -24,7 +24,7 @@ description: 'In plain English: Chainlink supplies stock prices to blockchains s
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live  
-> **Last updated:** 2026-10-17  
+> **Last updated:** 2026-11-12  
 
 | Field | Value |
 |---|---|
@@ -49,4 +49,4 @@ Public originals for the facts on this page.
 - <https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide>
 - <https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits>
 
-*Last checked 2026-10-17. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-12. Headline fields only; `unknown` means not yet verified from a source.*
