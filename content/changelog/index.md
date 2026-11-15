@@ -6,6 +6,7 @@ description: Public changes, every entry in the vault as of each publish. See Wh
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-15: Home page starter links are the main topics only](/changelog/2026-11-15-home-starter-links)
 - [2026-11-14: DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)
 - [2026-11-13: Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)
 - [2026-11-13: NYSE Avalanche interviews — Blaugrund on planned features, Ava Labs claims on testing and a dedicated L1](/changelog/2026-11-13-nyse-avalanche-interviews)

@@ -14,7 +14,6 @@ Issuers, legal structures, custody, chains, venues, settlement and regulation. E
 - [Start with the overview](/overview)
 - [Try a starter prompt](/starter-prompts)
 - [Browse issuers, venues & infrastructure](/database)
-- [[comparisons/implementations-by-model|What can you redeem a stock token into?]] Among [[issuers/xstocks-backed|xStocks]], [[issuers/robinhood-stock-tokens|Robinhood]] and [[issuers/dinari|Dinari]], only xStocks documents an in-kind path (into an Alpaca brokerage account); Robinhood and Dinari pay cash or stablecoin.
 
 ## What is this wiki?
 A reference on how stocks and bonds move onto blockchains: who issues the tokens, what you legally own, where they trade, how they settle and which rules apply. It's reference information, updated weekly. What it isn't: a broker or investment advice.
@@ -62,11 +61,11 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
+- [2026-11-15: Home page starter links are the main topics only](/changelog/2026-11-15-home-starter-links)
 - [2026-11-14: DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)
 - [2026-11-13: Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)
 - [2026-11-13: NYSE Avalanche interviews — Blaugrund on planned features, Ava Labs claims on testing and a dedicated L1](/changelog/2026-11-13-nyse-avalanche-interviews)
 - [2026-11-13: Transfer-agent comments, in-kind redemption, new jurisdictions, and catalog updates](/changelog/2026-11-13-friday-ingestion)
-- [2026-11-13: Alpaca CEO describes a planned prime brokerage business and a mid-October SPV-wrapped market-size estimate](/changelog/2026-11-13-alpaca-prime-brokerage)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
