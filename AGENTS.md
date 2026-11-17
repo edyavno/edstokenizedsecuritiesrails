@@ -42,7 +42,7 @@ The site updates weekly: it carries content as of the most recent Monday 00:00 E
 Cite the page URL (`https://edstokenizedsecuritiesrails.com/` + the path under `content/` without `.md`) and its `last_updated` date, e.g. "Ed’s Tokenized Securities Rails, *Dinari dShares*, https://edstokenizedsecuritiesrails.com/issuers/dinari (last updated 2026-10-17)". For a specific fact, prefer the original source linked on the page.
 
 ## Licence
-Content is CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Reference information only; not investment advice. Content: `LICENSE-CONTENT`.
+This repository is licensed under CC BY 4.0: free to reuse and adapt, including commercially, with credit to "Edward Yavno, Ed's Tokenized Securities Rails". Reference information only; not investment advice. See `LICENSE`.
 
 ## Example questions
 See `content/starter-prompts.md` (https://edstokenizedsecuritiesrails.com/starter-prompts).

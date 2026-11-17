@@ -18,6 +18,8 @@ Site: https://edstokenizedsecuritiesrails.com · Machine-readable index: [`conte
 `content/` is generated from a private source-of-truth vault by a publish script. Public pages carry headline fields and readable summaries; changes appear with a delay. Do not edit `content/` by hand.
 
 ## License
-- Content (`content/`: wiki pages, Markdown, diagrams, data files): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Free to reuse and adapt, including commercially, with credit: "Edward Yavno, Ed's Tokenized Securities Rails". See `LICENSE-CONTENT`.
+Copyright (c) 2026 Edward Yavno
+
+This repository is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Free to reuse and adapt, including commercially, with credit: "Edward Yavno, Ed's Tokenized Securities Rails". See `LICENSE` for the full legal text.
 
 Reference information only. Not investment advice.
