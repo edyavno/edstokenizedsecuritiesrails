@@ -1,11 +1,11 @@
 ---
 title: Trading venue architectures compared
 type: comparison
-description: 'How tokenized-stock venues are built, side by side: legal form of what trades, custody, matching design, settlement asset, chains, hours, KYC/allowlists, corporate actions and oracle, for 16 venues and platforms.'
+description: 'How tokenized-stock venues are built, side by side: legal form of what trades, custody, matching design, settlement asset, chains, hours, KYC/allowlists, corporate actions and oracle, for 17 venues and platforms.'
 tags:
 - comparisons
 - build
-last_checked: '2026-11-13'
+last_checked: '2026-11-20'
 sources:
 - https://21x.eu/smart-contracts-and-the-role-of-regulated-market-infrastructures/
 - https://group.boerse-stuttgart.com/en/seturion/
@@ -23,6 +23,10 @@ sources:
 - https://www.payward.com/press-release/xstocks-uk-eu-equities
 - https://optimism.io/blog/xstocks-native-op-mainnet-ether-fi-launch
 - https://www.payward.com/press-release/xstocks-dax-40
+- https://www.sec.gov/comments/S7-2026-32/4927-1134705-4042498.pdf
+- https://www.broadridge.com/press-release/2026/broadridge-to-enable-institutional-trading-of-dtcc-tokenized-securities
+- https://www.globenewswire.com/news-release/2026/11/20/3407521/0/en/fairmint-announces-plans-for-fairmint-tsv-a-venue-connecting-amms-to-issuer-sponsored-tokenized-shares-with-tradecraft-as-first-amm.html
+- https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption
 ---
 
 *In plain English: the same tokenized stock can trade in very different ways. This table shows, venue by venue, what you actually hold, who holds the share, how orders meet and what pays for them.*
@@ -34,12 +38,15 @@ Details and sources are on each linked page; the design patterns are explained w
 |---|---|---|---|
 | Onchain order book | [[platforms-venues/21x\|21X]] | Smart-contract order book | Same transaction, against a stablecoin |
 | Offchain match, onchain settle | [[platforms-venues/seturion\|Seturion]], [[issuers/dinari\|Dinari]] | Venue or broker systems | Onchain settlement layer |
-| Permissioned AMM pool | [[platforms-venues/okxice-tsv\|OKXICE TSV]], [[platforms-venues/tsv-llc\|TSV LLC]], [[platforms-venues/formation-securities\|Formation Securities]] | Pool of allowlisted liquidity | Atomic swap in the pool |
+| Permissioned AMM pool | [[platforms-venues/okxice-tsv\|OKXICE TSV]], [[platforms-venues/tsv-llc\|TSV LLC]], [[platforms-venues/formation-securities\|Formation Securities]], [[infrastructure/fairmint\|Fairmint TSV]] (announced plans, not live) | Pool of allowlisted liquidity | Atomic swap in the pool |
 | Issuer RFQ | JTX routing to [[issuers/ondo-global-markets\|Ondo]], [[issuers/backpack\|Backpack]], [[issuers/xstocks-backed\|xStocks]] | Quote from the issuer or its market maker | Onchain swap at the quoted price |
 | P2P escrow (OTC) | Swarm open dOTC | Maker offer, taker fill | Escrow contract releases both legs |
 | Perps engine | [[platforms-venues/hyperliquid-equity-perps\|HIP-3, Ostium]] | Perp order book or oracle-priced pool | Stablecoin margin, no shares |
 | Exchange, same book | [[platforms-venues/nasdaq-tokenized-securities\|Nasdaq]] | Existing exchange order book | DTC settlement |
 | Broker-dealer ATS | [[platforms-venues/prometheum\|Prometheum]], [[issuers/securitize\|Securitize]] | Broker or ATS systems | Broker-dealer books and custody |
+| Institutional RFQ plus prime broker (announced) | Talos, Marex and [[infrastructure/broadridge\|Broadridge]] DLX on [[infrastructure/dtcc-tokenization-pilot\|DTC]] tokenized Treasuries | Talos RFQ network | Atomic onchain settlement through the DLX orchestrator, synced to books and records ([Broadridge](https://www.broadridge.com/press-release/2026/broadridge-to-enable-institutional-trading-of-dtcc-tokenized-securities)) |
+
+Securitize's 12 Nov 2026 comment letter on the [[concepts/innovation-exemption|Innovation Exemption]] asks the SEC to explicitly permit PropAMMs: AMMs that reprice onchain liquidity from an offchain model, with every swap still settling onchain, as described in Jump Crypto research the letter cites. Securitize says they are arguably already within the order's scope but should be unambiguously allowed, because they can keep TSV prices closer to the underlying stock ([Securitize](https://www.sec.gov/comments/S7-2026-32/4927-1134705-4042498.pdf)). That is a comment-letter ask, not a change to the order. The Securitize Stocks row below already records a PropAMM on Solana with Jump as market maker.
 
 ## Full table
 | Venue / platform | Legal form of what trades | Custody | Matching | Settlement asset | Chains | Hours | KYC / allowlist | Corporate actions | Oracle |
@@ -60,8 +67,10 @@ Details and sources are on each linked page; the design patterns are explained w
 | [[platforms-venues/tsv-llc\|TSV LLC / Tradecraft]] | Issuer-sponsored shares (CNTN) | Register kept by [[infrastructure/fairmint\|Fairmint]] | Permissioned AMM pool on Tradecraft ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)) | USDC or SBC | Canton | Designed 24/7 with required stoppages | Transfer-agent-verified holders and wallets | Same rights as Nasdaq holders (issuer claim) | Pool price; Alpaca market data for caps |
 | [[platforms-venues/nasdaq-tokenized-securities\|Nasdaq]] | Same security, tokenized form | DTC | Same order book, same priority | Cash via DTC | unknown | unknown | DTC Pilot eligible participants | Same as the share | n/a |
 | [[platforms-venues/formation-securities\|Formation Securities]] | Tokenized NMS Stock (issuer-sponsored or third-party tokenizer) | None at venue (non-custodial) | Permissioned concentrated-liquidity AMM (licensed Orca) plus offchain router ([Formation notice](https://www.formationsecurities.com/notice.pdf)) | Non-security crypto asset or tokenized MMF | Solana | 24/7, subject to required stoppages | KYC/KYB, sanctions and wallet screening, plus tokenizer approval; Token-2022 transfer hook | Tokenizer, reviewed by the TSV; not at the venue | None for pricing (pool formula); third-party market data for halts and volume caps |
+| [[infrastructure/fairmint\|Fairmint TSV]] (announced plans, not live) | Issuer-sponsored shares recorded by Fairmint TA (planned) | Register kept by Fairmint TA (planned) | Permissioned AMM; Tradecraft named as first AMM (planned) | unknown | Canton first, Ethereum planned | unknown | Fairmint TA would verify holders (planned) | unknown | unknown |
 
 ## Reading the table
+- The Fairmint TSV row is an announced plan (20 Nov 2026), not a live venue; as of 2:59 PM ET that day it did not appear on the SEC's list of filed TSV notices ([GlobeNewswire](https://www.globenewswire.com/news-release/2026/11/20/3407521/0/en/fairmint-announces-plans-for-fairmint-tsv-a-venue-connecting-amms-to-issuer-sponsored-tokenized-shares-with-tradecraft-as-first-amm.html); [SEC](https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption)).
 - Dated, attributed trading-volume figures — which are not like-for-like and are not a league table — are in [[comparisons/reported-trading-volume-by-venue|Reported trading volume by venue]].
 - **Who holds the share** matters more than the chain: the rows run from no share at all (perps), through broker or entitlement custody, to the company's own register (TSV LLC/CNTN).
 - **Hours** on most onchain venues follow either the venue's own design (24/7 pools and order books) or the underlying market's sessions (e.g. Ondo's four US sessions plus an Off-Hours session for selected assets, with halts during corporate actions: [Ondo docs](https://docs.ondo.finance/ondo-stocks/market-hours-and-trading-availability)).
@@ -84,3 +93,7 @@ Public originals for the facts on this page.
 - <https://www.payward.com/press-release/xstocks-uk-eu-equities>
 - <https://optimism.io/blog/xstocks-native-op-mainnet-ether-fi-launch>
 - <https://www.payward.com/press-release/xstocks-dax-40>
+- <https://www.sec.gov/comments/S7-2026-32/4927-1134705-4042498.pdf>
+- <https://www.broadridge.com/press-release/2026/broadridge-to-enable-institutional-trading-of-dtcc-tokenized-securities>
+- <https://www.globenewswire.com/news-release/2026/11/20/3407521/0/en/fairmint-announces-plans-for-fairmint-tsv-a-venue-connecting-amms-to-issuer-sponsored-tokenized-shares-with-tradecraft-as-first-amm.html>
+- <https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption>

@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: rule approved by SEC 2026-03-18
 last_updated: '2026-11-09'
-description: 'In plain English: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC''s pilot.'
+description: Nasdaq can now trade tokenized versions of the same stocks it already lists, settled through DTC's pilot.
 ---
 
 > [!info] At a glance
@@ -45,7 +45,7 @@ Original notice: [SEC Rel. 34-103989](https://www.sec.gov/files/rules/sro/nasdaq
 On 10 Sep 2026 Nasdaq agreed to invest \$100M in Payward, Kraken's parent, to build Nasdaq Equity Tokens (NETs) linked to xStocks; NETs are expected in Q2 2027 ([Nasdaq](https://www.nasdaq.com/press-release/nasdaq-deepens-relationship-payward-advance-tokenized-equities-and-always)).
 
 ## Comment letter on transfer agent rules (5 Nov 2026)
-In its letter on the SEC's proposed transfer agent rules (File S7-2026-30), Nasdaq asks the SEC to require interoperability among onchain and offchain master securityholder files, tokenized and non-tokenized settlement rails, and the national clearance and settlement system, and to require fungibility at the recordkeeping layer, consistent with the trading-layer fungibility in its tokenization plans ([Nasdaq letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1122619-3995826.pdf), raw/188). It also argues issuers should be able to choose the transfer agent that keeps the master file separately from tokenization agents, custodians and venues. This is advocacy, not law; see [[topics/regulation|Regulation]].
+In its letter on the SEC's proposed transfer agent rules (File S7-2026-30), Nasdaq asks the SEC to require interoperability among onchain and offchain master securityholder files, tokenized and non-tokenized settlement rails, and the national clearance and settlement system, and to require fungibility at the recordkeeping layer, consistent with the trading-layer fungibility in its tokenization plans ([Nasdaq letter](https://www.sec.gov/comments/S7-2026-30/s7202630-1122619-3995826.pdf)). It also argues issuers should be able to choose the transfer agent that keeps the master file separately from tokenization agents, custodians and venues. This is advocacy, not law; see [[topics/regulation|Regulation]].
 
 ## What this means for holders
 - A tokenized share on Nasdaq trades on the same order book, with the same [[concepts/glossary#cusip|CUSIP]], symbol and shareholder rights as the regular share ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)).

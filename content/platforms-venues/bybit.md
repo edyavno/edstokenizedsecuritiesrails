@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: live (xStocks listed 2025-06-30)
 last_updated: '2026-11-12'
-description: 'In plain English: Bybit is a crypto exchange that lists xStocks for trading.'
+description: Bybit is a crypto exchange that lists xStocks for trading.
 ---
 
 > [!info] At a glance

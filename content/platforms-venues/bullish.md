@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: live (first trades 2026-08-12)
 last_updated: '2026-11-09'
-description: 'In plain English: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.'
+description: Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.
 ---
 
 > [!info] At a glance
@@ -42,7 +42,7 @@ On 12 Aug 2026 market participants traded Bullish's tokenized BLSH shares on Bul
 
 On 24 Sep 2026 Bullish and Equiniti formed the [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]] to set standards for [[concepts/glossary#issuer-sponsored-token|issuer-sponsored tokens]]. Bullish expects its \$4.2B Equiniti acquisition, agreed in May 2026, to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)).
 
-On 9 Nov 2026 Bullish appointed Stacey Cunningham, former President of NYSE Group, as its President, as it "advances its strategy to connect traditional capital markets infrastructure with blockchain technology" ([Bullish](https://www.globenewswire.com/news-release/2026/11/09/3398203/0/en/bullish-appoints-former-nyse-president-stacey-cunningham-as-president.html), raw/208).
+On 9 Nov 2026 Bullish appointed Stacey Cunningham, former President of NYSE Group, as its President, as it "advances its strategy to connect traditional capital markets infrastructure with blockchain technology" ([Bullish](https://www.globenewswire.com/news-release/2026/11/09/3398203/0/en/bullish-appoints-former-nyse-president-stacey-cunningham-as-president.html)).
 
 ## Why it matters
 - **The register.** Bullish is buying Equiniti, a transfer agent that keeps companies' official shareholder records, for \$4.2B. The deal is expected to close in January 2027 ([Bullish](https://www.bullish.com/us/news-insights/leading-market-infrastructure-firms-form-coalition-to-advance-issuer-sponsored-tokenized-securities)). Once it closes, Bullish will own the business that records who holds the shares. Equiniti is also one of NYSE's transfer agent partners for issuer-sponsored tokens as of 2 Nov 2026, so it backs a rival venue too ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).

@@ -16,7 +16,7 @@ type: issuer
 chain: unknown
 status: live (launched 2026-08-12)
 last_updated: '2026-10-25'
-description: 'In plain English: Crypto.com sells tokens that follow US stock prices, but they are contracts, not shares.'
+description: Crypto.com sells tokens that follow US stock prices, but they are contracts, not shares.
 ---
 
 > [!info] At a glance

@@ -4,7 +4,7 @@ type: overview
 description: How tokenized securities fit together (issuance, trading, settlement, custody, regulation), why tokenize, and what is new compared with traditional rails.
 tags:
 - overview
-last_checked: '2026-10-31'
+last_checked: '2026-11-18'
 sources:
 - https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf
 - https://www.fsb.org/uploads/P221024-2.pdf
@@ -23,6 +23,7 @@ sources:
 - https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto
 - https://www.mas.gov.sg/news/speeches/2024/tokenisation-in-financial-services-pathways-to-scale
 - https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
+- https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf
 ---
 
 <figure class="explainer-video">
@@ -55,19 +56,22 @@ Today, buying a stock or bond goes through a chain of brokers, [[concepts/glossa
 
 It's already real for big institutions, though two common numbers measure different things. About \$368B of repo trades *settle every day* on Broadridge's blockchain platform: that is a daily flow, with the same cash and bonds lent and repaid over and over ([Broadridge](https://www.broadridge.com/press-release/2025/broadridge-distributed-ledger-repo-platform-november)).
 
-Tokenized Treasuries *held* on blockchains total about \$14.5B as of Oct 2026: that is a stock of assets, like an account balance ([rwa.xyz](https://app.rwa.xyz/treasuries)). Most tokenized assets so far are bonds and [[concepts/glossary#money-market-fund|money market funds]] ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
+Tokenized Treasuries *held* on blockchains total about \$14.5B as of Oct 2026: that is a stock of assets, like an account balance ([rwa.xyz](https://app.rwa.xyz/treasuries)). Most tokenized assets so far are bonds and [[concepts/glossary#money-market-fund|money market funds]]. IOSCO's 2026 monitoring report puts tokenized real-world assets at about \$16B on 1 Jul 2025 and \$37B on 30 Jun 2026, citing RWA.xyz, with commercial traction mainly in fixed income and money market funds ([IOSCO 2026](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf)). Size estimates depend on what is counted and when: the IMF figure below is about \$65B for July 2026.
 
-The IMF's October 2026 stability report puts the wider picture in one place. Public tokenized real-world assets, not counting repo, were about \$65B in July 2026, which is 0.2% of US Treasuries outstanding; tokenized stocks were only about \$2.3B, more than 70% of it from [[issuers/ondo-global-markets|Ondo]] and [[issuers/xstocks-backed|xStocks]]. Over half of tokenized-stock trading happens when US markets are closed, about 80% of trades are smaller than one share, and prices still track the real share closely. The IMF says the risks to the system are limited for now, but 24/7 trading, collateral reuse and instant settlement could spread stress faster ([IMF GFSR Oct 2026, ch. 3](https://www.imf.org/-/media/files/publications/gfsr/2026/october/english/ch3.pdf), raw/164).
+The IMF's October 2026 stability report puts the wider picture in one place. Public tokenized real-world assets, not counting repo, were about \$65B in July 2026, which is 0.2% of US Treasuries outstanding; tokenized stocks were only about \$2.3B, more than 70% of it from [[issuers/ondo-global-markets|Ondo]] and [[issuers/xstocks-backed|xStocks]]. Over half of tokenized-stock trading happens when US markets are closed, about 80% of trades are smaller than one share, and prices still track the real share closely. The IMF says the risks to the system are limited for now, but 24/7 trading, collateral reuse and instant settlement could spread stress faster ([IMF GFSR Oct 2026, ch. 3](https://www.imf.org/-/media/files/publications/gfsr/2026/october/english/ch3.pdf)).
 
-Many stock tokens are wrappers: a third party holds the real share and gives you a token that tracks it, usually without a vote ([[overview#native-vs-wrapped|native vs wrapper]]).
+Many stock tokens are wrappers: a third party holds the real share and gives you a token that tracks it, usually without a vote ([[overview#what-is-the-difference-between-native-and-wrapped-tokens|native vs wrapper]]).
 
-## What's actually different from today's rails
+## What's actually different from today's rails?
+Four things change: one shared record replaces many copies, cash and asset can swap at the same moment, the rules travel with the token, and the ledger is always open and reusable.
 - **One shared record instead of many copies.** Today the official list of who owns a share sits with a [[concepts/glossary#transfer-agent|transfer agent]] or central depository, and every bank and broker in between keeps its own copy that has to be checked against the others. With tokens, everyone works from the same ledger, and the token balance can be the official record. The BIS says this joins "messaging, reconciliation and asset transfer into a single, seamless operation" ([BIS AER 2025, ch. III](https://www.bis.org/publ/arpdf/ar2025e3.htm)). A transfer agent often stays involved for regulatory reasons ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
 - **Cash and asset swap at the same moment.** If the payment is also a token on the same ledger, one transaction can move the security one way and the cash the other: both happen or neither does. This is called [[concepts/glossary#atomic-settlement|atomic]] [[concepts/glossary#dvp|delivery versus payment]] (DvP) ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)). The digital cash can be central bank money, tokenized bank deposits or [[concepts/glossary#stablecoin|stablecoins]] ([WEF 2025](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)), and which one is used changes the risk ([FSB 2024](https://www.fsb.org/uploads/P221024-2.pdf)). More: [[topics/settlement-and-matching|Settlement & matching]].
 - **The rules travel with the token.** Securities law still applies, so the token itself can refuse a transfer to a [[concepts/glossary#wallet|wallet]] that has not passed identity checks, and the issuer can freeze or recover tokens. ERC-3643 is one standard that works this way ([EIP-3643](https://eips.ethereum.org/EIPS/eip-3643)). See [[standards/erc-3643|ERC-3643]], [[standards/erc-1400|ERC-1400]], [[standards/solana-token-2022|Token-2022]].
 - **Always open, and reusable.** The ledger never closes, and the same token can be plugged into other uses such as collateral or lending ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). The flip side is that tightly linked systems can pass problems along; WEF flags the risk of "limitless composability" ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)).
 
-## Native vs wrapped
+## What is the difference between native and wrapped tokens?
+A native token is the share itself, recorded on the issuer's register; a wrapped token is a claim on a real share that a custodian or broker holds.
+
 There are two ways to put a share on a ledger, and which one you hold decides what you actually own.
 - **Native: the token is the share.** The company, or its transfer agent, issues the security on the ledger, and your token balance is the official ownership record ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf); [SEC staff, 28 Jan 2026](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Examples: [[issuers/superstate-opening-bell|Superstate Opening Bell]], [[issuers/securitize|Securitize]] transfer-agent issuances.
 - **Wrapper: a claim on a share.** The real share stays with a custodian or broker in the traditional system, and a third party issues a token that tracks it. SEC staff split wrappers into custodial ones (a claim on the held share) and [[concepts/glossary#synthetic-wrapper|synthetic]] ones (a separate contract, such as a note or swap) ([SEC staff](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)). Someone has to keep the number of tokens matched to the shares held, and you can only swap back through the issuer ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)).
@@ -77,7 +81,7 @@ There are two ways to put a share on a ledger, and which one you hold decides wh
 > - Usually no voting rights ([SEC staff](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)).
 > - You rely on that firm to keep the share safe and to [[concepts/glossary#redeem|redeem]] it ([WEF](https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/)). If it fails, you can lose money even if the company behind the share is fine: Robinhood warns its EU stock-token buyers they could lose up to their full investment if Robinhood becomes insolvent ([Robinhood EU](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
 > - The token can trade at a different price from the share.
-> - The company behind the share may not have agreed: 67 companies had objected to tokens of their shares on OKXICE by 5 Nov 2026 ([[platforms-venues/okxice-tsv#issuer-objections|OKXICE objections]]).
+> - The company behind the share may not have agreed: 67 companies had objected to tokens of their shares on OKXICE by 5 Nov 2026 ([[platforms-venues/okxice-tsv#which-issuers-have-objected-to-okxice-trading-their-stock|OKXICE objections]]).
 
 The legal wrapper decides what the holder actually owns. More: [[concepts/legal-taxonomy|Legal taxonomy]], [[topics/legal-structures|Legal structures]] and [[comparisons/implementations-by-model|implementations by model]].
 
@@ -125,12 +129,12 @@ The same four steps in detail: who does what at each step, the traditional role 
 ## Formal definitions
 CPMI: "the process of generating and recording a digital representation of traditional assets on a programmable platform" ([CPMI 2024](https://www.bis.org/cpmi/publ/d225.htm)). IOSCO: the "creation, issuance, or representation of assets on a digital token ledger or a programmable platform" ([IOSCO 2025](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
 
-## Where it stands
-Adoption is real but early. IOSCO finds it "incipient and incremental," led by fixed income and money market funds (see the [[comparisons/buidl-precedent|BUIDL precedent]]). A lack of cross-chain interoperability and of credible settlement assets limits scale, and many participants still use traditional trading and post-trade infrastructure ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
+## How far along is tokenization?
+Adoption is real but early. IOSCO's November 2026 monitoring report finds that tokenization "is progressing but remains transitional and fragmented." Traction is in fixed income, money market funds (see the [[comparisons/buidl-precedent|BUIDL precedent]]) and collateral management; primary issuance is more developed than secondary trading and distribution; and retail participation has begun through regulated intermediaries ([IOSCO 2026](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf)). Tokenized equities are a small slice: about \$1.7B on 30 Jun 2026, up from \$330M a year earlier, with Ondo and xStocks the two largest platforms (RWA.xyz data, as cited by [IOSCO 2026](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf), p. 34; the IMF's July 2026 estimate is about \$2.3B). IOSCO's 2025 report had called adoption "incipient and incremental" and pointed to limited cross-chain interoperability and credible settlement assets ([IOSCO 2025](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)).
 
 The FSB sees no material stability risk at today's small scale. It names liquidity and maturity mismatch, leverage, asset quality, interconnectedness and operational fragility as the vulnerabilities to watch ([FSB](https://www.fsb.org/uploads/P221024-2.pdf)). The BIS argues for a "unified ledger" with tokenised central bank reserves, commercial bank money and government bonds at its centre ([BIS](https://www.bis.org/publ/arpdf/ar2025e3.htm)).
 
-Regulators broadly apply "same activities, same risks, same regulatory outcomes" ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). For the US and EU specifics, see [[topics/regulation|Regulation]] and [[concepts/international|International]].
+Regulators broadly apply "same activities, same risks, same regulatory outcomes" ([IOSCO](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf)). In 2026 IOSCO found their attention converging on legal certainty of token ownership and transfer, alignment of onchain and offchain records, custody, disclosure of investor rights, operational and cyber resilience, and governance of smart contracts, bridges and oracles ([IOSCO 2026](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf)). For the US and EU specifics, see [[topics/regulation|Regulation]] and [[concepts/international|International]].
 
 ## Text version of the diagram
 ```mermaid
@@ -164,3 +168,4 @@ Public originals for the facts on this page.
 - <https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto>
 - <https://www.mas.gov.sg/news/speeches/2024/tokenisation-in-financial-services-pathways-to-scale>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
+- <https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf>

@@ -3,7 +3,7 @@ title: Legal taxonomy of tokenized securities
 type: concept
 tags:
 - concepts
-last_checked: '2026-11-12'
+last_checked: '2026-11-18'
 sources:
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
 - https://www.sidley.com/en/insights/newsupdates/2026/01/sec-staff-unveils-a-playbook-for-tokenized-securities
@@ -18,7 +18,8 @@ sources:
 - https://docs.ondo.finance/ondo-stocks/overview
 - https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks
 - https://robinhood.com/eu/en/support/articles/stock-tokens-faq/
-description: 'In plain English: The SEC sorts tokenized stocks into a few legal types. This page explains each one, because the type decides what you actually own.'
+- https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf
+description: The SEC sorts tokenized stocks into a few legal types. This page explains each one, because the type decides what you actually own.
 ---
 
 *In plain English: The SEC sorts tokenized stocks into a few legal types. This page explains each one, because the type decides what you actually own.*
@@ -30,7 +31,7 @@ The SEC staff statement of 28 Jan 2026 ([SEC](https://www.sec.gov/newsroom/speec
   - **Synthetic / linked**: the token is a separate security (e.g. a note) or security-based swap referencing the stock. Examples: [[issuers/ondo-global-markets|Ondo Stocks]] (notes), Robinhood Stock Tokens (debt securities), bStocks (certificates).
 - Format does not change legal obligations ([SEC](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities); analysis: [Sidley](https://www.sidley.com/en/insights/newsupdates/2026/01/sec-staff-unveils-a-playbook-for-tokenized-securities), [Jones Day](https://www.jonesday.com/en/insights/2026/02/sec-staff-provides-its-views-on-taxonomies-associated-with-tokenized-securities)).
 
-## Broker-dealer custody
+## How must a broker-dealer hold tokenized securities?
 [[concepts/glossary#rule-15c3-3|Rule 15c3-3]] possession-and-control applies to crypto asset securities. The 2020 special-purpose [[concepts/glossary#broker-dealer|broker-dealer]] statement is not mandatory ([SEC TM FAQ](https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology)). The 17 Dec 2025 TM statement describes how a broker-dealer establishes physical possession. It covers:
 - the ability to transfer the asset
 - private-key protections
@@ -43,14 +44,16 @@ Sources: [SEC](https://www.sec.gov/newsroom/speeches-statements/trading-markets-
 
 It depends on how the token is built. Some tokens *are* the share itself, recorded on the company's official register. Many widely traded tokens are not: they are a claim, certificate, note, or other instrument that references a share held somewhere else.
 
-The SEC staff's 28 Jan 2026 statement sorts tokenized securities into issuer-sponsored tokens, where the onchain record is or feeds the issuer's official register, and third-party tokens. A third-party token may be a custodial security entitlement or a separate ("synthetic") instrument such as a note. The staff says the format does not change legal obligations, and a third-party token "may or may not confer upon the holder of the crypto asset any rights as a holder of the underlying security" ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities), raw/11).
+The SEC staff's 28 Jan 2026 statement sorts tokenized securities into issuer-sponsored tokens, where the onchain record is or feeds the issuer's official register, and third-party tokens. A third-party token may be a custodial security entitlement or a separate ("synthetic") instrument such as a note. The staff says the format does not change legal obligations, and a third-party token "may or may not confer upon the holder of the crypto asset any rights as a holder of the underlying security" ([SEC staff statement](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities)).
+
+IOSCO's November 2026 monitoring report draws the same line for securities regulators worldwide. It says the label "stock tokens" can cover products that "differ materially" in legal structure and investor rights, some giving only contractual or economic exposure without shareholder rights or ownership. It separates "mirroring," where the token "is merely informative with limited legal value," from cases where "the blockchain is used to record the ownership of the securities," and concludes that a product's legal and economic character "cannot be assumed from the use of tokenization alone" ([IOSCO 2026](https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf), pp. 4, 33, 50).
 
 Examples from issuer documents, not a complete list:
 
-- [[issuers/xstocks-backed|xStocks]] are tracker certificates. They give economic exposure to the underlying equity and do not convey shareholder rights such as voting ([xStocks FAQ](https://docs.xstocks.fi/docs/frequently-asked-questions), raw/260). Kraken's distribution FAQ puts it more strongly: holding an xStock "is not the same as buying a share of the underlying company" and does not carry voting rights or a legal claim to the company's shares or residual assets ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq), last updated 11 Nov 2026, raw/261).
-- [[issuers/ondo-global-markets|Ondo Stocks]] are structured notes (debt instruments) issued by a bankruptcy-remote SPV. They are designed to give economic exposure, "not direct title" to the underlying assets, and no shareholder voting, statutory information, or other shareholder rights from the underlying issuer ([Ondo legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory) and [overview](https://docs.ondo.finance/ondo-stocks/overview), raw/262).
-- [[issuers/coinbase-tokenized-stocks|Coinbase]] tokenized stocks on Base are described as a beneficial claim on a real share held in bankruptcy-remote custody, not a share recorded on the company's register ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks), raw/264; see also the implementations table).
-- [[issuers/robinhood-stock-tokens|Robinhood]] products differ by program. Jersey Stock Tokens are debt securities and give no rights in the underlying shares, as already recorded on the issuer page. EU Classic Stock Tokens are a derivatives contract with Robinhood Europe: the FAQ says "you do not own the underlying stock" and "will not have certain shareholder rights like voting" ([Classic FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/), raw/266).
+- [[issuers/xstocks-backed|xStocks]] are tracker certificates. They give economic exposure to the underlying equity and do not convey shareholder rights such as voting ([xStocks FAQ](https://docs.xstocks.fi/docs/frequently-asked-questions)). Kraken's distribution FAQ puts it more strongly: holding an xStock "is not the same as buying a share of the underlying company" and does not carry voting rights or a legal claim to the company's shares or residual assets ([Kraken FAQ](https://support.kraken.com/articles/xstocks-faq), last updated 11 Nov 2026).
+- [[issuers/ondo-global-markets|Ondo Stocks]] are structured notes (debt instruments) issued by a bankruptcy-remote SPV. They are designed to give economic exposure, "not direct title" to the underlying assets, and no shareholder voting, statutory information, or other shareholder rights from the underlying issuer ([Ondo legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory) and [overview](https://docs.ondo.finance/ondo-stocks/overview)).
+- [[issuers/coinbase-tokenized-stocks|Coinbase]] tokenized stocks on Base are described as a beneficial claim on a real share held in bankruptcy-remote custody, not a share recorded on the company's register ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks); see also the implementations table).
+- [[issuers/robinhood-stock-tokens|Robinhood]] products differ by program. Jersey Stock Tokens are debt securities and give no rights in the underlying shares, as already recorded on the issuer page. EU Classic Stock Tokens are a derivatives contract with Robinhood Europe: the FAQ says "you do not own the underlying stock" and "will not have certain shareholder rights like voting" ([Classic FAQ](https://robinhood.com/eu/en/support/articles/stock-tokens-faq/)).
 
 Issuer-sponsored tokens, where the token *is* the registered share, are listed on the implementations table. For a side-by-side of models, what a holder can redeem into, and a four-model lens, see [[comparisons/implementations-by-model]]. This is reference information, not legal advice.
 
@@ -72,3 +75,4 @@ Public originals for the facts on this page.
 - <https://docs.ondo.finance/ondo-stocks/overview>
 - <https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks>
 - <https://robinhood.com/eu/en/support/articles/stock-tokens-faq/>
+- <https://www.iosco.org/library/pubdocs/pdf/IOSCOPD832.pdf>

@@ -16,7 +16,7 @@ type: infrastructure
 chain: unknown
 status: operating (platform since 2019)
 last_updated: '2026-11-02'
-description: 'In plain English: Vertalo keeps companies'' official shareholder records and links tokens to them, so token holders get dividends and votes.'
+description: Vertalo keeps companies' official shareholder records and links tokens to them, so token holders get dividends and votes.
 ---
 
 > [!info] At a glance
