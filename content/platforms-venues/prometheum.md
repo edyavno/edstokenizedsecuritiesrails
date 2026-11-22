@@ -16,7 +16,7 @@ type: venue
 chain: unknown
 status: Correspondent clearing offered (pages read 9 Nov 2026)
 last_updated: '2026-11-09'
-description: 'In plain English: Prometheum lets ordinary US brokers offer tokenized securities by clearing and holding them for those brokers, under the same…'
+description: Prometheum lets ordinary US brokers offer tokenized securities by clearing and holding them for those brokers, under the same customer-protection rules as…
 ---
 
 > [!info] At a glance

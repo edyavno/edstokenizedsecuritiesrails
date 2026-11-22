@@ -10,7 +10,7 @@ who_can_buy: unknown
 num_assets: unknown
 structure_short: Synthetic perps
 who_can_buy_short: unknown
-last_checked: '2026-11-11'
+last_checked: '2026-11-19'
 title: Equity perps (Hyperliquid HIP-3, Ostium)
 tags:
 - platforms-venues
@@ -19,8 +19,8 @@ chain:
 - Hyperliquid (HyperCore)
 - Arbitrum (Ostium)
 status: Live (docs read 9 Nov 2026)
-last_updated: '2026-11-11'
-description: 'In plain English: these are bets on a stock or index price, settled in stablecoins. You never own the share, and no one holds a share for you.'
+last_updated: '2026-11-19'
+description: these are bets on a stock or index price, settled in stablecoins. You never own the share, and no one holds a share for you.
 ---
 
 > [!info] At a glance
@@ -28,7 +28,7 @@ description: 'In plain English: these are bets on a stock or index price, settle
 > **Jurisdiction:** unknown  
 > **Chain:** Hyperliquid (HyperCore), Arbitrum (Ostium)  
 > **Status:** Live (docs read 9 Nov 2026)  
-> **Last updated:** 2026-11-11  
+> **Last updated:** 2026-11-19  
 
 | Field | Value |
 |---|---|
@@ -57,6 +57,9 @@ Perpetual futures ("perps") give price exposure without any share behind them: a
 ## Off-hours demand (attributed)
 Around the US election results (4-5 Nov 2026), analyst Tom Wan reported that the trade[XYZ] S&P 500 perp on Hyperliquid did \$458M of volume overnight, 5.7x a normal night ([Tom Wan on X](https://x.com/tomwanhh/status/2118301097131418094), third-party figure, unverified). For tokenized stocks, Ondo said Ondo Stocks traded "about 10x its usual volume after the closing bell" on election night ([Ondo on X](https://x.com/Ondo/status/2118090005071396987), company-reported).
 
+## Pre-IPO perpetuals (trade[XYZ])
+trade[XYZ] lists pre-IPO perps, including "ANT" referencing one Anthropic Class A share. Its docs say they "are not shares", "not IPO allocations" and not "tokenized equity, securities entitlements, or rights to receive any security", and give no ownership, voting, dividend or allocation rights. After the stock lists and external data suffices, the contract is "expected to convert into a normal equity perpetual", "typically the first regular session after listing"; the specification page gives up to 60 days (no later than 19 Jan 2027) for a listing before alternative settlement applies ([trade[XYZ] docs](https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md)). See [[comparisons/implementations-by-model|Implementations by model]].
+
 See [[build/trading-reference-architecture#how-venues-match-and-settle|How venues match and settle]] and [[comparisons/trading-venue-architectures|Trading venue architectures]]. Dated, attributed volume figures for trade[XYZ] and other equity perps — which are notional and not comparable to spot tokenized-stock volume — are in [[comparisons/reported-trading-volume-by-venue#synthetic-equity-perps-not-spot-tokens|Reported trading volume by venue]].
 
 ## What this means for holders
@@ -71,5 +74,6 @@ Public originals for the facts on this page.
 - <https://docs.trade.xyz/architecture>
 - <https://docs.ostium.com/protocol/how-ostium-works>
 - <https://s3.us-east-1.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-Staking-Report-Q4-2026.pdf>
+- <https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md>
 
-*Last checked 2026-11-11. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-19. Headline fields only; `unknown` means not yet verified from a source.*

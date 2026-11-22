@@ -18,7 +18,7 @@ chain:
 - Provenance
 status: live
 last_updated: '2026-10-25'
-description: 'In plain English: Figure lets companies issue their shares directly on a blockchain, so the token is the real share.'
+description: Figure lets companies issue their shares directly on a blockchain, so the token is the real share.
 ---
 
 > [!info] At a glance

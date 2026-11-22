@@ -16,7 +16,7 @@ type: venue
 chain: Public and selected private chains (unnamed)
 status: DLT TSS licence obtained 20 Oct 2026
 last_updated: '2026-11-09'
-description: 'In plain English: Seturion lets existing European trading venues keep matching orders as they do today and settle tokenized trades on a blockchain, without…'
+description: Seturion lets existing European trading venues keep matching orders as they do today and settle tokenized trades on a blockchain, without each venue needing…
 ---
 
 > [!info] At a glance

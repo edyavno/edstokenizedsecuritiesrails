@@ -2,7 +2,7 @@
 title: Ed’s Tokenized Securities Rails
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: '2026-11-15'
+last_checked: '2026-11-22'
 ---
 
 # Ed’s Tokenized Securities Rails
@@ -23,6 +23,7 @@ A reference on how stocks and bonds move onto blockchains: who issues the tokens
 *How it fits together, in one picture: [[overview|see the overview]].*
 
 ## Who is this for?
+It's for anyone who needs to know how tokenized securities actually work: investors, capital-markets people, crypto people, software engineers and AI agents.
 - **Investors:** what a stock token really gives you, who can buy, the risks. Start with the [[overview|overview]] and the [[concepts/glossary|glossary]].
 - **Capital-markets people:** how issuance, trading, settlement and custody map to the rails you know. Start with [[topics/settlement-and-matching|Settlement & matching]].
 - **Crypto people:** the securities rules, issuers and venues behind tokenized stocks. Start with [[topics/rules-by-jurisdiction|Rules by jurisdiction]].
@@ -30,6 +31,7 @@ A reference on how stocks and bonds move onto blockchains: who issues the tokens
 - **AI agents:** machine-readable via [llms.txt](/llms.txt) ([[concepts/glossary#llmstxt|what's that?]]) and the [[agents|guide for AI agents]], with sources on every fact and stable page anchors.
 
 ## Why tokenize securities?
+Tokenizing a security can let cash and the asset settle together, let markets trade around the clock, and let the asset plug into other products like collateral; each point is sourced below.
 - **Cash and asset swap in one step.** Both sides settle together or not at all ([ECB](https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260826~3641116314.en.html)).
 - **Markets don't need to close.** Trades could clear in seconds, 24/7 ([BlackRock](https://www.blackrock.com/corporate/investor-relations/2025-larry-fink-annual-chairmans-letter)).
 - **Assets plug into other things,** such as collateral for futures and swaps ([CFTC](https://www.cftc.gov/PressRoom/PressReleases/9146-25)).
@@ -54,18 +56,18 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 
 ## How to use this wiki
 - **New to this?** [[overview|Overview]] → [[concepts/glossary|Glossary]] → [[topics/who-can-buy|Who can buy]]
-- **Looking up a company?** [[database|Issuer & platform database]] (32 entities)
+- **Looking up a company?** [[database|Issuer & platform database]] (34 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 - **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
-- [2026-11-15: Home page starter links are the main topics only](/changelog/2026-11-15-home-starter-links)
-- [2026-11-14: DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)
-- [2026-11-13: Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)
-- [2026-11-13: NYSE Avalanche interviews — Blaugrund on planned features, Ava Labs claims on testing and a dedicated L1](/changelog/2026-11-13-nyse-avalanche-interviews)
-- [2026-11-13: Transfer-agent comments, in-kind redemption, new jurisdictions, and catalog updates](/changelog/2026-11-13-friday-ingestion)
+- [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)
+- [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)
+- [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)
+- [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)
+- [2026-11-20: UK enabling amendment (Woolard letter), Chainlink–UBS structured notes, HSBC RedCoin tokenised fund](/changelog/2026-11-20-woolard-chainlink-ubs-hsbc-redcoin)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 

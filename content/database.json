@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15",
+ "generated": "2026-11-22",
  "source": "https://edstokenizedsecuritiesrails.com/database",
  "license": "CC BY 4.0",
  "records": [
@@ -11,7 +11,7 @@
    "structure": "NY UCC Article 8 security entitlements; selected names also tokenized 1:1 on Solana as separate instruments",
    "chains": "Solana",
    "who_can_buy": "Eligible verified Backpack users in supported regions; not US, UK, UAE, Japan or Backpack EU",
-   "last_checked": "2026-11-09"
+   "last_checked": "2026-11-19"
   },
   {
    "name": "bStocks",
@@ -21,7 +21,7 @@
    "structure": "Certificates over Shares (FSMR Sch.1 para 92); beneficial interest, not direct share ownership",
    "chains": "BNB Smart Chain",
    "who_can_buy": "Offer made only in ADGM; not to US persons (Reg S)",
-   "last_checked": "2026-11-12"
+   "last_checked": "2026-11-21"
   },
   {
    "name": "Coinbase Tokenized Stocks",
@@ -31,7 +31,7 @@
    "structure": "Beneficial claim on backing shares",
    "chains": "Base",
    "who_can_buy": "Eligible jurisdictions outside the US; offered under Regulation S",
-   "last_checked": "2026-11-09"
+   "last_checked": "2026-11-19"
   },
   {
    "name": "Crypto.com Tokenized Stocks",
@@ -51,7 +51,7 @@
    "structure": "Tokens backed by custodied securities; jurisdiction-specific rights",
    "chains": "Ethereum, Arbitrum One, Avalanche C-Chain, Base, HyperEVM, HyperCore, Plume",
    "who_can_buy": "Eligible US investors (since 2026-08-04); international per Fensory (secondary)",
-   "last_checked": "2026-11-10"
+   "last_checked": "2026-11-19"
   },
   {
    "name": "Figure OPEN",
@@ -71,7 +71,17 @@
    "structure": "Structured notes giving economic exposure; no shareholder voting/information rights",
    "chains": "Ethereum, BNB Chain, Solana, (select tokens transferable to HyperEVM and Robinhood Chain via bridge)",
    "who_can_buy": "Excludes US persons and other prohibited jurisdictions (including Canada and the sanctioned jurisdictions listed in Ondo docs); Brazil, the EEA, Hong Kong, Malaysia, Singapore, Switzerland (entities only) and the UK require professional or qualified status",
-   "last_checked": "2026-11-13"
+   "last_checked": "2026-11-19"
+  },
+  {
+   "name": "Reality (rANT / rTokens)",
+   "type": "Issuer",
+   "url": "https://edstokenizedsecuritiesrails.com/issuers/reality",
+   "jurisdiction": "unknown",
+   "structure": "Tokenized stock issued by Reality, per Bitget; Bitget says holding rANT is not equivalent to holding the share and does not automatically confer shareholder status or voting rights",
+   "chains": "unknown",
+   "who_can_buy": "Eligible users in permitted regions, not residents of restricted jurisdictions, per Bitget's IPO Prime announcement; US eligibility is not stated in the retrieved articles",
+   "last_checked": "2026-11-21"
   },
   {
    "name": "Robinhood Stock Tokens",
@@ -81,7 +91,7 @@
    "structure": "Debt securities",
    "chains": "Robinhood Chain",
    "who_can_buy": "Not US, Canada, UK, Switzerland; other restrictions apply",
-   "last_checked": "2026-11-11"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "Securitize (issuer-sponsored shares)",
@@ -91,7 +101,7 @@
    "structure": "Securitize Stocks: UCC Article 8 security entitlements, 1:1 backed, via Securitize's broker-dealer; also issuer-sponsored shares",
    "chains": "Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)",
    "who_can_buy": "Eligible investors in the United States, the European Union and other permitted jurisdictions (Securitize, 2 Nov 2026)",
-   "last_checked": "2026-11-13"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "Superstate Opening Bell",
@@ -101,7 +111,7 @@
    "structure": "Actual company shares (e.g. Galaxy Class A common)",
    "chains": "Ethereum, Solana",
    "who_can_buy": "KYC-verified investors in self-custody wallets",
-   "last_checked": "2026-11-12"
+   "last_checked": "2026-11-18"
   },
   {
    "name": "WisdomTree tokenized funds",
@@ -111,7 +121,7 @@
    "structure": "Tokenized registered fund shares (FUNDS, not single stocks)",
    "chains": "Solana, others (multi-chain)",
    "who_can_buy": "unknown",
-   "last_checked": "2026-11-12"
+   "last_checked": "2026-11-18"
   },
   {
    "name": "xStocks (Backed)",
@@ -121,7 +131,7 @@
    "structure": "Tokenized certificates/tracker tokens backed by custodied securities",
    "chains": "Solana, Ethereum, TON, Ink, X Layer, OP Mainnet (native mint and redeem, Optimism Foundation blog, 12 Nov 2026), (Tron, Mantle, BNB Chain announced as coming, Dec 2025)",
    "who_can_buy": "Eligible non-US persons; excluded in US, UK, Canada, Australia and sanctioned jurisdictions",
-   "last_checked": "2026-11-13"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "21X",
@@ -132,6 +142,16 @@
    "chains": "unknown (multi-chain; pilot on a private-permissioned instance of Zero)",
    "who_can_buy": "Whitelisted wallets of admitted participants",
    "last_checked": "2026-11-09"
+  },
+  {
+   "name": "Bitget",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/bitget",
+   "jurisdiction": "unknown",
+   "structure": "Venue (CEX); IPO Prime is Bitget's subscription platform; allocated IPO assets are delivered as rTokens, per Bitget",
+   "chains": "unknown",
+   "who_can_buy": "Eligible users in permitted regions; not residents of restricted jurisdictions, per Bitget; US eligibility is not stated in the retrieved articles",
+   "last_checked": "2026-11-21"
   },
   {
    "name": "Bullish Exchange",
@@ -171,7 +191,7 @@
    "structure": "Synthetic perpetual futures on equities and indices; no share custody",
    "chains": "Hyperliquid (HyperCore), Arbitrum (Ostium)",
    "who_can_buy": "unknown",
-   "last_checked": "2026-11-11"
+   "last_checked": "2026-11-19"
   },
   {
    "name": "Kraken",
@@ -181,7 +201,7 @@
    "structure": "unknown",
    "chains": "unknown",
    "who_can_buy": "Eligible non-US clients; EEA clients after a questionnaire, fiat-only via Convert",
-   "last_checked": "2026-11-11"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "Nasdaq tokenized securities rule",
@@ -241,7 +261,7 @@
    "structure": "Permissioned concentrated-liquidity AMM (Tradecraft, Uniswap v3-style)",
    "chains": "Canton",
    "who_can_buy": "Approved Canton parties verified by the issuer's transfer agent plus TSV LLC screening",
-   "last_checked": "2026-11-09"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "Broadridge",
@@ -251,7 +271,7 @@
    "structure": "Proxy voting, transfer agency and tokenization infrastructure",
    "chains": "unknown",
    "who_can_buy": "unknown",
-   "last_checked": "2026-11-09"
+   "last_checked": "2026-11-18"
   },
   {
    "name": "Chainlink tokenized equity feeds",
@@ -261,7 +281,7 @@
    "structure": "Oracle",
    "chains": "unknown",
    "who_can_buy": "n/a",
-   "last_checked": "2026-11-12"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "DTCC Tokenization Service (DTS)",
@@ -271,7 +291,7 @@
    "structure": "Security entitlements recorded on DLT",
    "chains": "At launch: Canton Network, Besu (DTCC private network); 2027: Stellar, Arc (Circle); Solana planned for the second half of 2027 (DTCC, 12 Nov 2026)",
    "who_can_buy": "DTC participants (20 signed at launch, 28 Oct 2026); clients of Participants cannot submit conversion orders or independently register wallets (DTCC FAQs, retrieved 14 Nov 2026)",
-   "last_checked": "2026-11-14"
+   "last_checked": "2026-11-18"
   },
   {
    "name": "Fairmint",
@@ -281,7 +301,7 @@
    "structure": "Transfer agent keeping the official onchain shareholder register (issuer-sponsored shares)",
    "chains": "Canton",
    "who_can_buy": "unknown",
-   "last_checked": "2026-11-13"
+   "last_checked": "2026-11-20"
   },
   {
    "name": "tZERO",

@@ -16,7 +16,7 @@ type: infrastructure
 chain: unknown
 status: unknown
 last_updated: '2026-10-27'
-description: 'In plain English: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.'
+description: Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 ---
 
 > [!info] At a glance

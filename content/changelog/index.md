@@ -1,11 +1,27 @@
 ---
 title: Changelog
-last_checked: '2026-11-15'
+last_checked: '2026-11-22'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)
+- [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)
+- [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)
+- [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)
+- [2026-11-20: UK enabling amendment (Woolard letter), Chainlink–UBS structured notes, HSBC RedCoin tokenised fund](/changelog/2026-11-20-woolard-chainlink-ubs-hsbc-redcoin)
+- [2026-11-20: Securitize pays Apple dividend in USDC onchain](/changelog/2026-11-20-securitize-apple-onchain-dividend)
+- [2026-11-20: Fairmint announces plans for Fairmint TSV](/changelog/2026-11-20-fairmint-tsv-announced-plans)
+- [2026-11-20: Anthropic's first trading day, three more tokenized versions, and a use-case analysis](/changelog/2026-11-20-anthropic-first-day-and-new-wrappers)
+- [2026-11-19: Payward agrees to acquire Tribe Capital](/changelog/2026-11-19-payward-tribe-capital)
+- [2026-11-19: How Anthropic's IPO-day tokenized products were built](/changelog/2026-11-19-anthropic-ipo-tokenized-products)
+- [2026-11-18: IOSCO 2026 report, senators' Innovation Exemption letter, DTCC-token financing stack, and settlement-design views](/changelog/2026-11-18-iosco-senators-dtcc-financing)
+- [2026-11-17: Four more firms join the Issuer Sponsored Token Coalition, now 12](/changelog/2026-11-17-coalition-12-firms)
+- [2026-11-16: Zelle demonstrates a $1.25 million ZelleUSD confidential transfer on Solana devnet](/changelog/2026-11-16-zelleusd-solana-breakpoint)
+- [2026-11-16: Innovation Exemption comment letters, Ondo Off-Hours snapshot, B20 policy registry, and Cambodia bond PoC](/changelog/2026-11-16-sec-letters-ondo-offhours)
+- [2026-11-16: DBS and Kinexys by J.P. Morgan launch 24/7 cross-border tokenized-deposit transfers](/changelog/2026-11-16-dbs-kinexys-tokenised-deposits)
+- [2026-11-16: Coinbase and Broadridge propose an open standard for onchain shareholder communications](/changelog/2026-11-16-coinbase-broadridge-onchain-rights)
 - [2026-11-15: Home page starter links are the main topics only](/changelog/2026-11-15-home-starter-links)
 - [2026-11-14: DTCC Tokenization Service FAQs, DRS postponement, first named uses, and OKXICE context](/changelog/2026-11-14-dtcc-okxice-sources)
 - [2026-11-13: Securitize describes TSV APIs, dual CET wording, and Formation support](/changelog/2026-11-13-securitize-tsv-apis)

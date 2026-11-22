@@ -1,0 +1,11 @@
+---
+title: '2026-11-20: UK enabling amendment (Woolard letter), Chainlink–UBS structured notes, HSBC RedCoin tokenised fund'
+date: 2026-11-20
+tags:
+- changelog
+last_checked: '2026-11-20'
+---
+
+- [[concepts/international|International regimes]], [[topics/rules-by-jurisdiction|Rules by jurisdiction]], [[topics/regulation|Regulation]] and [[topics/legal-structures|Legal structures]]: on 18 Nov 2026 Chris Woolard, the UK Wholesale Digital Markets Champion, welcomed an enabling amendment the government had laid to the Financial Services and Markets Bill, "which will enable legislation to adapt to technological change." He said greater clarity is still needed for settlement finality, and that "the treatment of registers in the Companies Act... could prevent the issuance of digitally native equities." His second report is due in July 2027. The letter does not say the amendment has been enacted ([letter](https://www.theglobalcity.uk/PositiveWebsite/media/research-downloads/20261118_CW-Letter.pdf)).
+- [[infrastructure/chainlink-equity-feeds|Chainlink tokenized equity feeds]] and [[topics/corporate-actions-and-dividends|Corporate actions]]: on 19 Nov 2026 Chainlink said UBS used the Chainlink Runtime Environment (CRE) in a production pilot to run lifecycle servicing for a tokenized structured note on Ethereum, including real-time visibility of coupon entitlements, barrier proximity and product status. This is a structured note, not a stock. Settlement using UBS digital money is described as future automation, not a live feature ([Chainlink / PR Newswire](https://www.prnewswire.com/news-releases/chainlink-develops-blockchain-solution-with-ubs-for-the-2-trillion-global-structured-products-market-302944470.html)).
+- [[concepts/international|International regimes]] and [[comparisons/buidl-precedent|BUIDL]]: on 19 Nov 2026 HSBC said eligible customers can use HSBC RedCoin (RCHKD), its licensed Hong Kong dollar stablecoin, to buy Class SD, a tokenised unit class of the HSBC Global Money Funds – Hong Kong Dollar, from a minimum of HKD 100. HSBC tokenises the class and custodies both the stablecoin and Class SD. This is a tokenised money market fund, not a tokenized stock ([HSBC](https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-expands-into-wealth-with-tokenised-fund-access)).

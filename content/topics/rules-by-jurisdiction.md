@@ -4,7 +4,7 @@ type: topic
 tags:
 - regulation
 - international
-last_checked: '2026-11-02'
+last_checked: '2026-11-20'
 sources:
 - https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52
 - https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=26EC22
@@ -37,31 +37,34 @@ sources:
 - https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps
 - https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf
 - https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf
+- https://www.sbigroup.co.jp/news/pdf/2026/1113_a.pdf
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
 - https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities
 - https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20
 - https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets
 - https://www.wyoleg.gov/2019/Enroll/SF0125.pdf
-description: 'In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.'
+- https://www.theglobalcity.uk/PositiveWebsite/media/research-downloads/20261118_CW-Letter.pdf
+description: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
 ---
 
 *In plain English: Where tokenized securities stand under the rules in each place this wiki tracks, in one table.*
 
-Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 1 of 16 jurisdictions are not yet collected.
+Each row gives the status and the main rule or regulator guidance, linked to the regulator's own document. **Not yet collected** means this wiki has no source for that place yet; it does not mean there are no rules. 1 of 17 jurisdictions are not yet collected.
 
 | Jurisdiction | Status | Main rule or guidance | Last checked |
 |---|---|---|---|
 | United States (federal) | Rules in force | [SEC Innovation Exemption for tokenized NMS stock (Rel. 34-106402)](https://business.cch.com/srd/34-106402091726.pdf) | 2026-11-02 |
 | United States (states) | Rules in force | [State securities acts apply to tokenized securities; Wyoming UCC treatment of digital securities](https://www.wyoleg.gov/2019/Enroll/SF0125.pdf) | 2026-11-02 |
 | European Union | Pilot or sandbox | [DLT Pilot Regime (ESMA recommends making it permanent and wider)](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA75-117376770-460_Report_on_the_functioning_and_review_of_the_DLTR_-_Art.14.pdf) | 2026-11-02 |
-| United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox) | 2026-11-02 |
+| United Kingdom | Pilot or sandbox | [Digital Securities Sandbox (Bank of England and FCA)](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox); on 18 Nov 2026 the Wholesale Digital Markets Champion said the government had laid an enabling amendment to the Financial Services and Markets Bill, and that settlement finality and Companies Act register rules still need greater certainty ([letter](https://www.theglobalcity.uk/PositiveWebsite/media/research-downloads/20261118_CW-Letter.pdf)) | 2026-11-20 |
 | Switzerland | Rules in force | [DLT Act (FinMIA Chapter 4a, DLT trading facilities)](https://www.finma.ch/en/authorisation/fintech/dlt-handelssystem/) | 2026-11-02 |
 | Singapore | Regulator guidance | [MAS Guide on the Tokenisation of Capital Markets Products](https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps) | 2026-11-02 |
 | South Korea | Proposed | [Revised Electronic Registration Act and FSCMA (tokenized securities), effective 4 Feb 2027](https://fsc.go.kr/eng/pr010101/87834) | 2026-11-02 |
 | Japan | Proposed | [FSA FY2026 study group on digital and decentralised finance (agenda, not rules)](https://www.fsa.go.jp/singi/digital_2026/shiryo/261020/jimukyoku.pdf) | 2026-11-02 |
 | Australia | Not yet collected | [No tokenization rule collected; RBA consultation on RITS settlement for tokenised assets (closed 30 Oct 2026)](https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf) | not yet checked |
 | Hong Kong | Regulator guidance | [SFC circular on tokenised securities-related activities (23EC52)](https://apps.sfc.hk/edistributionWeb/gateway/EN/circular/doc?refNo=23EC52) | 2026-11-02 |
+| Cambodia | Pilot or sandbox | [NBC and SBI Holdings MOU for a Cambodian government bond tokenization PoC on Canton (13 Nov 2026)](https://www.sbigroup.co.jp/news/pdf/2026/1113_a.pdf) | 2026-11-16 |
 | UAE (ADGM) | Regulator guidance | [FSRA Guidance on Regulation of Digital Securities Activities (digital securities are Securities under FSMR)](https://assets.adgm.com/download/assets/guidance-on-regulation-of-digital-securities-activities-in-adgm.pdf/f57b23cc3a0a11ef857b6e984d6ae48f) | 2026-11-02 |
 | UAE (Dubai and federal) | Rules in force | [Federal CMA Virtual Assets Framework (April 2026); Dubai VARA rulebooks outside DIFC](https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets) | 2026-11-02 |
 | Jersey | Regulator guidance | [JFSC guidance on tokenisation of real world assets (COBO consent; issuer domicile for xStocks and Robinhood Stock Tokens)](https://www.jerseyfsc.org/industry/guidance-and-policy/tokenisation-of-real-world-assets-rwas/) | 2026-11-02 |
@@ -109,9 +112,11 @@ Public originals for the facts on this page.
 - <https://www.mas.gov.sg/regulation/guidelines/guide-on-tokenisation-of-cmps>
 - <https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf>
 - <https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem/pdf/the-role-of-rits-in-supporting-settlement-in-a-tokenised-ecosystem.pdf>
+- <https://www.sbigroup.co.jp/news/pdf/2026/1113_a.pdf>
 - <https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf>
 - <https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf>
 - <https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities>
 - <https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20>
 - <https://www.wam.ae/en/article/bzp2c5q-capital-market-authority-issues-virtual-assets>
 - <https://www.wyoleg.gov/2019/Enroll/SF0125.pdf>
+- <https://www.theglobalcity.uk/PositiveWebsite/media/research-downloads/20261118_CW-Letter.pdf>

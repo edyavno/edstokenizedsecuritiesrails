@@ -8,7 +8,7 @@ sources:
 - https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf
 - https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf
 - https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf
-description: 'In plain English: In this model a tokenized share is the same share as the normal one.'
+description: In this model a tokenized share is the same share as the normal one. It trades on the same exchanges and only the record-keeping behind it changes.
 ---
 
 *In plain English: In this model a tokenized share is the same share as the normal one. It trades on the same exchanges and only the record-keeping behind it changes.*

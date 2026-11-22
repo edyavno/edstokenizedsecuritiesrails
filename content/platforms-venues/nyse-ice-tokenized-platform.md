@@ -16,7 +16,7 @@ type: venue
 chain: 'Settlement ledger: Avalanche (for the clearing firm); issuance: multiple chains (unnamed)'
 status: rule filed; platform in development
 last_updated: '2026-11-13'
-description: 'In plain English: NYSE has a rule, like Nasdaq''s, to trade tokenized versions of listed stocks through DTC''s pilot.'
+description: NYSE has a rule, like Nasdaq's, to trade tokenized versions of listed stocks through DTC's pilot.
 ---
 
 > [!info] At a glance

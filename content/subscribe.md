@@ -1,7 +1,7 @@
 ---
 title: Subscribe
 description: A free weekly email on what changed in tokenized securities.
-last_checked: '2026-11-15'
+last_checked: '2026-11-22'
 ---
 
 A free weekly email on what changed in tokenized securities. Leave your email and we'll add you to the list.

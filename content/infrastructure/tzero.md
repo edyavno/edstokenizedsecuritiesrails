@@ -16,7 +16,7 @@ type: infrastructure
 chain: unknown
 status: NYSE design partner (MOU, Aug 2026); approval pending
 last_updated: '2026-11-13'
-description: 'In plain English: tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE''s approved token record-keepers.'
+description: tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE's approved token record-keepers.
 ---
 
 > [!info] At a glance
@@ -44,7 +44,7 @@ ICE is also investing in tZERO's latest funding round (amount not disclosed) and
 
 It is one of six NYSE transfer agent partners as of 2 Nov 2026 ([[platforms-venues/nyse-ice-tokenized-platform#transfer-agent-partners|NYSE / ICE]]; [Crypto Briefing](https://cryptobriefing.com/nyse-expands-tokenization-push-with-firms-serving-nearly-99-of-sp-500/)).
 
-On 11 Nov 2026 tZERO said the CFTC approved the registration of its wholly owned subsidiary tZERO DCM, LLC as a Designated Contract Market, following the 16 Oct 2026 registration of tZERO DCO, LLC as a Derivatives Clearing Organization. tZERO says those approvals satisfy the first earn-out milestone in its 31 Oct 2026 merger agreement with FG Imperii Acquisition Corp. This is a derivatives-market registration, not a tokenized-securities product launch ([tZERO](https://www.tzero.com/news/tzero-receives-cftc-approval-to-operate-regulated-derivatives-exchange-and-achieves-first-earn), raw/301).
+On 11 Nov 2026 tZERO said the CFTC approved the registration of its wholly owned subsidiary tZERO DCM, LLC as a Designated Contract Market, following the 16 Oct 2026 registration of tZERO DCO, LLC as a Derivatives Clearing Organization. tZERO says those approvals satisfy the first earn-out milestone in its 31 Oct 2026 merger agreement with FG Imperii Acquisition Corp. This is a derivatives-market registration, not a tokenized-securities product launch ([tZERO](https://www.tzero.com/news/tzero-receives-cftc-approval-to-operate-regulated-derivatives-exchange-and-achieves-first-earn)).
 
 *Reference information only, not investment advice.*
 

@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-11-15'
+last_checked: '2026-11-22'
 ---
 
 Weekly changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -10,6 +10,33 @@ Grouped by week (weeks start Monday), newest first.
 
 ## Get it by email
 A free weekly email with these headlines. [[subscribe|Subscribe]].
+
+## Week of 16 Nov 2026
+- **[Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)**
+- **[Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)**
+  - *What this means for holders:* Bitget's rANT, issued by Reality per Bitget, is a tokenized Anthropic product delivered through IPO Prime, not a share: Bitget says it does not automatically confer shareholder status or voting rights. Bitget reported a final allocation of 153,774 shares. See [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
+- **[Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)**
+- **[Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)**
+- **[UK enabling amendment (Woolard letter), Chainlink–UBS structured notes, HSBC RedCoin tokenised fund](/changelog/2026-11-20-woolard-chainlink-ubs-hsbc-redcoin)**
+- **[Securitize pays Apple dividend in USDC onchain](/changelog/2026-11-20-securitize-apple-onchain-dividend)**
+- **[Fairmint announces plans for Fairmint TSV](/changelog/2026-11-20-fairmint-tsv-announced-plans)**
+- **[Anthropic's first trading day, three more tokenized versions, and a use-case analysis](/changelog/2026-11-20-anthropic-first-day-and-new-wrappers)**
+  - *What this means for holders:* If you hold a tokenized Anthropic product, check which one: Securitize's is a US broker-dealer entitlement, Robinhood's is a Jersey debt security with no voting rights, and Binance's ANTB is an ADGM certificate. Crypto venues received only small IPO allocations and refunded most committed funds. See [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
+- **[Payward agrees to acquire Tribe Capital](/changelog/2026-11-19-payward-tribe-capital)**
+- **[How Anthropic's IPO-day tokenized products were built](/changelog/2026-11-19-anthropic-ipo-tokenized-products)**
+  - *What this means for holders:* Several tokenized products tracked Anthropic's IPO, and they differ in what you hold: an Ondo note, xStocks tracker tokens, a Dinari dShare, a Coinbase ADGM certificate, a Backpack token, and cash-settled perps with no share behind them. See [[comparisons/implementations-by-model|Implementations by model]].
+- **[IOSCO 2026 report, senators' Innovation Exemption letter, DTCC-token financing stack, and settlement-design views](/changelog/2026-11-18-iosco-senators-dtcc-financing)**
+  - *What this means for holders:* Global regulators say a stock token's rights depend on how it is built, not on the word "token". See [[concepts/legal-taxonomy|Legal taxonomy]].
+- **[Four more firms join the Issuer Sponsored Token Coalition, now 12](/changelog/2026-11-17-coalition-12-firms)**
+  - *What this means for holders:* More trading and tokenization firms now back issuer-sponsored tokens. Joining is non-binding. See [[concepts/issuer-sponsored-token-coalition|Issuer Sponsored Token Coalition]].
+- **[Zelle demonstrates a $1.25 million ZelleUSD confidential transfer on Solana devnet](/changelog/2026-11-16-zelleusd-solana-breakpoint)**
+  - *What this means for holders:* This is a stablecoin cash-leg demonstration, not a tokenized security. It does not by itself change how a stock token is issued, held, or voted.
+- **[Innovation Exemption comment letters, Ondo Off-Hours snapshot, B20 policy registry, and Cambodia bond PoC](/changelog/2026-11-16-sec-letters-ondo-offhours)**
+- **[DBS and Kinexys by J.P. Morgan launch 24/7 cross-border tokenized-deposit transfers](/changelog/2026-11-16-dbs-kinexys-tokenised-deposits)**
+  - *What this means for holders:* This is a tokenized-deposit cash rail between two banks, not a tokenized security. It does not by itself change how a stock token is issued, held, or voted.
+- **[Coinbase and Broadridge propose an open standard for onchain shareholder communications](/changelog/2026-11-16-coinbase-broadridge-onchain-rights)**
+  - *What this means for holders:* The proposed standard would deliver shareholder notices to wallets holding tokenized shares; it does not by itself create legal rights, calculate entitlement, or submit votes. Onchain voting is described as the next phase.
+- Database: 3 headline field updates across issuer, venue and token records.
 
 ## Week of 9 Nov 2026
 - **[Home page starter links are the main topics only](/changelog/2026-11-15-home-starter-links)**
