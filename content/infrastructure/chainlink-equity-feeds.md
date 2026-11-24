@@ -8,14 +8,14 @@ who_can_buy: n/a
 num_assets: unknown
 structure_short: Oracle / price feeds
 who_can_buy_short: n/a
-last_checked: '2026-11-20'
+last_checked: '2026-11-23'
 title: Chainlink tokenized equity feeds
 tags:
 - infrastructure
 type: infrastructure
 chain: unknown
 status: live
-last_updated: '2026-11-20'
+last_updated: '2026-11-23'
 description: Chainlink supplies stock prices to blockchains so apps can value stock tokens, including outside market hours.
 ---
 
@@ -24,7 +24,7 @@ description: Chainlink supplies stock prices to blockchains so apps can value st
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live  
-> **Last updated:** 2026-11-20  
+> **Last updated:** 2026-11-23  
 
 | Field | Value |
 |---|---|
@@ -40,7 +40,7 @@ description: Chainlink supplies stock prices to blockchains so apps can value st
 
 Feeds combine the underlying 24/5 equity price with the issuer's [[concepts/glossary#multiplier|multiplier]] and respect issuer-controlled oracle pauses; issuer-specific pages exist for Coinbase [[concepts/glossary#b20|B20]] and Robinhood ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds)).
 
-Data Streams price regular, extended and overnight sessions with market-status flags and staleness checks ([Chainlink](https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide)). For splits: pause the feed, stage the new multiplier, unpause; the issuer coordinates timing and Chainlink provides no corporate-action calendar ([Chainlink](https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits)).
+Data Streams price regular, extended and overnight sessions with market-status flags and staleness checks ([Chainlink](https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide)). [[platforms-venues/aave|Aave]] says the Equities Hub on Base uses Chainlink 24/5 tokenized-equity feeds that publish from Sunday 20:00 ET to Friday 20:00 ET and hold the last price over weekends and U.S. holidays ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)). Aave Labs' SPCXc technical assessment recorded weekend publication gaps of 49.14 hours and a longest gap of 52.47 hours in the prior month, and said work toward 24/7 availability was in progress ([SPCXc assessment](https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943)). The 21 Sep 2026 update to the V4 Base deployment ARFC also described 24/7 feeds as expected later; whether they are in production is not stated in the sources reviewed on 23 Nov 2026 ([ARFC, Deploy Aave V4 on Base](https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427)). For splits: pause the feed, stage the new multiplier, unpause; the issuer coordinates timing and Chainlink provides no corporate-action calendar ([Chainlink](https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits)).
 
 In an 11 Nov 2026 comment letter on the [[concepts/innovation-exemption|Innovation Exemption]], Chainlink Labs proposed FAQs and nonbinding principles on comparable TSV trade reports, corporate-action reconciliation across systems, and how TSVs should assess external data used for pricing and controls. Chainlink is a vendor of these services; the letter is advocacy, not a product specification ([Chainlink Labs](https://www.sec.gov/comments/4-927/4927-1133160-4036827.pdf)).
 
@@ -54,5 +54,8 @@ Public originals for the facts on this page.
 - <https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits>
 - <https://www.sec.gov/comments/4-927/4927-1133160-4036827.pdf>
 - <https://www.prnewswire.com/news-releases/chainlink-develops-blockchain-solution-with-ubs-for-the-2-trillion-global-structured-products-market-302944470.html>
+- <https://aave.com/blog/coinbase-tokenized-stocks>
+- <https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427>
+- <https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943>
 
-*Last checked 2026-11-20. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*

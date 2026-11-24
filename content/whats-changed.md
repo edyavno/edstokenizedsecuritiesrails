@@ -1,7 +1,7 @@
 ---
 title: What changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: '2026-11-22'
+last_checked: '2026-11-24'
 ---
 
 Weekly changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
@@ -11,8 +11,20 @@ Grouped by week (weeks start Monday), newest first.
 ## Get it by email
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
+## Week of 23 Nov 2026
+- **[OKXICE TSV's first 24 hours of trading](/changelog/2026-11-24-okxice-tsv-first-24-hours)**
+  - *What this means for holders:* OKXICE's six launch pools recorded 3,314 trades worth about USD 2.55 million in the first 24 hours after the noon ET launch, with just over half of that dollar volume outside regular U.S. market hours. See [[analyses/okxice-tsv-first-24-hours|OKXICE TSV's first 24 hours]] and [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[OKXICE TSV public data API](/changelog/2026-11-23-okxice-tsv-public-data-api)**
+  - *What this means for holders:* OKXICE TSV publishes free, machine-readable trade data and a no-login public API. The published fee schedule is 30 bps. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[OKXICE TSV launched](/changelog/2026-11-23-okxice-tsv-launch)**
+  - *What this means for holders:* OKX said its Tokenized Securities Venue opened at noon ET on 23 Nov 2026 for eligible U.S. customers, starting with six Securitize-tokenized stocks paired with USDC. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](/changelog/2026-11-23-aave-equities-hub-horizon)**
+  - *What this means for holders:* Some Coinbase stock tokens can be posted as collateral to borrow USDC on Aave's Equities Hub, for eligible non-U.S. users; weekend prices are held at the last 24/5 Chainlink print. A proposed ANTc listing and proposed collateral-factor cuts were not stated as executed as of 23 Nov 2026. See [[platforms-venues/aave|Aave]] and [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]].
+- Database: 9 headline field updates across issuer, venue and token records.
+
 ## Week of 16 Nov 2026
 - **[Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)**
+- **[Anthropic legal-models section adds a diagram and keeps the sourced table](/changelog/2026-11-22-anthropic-legal-models-diagram)**
 - **[Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)**
   - *What this means for holders:* Bitget's rANT, issued by Reality per Bitget, is a tokenized Anthropic product delivered through IPO Prime, not a share: Bitget says it does not automatically confer shareholder status or voting rights. Bitget reported a final allocation of 153,774 shares. See [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
 - **[Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)**

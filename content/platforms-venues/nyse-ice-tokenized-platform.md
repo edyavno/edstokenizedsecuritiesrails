@@ -42,6 +42,10 @@ NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along
 
 Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and [[concepts/glossary#etf|ETFs]] with instant settlement and [[concepts/glossary#stablecoin|stablecoin]] funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
 
+## Can you trade tokenized NYSE stocks yet?
+
+Not yet. As of 13 Nov 2026, NYSE has filed a rule, like Nasdaq's, to trade tokenized versions of listed stocks through DTC's pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)). Separately it is building a 24/7 tokenized platform whose trades are to be settled on an Avalanche-based ledger ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/); [NYSE on X](https://x.com/NYSE/status/2119812983224213903)).
+
 ## Settlement ledger: Avalanche
 On 9 Nov 2026 NYSE said Avalanche "will provide the core ledger technology for the clearing firm on the NYSE-affiliated tokenized securities platform", which is designed, subject to regulatory approvals, to support 24/7 trading, clearing and settlement for its subscribers ([NYSE on X](https://x.com/NYSE/status/2119812983224213903)). NYSE's advisory describes the platform as an upcoming [[concepts/glossary#ats|ATS]] and the aim as bringing clearing of tokenized equities onchain ([NYSE](https://www.prnewswire.com/news-releases/avalanche-to-support-nyses-affiliated-upcoming-digital-ats-nyse-content-update-302933387.html)); Ava Labs describes the same clearing-ledger role ([Ava Labs](https://www.avalanche.com/about/blog/wall-streets-next-chapter-is-being-built-on-avalanche)).
 

@@ -23,6 +23,7 @@ sources:
 - https://docs.dinari.com/docs/anthropic-ipo-faqs
 - https://docs.dinari.com/docs/us
 - https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf
+- https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441
 - https://docs.sunrise.xyz/equities/backpack-securities
 - https://crypto.news/tokenized-anthropic-stock-solana-backpack-securities/
 - https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md
@@ -63,6 +64,13 @@ Only underwriters and the brokers Anthropic named.
 
 One ticker, many different claims.
 
+<a href="/diagrams/analyses/anthropic-ant-legal-models-2026-11.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/anthropic-ant-legal-models-2026-11-1200.webp" alt="Diagram grouping tokenized Anthropic products into four legal-claim types. Brokerage entitlement: Securitize Stocks ANT (US eligible; vote per product terms), Backpack ANT (no US; vote not stated), Dinari dShares (US yes; vote sources differ). ADGM certificate: Coinbase ANTc (no US; Vested Holders only vote), Binance bStocks ANTB (no US; vote not stated). Note or tracker token: Robinhood Stock Token, xStocks ANTx, Ondo ANTon (no US; no vote), Reality rANT via Bitget (US not stated; vote not automatic). Cash-settled derivative: pre-IPO and equity perps (US varies; no vote)." width="1200" height="750" loading="lazy" style="width:100%;height:auto"></a>
+
+**Short answer.** The ten products fall into four legal types: brokerage entitlements (Securitize, Backpack, Dinari), ADGM certificates (Coinbase ANTc, Binance ANTB), note or tracker tokens (Robinhood, xStocks, Ondo, Reality rANT) and cash-settled perpetuals. Most exclude US buyers, and few pass through a vote.
+
+<details>
+<summary>Full table with sources</summary>
+
 | Product | What the holder has (issuer) | Who can buy | Vote |
 |---|---|---|---|
 | Securitize Stocks ANT | Security entitlement through a US broker-dealer (Securitize Markets) | Eligible investors in the US, EU and other permitted places | Passed through "under the product terms"; not registered shareholders ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx)) |
@@ -75,6 +83,8 @@ One ticker, many different claims.
 | Dinari ANT dShares | Dinari's tokenized representation; a "secondary ledger" in its US docs | US and more than 90 countries | Blog says preserved; US docs differ ([Dinari](https://docs.dinari.com/docs/anthropic-ipo-faqs)) |
 | Reality rANT (Bitget IPO Prime) | Tokenized stock; Bitget says it is not equivalent to holding the shares and does not automatically confer shareholder status or voting rights (Reality, per Bitget) | Eligible users in permitted regions; restricted jurisdictions excluded; US eligibility not stated | No, not automatically ([Bitget](https://www.bitget.com/support/articles/12560603899381); [Bitget rANT page](https://www.bitget.com/price/anthropic-tokenized-stock-reality)) |
 | Pre-IPO and equity perpetuals | Cash-settled derivative (the venue) | Varies by venue | None ([trade.xyz](https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md)) |
+
+</details>
 
 **Backing claims differ too.** Kraken says ANTx is "backed 1:1"; Binance's reported campaign terms allowed cash or other assets; Ondo includes "cash in transit"; Robinhood's shares may be lent out; Coinbase limits redemption to Vested Holders ([Kraken](https://support.kraken.com/articles/anthropic-ipo-access); [Bitcoin.com](https://news.bitcoin.com/exchanges/binance-wallet-500m-anthropic-ipo-xstocks-token-sale/); [Ondo release](https://www.prnewswire.co.uk/news-releases/ondo-stocks-to-launch-anton-with-247-mint-and-redeem-live-on-ipo-day-302943767.html); [Robinhood Final Terms](https://cdn.robinhood.com/assets/robinhood/legal/rhj_final_terms_for_tokenised_debt_securities_linked_to_anthropic_pbc.pdf); [Coinbase prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf)). The wiki does not rank them.
 
@@ -160,13 +170,18 @@ None of the sources retrieved says so. Ondo and Securitize say Anthropic did not
 
 Only through products open to US persons, such as Securitize's ANT and Dinari's dShares. Robinhood's Stock Token, bStocks, xStocks, Ondo, Coinbase's ANTc and PreStocks exclude US persons ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx); [Dinari FAQ](https://docs.dinari.com/docs/anthropic-ipo-faqs); [Robinhood docs](https://docs.robinhood.com/rhj); [Binance](https://www.binance.com/en/support/announcement/detail/830c320848af4257812d5b6e99e031f9); [Ondo release](https://www.prnewswire.co.uk/news-releases/ondo-stocks-to-launch-anton-with-247-mint-and-redeem-live-on-ipo-day-302943767.html); [Coinbase prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf); [PreStocks](https://prestocks.com/anthropic)).
 
+
+### Has Coinbase's ANTc been listed as Aave collateral?
+
+Not as of 23 Nov 2026. On that day, at 3:26 AM ET, LlamaRisk posted an addendum to an 18 Nov Aave ARFC proposing to add ANTc as collateral-only on the Aave V4 Equities Hub on Base, at a 45% collateral factor, a 6.5% maximum liquidation bonus, 10% collateral risk and a $5.00 million add cap. LlamaRisk says ANT had one session of its own trading history when that factor was set, and it lists further early share releases starting 15 Dec 2026. A lender reply the same day asked to delay or stage the listing until after those releases and first earnings. The proposal is not stated as executed ([ARFC, expand Coinbase tokenized equities](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441)). See [[platforms-venues/aave|Aave]] and [[issuers/coinbase-tokenized-stocks#anthropic-antc|Coinbase ANTc]].
+
 ### Did the tokens trade at a premium to Nasdaq?
 
 No. In the last minute before the 4:00 PM ET close, the largest pools for Backpack's ANT, ANTB and ANTc traded 0.5% to 0.7% below Nasdaq's \$97.17 close on 19 Nov and 0.4% to 1.0% below its \$88.91 close on 20 Nov ([GeckoTerminal](https://www.geckoterminal.com/solana/pools/4v6geaGFiFfQP9HbrxSLdwFKsda8V7jr99ADYq9NtJV1)). These are single-pool prices, not prices for a large order.
 
 ## What are the limits of this analysis?
 
-Built from the wiki pages in `pages_used` and the raw captures they cite, retrieved 19-21 Nov 2026 (Bitget rANT sources retrieved 21 Nov). Volume and holdings figures are reported by third parties and were not verified onchain. Not covered: Securitize and Dinari supply, Robinhood, ANTx and ANTon close-time prices, an ANTB-specific prospectus, which was not found, and Reality's product documents, legal entity, chain and contract.
+Built from the wiki pages in `pages_used` and the raw captures they cite, retrieved 19-21 Nov 2026 (Bitget rANT sources retrieved 21 Nov; the Aave ANTc collateral proposal was retrieved 23 Nov 2026 and is not executed as of that date). Volume and holdings figures are reported by third parties and were not verified onchain. Not covered: Securitize and Dinari supply, Robinhood, ANTx and ANTon close-time prices, an ANTB-specific prospectus, which was not found, and Reality's product documents, legal entity, chain and contract.
 
 *Reference information only, not legal or investment advice.*
 
@@ -190,6 +205,7 @@ Public originals for the facts on this page.
 - <https://docs.dinari.com/docs/anthropic-ipo-faqs>
 - <https://docs.dinari.com/docs/us>
 - <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf>
+- <https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441>
 - <https://docs.sunrise.xyz/equities/backpack-securities>
 - <https://crypto.news/tokenized-anthropic-stock-solana-backpack-securities/>
 - <https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md>
