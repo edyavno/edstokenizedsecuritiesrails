@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-24",
  "source": "https://edstokenizedsecuritiesrails.com/database",
  "license": "CC BY 4.0",
  "records": [
@@ -31,7 +31,7 @@
    "structure": "Beneficial claim on backing shares",
    "chains": "Base",
    "who_can_buy": "Eligible jurisdictions outside the US; offered under Regulation S",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-23"
   },
   {
    "name": "Crypto.com Tokenized Stocks",
@@ -99,9 +99,9 @@
    "url": "https://edstokenizedsecuritiesrails.com/issuers/securitize",
    "jurisdiction": "unknown",
    "structure": "Securitize Stocks: UCC Article 8 security entitlements, 1:1 backed, via Securitize's broker-dealer; also issuer-sponsored shares",
-   "chains": "Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)",
+   "chains": "Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role)",
    "who_can_buy": "Eligible investors in the United States, the European Union and other permitted jurisdictions (Securitize, 2 Nov 2026)",
-   "last_checked": "2026-11-20"
+   "last_checked": "2026-11-23"
   },
   {
    "name": "Superstate Opening Bell",
@@ -142,6 +142,16 @@
    "chains": "unknown (multi-chain; pilot on a private-permissioned instance of Zero)",
    "who_can_buy": "Whitelisted wallets of admitted participants",
    "last_checked": "2026-11-09"
+  },
+  {
+   "name": "Aave",
+   "type": "Venue/rule",
+   "url": "https://edstokenizedsecuritiesrails.com/platforms-venues/aave",
+   "jurisdiction": "unknown",
+   "structure": "Non-custodial lending protocol; Equities Hub is an isolated V4 liquidity hub for tokenized-equity collateral; Horizon is a separate, licensed Aave Labs instance forked from V3.3 for permissioned RWA collateral",
+   "chains": "Base (Equities Hub), Ethereum (Horizon)",
+   "who_can_buy": "Equities Hub access is limited to users in eligible jurisdictions outside the U.S., per Aave Labs; Horizon RWA collateral is limited to issuer-allowlisted qualified users, while stablecoin supply is permissionless",
+   "last_checked": "2026-11-23"
   },
   {
    "name": "Bitget",
@@ -230,8 +240,8 @@
    "jurisdiction": "United States (TSV Exemption)",
    "structure": "Permissioned AMM (Uniswap v4 hook)",
    "chains": "XLayer",
-   "who_can_buy": "Eligible U.S.-based OKX Inc. customers who have activated a CeDeFi Wallet, completed identity verification and completed onboarding with OKXICE; access also uses soulbound tokens per the TSV notice",
-   "last_checked": "2026-11-14"
+   "who_can_buy": "Eligible U.S.-based OKX Inc. customers who complete identity verification, activate a CeDeFi Wallet and complete OKX Inc. onboarding; access is subject to geographic and other eligibility requirements, and uses soulbound tokens per the TSV notice",
+   "last_checked": "2026-11-24"
   },
   {
    "name": "Prometheum",
@@ -281,10 +291,10 @@
    "structure": "Oracle",
    "chains": "unknown",
    "who_can_buy": "n/a",
-   "last_checked": "2026-11-20"
+   "last_checked": "2026-11-23"
   },
   {
-   "name": "DTCC Tokenization Service (DTS)",
+   "name": "DTCC Tokenization Service (DTS): the DTC tokenization pilot",
    "type": "Infra",
    "url": "https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot",
    "jurisdiction": "United States",

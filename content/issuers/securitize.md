@@ -8,11 +8,12 @@ chains:
 - Ethereum (per Zerion, secondary)
 - Solana (per Zerion, secondary)
 - Avalanche (per Zerion, secondary)
+- XLayer (OKXICE TSV tokenizer role)
 who_can_buy: Eligible investors in the United States, the European Union and other permitted jurisdictions (Securitize, 2 Nov 2026)
 num_assets: More than 50 U.S. equities (Securitize, 19 Nov 2026); 25 on 2 Nov 2026
 structure_short: Security entitlements + issuer shares
 who_can_buy_short: Issuer-specific
-last_checked: '2026-11-20'
+last_checked: '2026-11-23'
 title: Securitize (issuer-sponsored shares)
 tags:
 - issuers
@@ -22,17 +23,18 @@ chain:
 - Ethereum (per Zerion, secondary)
 - Solana (per Zerion, secondary)
 - Avalanche (per Zerion, secondary)
+- XLayer (OKXICE TSV tokenizer role)
 status: live (Securitize Stocks launched 2026-10-08)
-last_updated: '2026-11-20'
+last_updated: '2026-11-23'
 description: Securitize acts as transfer agent and tokenization platform for funds and companies that issue tokens.
 ---
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** unknown  
-> **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)  
+> **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role)  
 > **Status:** live (Securitize Stocks launched 2026-10-08)  
-> **Last updated:** 2026-11-20  
+> **Last updated:** 2026-11-23  
 
 | Field | Value |
 |---|---|
@@ -40,7 +42,7 @@ description: Securitize acts as transfer agent and tokenization platform for fun
 | jurisdiction | unknown |
 | product_name | Securitize Stocks; issuer-sponsored tokenized shares |
 | structure | Securitize Stocks: UCC Article 8 security entitlements, 1:1 backed, via Securitize's broker-dealer; also issuer-sponsored shares |
-| chains | Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary) |
+| chains | Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role) |
 | who_can_buy | Eligible investors in the United States, the European Union and other permitted jurisdictions (Securitize, 2 Nov 2026) |
 | num_assets | More than 50 U.S. equities (Securitize, 19 Nov 2026); 25 on 2 Nov 2026 |
 
@@ -53,13 +55,13 @@ On 17 Nov 2026 Securitize said it had completed its acquisition of River One (Ri
 ## What are Securitize Stocks?
 Securitize Stocks, launched on 8 Oct 2026, are UCC Article 8 security entitlements to US stocks, 1:1 backed, held through Securitize's broker-dealer.
 
-They launched on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; an NYSE venue was planned in that launch release ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news). A 2 Nov 2026 Securitize release says a second wave adds 13 security-entitlement tokens on Solana, bringing the total offering to 25 stocks for eligible investors in the United States, the European Union and other permitted jurisdictions. The 13 names added are Arista Networks (ANET), Flex Ltd. (FLEX), Exxon Mobil (XOM), GameStop (GME), Johnson & Johnson (JNJ), Lockheed Martin (LMT), Lumentum (LITE), Merck & Co. (MRK), Salesforce (CRM), Seagate Technology (STX), Texas Instruments (TXN), The Walt Disney Company (DIS) and Uber Technologies (UBER). The release says those join the original 12 launched in October: AAPL, MSFT, NVDA, GOOG, TSLA, META, AMZN, NFLX, CRCL, SPCX, MSTR and PLTR ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Expands-Onchain-U-S--Stock-Offering-to-25-Equities/default.aspx)).
+They launched on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; an NYSE venue was planned in that launch release ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). Official Aave sources reviewed on 23 Nov 2026 still do not list Securitize stock entitlement tokens as Aave collateral. Separately, Aave Labs said on 2 Nov 2026 that the community approved HINC, a Neuberger Berman high-yield fund token administered by Securitize, for [[platforms-venues/aave#aave-horizon|Aave Horizon]] through a Snapshot vote; whether that listing was then activated is not stated, and HINC is not a Securitize Stocks entitlement token ([Aave Labs October 2026 update](https://governance.aave.com/t/al-development-update-october-2026/25979); [HINC ARFC](https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news). A 2 Nov 2026 Securitize release says a second wave adds 13 security-entitlement tokens on Solana, bringing the total offering to 25 stocks for eligible investors in the United States, the European Union and other permitted jurisdictions. The 13 names added are Arista Networks (ANET), Flex Ltd. (FLEX), Exxon Mobil (XOM), GameStop (GME), Johnson & Johnson (JNJ), Lockheed Martin (LMT), Lumentum (LITE), Merck & Co. (MRK), Salesforce (CRM), Seagate Technology (STX), Texas Instruments (TXN), The Walt Disney Company (DIS) and Uber Technologies (UBER). The release says those join the original 12 launched in October: AAPL, MSFT, NVDA, GOOG, TSLA, META, AMZN, NFLX, CRCL, SPCX, MSTR and PLTR ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Expands-Onchain-U-S--Stock-Offering-to-25-Equities/default.aspx)).
 
 Securitize's Q3 2026 10-Q says its broker-dealer, Securitize Markets, received FINRA approval to custody tokenized securities after SEC staff's December 2025 custody statement ([10-Q](https://www.sec.gov/Archives/edgar/data/2094496/000162828026073910/secz-20260930.htm)).
 
 On 16 Nov 2026, Apple's dividend pay date, Securitize paid that dividend in USDC on Solana to holders of its Apple token; see [[topics/corporate-actions-and-dividends#securitize-apple-dividend-16-nov-2026|Corporate actions]] for the reported figures ([Bitquery](https://bitquery.io/investigations/securitize-apple-dividend-onchain); [Carlos Domingo on X](https://x.com/carlosdomingo/status/2123822462194643349)).
 
-On 11 Nov 2026 OKX said Securitize will provide the tokenization infrastructure for [[platforms-venues/okxice-tsv|OKXICE TSV]], with trading due to begin on 23 Nov 2026. Each token on that venue will represent a security entitlement backed one-to-one by an underlying U.S. share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). That is a tokenizer role for the TSV, distinct from Securitize Stocks on Solana.
+On 23 Nov 2026 OKX said [[platforms-venues/okxice-tsv|OKXICE TSV]] opened at noon ET that day and that Securitize provides the tokenization infrastructure. Each token on that venue is a security entitlement backed one-to-one by an underlying share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). The 20 Nov 2026 TSV notice names Securitize Markets, LLC as the tokenizer for the six Tokenized NMS Stocks made available at launch (COIN, SECZ, MSTR, BTGO, HOOD and CRCL), each paired with USDC ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). That is a tokenizer role for the TSV, distinct from Securitize Stocks on Solana.
 
 ## Anthropic (ANT) on Securitize Stocks (19 Nov 2026)
 On 19 Nov 2026, Anthropic's first day of trading, Securitize said Anthropic (Nasdaq: ANT) was available through Securitize Stocks on Solana, alongside new additions Amgen and Fox, bringing the offering to more than 50 U.S. equities. It describes the tokens as "security entitlements, not shares registered directly in the holder's name, backed 1:1 by corresponding underlying securities held through Securitize Markets' brokerage infrastructure", offered through Securitize Markets, LLC, a FINRA/SIPC member broker-dealer, to "eligible investors in the United States, European Union (EU) and other permitted jurisdictions". "Rights" means "applicable economic benefits and voting entitlements passed through under the product terms"; holders "are not registered shareholders of Anthropic, and Anthropic has not sponsored, authorized or endorsed Securitize Stocks". Jump Trading supports liquidity, transactions settle in USDC, and trading "is initially available beyond traditional market hours, with plans to move toward 24/7 availability" ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx)). See [[comparisons/implementations-by-model|Implementations by model]].
@@ -125,5 +127,7 @@ Public originals for the facts on this page.
 - <https://investors.securitize.io/news/news-details/2026/Securitize-Completes-Acquisition-of-River-One-Expanding-Into-6-Trillion-Asset-Backed-Finance-Market/default.aspx>
 - <https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx>
 - <https://bitquery.io/investigations/securitize-apple-dividend-onchain>
+- <https://governance.aave.com/t/al-development-update-october-2026/25979>
+- <https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500>
 
-*Last checked 2026-11-20. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*

@@ -1,6 +1,6 @@
 # Ed’s Tokenized Securities Rails (all public pages)
 Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
-> Human-curated, LLM-maintained. Generated 2026-11-22; public data is a weekly snapshot as of 2026-11-16. CC BY 4.0.
+> Human-curated, LLM-maintained. Generated 2026-11-24; public data is a weekly snapshot as of 2026-11-23. CC BY 4.0.
 Agent feedback: POST a short note to https://edstokenizedsecuritiesrails.com/feedback. Instructions: https://edstokenizedsecuritiesrails.com/agents#giving-feedback or GET https://edstokenizedsecuritiesrails.com/feedback.
 
 ========================================================================
@@ -8,7 +8,7 @@ Agent feedback: POST a short note to https://edstokenizedsecuritiesrails.com/fee
 URL: https://edstokenizedsecuritiesrails.com/index
 description: A human-curated, LLM-maintained wiki on issuers, legal structures, custody, venues, settlement and regulation.
 type: home
-last_checked: 2026-11-22
+last_checked: 2026-11-24
 
 # Ed’s Tokenized Securities Rails
 
@@ -61,18 +61,18 @@ Read https://edstokenizedsecuritiesrails.com/llms-full.txt. Cite page URLs and s
 
 ## How to use this wiki
 - **New to this?** [[overview|Overview]] → [[concepts/glossary|Glossary]] → [[topics/who-can-buy|Who can buy]]
-- **Looking up a company?** [[database|Issuer & platform database]] (34 entities)
+- **Looking up a company?** [[database|Issuer & platform database]] (35 entities)
 - **Following the rules?** [[topics/rules-by-jurisdiction|Rules by jurisdiction]] · [[concepts/innovation-exemption|Innovation Exemption (TSVs)]] · [[whats-changed|What changed, week by week]]
 - **Building something?** [[build/index|Build with this wiki]] · [[build/trading-reference-architecture|Reference architecture for trading]]
 - **Using an AI agent?** [[starter-prompts|Starter prompts]] · [[starter-prompts#prompts-for-coding-agents|Prompts for coding agents]] · [[agents|Guide for AI agents]] · [llms.txt](/llms.txt) · [llms-full.txt](/llms-full.txt)
 - **Going deeper?** Concepts: [[concepts/legal-taxonomy|Legal taxonomy]] · [[concepts/token-primitives|Token primitives]] · [[concepts/post-trade-reg-nms-model|Post-trade (Reg NMS) model]] · [[concepts/international|International]]. Standards: [[comparisons/implementations-by-model|Implementations by model]] · [[standards/erc-3643|ERC-3643]] · [[standards/erc-1400|ERC-1400]] · [[standards/solana-token-2022|Token-2022]] · [[standards/b20|B20]]. Topics: [[topics/legal-structures|Legal structures]] · [[topics/custody|Custody]] · [[topics/settlement-and-matching|Settlement & matching]] · [[topics/regulation|Regulation]] · [[topics/corporate-actions-and-dividends|Corporate actions & dividends]]
 
 ## Latest changes
+- [2026-11-24: OKXICE TSV's first 24 hours of trading](/changelog/2026-11-24-okxice-tsv-first-24-hours)
+- [2026-11-23: OKXICE TSV public data API](/changelog/2026-11-23-okxice-tsv-public-data-api)
+- [2026-11-23: OKXICE TSV launched](/changelog/2026-11-23-okxice-tsv-launch)
+- [2026-11-23: Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](/changelog/2026-11-23-aave-equities-hub-horizon)
 - [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)
-- [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)
-- [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)
-- [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)
-- [2026-11-20: UK enabling amendment (Woolard letter), Chainlink–UBS structured notes, HSBC RedCoin tokenised fund](/changelog/2026-11-20-woolard-chainlink-ubs-hsbc-redcoin)
 
 See [[whats-changed|What changed]] by week, or the full [[changelog/index|changelog]].
 
@@ -261,7 +261,7 @@ Public originals for the facts on this page.
 # Guide for AI agents
 URL: https://edstokenizedsecuritiesrails.com/agents
 description: How AI agents should read, query and cite this wiki on the live site.
-last_checked: 2026-11-22
+last_checked: 2026-11-24
 
 Ed’s Tokenized Securities Rails is a human-curated, LLM-maintained, source-linked knowledge base on tokenized securities infrastructure. This page is for AI agents reading the live site. Working from a clone of the repo? Read [AGENTS.md](https://github.com/edyavno/edstokenizedsecuritiesrails/blob/main/AGENTS.md) instead.
 
@@ -1093,7 +1093,7 @@ Public originals for the facts on this page.
 # What changed
 URL: https://edstokenizedsecuritiesrails.com/whats-changed
 description: Weekly headlines on tokenized securities, with a note on what each change means for holders.
-last_checked: 2026-11-22
+last_checked: 2026-11-24
 
 Weekly changes in tokenized securities, newest first. Each headline links to its changelog entry and sources; where the sources support it, a line says what the change means for people who hold the tokens.
 
@@ -1102,8 +1102,20 @@ Grouped by week (weeks start Monday), newest first.
 ## Get it by email
 A free weekly email with these headlines. [[subscribe|Subscribe]].
 
+## Week of 23 Nov 2026
+- **[OKXICE TSV's first 24 hours of trading](/changelog/2026-11-24-okxice-tsv-first-24-hours)**
+  - *What this means for holders:* OKXICE's six launch pools recorded 3,314 trades worth about USD 2.55 million in the first 24 hours after the noon ET launch, with just over half of that dollar volume outside regular U.S. market hours. See [[analyses/okxice-tsv-first-24-hours|OKXICE TSV's first 24 hours]] and [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[OKXICE TSV public data API](/changelog/2026-11-23-okxice-tsv-public-data-api)**
+  - *What this means for holders:* OKXICE TSV publishes free, machine-readable trade data and a no-login public API. The published fee schedule is 30 bps. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[OKXICE TSV launched](/changelog/2026-11-23-okxice-tsv-launch)**
+  - *What this means for holders:* OKX said its Tokenized Securities Venue opened at noon ET on 23 Nov 2026 for eligible U.S. customers, starting with six Securitize-tokenized stocks paired with USDC. See [[platforms-venues/okxice-tsv|OKXICE TSV]].
+- **[Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](/changelog/2026-11-23-aave-equities-hub-horizon)**
+  - *What this means for holders:* Some Coinbase stock tokens can be posted as collateral to borrow USDC on Aave's Equities Hub, for eligible non-U.S. users; weekend prices are held at the last 24/5 Chainlink print. A proposed ANTc listing and proposed collateral-factor cuts were not stated as executed as of 23 Nov 2026. See [[platforms-venues/aave|Aave]] and [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]].
+- Database: 9 headline field updates across issuer, venue and token records.
+
 ## Week of 16 Nov 2026
 - **[Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)**
+- **[Anthropic legal-models section adds a diagram and keeps the sourced table](/changelog/2026-11-22-anthropic-legal-models-diagram)**
 - **[Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)**
   - *What this means for holders:* Bitget's rANT, issued by Reality per Bitget, is a tokenized Anthropic product delivered through IPO Prime, not a share: Bitget says it does not automatically confer shareholder status or voting rights. Bitget reported a final allocation of 153,774 shares. See [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
 - **[Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)**
@@ -1368,12 +1380,12 @@ Public originals for the facts on this page.
 ========================================================================
 # Database of tokenized-securities issuers, venues and infrastructure
 URL: https://edstokenizedsecuritiesrails.com/database
-description: One table of the 34 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
-last_checked: 2026-11-22
+description: One table of the 35 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
+last_checked: 2026-11-24
 
-**What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 34 records in total, made up of 13 token issuers, 13 trading venues and exchange rules, and 8 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
+**What it is:** one row for every issuer, venue and infrastructure page this wiki covers: 35 records in total, made up of 13 token issuers, 14 trading venues and exchange rules, and 8 infrastructure providers (price oracles, a depository pilot, an AMM standard, a transfer agent and a tokenization engine). Each row gives the jurisdiction, legal structure, chains, who can buy and the date it was last checked.
 
-**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-22.
+**Where the data comes from:** each row is generated from the headline fields of its source-linked wiki page. Follow the name to see the sources behind every field. `unknown` means not yet verified from a source. Generated on 2026-11-24.
 
 **Download:** [CSV](/database.csv) · [JSON](/database.json) (full field text, CC BY 4.0).
 
@@ -1381,18 +1393,19 @@ last_checked: 2026-11-22
 |---|---|---|---|---|---|---|
 | [Backpack Securities](/issuers/backpack) | Issuer | unknown | Entitlements + 1:1 tokens | Solana | Non-US eligible users | 2026-11-19 |
 | [bStocks](/issuers/bstocks) | Issuer | ADGM (UAE) | Certificates over shares | BNB Smart Chain | ADGM only; not US | 2026-11-21 |
-| [Coinbase Tokenized Stocks](/issuers/coinbase-tokenized-stocks) | Issuer | ADGM (UAE) | Beneficial claim, 1:1 | Base | Non-US (Reg S) | 2026-11-19 |
+| [Coinbase Tokenized Stocks](/issuers/coinbase-tokenized-stocks) | Issuer | ADGM (UAE) | Beneficial claim, 1:1 | Base | Non-US (Reg S) | 2026-11-23 |
 | [Crypto.com Tokenized Stocks](/issuers/crypto-com-tokenized-stocks) | Issuer | Cyprus | Derivative | unknown | EEA and approved regions | 2026-10-25 |
 | [Dinari dShares](/issuers/dinari) | Issuer | United States | Custodial tokenized shares | Ethereum, Arbitrum One, Avalanche C-Chain +4 | US eligible + intl | 2026-11-19 |
 | [Figure OPEN](/issuers/figure-open) | Issuer | United States | Blockchain-native equity | Provenance | Venue onboarding | 2026-10-25 |
 | [Ondo Stocks (Ondo Global Markets)](/issuers/ondo-global-markets) | Issuer | BVI | Structured notes | Ethereum, BNB Chain, Solana | Non-US; some professional… | 2026-11-19 |
 | [Reality (rANT / rTokens)](/issuers/reality) | Issuer | unknown | Tokenized stock (Reality) | unknown | Bitget eligible users | 2026-11-21 |
 | [Robinhood Stock Tokens](/issuers/robinhood-stock-tokens) | Issuer | Jersey | Tokenised debt securities | Robinhood Chain | Non-US; excl. CA, UK, CH | 2026-11-20 |
-| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +1 | Issuer-specific | 2026-11-20 |
+| [Securitize (issuer-sponsored shares)](/issuers/securitize) | Issuer | unknown | Security entitlements + issue… | Algorand, Ethereum, Solana +2 | Issuer-specific | 2026-11-23 |
 | [Superstate Opening Bell](/issuers/superstate-opening-bell) | Issuer | unknown | Issuer shares, TA record | Ethereum, Solana | KYC'd investors | 2026-11-18 |
 | [WisdomTree tokenized funds](/issuers/wisdomtree) | Issuer | United States | FUNDS: tokenized '40 Act | Solana, others | Retail+inst. via apps | 2026-11-18 |
 | [xStocks (Backed)](/issuers/xstocks-backed) | Issuer | Jersey | Backed tracker tokens | Solana, Ethereum, TON +3 | Non-US eligible | 2026-11-20 |
 | [21X](/platforms-venues/21x) | Venue/rule | EU | DLT TSS, onchain order book | unknown (multi-chain; p… | Whitelisted participants | 2026-11-09 |
+| [Aave](/platforms-venues/aave) | Venue/rule | unknown | Lending protocol (Equities Hu… | Base, Ethereum | Equities Hub, eligible no… | 2026-11-23 |
 | [Bitget](/platforms-venues/bitget) | Venue/rule | unknown | Venue (CEX) | unknown | Bitget eligible users | 2026-11-21 |
 | [Bullish Exchange](/platforms-venues/bullish) | Venue/rule | Gibraltar | Venue (CEX), direct shares | unknown | unknown | 2026-11-09 |
 | [Bybit](/platforms-venues/bybit) | Venue/rule | unknown | Venue (CEX) | unknown | unknown | 2026-11-12 |
@@ -1401,13 +1414,13 @@ last_checked: 2026-11-22
 | [Kraken](/platforms-venues/kraken) | Venue/rule | unknown | Venue (CEX) | unknown | Non-US eligible | 2026-11-20 |
 | [Nasdaq tokenized securities rule](/platforms-venues/nasdaq-tokenized-securities) | Venue/rule | United States | Same security, tokenized form | unknown | DTC pilot participants | 2026-11-09 |
 | [NYSE / ICE tokenized securities](/platforms-venues/nyse-ice-tokenized-platform) | Venue/rule | United States | Exchange rule + planned venue | Settlement ledger: Aval… | unknown | 2026-11-13 |
-| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | XLayer | Eligible US OKX customers | 2026-11-14 |
+| [OKXICE TSV](/platforms-venues/okxice-tsv) | Venue/rule | United States | TSV, permissioned AMM | XLayer | Eligible US OKX customers | 2026-11-24 |
 | [Prometheum](/platforms-venues/prometheum) | Venue/rule | United States | Broker-dealer clearing + ATS | unknown | Via broker-dealers | 2026-11-09 |
 | [Seturion](/platforms-venues/seturion) | Venue/rule | EU | Settlement layer (EU) | Public and selected pri… | Venues, banks, brokers | 2026-11-09 |
 | [TSV LLC](/platforms-venues/tsv-llc) | Venue/rule | United States | TSV, permissioned AMM | Canton | Approved participants | 2026-11-20 |
 | [Broadridge](/infrastructure/broadridge) | Infra | United States | Governance + transfer agent… | unknown | B2B | 2026-11-18 |
-| [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-11-20 |
-| [DTCC Tokenization Service (DTS)](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-11-18 |
+| [Chainlink tokenized equity feeds](/infrastructure/chainlink-equity-feeds) | Infra | unknown | Oracle / price feeds | unknown | n/a | 2026-11-23 |
+| [DTCC Tokenization Service (DTS): the DTC tokenization pilot](/infrastructure/dtcc-tokenization-pilot) | Infra | United States | Depository pilot | At launch: Canton Netwo… | DTC participants | 2026-11-18 |
 | [Fairmint](/infrastructure/fairmint) | Infra | United States | Onchain transfer agent | Canton | B2B (issuers) | 2026-11-20 |
 | [tZERO](/infrastructure/tzero) | Infra | United States | Transfer agent + broker-deale… | unknown | B2B | 2026-11-13 |
 | [Uniswap v4 permissioned pools](/infrastructure/uniswap-permissioned-pools) | Infra | unknown | AMM hook standard | unknown | Allowlisted wallets | 2026-11-11 |
@@ -1418,11 +1431,16 @@ last_checked: 2026-11-22
 # Changelog
 URL: https://edstokenizedsecuritiesrails.com/changelog/index
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
-last_checked: 2026-11-22
+last_checked: 2026-11-24
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-24: OKXICE TSV's first 24 hours of trading](/changelog/2026-11-24-okxice-tsv-first-24-hours)
+- [2026-11-23: OKXICE TSV public data API](/changelog/2026-11-23-okxice-tsv-public-data-api)
+- [2026-11-23: OKXICE TSV launched](/changelog/2026-11-23-okxice-tsv-launch)
+- [2026-11-23: Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](/changelog/2026-11-23-aave-equities-hub-horizon)
 - [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)
+- [2026-11-22: Anthropic legal-models section adds a diagram and keeps the sourced table](/changelog/2026-11-22-anthropic-legal-models-diagram)
 - [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)
 - [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)
 - [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)
@@ -1523,7 +1541,7 @@ Public changes, every entry in the vault as of each publish. See [[whats-changed
 # About
 URL: https://edstokenizedsecuritiesrails.com/about
 description: Who curates Ed's Tokenized Securities Rails and how pages are sourced.
-last_checked: 2026-11-22
+last_checked: 2026-11-24
 
 Curated by Edward Yavno, Software Engineer and Hands-on Technology Leader in FinTech and Capital Markets. Every page is sourced from primary documents and updated as things change.
 
@@ -1534,7 +1552,7 @@ Curated by Edward Yavno, Software Engineer and Hands-on Technology Leader in Fin
 URL: https://edstokenizedsecuritiesrails.com/build/trading-reference-architecture
 description: End-to-end reference architecture for trading tokenized stocks on tokenized rails: onboarding and allowlisting, onchain or hybrid matching, compliance hooks, atomic DvP, register sync, and oracle and halt controls.
 type: build
-last_checked: 2026-11-16
+last_checked: 2026-11-23
 
 *In plain English: an overview of how a tokenized-stock trading system fits together, from letting an investor in, through the trade, to updating the official record. Deeper pages on each part will be added as the roadmap ships.*
 
@@ -1753,9 +1771,9 @@ Neither column says anything about DTC or brokers elsewhere in the chain; an onc
 ### Securitize entitlement tokens with self-custodial wallets (OKXICE)
 *In plain English: on this venue the token is described as a claim on a real share, held in the customer's own wallet after the customer has been checked and onboarded. This is how OKX describes the OKXICE design, not a legal conclusion.*
 
-On 11 Nov 2026 OKX said [[issuers/securitize|Securitize]] will provide the tokenization infrastructure for [[platforms-venues/okxice-tsv|OKXICE TSV]], which is due to begin trading on 23 Nov 2026. Each token will represent a security entitlement backed one-to-one by an underlying U.S. share, with applicable shareholder rights and economic benefits, including dividends, voting rights and participation in corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). Customers will hold the tokens in self-custodial wallets; the venue will hold neither their assets nor their private keys. Access is limited to eligible U.S.-based OKX Inc. customers who have activated a CeDeFi Wallet, completed identity verification and completed onboarding with OKXICE, and is subject to geographic and other eligibility requirements. The venue's smart contracts restrict trading and liquidity provision to eligible wallets ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)).
+On 23 Nov 2026 OKX said [[platforms-venues/okxice-tsv|OKXICE TSV]] opened at noon ET that day for eligible U.S. customers, in the TSV tab of the OKX app. [[issuers/securitize|Securitize]] provides the tokenization infrastructure. Each token is a security entitlement backed one-to-one by an underlying share, with applicable shareholder rights and economic benefits, including dividends, voting rights and corporate actions. Customers hold the tokens in self-custodial wallets; the venue does not hold customer assets or private keys. Access is limited to eligible U.S.-based OKX Inc. customers who complete identity verification, activate a CeDeFi Wallet and complete OKX Inc. onboarding, and is subject to geographic and other eligibility requirements. The venue's smart contracts restrict trading and liquidity provision to eligible wallets ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)).
 
-The 5 Nov 2026 TSV notice, which did not name the tokenizer, describes the same kind of third-party model: each token represents a security entitlement to one share of the underlying NMS stock; ownership is recorded on the chain and reconciled with the tokenizer's books and records; mint and redemption run through the tokenizer acting through its broker-dealer ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). This subsection records that pattern as those sources describe it. It is reference information, not legal advice, and it does not treat this as the only way to structure an entitlement token. It is also distinct from [[issuers/securitize|Securitize Stocks]] on Solana, which is a separate product.
+The 20 Nov 2026 TSV notice names Securitize Markets, LLC as the tokenizer for the six Tokenized NMS Stocks made available at launch (COIN, SECZ, MSTR, BTGO, HOOD and CRCL), each paired with USDC. It describes the same third-party model: each token represents a security entitlement to one share of the underlying NMS stock; ownership is recorded on the chain and reconciled with the tokenizer's books and records; mint and redemption run through the tokenizer acting through its broker-dealer ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). This subsection records that pattern as those sources describe it. It is reference information, not legal advice, and it does not treat this as the only way to structure an entitlement token. It is also distinct from [[issuers/securitize|Securitize Stocks]] on Solana, which is a separate product.
 
 
 ### Proposed by Fairmint, not current law or production
@@ -1807,7 +1825,7 @@ flowchart LR
     classDef trading fill:#fef3c7,stroke:#d97706,color:#78350f
     class P3 trading
 ```
-Each trade executes against the pool in one transaction, so there is no order priority among participants on OKXICE ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). On 11 Nov 2026 OKX announced that [[platforms-venues/okxice-tsv|OKXICE TSV]] is due to begin trading on 23 Nov 2026 ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). TSV LLC runs CNTN in a permissioned pool on Tradecraft ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)). [[platforms-venues/formation-securities|Formation Securities]]'s 9 Nov 2026 TSV notice describes permissioned concentrated-liquidity AMM pools on Solana using licensed Orca AMM contracts, plus a licensed offchain Formation Router that selects routes and is expected to refresh quotes after about 15 seconds. Pool prices come from the concentrated-liquidity formula; the notice says the TSV's smart contracts do not use pricing oracles or other external pricing market data. Halt, suspension, Limit Up-Limit Down and volume-cap data come from a third-party market-data vendor and trigger an onchain pause, which does not require a multi-signature transaction. During a stoppage, no trades execute and liquidity providers may withdraw liquidity but may not deposit or reposition it ([Formation notice](https://www.formationsecurities.com/notice.pdf)). On 5 Nov 2026 Groma opened a permissioned GRO/USDC pool on Base through Uniswap's permissioned-pool infrastructure, for a real-estate trust token rather than a listed stock ([Groma](https://groma.substack.com/p/bringing-real-estate-to-uniswap-introducing)); see [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]].
+Each trade executes against the pool in one transaction, so there is no order priority among participants on OKXICE ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). The 20 Nov notice lists the XLayer contracts that make up that design: TSVRegistryV1, TSVSwapRouterV1, TSVVolumeLedgerV1, TSVLPManagerV1, TSVHookV1 (the OKXICE TSV Hook), PermissionsAdapterFactory, an SBT contract, and Uniswap v4's PoolManager, which the notice describes as third-party contracts that do not belong to OKXICE TSV. A wallet holding a valid soulbound token may call the TSV contracts directly; the notice says the venue does not currently support aggregators, solvers or relayers. Prior to commencing operations, the contracts were audited internally by OKX Technology Inc. and externally by Certified Kernel Tech LLC ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). On 23 Nov 2026 OKX said [[platforms-venues/okxice-tsv|OKXICE TSV]] opened at noon ET that day ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). TSV LLC runs CNTN in a permissioned pool on Tradecraft ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)). [[platforms-venues/formation-securities|Formation Securities]]'s 9 Nov 2026 TSV notice describes permissioned concentrated-liquidity AMM pools on Solana using licensed Orca AMM contracts, plus a licensed offchain Formation Router that selects routes and is expected to refresh quotes after about 15 seconds. Pool prices come from the concentrated-liquidity formula; the notice says the TSV's smart contracts do not use pricing oracles or other external pricing market data. Halt, suspension, Limit Up-Limit Down and volume-cap data come from a third-party market-data vendor and trigger an onchain pause, which does not require a multi-signature transaction. During a stoppage, no trades execute and liquidity providers may withdraw liquidity but may not deposit or reposition it ([Formation notice](https://www.formationsecurities.com/notice.pdf)). On 5 Nov 2026 Groma opened a permissioned GRO/USDC pool on Base through Uniswap's permissioned-pool infrastructure, for a real-estate trust token rather than a listed stock ([Groma](https://groma.substack.com/p/bringing-real-estate-to-uniswap-introducing)); see [[infrastructure/uniswap-permissioned-pools|Uniswap v4 permissioned pools]].
 
 **4. Issuer RFQ** (JTX routing to [[issuers/ondo-global-markets|Ondo]], [[issuers/backpack|Backpack]], [[issuers/xstocks-backed|xStocks]])
 ```mermaid
@@ -1855,6 +1873,7 @@ Off-hours demand, attributed: Ondo said its tokenized stocks traded "about 10x i
 - **Staleness checks.** When a 24/5 feed stops updating, `updatedAt` stops advancing while the contract may still be callable. Coinbase tokenized-equity feeds on Base hold the last close on weekends and holidays and freeze during corporate actions; the Base docs say to apply staleness bounds and never settle or liquidate against a frozen feed ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks)).
 - **Issuer oracle pauses.** A Coinbase onchain oracle registry exposes a pause flag. When paused, the feed stops publishing and holds the last known good value; mint and redeem can also be paused offchain during a corporate action without pausing the token onchain, so transfers are not blocked while the feed is frozen ([Base docs](https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks)).
 - **Liquidation while the underlying is closed.** A lending market can still liquidate collateral when the cash equity market is shut. That risk is already recorded for Kamino's isolated Backpack Market ([Business Wire](https://www.businesswire.com/news/home/20261104930970/en/Kamino-and-Backpack-Securities-Expand-Credit-for-Tokenized-U.S.-Equities), 4 Nov 2026). Off-hours issuer quotes can also diverge from the next reopen value, as Ondo documents for its Off-Hours session ([Ondo docs](https://docs.ondo.finance/ondo-stocks/market-hours-and-trading-availability)). See [[topics/settlement-and-matching#what-prices-a-stock-token-when-the-market-is-closed|What prices a stock token when the market is closed?]].
+- **Aave Equities Hub (24/5 hold).** On [[platforms-venues/aave|Aave]] V4's Equities Hub on Base, some [[issuers/coinbase-tokenized-stocks|Coinbase]] stock tokens can be posted as collateral to borrow USDC. Aave says Chainlink 24/5 feeds hold the last published price over weekends and U.S. holidays, and that during that window a position's health factor can fall only through interest accrual; a gap at the reopen can therefore move collateral value in one step ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)). LlamaRisk's 23 Nov 2026 collateral-factor proposal (not stated as executed) sizes those factors for a 24/5 off-hours fall into the next regular open ([ARFC](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)). The 21 Sep 2026 update to the deployment ARFC said 24/7 feeds were expected later; whether they are in production is not stated in the sources reviewed on 23 Nov 2026 ([ARFC, Deploy Aave V4 on Base](https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427)).
 - **Issuer Off-Hours mint and redeem (dated snapshot).** Ondo's Off-Hours docs, retrieved 16 Nov 2026, say a dedicated Off-Hours session runs when conventional sessions are closed — weekends, holidays and early-close days — on Ethereum, BNB Chain and Solana. Buys and sells are still quoted, minted and redeemed instantly. The page then listed 32 enabled assets (including AAPLon, NVDAon, TSLAon, SPYon, QQQon, IBITon and SPCXon). Each asset has its own dynamic Off-Hours limit, separate from regular-session limits; quotes can be declined at the limit, and spreads may be wider. The list and limits can change; current status is at status.ondo.finance/market ([Ondo Off-Hours](https://docs.ondo.finance/ondo-stocks/off-hours-trading)). See [[issuers/ondo-global-markets|Ondo Stocks]].
 - **Reporting and data used for TSV controls.** Chainlink Labs' 11 Nov 2026 comment letter proposes voluntary conventions so TSV trade reports can be compared across venues (stable identifiers, stated USD conversion methods, linked corrections, and a free open API), and nonbinding principles for assessing external data used in pricing and controls. Chainlink is a vendor of these services; the letter is advocacy, not a requirement ([Chainlink Labs](https://www.sec.gov/comments/4-927/4927-1133160-4036827.pdf)).
 - **Fund example: pre-funded off-hours inventory.** A 12 Nov 2026 Securitize and Ethena Labs release describes a 24/7 liquidity facility for BlackRock's BUIDL that lets eligible investors exchange BUIDL for supported stablecoins, including USDC, and back, outside traditional market hours. It launches with \$50 million of initial liquidity (\$25 million USDC and \$25 million BUIDL), and says up to another \$50 million may be made available within about an hour, for a maximum capacity of \$100 million — not an amount continuously funded or immediately available ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-and-Ethena-Launch-100-Million-Liquidity-Facility-for-BlackRocks-BUIDL/default.aspx)). This is a tokenized fund, not a stock token.
@@ -1926,6 +1945,9 @@ Public originals for the facts on this page.
 - <https://ondo.finance/blog/ondo-bridge-adds-fcat-as-required-verifier>
 - <https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide>
 - <https://docs.base.org/build-on-base/integrate-defi/list-tokenized-stocks>
+- <https://aave.com/blog/coinbase-tokenized-stocks>
+- <https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427>
+- <https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482>
 - <https://docs.ondo.finance/ondo-stocks/market-hours-and-trading-availability>
 - <https://www.sec.gov/comments/S7-2026-30/s7202630-1119921-3984266.pdf>
 - <https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout>
@@ -3223,7 +3245,7 @@ Securitize's 12 Nov 2026 comment letter on the [[concepts/innovation-exemption|I
 | [[platforms-venues/hyperliquid-equity-perps\|Ostium]] | Synthetic perp | None; USDC in vault | Oracle-priced, hedged offchain ([Ostium](https://docs.ostium.com/protocol/how-ostium-works)) | USDC | Arbitrum | unknown | unknown | None | In-house consensus oracle |
 | Swarm open dOTC | Tokenized RWAs (SX1155) | Escrow contract during trade | P2P maker/taker offers ([GitHub](https://github.com/SwarmMarkets/open-dotc)) | Counter-asset in the offer | Ethereum, Polygon, Base, BNB Chain | unknown | Offer-level counterparty restrictions | unknown | Allowlisted price feeds |
 | JTX (RFQ terminal) | Issuer tokens (Ondo, Backpack, xStocks) | Issuer's model | RFQ to issuers, swaps up to \$1M ([SolanaFloor](https://solanafloor.com/news/jtx-equities-discoverability-rfq-execution-1650-tokenized-stocks), Jito-affiliated) | unknown | Solana | Issuer-dependent (e.g. [Ondo hours](https://docs.ondo.finance/ondo-stocks/market-hours-and-trading-availability)) | Issuer-dependent | Issuer-dependent | Issuer quote |
-| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Security entitlement tokens (Securitize as tokenizer), backed 1:1 ([OKX, 11 Nov 2026](https://www.okx.com/en-us/learn/okxice-tsv-launch)) | Self-custodial wallets; venue holds neither assets nor keys ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)) | Permissioned AMM (Uniswap v4 hook) on XLayer ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch); [OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)) | USDC, USDG, USDT | XLayer | 24/7 planned; announced launch beginning 23 Nov 2026 ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)); not yet trading as of that announcement | Eligible U.S. OKX Inc. customers: CeDeFi Wallet, identity verification and OKXICE onboarding; soulbound tokens / permissioning list ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch); [notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)) | None at venue (tokenizer processes corporate actions, per the 5 Nov notice) | Pool price |
+| [[platforms-venues/okxice-tsv\|OKXICE TSV]] | Security entitlement tokens (Securitize Markets as tokenizer), backed 1:1 ([OKX, 23 Nov 2026](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live); [OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)) | Self-custodial wallets; venue holds neither assets nor keys ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)) | Permissioned AMM on XLayer: Uniswap v4 pools plus TSVRegistryV1, TSVSwapRouterV1, TSVVolumeLedgerV1, TSVLPManagerV1, TSVHookV1, PermissionsAdapterFactory and an SBT contract; Uniswap v4 PoolManager is third-party ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)) | Payment stablecoins (e.g. USDC, USDG); the six launch stocks are paired with USDC ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)) | XLayer | Live; launched 23 Nov 2026 at noon ET, per OKX, with 24/7 trading ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)) | Eligible U.S. OKX Inc. customers: identity verification, CeDeFi Wallet and OKX Inc. onboarding; soulbound tokens / permissioning list ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live); [notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)) | None at venue (tokenizer processes corporate actions, per the 20 Nov notice) | Pool price |
 | [[platforms-venues/tsv-llc\|TSV LLC / Tradecraft]] | Issuer-sponsored shares (CNTN) | Register kept by [[infrastructure/fairmint\|Fairmint]] | Permissioned AMM pool on Tradecraft ([CNTN release](https://www.prnewswire.com/news-releases/first-trades-of-tokenized-us-equity-under-sec-innovation-exemption-executed-on-the-canton-network-302929795.html)) | USDC or SBC | Canton | Designed 24/7 with required stoppages | Transfer-agent-verified holders and wallets | Same rights as Nasdaq holders (issuer claim) | Pool price; Alpaca market data for caps |
 | [[platforms-venues/nasdaq-tokenized-securities\|Nasdaq]] | Same security, tokenized form | DTC | Same order book, same priority | Cash via DTC | unknown | unknown | DTC Pilot eligible participants | Same as the share | n/a |
 | [[platforms-venues/formation-securities\|Formation Securities]] | Tokenized NMS Stock (issuer-sponsored or third-party tokenizer) | None at venue (non-custodial) | Permissioned concentrated-liquidity AMM (licensed Orca) plus offchain router ([Formation notice](https://www.formationsecurities.com/notice.pdf)) | Non-security crypto asset or tokenized MMF | Solana | 24/7, subject to required stoppages | KYC/KYB, sanctions and wallet screening, plus tokenizer approval; Token-2022 transfer hook | Tokenizer, reviewed by the TSV; not at the venue | None for pricing (pool formula); third-party market data for halts and volume caps |
@@ -3282,6 +3304,13 @@ Only underwriters and the brokers Anthropic named.
 
 One ticker, many different claims.
 
+<a href="/diagrams/analyses/anthropic-ant-legal-models-2026-11.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/anthropic-ant-legal-models-2026-11-1200.webp" alt="Diagram grouping tokenized Anthropic products into four legal-claim types. Brokerage entitlement: Securitize Stocks ANT (US eligible; vote per product terms), Backpack ANT (no US; vote not stated), Dinari dShares (US yes; vote sources differ). ADGM certificate: Coinbase ANTc (no US; Vested Holders only vote), Binance bStocks ANTB (no US; vote not stated). Note or tracker token: Robinhood Stock Token, xStocks ANTx, Ondo ANTon (no US; no vote), Reality rANT via Bitget (US not stated; vote not automatic). Cash-settled derivative: pre-IPO and equity perps (US varies; no vote)." width="1200" height="750" loading="lazy" style="width:100%;height:auto"></a>
+
+**Short answer.** The ten products fall into four legal types: brokerage entitlements (Securitize, Backpack, Dinari), ADGM certificates (Coinbase ANTc, Binance ANTB), note or tracker tokens (Robinhood, xStocks, Ondo, Reality rANT) and cash-settled perpetuals. Most exclude US buyers, and few pass through a vote.
+
+<details>
+<summary>Full table with sources</summary>
+
 | Product | What the holder has (issuer) | Who can buy | Vote |
 |---|---|---|---|
 | Securitize Stocks ANT | Security entitlement through a US broker-dealer (Securitize Markets) | Eligible investors in the US, EU and other permitted places | Passed through "under the product terms"; not registered shareholders ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx)) |
@@ -3294,6 +3323,8 @@ One ticker, many different claims.
 | Dinari ANT dShares | Dinari's tokenized representation; a "secondary ledger" in its US docs | US and more than 90 countries | Blog says preserved; US docs differ ([Dinari](https://docs.dinari.com/docs/anthropic-ipo-faqs)) |
 | Reality rANT (Bitget IPO Prime) | Tokenized stock; Bitget says it is not equivalent to holding the shares and does not automatically confer shareholder status or voting rights (Reality, per Bitget) | Eligible users in permitted regions; restricted jurisdictions excluded; US eligibility not stated | No, not automatically ([Bitget](https://www.bitget.com/support/articles/12560603899381); [Bitget rANT page](https://www.bitget.com/price/anthropic-tokenized-stock-reality)) |
 | Pre-IPO and equity perpetuals | Cash-settled derivative (the venue) | Varies by venue | None ([trade.xyz](https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md)) |
+
+</details>
 
 **Backing claims differ too.** Kraken says ANTx is "backed 1:1"; Binance's reported campaign terms allowed cash or other assets; Ondo includes "cash in transit"; Robinhood's shares may be lent out; Coinbase limits redemption to Vested Holders ([Kraken](https://support.kraken.com/articles/anthropic-ipo-access); [Bitcoin.com](https://news.bitcoin.com/exchanges/binance-wallet-500m-anthropic-ipo-xstocks-token-sale/); [Ondo release](https://www.prnewswire.co.uk/news-releases/ondo-stocks-to-launch-anton-with-247-mint-and-redeem-live-on-ipo-day-302943767.html); [Robinhood Final Terms](https://cdn.robinhood.com/assets/robinhood/legal/rhj_final_terms_for_tokenised_debt_securities_linked_to_anthropic_pbc.pdf); [Coinbase prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf)). The wiki does not rank them.
 
@@ -3379,13 +3410,18 @@ None of the sources retrieved says so. Ondo and Securitize say Anthropic did not
 
 Only through products open to US persons, such as Securitize's ANT and Dinari's dShares. Robinhood's Stock Token, bStocks, xStocks, Ondo, Coinbase's ANTc and PreStocks exclude US persons ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx); [Dinari FAQ](https://docs.dinari.com/docs/anthropic-ipo-faqs); [Robinhood docs](https://docs.robinhood.com/rhj); [Binance](https://www.binance.com/en/support/announcement/detail/830c320848af4257812d5b6e99e031f9); [Ondo release](https://www.prnewswire.co.uk/news-releases/ondo-stocks-to-launch-anton-with-247-mint-and-redeem-live-on-ipo-day-302943767.html); [Coinbase prospectus](https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf); [PreStocks](https://prestocks.com/anthropic)).
 
+
+### Has Coinbase's ANTc been listed as Aave collateral?
+
+Not as of 23 Nov 2026. On that day, at 3:26 AM ET, LlamaRisk posted an addendum to an 18 Nov Aave ARFC proposing to add ANTc as collateral-only on the Aave V4 Equities Hub on Base, at a 45% collateral factor, a 6.5% maximum liquidation bonus, 10% collateral risk and a $5.00 million add cap. LlamaRisk says ANT had one session of its own trading history when that factor was set, and it lists further early share releases starting 15 Dec 2026. A lender reply the same day asked to delay or stage the listing until after those releases and first earnings. The proposal is not stated as executed ([ARFC, expand Coinbase tokenized equities](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441)). See [[platforms-venues/aave|Aave]] and [[issuers/coinbase-tokenized-stocks#anthropic-antc|Coinbase ANTc]].
+
 ### Did the tokens trade at a premium to Nasdaq?
 
 No. In the last minute before the 4:00 PM ET close, the largest pools for Backpack's ANT, ANTB and ANTc traded 0.5% to 0.7% below Nasdaq's \$97.17 close on 19 Nov and 0.4% to 1.0% below its \$88.91 close on 20 Nov ([GeckoTerminal](https://www.geckoterminal.com/solana/pools/4v6geaGFiFfQP9HbrxSLdwFKsda8V7jr99ADYq9NtJV1)). These are single-pool prices, not prices for a large order.
 
 ## What are the limits of this analysis?
 
-Built from the wiki pages in `pages_used` and the raw captures they cite, retrieved 19-21 Nov 2026 (Bitget rANT sources retrieved 21 Nov). Volume and holdings figures are reported by third parties and were not verified onchain. Not covered: Securitize and Dinari supply, Robinhood, ANTx and ANTon close-time prices, an ANTB-specific prospectus, which was not found, and Reality's product documents, legal entity, chain and contract.
+Built from the wiki pages in `pages_used` and the raw captures they cite, retrieved 19-21 Nov 2026 (Bitget rANT sources retrieved 21 Nov; the Aave ANTc collateral proposal was retrieved 23 Nov 2026 and is not executed as of that date). Volume and holdings figures are reported by third parties and were not verified onchain. Not covered: Securitize and Dinari supply, Robinhood, ANTx and ANTon close-time prices, an ANTB-specific prospectus, which was not found, and Reality's product documents, legal entity, chain and contract.
 
 *Reference information only, not legal or investment advice.*
 
@@ -3409,6 +3445,7 @@ Public originals for the facts on this page.
 - <https://docs.dinari.com/docs/anthropic-ipo-faqs>
 - <https://docs.dinari.com/docs/us>
 - <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf>
+- <https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441>
 - <https://docs.sunrise.xyz/equities/backpack-securities>
 - <https://crypto.news/tokenized-anthropic-stock-solana-backpack-securities/>
 - <https://docs.trade.xyz/perpetuals/markets/pre-ipo-perpetuals.md>
@@ -3425,6 +3462,177 @@ Public originals for the facts on this page.
 - <https://www.bitget.com/support/articles/12560603901105>
 - <https://www.bitget.com/spotlight/ipo-prime>
 - <https://www.bitget.com/price/anthropic-tokenized-stock-reality>
+
+========================================================================
+# OKXICE TSV's first 24 hours: $2.55 million traded across six tokenized stocks
+URL: https://edstokenizedsecuritiesrails.com/analyses/okxice-tsv-first-24-hours
+description: In the first 24 hours after its 23 Nov 2026 noon ET launch, OKXICE recorded 3,314 trades worth about 2.55 million dollars across six tokenized stocks.
+status: reviewed
+last_checked: 2026-11-24
+
+In the first 24 hours after its 23 Nov 2026 noon ET launch, OKXICE recorded 3,314 trades worth about 2.55 million dollars across six tokenized stocks. Sells outnumbered buys. Circle (CRCL) and Robinhood (HOOD) made up about two-thirds of the dollars, and just over half the dollar volume traded outside regular U.S. market hours. This page is a first look at that window, from the venue's public data and from public chain records. See [[platforms-venues/okxice-tsv|OKXICE TSV]] for how the venue is built.
+
+> [!info] At a glance
+> **3,314 trades**, worth about **\$2.55 million** (\$2,546,330.59), in the 24 hours from noon ET on 23 Nov 2026 to noon ET on 24 Nov.
+> **Average trade:** about \$768.
+> **Six stocks**, all versus USDC. CRCL and HOOD were about two-thirds of the dollars.
+> **More selling than buying:** 1,948 sells vs 1,366 buys (59% of trades, 58% of dollars).
+> **About 54% of the dollars** traded outside regular U.S. hours (pre-market, after hours and overnight).
+> **About \$1.22 million** sat in the six pools at Monday midnight EST. That official figure is for the calendar day, not the same 24-hour window.
+
+## How much traded in OKXICE's first 24 hours?
+
+3,314 trades, worth \$2,546,330.59, across 60,345.96 shares, from noon ET on Monday 23 Nov 2026 to noon ET on Tuesday 24 Nov. The average trade was \$768.36. These figures are from the venue's public transaction list, pulled around 12:30 PM ET on 24 Nov 2026 ([transaction-list API](https://web3.okx.com/api/v6/explorer/tsv/transaction-list); [API docs](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-transaction-list)).
+
+[[platforms-venues/okxice-tsv|OKXICE TSV]] is OKX's tokenized-stock venue on X Layer, opened at noon ET on 23 Nov 2026 for eligible U.S. customers ([OKX launch post](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). Each of the six launch stocks trades against [[concepts/glossary#stablecoin|USDC]] in a [[concepts/glossary#permissioned-pool|permissioned]] [[concepts/glossary#amm-automated-market-maker|AMM]] pool built with [[concepts/glossary#uniswap-v4-hooks|Uniswap v4 hooks]]. The venue publishes its trades through a free public API with no login ([OKX landing page](https://www.okx.com/okxicetsv), [TSV API reference](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference)).
+
+| Metric | First 24 hours (Mon 12:00 PM – Tue 12:00 PM ET) |
+|---|---|
+| Trades | 3,314 |
+| Buys / sells (by count) | 1,366 / 1,948 (41% / 59%) |
+| Shares traded | 60,345.96 |
+| Dollar volume (price × shares) | \$2,546,330.59 |
+| Buy / sell dollars | \$1,059,048.73 / \$1,487,281.86 |
+| Average trade | \$768.36 |
+| Pool fee on every trade in this pull | 20 bps (0.2%) |
+
+Dollar volume is our calculation (price × shares for each fill). The API gives price and share quantity, not a dollar total.
+
+The 20 bps figure is the liquidity-pool fee shown on every fill in this pull (`feePercent` of 0.2%). The published fee schedule on [okx.com/okxicetsv](https://www.okx.com/okxicetsv) is 30 bps in total: that 0.2% pool fee plus a 0.1% OKXICE service fee, with gas waived. The service fee is not broken out on each fill.
+
+**Outside this 24-hour window, and unexplained in the public data:**
+
+- **Before the announced noon launch on Monday** (from 12:01 AM ET to 11:59 AM ET): 992 trades, about \$1.25 million (\$1,247,653.73). Why those trades happened before noon is **unknown**.
+- **After Tuesday noon** (through about 12:30 PM ET, when we pulled the data): 176 trades, about \$106,531.
+
+## Which tokenized stocks traded most on OKXICE?
+
+Circle (CRCL) had the most dollar volume, about \$948,000, or 37.2% of the total. Robinhood (HOOD) was next, about \$751,000, or 29.5%. Together they were about two-thirds of the dollars. Strategy (MSTR) had the most trades, 1,097, but they were smaller.
+
+<a href="/diagrams/analyses/okxice-first-24h-volume-by-stock-2026-11-24.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/okxice-first-24h-volume-by-stock-2026-11-24-1200.webp" alt="Horizontal bar chart of dollar volume in OKXICE's first 24 hours, one bar per stock, each bar split into buys (teal) and sells (orange). CRCL $947,614.14 (37.2%), HOOD $750,687.86 (29.5%), MSTR $471,040.02 (18.5%), COIN $289,336.34 (11.4%), BTGO $79,058.38 (3.1%), SECZ $8,593.86 (0.3%). Sells are the larger part of the four biggest bars." width="1200" height="660" loading="lazy" style="width:100%;height:auto"></a>
+
+CRCL and HOOD were about two-thirds of the dollars. Sells (orange) outweighed buys (teal) on the four largest stocks.
+
+The six names are the Tokenized NMS Stocks listed for launch in the 20 Nov 2026 notice, each paired with USDC and tokenized by [[issuers/securitize|Securitize]] Markets: Coinbase (COIN), Securitize (SECZ), Strategy (MSTR), BitGo (BTGO), Robinhood (HOOD) and Circle (CRCL) ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). The public asset list pulled with the trades still showed only those six USDC pools ([asset-list API](https://web3.okx.com/api/v6/explorer/tsv/asset-list)).
+
+| Stock | Trades | Shares | Dollar volume | Share of $ | VWAP | Sell share of $ |
+|---|---|---|---|---|---|---|
+| CRCL | 789 | 18,821.36 | \$947,614.14 | 37.2% | \$50.35 | 59.2% |
+| HOOD | 680 | 11,368.86 | \$750,687.86 | 29.5% | \$66.03 | 58.1% |
+| MSTR | 1,097 | 5,724.37 | \$471,040.02 | 18.5% | \$82.29 | 58.8% |
+| COIN | 618 | 2,718.04 | \$289,336.34 | 11.4% | \$106.45 | 58.8% |
+| BTGO | 98 | 20,511.00 | \$79,058.38 | 3.1% | \$3.85 | 49.9% |
+| SECZ | 32 | 1,202.32 | \$8,593.86 | 0.3% | \$7.15 | 42.7% |
+
+VWAP is the volume-weighted average price in this window (dollar volume divided by shares). CRCL also had the largest single fill, about \$29,334. MSTR's trades were frequent but smaller (median fill about \$369, versus about \$878 for CRCL).
+
+## How much OKXICE trading happened outside US market hours?
+
+Just over half the dollars — about 54% — traded outside regular U.S. market hours. Regular hours (9:30 AM–4:00 PM ET) were still the single largest session, at \$1,181,270.81, or 46.4% of the window. Pre-market was 27.0%, overnight 19.4%, and after hours 7.1%.
+
+<a href="/diagrams/analyses/okxice-first-24h-session-split-2026-11-24.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/okxice-first-24h-session-split-2026-11-24-1200.webp" alt="Horizontal bar chart of dollar volume by U.S. stock-market session in OKXICE's first 24 hours. Regular hours, 9:30 AM to 4:00 PM ET: $1,181,270.81 (46.4%), 1,628 trades. Pre-market, 4:00 to 9:30 AM: $688,772.80 (27.0%), 750 trades. Overnight, 8:00 PM to 4:00 AM: $494,918.71 (19.4%), 721 trades. After hours, 4:00 to 8:00 PM: $181,368.28 (7.1%), 215 trades." width="1200" height="620" loading="lazy" style="width:100%;height:auto"></a>
+
+Regular hours were the largest single session, but the three off-hours sessions together were about 54% of the dollars.
+
+Because this window starts at Monday noon and ends at Tuesday noon, the regular-hours total here is Monday 12:00–4:00 PM ET plus Tuesday 9:30 AM–12:00 PM ET, not two full cash-market sessions.
+
+| Session (ET) | Trades | Dollar volume | Share of $ |
+|---|---|---|---|
+| Regular hours (9:30 AM–4:00 PM) | 1,628 | \$1,181,270.81 | 46.4% |
+| Pre-market (4:00–9:30 AM) | 750 | \$688,772.80 | 27.0% |
+| Overnight (8:00 PM–4:00 AM) | 721 | \$494,918.71 | 19.4% |
+| After hours (4:00–8:00 PM) | 215 | \$181,368.28 | 7.1% |
+
+The busiest hour was **Tuesday 9:00–10:00 AM ET** (579 trades, \$508,309.15), which covers late pre-market and the U.S. open. The quietest was **Tuesday 2:00–3:00 AM ET** (16 trades, \$14,426.40). Monday evening also picked up around 9:00 PM ET (198 trades, \$119,857.16).
+
+<a href="/diagrams/analyses/okxice-first-24h-hourly-volume-2026-11-24.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/okxice-first-24h-hourly-volume-2026-11-24-1200.webp" alt="Bar chart of OKXICE dollar volume in each Eastern-time hour from Monday noon to Tuesday noon, 23–24 Nov 2026. Trading continues overnight. The tallest bar is Tuesday 9 to 10 AM ET at about $508,000, covering late pre-market and the U.S. open. The shortest bar is Tuesday 2 to 3 AM ET at about $14,000." width="1200" height="640" loading="lazy" style="width:100%;height:auto"></a>
+
+Trading did not stop overnight. The Tuesday 9:00–10:00 AM bar is the peak; it straddles the U.S. cash-market open.
+
+## Do OKXICE prices track the stock market?
+
+In this window, the pools moved overnight with the stocks' gap down, and during regular and extended hours the median fill for the four most-traded names was within about 0–30 basis points of the matching 30-minute Yahoo Finance bar. There is no overnight reference price in that source, so a like-for-like overnight comparison is **unknown**.
+
+All four of the most-traded stocks — COIN, MSTR, HOOD and CRCL — fell from Monday's close to Tuesday's open. Volume-weighted prices on OKXICE, compared with the Yahoo Finance daily open and close ([COIN](https://finance.yahoo.com/quote/COIN/), [MSTR](https://finance.yahoo.com/quote/MSTR/), [HOOD](https://finance.yahoo.com/quote/HOOD/), [CRCL](https://finance.yahoo.com/quote/CRCL/)):
+
+| Stock | Mon close | Tue open | Overnight VWAP (8:00 PM–4:00 AM) | Pre-market VWAP (4:00–9:30 AM) |
+|---|---|---|---|---|
+| COIN | \$108.78 | \$107.49 | \$107.46 (−1.2% vs close) | \$105.93 (−1.5% vs open) |
+| MSTR | \$84.40 | \$82.33 | \$82.95 (−1.7% vs close) | \$81.22 (−1.4% vs open) |
+| HOOD | \$67.37 | \$65.73 | \$67.15 (−0.3% vs close) | \$65.50 (−0.3% vs open) |
+| CRCL | \$51.34 | \$50.03 | \$50.88 (−0.9% vs close) | \$49.90 (−0.3% vs open) |
+
+What this shows, and what it does not:
+
+- **Overnight**, when the regular market is closed, OKXICE prices were already moving toward Tuesday's lower open. COIN's overnight VWAP was almost exactly the Tuesday open.
+- **Pre-market** OKXICE prices were at or below the Tuesday open. They tracked the pre-market drop rather than lagging behind it.
+- **During regular and extended hours**, the median fill for those four names was within about 0–30 bps of the matching 30-minute Yahoo bar. The middle 80% of fills (10th to 90th percentile) ranged from about −0.7% to +1.1%. This is a rough check: it uses 30-minute bar closes, not tick-level quotes, so part of any gap is price movement inside the bar.
+- BTGO and SECZ had too few off-hours trades for a fair comparison.
+- **Unknown:** Yahoo's 30-minute bars in this pull have no observations between 8:00 PM and 4:00 AM ET, so we cannot measure overnight drift against a live quote. That leg compares only to Monday's close and Tuesday's open. Yahoo prices are not official exchange prints.
+
+## How large were the OKXICE liquidity pools after day one?
+
+About \$1.22 million in total, according to the venue's official daily statistics for the Monday calendar day. That is a different window from the first 24 hours after noon: it includes Monday's pre-noon trades and stops at midnight EST.
+
+<a href="/diagrams/analyses/okxice-first-24h-pool-tvl-2026-11-24.png" class="tap-enlarge" title="Open full size"><img src="/diagrams/analyses/okxice-first-24h-pool-tvl-2026-11-24-1200.webp" alt="Horizontal bar chart of official end-of-day OKXICE pool size, or TVL, on the 23 Nov 2026 EST calendar day. HOOD $353,196.82 (28.8%), CRCL $345,787.91 (28.2%), COIN $236,756.79 (19.3%), MSTR $226,966.17 (18.5%), BTGO $30,948.51 (2.5%), SECZ $30,714.48 (2.5%). Total $1,224,370.68." width="1200" height="680" loading="lazy" style="width:100%;height:auto"></a>
+
+HOOD and CRCL also held the most liquidity at Monday midnight, about \$353,000 and \$346,000. The official total is \$1,224,370.68.
+
+OKXICE's daily-statistics endpoint, which was still empty on the evening of 23 Nov, was populated by this 24 Nov pull ([daily-statistics API](https://web3.okx.com/api/v6/explorer/tsv/daily-statistics); [docs](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-daily-statistics)). The first entry covers Monday 23 Nov, 12:00 AM to Tuesday 24 Nov, 12:00 AM, on a fixed EST (UTC−5) day with no daylight-saving shift.
+
+| Stock | Nov 23 share volume (official) | End-of-day pool size |
+|---|---|---|
+| HOOD | 7,312.32 | \$353,196.82 |
+| CRCL | 14,372.54 | \$345,787.91 |
+| COIN | 3,013.73 | \$236,756.79 |
+| MSTR | 5,601.03 | \$226,966.17 |
+| BTGO | 20,729.88 | \$30,948.51 |
+| SECZ | 1,820.44 | \$30,714.48 |
+| **Total** | | **\$1,224,370.68** |
+
+Our Nov 23 share volume per stock, added up from the transaction list, matches these official `dailyShareVolume` figures exactly (to rounding), so the pull did not miss fills for that calendar day. About \$2.55 million traded in the first 24 hours after noon, against about \$1.22 million of end-of-day pool size on the calendar day. Those two figures are not directly comparable, because the windows differ.
+
+## Can you tell how many people traded on OKXICE?
+
+No. Public chain data shows sending addresses and contracts, not the people behind them. How many distinct end users traded is **unknown**.
+
+We looked up all 3,314 first-24-hour transactions on X Layer through the public RPC. All 3,314 receipts reported success.
+
+- **74.9% (2,483 transactions)** were sent by one address, [`0x7ff4…8656`](https://www.oklink.com/x-layer/address/0x7ff4b3acd0a9f7c3f1bcb650f00c8b7bd8d18656), to an unlabeled contract, [`0x1f61…23a2`](https://www.oklink.com/x-layer/address/0x1f61eb055947f49dbf4ff1a532e6bd74c18123a2).
+- **24.2% (802 transactions)** were sent by one address, [`0x985b…8533`](https://www.oklink.com/x-layer/address/0x985b0a4f05ffd79a6d612076272ab8b1275f8533), directly to TSVSwapRouterV1, [`0xc58d…d686`](https://www.oklink.com/x-layer/address/0xc58d2bf7ad7cb023760e767e9050be3f15cad686).
+- **0.9% (29 transactions)** went to the standard ERC-4337 EntryPoint, [`0x0000…a032`](https://www.oklink.com/x-layer/address/0x0000000071727de22e5e9d8baf0edac6f37da032), sent by five bundler addresses.
+
+The first two sending addresses account for 99.1% of the transactions. That is what the chain shows. It does not, by itself, say who the traders were, or how many of them there were.
+
+## What is still unknown?
+
+- **Why 992 trades, about \$1.25 million, happened before the announced noon ET launch on Monday.** The public transaction list includes them, starting at 12:01 AM ET. The reason is unknown.
+- **An overnight reference price.** The Yahoo Finance 30-minute bars in this pull have no observations between 8:00 PM and 4:00 AM ET, so overnight OKXICE prices can be compared only with Monday's close and Tuesday's open, not with a live overnight quote.
+- **How many distinct end users traded.** Public chain data shows a small number of sending addresses and contracts, not the people behind them.
+
+## How was this measured?
+
+- **Trades and assets:** OKXICE's public TSV API, pulled around 12:30 PM ET on 24 Nov 2026, under the documented limit of 2 requests per second per IP ([API reference](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference)). We paginated the full transaction feed and also pulled each stock separately, then merged and de-duplicated by transaction hash and log index (4,482 unique fills in the full pull).
+- **Completeness:** Official Nov 23 EST share volume per stock in the daily statistics matches our transaction-list totals exactly (to rounding).
+- **Time zones:** Fill timestamps are second-resolution UTC times from the API, converted to U.S. Eastern Time. Sessions use Eastern clocks. The official daily-statistics day is a fixed EST (UTC−5) calendar day.
+- **Prices:** Yahoo Finance daily and 30-minute data, pulled around 12:31 PM ET on 24 Nov 2026. They are not official exchange prints.
+- **On-chain senders:** Public X Layer RPC records for the 3,314 first-24-hour transaction hashes, viewed on [OKLink](https://www.oklink.com/x-layer/address/0xc58d2bf7ad7cb023760e767e9050be3f15cad686).
+- This is not investment advice.
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://www.oklink.com/x-layer/address/0xc58d2bf7ad7cb023760e767e9050be3f15cad686>
+- <https://www.oklink.com/x-layer/address/0x7ff4b3acd0a9f7c3f1bcb650f00c8b7bd8d18656>
+- <https://www.oklink.com/x-layer/address/0x985b0a4f05ffd79a6d612076272ab8b1275f8533>
+- <https://www.oklink.com/x-layer/address/0x1f61eb055947f49dbf4ff1a532e6bd74c18123a2>
+- <https://www.oklink.com/x-layer/address/0x0000000071727de22e5e9d8baf0edac6f37da032>
+- <https://finance.yahoo.com/quote/COIN/>
+- <https://finance.yahoo.com/quote/MSTR/>
+- <https://finance.yahoo.com/quote/HOOD/>
+- <https://finance.yahoo.com/quote/CRCL/>
+- <https://finance.yahoo.com/quote/BTGO/>
+- <https://finance.yahoo.com/quote/SECZ/>
 
 ========================================================================
 # Backpack Securities
@@ -3587,15 +3795,15 @@ type: issuer
 jurisdiction: Abu Dhabi Global Market (FSRA-authorized, per Coinbase via Zerion)
 chain: Base
 status: live
-last_updated: 2026-11-19
-last_checked: 2026-11-19
+last_updated: 2026-11-23
+last_checked: 2026-11-23
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** Abu Dhabi Global Market (FSRA-authorized, per Coinbase via Zerion)  
 > **Chain:** Base  
 > **Status:** live  
-> **Last updated:** 2026-11-19  
+> **Last updated:** 2026-11-23  
 
 | Field | Value |
 |---|---|
@@ -3617,7 +3825,13 @@ A public read-only API publishes records, [[concepts/glossary#multiplier|multipl
 
 On Alpaca's Instant Tokenization Network (ITN), "coinbase" is one of the issuer values an authorized participant can name in a mint request; Alpaca moves the shares from the AP's account to the issuer's Alpaca account, and the issuer mints the tokens to the AP's wallet ([Alpaca mint API](https://docs.alpaca.markets/us/reference/posttokenizationmintbroker); [Alpaca issuer guide](https://docs.alpaca.markets/us/docs/tokenization-guide-for-issuer)). The API value shows Coinbase is set up as an ITN issuer; it is not by itself a statement about Coinbase's custody terms. See [[build/trading-reference-architecture#primary-market-mint-and-redeem-broker-custodied-model|mint and redeem, step by step]].
 
-Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on Aave V4 on Base ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)).
+Since 25 Sep 2026, seven Coinbase tokenized stocks (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) can be posted as collateral to borrow USDC on [[platforms-venues/aave|Aave]] V4's Equities Hub on Base. The tokens are collateral-only: they cannot be borrowed on that market. Prices come from Chainlink 24/5 feeds, which Aave says publish from Sunday 20:00 ET to Friday 20:00 ET and hold the last price over weekends and U.S. holidays ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks)). Aave Labs later said access to the Equities Hub "is limited to users in eligible jurisdictions outside the U.S." ([Aave Labs 180-day report](https://governance.aave.com/t/aave-labs-180-day-report/26342)).
+
+LlamaRisk's assessment of those seven tokens says a liquidator that seizes them holds them as an unvested holder, with no redemption right until the issuer's vesting process is completed ([B20 assessments](https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690)).
+
+SPCXc, Coinbase's B20 tokenized SpaceX Class A shares per LlamaRisk, is treated as a live Equities Hub reserve in LlamaRisk's 23 Nov 2026 collateral-factor ARFC (current factor 55%). Aave Labs posted a Direct-to-AIP listing on 15 Oct 2026 and said AIP #537 voting would start on 27 Oct 2026; the exact execution date is not stated ([Direct-to-AIP, SPCXc](https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850); [ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)). See [[platforms-venues/aave|Aave]].
+
+Open proposals as of 23 Nov 2026, not stated as executed: LlamaRisk on 18 Nov 2026 proposed adding NFLXc, ORCLc, PLTRc, AMDc, NOWc and MSTRc as collateral, and on 23 Nov 2026 proposed ANTc as well (see below) and a cut to six of the eight live collateral factors ([ARFC, expand](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441); [ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)).
 
 John D'Agostino, head of strategy at Coinbase Institutional, said the initial offering covers about seven stocks and is planned to grow to 2,000 (a stated plan, not a launched figure) ([TheStreet via Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/tokenized-stocks-turn-share-collateral-165759306.html), news, 27 Oct 2026).
 
@@ -3644,10 +3858,13 @@ Coinbase Onchain SPV Ltd, an ADGM company incorporated 17 June 2026, published a
 - **Fees:** creation fee 0.01%, redemption fee 0.05%.
 The prospectus text does not name the blockchain network. Anthropic's 424B4 does not mention tokenized shares ([Anthropic 424B4](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm)). See [[comparisons/implementations-by-model|Implementations by model]].
 
+On 23 Nov 2026, 3:26 AM ET, LlamaRisk posted an addendum to an 18 Nov Aave ARFC proposing to list ANTc as collateral-only on the Equities Hub, at a 45% collateral factor, a 6.5% maximum liquidation bonus, 10% collateral risk, and a $5.00 million add cap. LlamaRisk says ANT had one session of its own history when that factor was set, and it lists further early share releases starting 15 Dec 2026. A lender reply the same day, at 2:38 PM ET, asked to delay or stage the listing until after those releases and first earnings. The proposal is not stated as executed ([ARFC, expand Coinbase tokenized equities](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441)). See [[platforms-venues/aave|Aave]] and [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
+
 ## What this means for holders
 - A B20 stock token is a beneficial claim on a share held in [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] custody, not a share on the company's register ([Coinbase](https://www.coinbase.com/tokenize); [Base](https://www.base.org/stocks)).
 - Offered outside the US only; dividends are reinvested through a [[concepts/glossary#multiplier|multiplier]] ([Base](https://www.base.org/stocks)).
 - [[concepts/glossary#redeem|Redemption]] terms are set in the issuer documents; check them before relying on redemption ([Base docs](https://docs.base.org/sdks/tokenized-stocks/overview)).
+- Some of these tokens can be posted as collateral to borrow USDC on [[platforms-venues/aave|Aave]]'s Equities Hub, for eligible non-U.S. users; a liquidator may hold seized tokens as an unvested holder ([Aave](https://www.aave.com/blog/coinbase-tokenized-stocks); [B20 assessments](https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690)).
 
 *Reference information only, not investment advice.*
 
@@ -3669,8 +3886,16 @@ Public originals for the facts on this page.
 - <https://www.onchainrights.org/>
 - <https://www.onchainrights.org/docs>
 - <https://www.adgm.com/globalassets/market-disclosure/content/prospectus/coinbase-onchain-spv-ltd---prospectus-antc---18nov2026.pdf>
+- <https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427>
+- <https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690>
+- <https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850>
+- <https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943>
+- <https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441>
+- <https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482>
+- <https://governance.aave.com/t/aave-labs-180-day-report/26342>
+- <https://www.aave.com/blog/coinbase-tokenized-stocks>
 
-*Last checked 2026-11-19. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Crypto.com Tokenized Stocks
@@ -3883,6 +4108,10 @@ Ondo Stocks (previously Ondo Global Markets) are tokenized US stocks and ETFs: B
 Ondo tokenized stocks are structured notes issued by Ondo Global Markets (BVI) Limited, a [[concepts/glossary#bankruptcy-remote|bankruptcy-remote]] BVI [[concepts/glossary#spv|SPV]]. They are backed 1:1 plus a buffer by the corresponding US stocks or ETFs (and cash in transit) held through US custodial [[concepts/glossary#broker-dealer|broker-dealers]], with Ankura Trust Company as security agent and daily verification agent ([legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory); [trust and transparency](https://docs.ondo.finance/ondo-stocks/trust-and-transparency)). Tokenholder rights are governed by Swiss law under the issuer's Sales Terms. The tokens are offered under Regulation S and may not be sold to US persons or into the United States except under a registration or a valid exemption ([legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Ondo's legal notice also says the tokens are not themselves stocks, ETFs or ADRs and do not give holders a right to receive the underlying assets ([Ondo Stocks](https://ondo.finance/ondo-stocks)).
 
 The issuer is 90.01% owned by Flux Finance Inc. (a wholly owned subsidiary of the Ondo Foundation) and 9.99% owned by Ondo Finance Inc. ([legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Ondo Finance is described as the technology and service provider, not the issuer ([trust and transparency](https://docs.ondo.finance/ondo-stocks/trust-and-transparency)). An EEA/EU base prospectus has been approved by the Financial Market Authority Liechtenstein (FMA), according to the same legal notice, and is published on each token page at [app.ondo.finance](https://app.ondo.finance) ([Ondo Stocks](https://ondo.finance/ondo-stocks)).
+
+## When did Ondo Global Markets launch, and how big is it?
+
+Ondo Global Markets (now branded Ondo Stocks) launched in September 2025, per Ondo ([Ondo PR Newswire](https://www.prnewswire.com/news-releases/ondo-stocks-surpasses-1-billion-in-value-as-ecosystem-surges-302852154.html)). On 27 Oct 2026 Ondo claimed \$1.3B in total value locked and more than 450,000 cumulative holders (issuer claim) ([Ondo blog](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap)).
 
 ## How does minting and redemption work?
 
@@ -4138,17 +4367,17 @@ URL: https://edstokenizedsecuritiesrails.com/issuers/securitize
 description: Securitize acts as transfer agent and tokenization platform for funds and companies that issue tokens.
 type: issuer
 jurisdiction: unknown
-chain: Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)
+chain: Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role)
 status: live (Securitize Stocks launched 2026-10-08)
-last_updated: 2026-11-20
-last_checked: 2026-11-20
+last_updated: 2026-11-23
+last_checked: 2026-11-23
 
 > [!info] At a glance
 > **Type:** issuer  
 > **Jurisdiction:** unknown  
-> **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary)  
+> **Chain:** Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role)  
 > **Status:** live (Securitize Stocks launched 2026-10-08)  
-> **Last updated:** 2026-11-20  
+> **Last updated:** 2026-11-23  
 
 | Field | Value |
 |---|---|
@@ -4156,7 +4385,7 @@ last_checked: 2026-11-20
 | jurisdiction | unknown |
 | product_name | Securitize Stocks; issuer-sponsored tokenized shares |
 | structure | Securitize Stocks: UCC Article 8 security entitlements, 1:1 backed, via Securitize's broker-dealer; also issuer-sponsored shares |
-| chains | Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary) |
+| chains | Algorand (Exodus), Ethereum (per Zerion, secondary), Solana (per Zerion, secondary), Avalanche (per Zerion, secondary), XLayer (OKXICE TSV tokenizer role) |
 | who_can_buy | Eligible investors in the United States, the European Union and other permitted jurisdictions (Securitize, 2 Nov 2026) |
 | num_assets | More than 50 U.S. equities (Securitize, 19 Nov 2026); 25 on 2 Nov 2026 |
 
@@ -4169,13 +4398,13 @@ On 17 Nov 2026 Securitize said it had completed its acquisition of River One (Ri
 ## What are Securitize Stocks?
 Securitize Stocks, launched on 8 Oct 2026, are UCC Article 8 security entitlements to US stocks, 1:1 backed, held through Securitize's broker-dealer.
 
-They launched on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; an NYSE venue was planned in that launch release ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news). A 2 Nov 2026 Securitize release says a second wave adds 13 security-entitlement tokens on Solana, bringing the total offering to 25 stocks for eligible investors in the United States, the European Union and other permitted jurisdictions. The 13 names added are Arista Networks (ANET), Flex Ltd. (FLEX), Exxon Mobil (XOM), GameStop (GME), Johnson & Johnson (JNJ), Lockheed Martin (LMT), Lumentum (LITE), Merck & Co. (MRK), Salesforce (CRM), Seagate Technology (STX), Texas Instruments (TXN), The Walt Disney Company (DIS) and Uber Technologies (UBER). The release says those join the original 12 launched in October: AAPL, MSFT, NVDA, GOOG, TSLA, META, AMZN, NFLX, CRCL, SPCX, MSTR and PLTR ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Expands-Onchain-U-S--Stock-Offering-to-25-Equities/default.aspx)).
+They launched on [[concepts/glossary#solana|Solana]], settled in USDC, through Securitize's [[concepts/glossary#broker-dealer|broker-dealer]]; Jump makes markets on the PropAMM; conversion to direct registration where available; an NYSE venue was planned in that launch release ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html); [RQD](https://rqdclearing.com/securitize-launches-global-onchain-trading-of-u-s-stocks-with-security-entitlements/)). The structure is called a convertible [[concepts/glossary#entitlement-token|entitlement token]] (CET). Securitize says it is open to eligible investors in the US, EU and other permitted jurisdictions, the backing shares will not be lent out, and lending and collateral use on markets like Aave is planned ([PR Newswire](https://www.prnewswire.com/news-releases/securitize-launches-global-onchain-trading-of-us-stocks-with-security-entitlements-302902107.html)). Official Aave sources reviewed on 23 Nov 2026 still do not list Securitize stock entitlement tokens as Aave collateral. Separately, Aave Labs said on 2 Nov 2026 that the community approved HINC, a Neuberger Berman high-yield fund token administered by Securitize, for [[platforms-venues/aave#aave-horizon|Aave Horizon]] through a Snapshot vote; whether that listing was then activated is not stated, and HINC is not a Securitize Stocks entitlement token ([Aave Labs October 2026 update](https://governance.aave.com/t/al-development-update-october-2026/25979); [HINC ARFC](https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500)). CoinDesk reported 12 companies at launch ([CoinDesk](https://www.coindesk.com/business/2026/10/08/securitize-brings-apple-nvidia-and-tesla-to-solana-with-nyse-trading-in-the-works), news). A 2 Nov 2026 Securitize release says a second wave adds 13 security-entitlement tokens on Solana, bringing the total offering to 25 stocks for eligible investors in the United States, the European Union and other permitted jurisdictions. The 13 names added are Arista Networks (ANET), Flex Ltd. (FLEX), Exxon Mobil (XOM), GameStop (GME), Johnson & Johnson (JNJ), Lockheed Martin (LMT), Lumentum (LITE), Merck & Co. (MRK), Salesforce (CRM), Seagate Technology (STX), Texas Instruments (TXN), The Walt Disney Company (DIS) and Uber Technologies (UBER). The release says those join the original 12 launched in October: AAPL, MSFT, NVDA, GOOG, TSLA, META, AMZN, NFLX, CRCL, SPCX, MSTR and PLTR ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Expands-Onchain-U-S--Stock-Offering-to-25-Equities/default.aspx)).
 
 Securitize's Q3 2026 10-Q says its broker-dealer, Securitize Markets, received FINRA approval to custody tokenized securities after SEC staff's December 2025 custody statement ([10-Q](https://www.sec.gov/Archives/edgar/data/2094496/000162828026073910/secz-20260930.htm)).
 
 On 16 Nov 2026, Apple's dividend pay date, Securitize paid that dividend in USDC on Solana to holders of its Apple token; see [[topics/corporate-actions-and-dividends#securitize-apple-dividend-16-nov-2026|Corporate actions]] for the reported figures ([Bitquery](https://bitquery.io/investigations/securitize-apple-dividend-onchain); [Carlos Domingo on X](https://x.com/carlosdomingo/status/2123822462194643349)).
 
-On 11 Nov 2026 OKX said Securitize will provide the tokenization infrastructure for [[platforms-venues/okxice-tsv|OKXICE TSV]], with trading due to begin on 23 Nov 2026. Each token on that venue will represent a security entitlement backed one-to-one by an underlying U.S. share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). That is a tokenizer role for the TSV, distinct from Securitize Stocks on Solana.
+On 23 Nov 2026 OKX said [[platforms-venues/okxice-tsv|OKXICE TSV]] opened at noon ET that day and that Securitize provides the tokenization infrastructure. Each token on that venue is a security entitlement backed one-to-one by an underlying share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). The 20 Nov 2026 TSV notice names Securitize Markets, LLC as the tokenizer for the six Tokenized NMS Stocks made available at launch (COIN, SECZ, MSTR, BTGO, HOOD and CRCL), each paired with USDC ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). That is a tokenizer role for the TSV, distinct from Securitize Stocks on Solana.
 
 ## Anthropic (ANT) on Securitize Stocks (19 Nov 2026)
 On 19 Nov 2026, Anthropic's first day of trading, Securitize said Anthropic (Nasdaq: ANT) was available through Securitize Stocks on Solana, alongside new additions Amgen and Fox, bringing the offering to more than 50 U.S. equities. It describes the tokens as "security entitlements, not shares registered directly in the holder's name, backed 1:1 by corresponding underlying securities held through Securitize Markets' brokerage infrastructure", offered through Securitize Markets, LLC, a FINRA/SIPC member broker-dealer, to "eligible investors in the United States, European Union (EU) and other permitted jurisdictions". "Rights" means "applicable economic benefits and voting entitlements passed through under the product terms"; holders "are not registered shareholders of Anthropic, and Anthropic has not sponsored, authorized or endorsed Securitize Stocks". Jump Trading supports liquidity, transactions settle in USDC, and trading "is initially available beyond traditional market hours, with plans to move toward 24/7 availability" ([Securitize](https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx)). See [[comparisons/implementations-by-model|Implementations by model]].
@@ -4241,8 +4470,10 @@ Public originals for the facts on this page.
 - <https://investors.securitize.io/news/news-details/2026/Securitize-Completes-Acquisition-of-River-One-Expanding-Into-6-Trillion-Asset-Backed-Finance-Market/default.aspx>
 - <https://investors.securitize.io/news/news-details/2026/Securitize-Tokenizes-Anthropic-Stock-Onchain-on-First-Day-of-Public-Trading/default.aspx>
 - <https://bitquery.io/investigations/securitize-apple-dividend-onchain>
+- <https://governance.aave.com/t/al-development-update-october-2026/25979>
+- <https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500>
 
-*Last checked 2026-11-20. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Superstate Opening Bell
@@ -4522,6 +4753,114 @@ Public originals for the facts on this page.
 - <https://docs.21x.eu/participant-docs/participant-docs>
 
 *Last checked 2026-11-09. Headline fields only; `unknown` means not yet verified from a source.*
+
+========================================================================
+# Aave
+URL: https://edstokenizedsecuritiesrails.com/platforms-venues/aave
+description: Aave runs a Base lending market where some Coinbase stock tokens can be posted as collateral to borrow USDC, and a separate Ethereum market, Horizon, where…
+type: venue
+jurisdiction: unknown
+chain: Base (Equities Hub), Ethereum (Horizon)
+status: Equities Hub live on Base from 25 Sep 2026, per Aave Labs; Horizon live on Ethereum from 26 Aug 2025, per Aave Labs. Several 2026 listing and parameter items below are open proposals, not executed changes.
+last_updated: 2026-11-23
+last_checked: 2026-11-23
+
+> [!info] At a glance
+> **Type:** venue  
+> **Jurisdiction:** unknown  
+> **Chain:** Base (Equities Hub), Ethereum (Horizon)  
+> **Status:** Equities Hub live on Base from 25 Sep 2026, per Aave Labs; Horizon live on Ethereum from 26 Aug 2025, per Aave Labs. Several 2026 listing and parameter items below are open proposals, not executed changes.  
+> **Last updated:** 2026-11-23  
+
+| Field | Value |
+|---|---|
+| name | Aave |
+| jurisdiction | unknown |
+| product_name | Aave V4 Equities Hub on Base; Aave Horizon RWA market on Ethereum |
+| structure | Non-custodial lending protocol; Equities Hub is an isolated V4 liquidity hub for tokenized-equity collateral; Horizon is a separate, licensed Aave Labs instance forked from V3.3 for permissioned RWA collateral |
+| chains | Base (Equities Hub), Ethereum (Horizon) |
+| who_can_buy | Equities Hub access is limited to users in eligible jurisdictions outside the U.S., per Aave Labs; Horizon RWA collateral is limited to issuer-allowlisted qualified users, while stablecoin supply is permissionless |
+| num_assets | Eight Coinbase B20 tokens treated as live Equities Hub reserves in LlamaRisk's 23 Nov 2026 collateral-factor ARFC (the original seven plus SPCXc); Horizon's live collateral set is not fully inventoried from the sources in this ingest |
+
+*In plain English: Aave runs a Base lending market where some Coinbase stock tokens can be posted as collateral to borrow USDC, and a separate Ethereum market, Horizon, where allowlisted holders of tokenized funds and other RWAs can borrow stablecoins. Official Aave sources reviewed on 23 Nov 2026 do not list Securitize stock tokens, xStocks, Backpack or Ondo equities as Aave collateral.*
+
+Aave is a non-custodial lending protocol. This page covers two Aave markets that touch tokenized securities: the V4 Equities Hub on Base, which lists [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]], and [[#aave-horizon|Aave Horizon]] on Ethereum, a permissioned RWA market. It is not a complete guide to Aave.
+
+## Equities Hub on Base
+
+Aave Labs said the official Aave V4 deployment on Base, including the Equities Hub, was approved and activated on 25 Sep 2026 ([Aave Labs 180-day report](https://governance.aave.com/t/aave-labs-180-day-report/26342); [Aave](https://aave.com/blog/coinbase-tokenized-stocks)). "Access is limited to users in eligible jurisdictions outside the U.S." ([Aave Labs 180-day report](https://governance.aave.com/t/aave-labs-180-day-report/26342)). The 25 Sep launch post names seven collateral tokens — AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc and TSLAc — used to borrow USDC, and says they are offered under Regulation S only to eligible non-U.S. persons in permitted jurisdictions ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)).
+
+The market is a dedicated Equities Hub, isolated from other Aave markets on Base. USDC suppliers to the hub explicitly opt into lending against tokenized-equity collateral. The hub has one USDC reserve and two spokes: the Mag-7 Spoke, where users can post any combination of the listed equity tokens as collateral and borrow USDC, each token keeping its own collateral factor; and a supply-only Tokenized USDC Spoke. The equities are collateral-only at launch: they cannot be borrowed, and equity-against-equity positions are not enabled ([ARFC, Deploy Aave V4 on Base](https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427); [Aave](https://aave.com/blog/coinbase-tokenized-stocks)).
+
+Pricing uses Chainlink 24/5 tokenized-equity feeds, which Aave says publish from Sunday 20:00 ET to Friday 20:00 ET and hold the last published price over weekends and U.S. market holidays. During that window, Aave says collateral values do not change and a position's health factor can fall only through interest accrual. The market itself stays open 24/7, except that a reserve is paused during corporate actions such as stock splits until the token multiplier is updated ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)). The 3 Aug 2026 deployment ARFC, updated 21 Sep 2026, called this 24/5 setup an intermediate step and said Chainlink was expected to bring 24/7 feeds, after which parameters might be revisited so liquidations could run through the weekend. Whether those 24/7 feeds are in production is not stated in the sources reviewed on 23 Nov 2026 ([ARFC, Deploy Aave V4 on Base](https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427)).
+
+LlamaRisk's pre-listing assessment of the seven launch tokens says secondary-market buyers, including a liquidator that seizes tokens, hold them as unvested holders: they have economic exposure and can transfer the token, but no redemption right until they complete the issuer's vesting process. LlamaRisk says there is no separate onboarding path for a liquidator or a lending contract, so the redemption route should be treated as available only to parties that already hold the right ([Coinbase B20 Equities on Base Assessments](https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690)).
+
+In its 2 Nov 2026 October update, Aave Labs said that on Base "the market for loans backed by tokenized stocks crossed $9M in deposits and approached $4M in loans" ([Aave Labs October 2026 update](https://governance.aave.com/t/al-development-update-october-2026/25979)). Those figures are Aave Labs' and are not independently verified here.
+
+### SPCXc
+
+SPCXc is Coinbase's B20 tokenized form of SpaceX Class A shares, on the same Base stack as the original seven tokens, according to LlamaRisk ([Direct-to-AIP, SPCXc](https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850)). The opening Aave Labs motivation in that same thread calls SPCXc "issued by Base" and says SpaceX trades on Nasdaq under the same ticker; that wording conflicts with LlamaRisk's description and is not used elsewhere on this page.
+
+Aave Labs posted a Direct-to-AIP listing on 15 Oct 2026, 9:36 AM ET. LlamaRisk supported onboarding with a 55% collateral factor, a 6.5% maximum liquidation bonus, 1,000 bps of collateral risk, and an add cap of 37,000 SPCXc. On 27 Oct 2026, 10:41 AM ET, Aave Labs said AIP #537 had been re-created and that voting would start in less than an hour ([Direct-to-AIP, SPCXc](https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850)). The exact onchain execution date is not stated in the sources reviewed.
+
+LlamaRisk's 23 Nov 2026, 10:00 AM ET collateral-factor ARFC lists SPCXc as a current Equities Hub reserve with a 55% collateral factor, which is the official-forum evidence used here that SPCXc is already live on the hub. That ARFC is itself an open proposal, described below ([ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)).
+
+Aave Labs' 23 Oct 2026 technical assessment, posted 29 Oct 2026, 10:00 AM ET, found SPCXc technically eligible for listing. It describes SPCXc as a Base-native B20 precompile rather than a conventional verified Solidity contract, subject to an issuer blocklist, with no onchain timelock on administrative actions, and with a share-per-token multiplier an operator can change immediately. The dedicated Chainlink feed is 24/5; Aave Labs recorded weekend gaps of 49.14 hours and a longest gap of 52.47 hours in the prior month, said Chainlink classified the feed's pricing risk as high, and said work toward 24/7 availability was in progress. Redemption is restricted to six authorized addresses, so Aave Labs says a liquidator would need to exit through onchain liquidity. There is no onchain proof of reserves ([SPCXc technical assessment](https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943)).
+
+### Open proposals as of 23 Nov 2026
+
+These items are proposals on the official Aave forum. They are not stated as executed.
+
+On 18 Nov 2026, 3:58 PM ET, LlamaRisk proposed adding six further Coinbase tokens — NFLXc, ORCLc, PLTRc, AMDc, NOWc and MSTRc — as collateral-only on the Mag-7 Spoke, priced on the same Chainlink 24/5 total-return template, with collateral factors from 65% (NFLXc) down to 47% (MSTRc) and $5 million add caps each ([ARFC, expand Coinbase tokenized equities](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441)).
+
+On 23 Nov 2026, 3:26 AM ET, LlamaRisk added an addendum to that same ARFC proposing to list Anthropic (ANTc) as well, collateral-only, at a 45% collateral factor, a 6.5% maximum liquidation bonus, 10% collateral risk, and a $5.00 million add cap (51,456 tokens). LlamaRisk says ANT had one session of its own trading history, so the factor is set below stand-in estimates, and it lists further early share releases starting 15 Dec 2026. A lender reply on 23 Nov 2026, 2:38 PM ET, asked to hold ANTc until after the 15 Dec release and first earnings, or to stage a smaller cap and an earlier review if it lists sooner. The addendum says the ANTc and MSTRc price feeds are live and that the other five proposed feeds were not yet deployed as of that post ([ARFC, expand Coinbase tokenized equities](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441)). See [[issuers/coinbase-tokenized-stocks#anthropic-antc|Coinbase ANTc]] and [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]].
+
+On 23 Nov 2026, 10:00 AM ET, LlamaRisk proposed lowering six of eight live collateral factors on the hub, and stated the current factors as: MSFTc 79%, AAPLc 78%, GOOGLc 76%, AMZNc 73%, NVDAc 70%, METAc 65%, TSLAc 65%, and SPCXc 55%. The proposal would move MSFTc, AAPLc, GOOGLc, AMZNc and NVDAc to 65%, and SPCXc to 53%; METAc and TSLAc would stay at 65%. In Aave V4, LlamaRisk says the collateral factor is both the borrowing limit and the liquidation threshold, sized for a 24/5 off-hours fall into the next regular open, plus a 0.5% feed-deviation allowance, the maximum liquidation bonus, and interest over the longest market closure (92 hours 35 minutes). LlamaRisk says the update would not liquidate existing positions. This ARFC is not stated as executed; the current figures above are LlamaRisk's as of that post, not confirmed onchain here ([ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)).
+
+## Aave Horizon
+
+Aave Labs launched Horizon on 26 Aug 2025 as a lending market on Ethereum, built on Aave Protocol version 3.3, where qualified users borrow stablecoins against issuer-permissioned real-world assets. Launch collateral came from Superstate (USTB, USCC) and Centrifuge (JRTSY, JAAA). Anyone may supply USDC, RLUSD or GHO; RWA aTokens are non-transferable; issuers control whitelisting, KYC and asset management. Partners named at launch included Securitize, VanEck, Chainlink and LlamaRisk ([Aave](https://aave.com/blog/horizon-launch)). Official docs describe Horizon as a licensed, separate Aave Labs instance: only issuer-allowlisted holders can supply RWA collateral, that collateral cannot be borrowed, and only those suppliers can borrow the permissionless stablecoins. Chainlink DON bounds, configured with LlamaRisk, reject NAV updates outside set ranges and keep the last valid price; an emergency multisig can then freeze new exposure. Issuers can migrate a whole position to a new wallet, for example if keys are lost, and can prevent a user from increasing a borrow ([Aave Horizon docs](https://aave.com/docs/aave-v3/horizon)).
+
+A 24 Feb 2026 Aave Labs post says Horizon lets qualified investors borrow stablecoins against "tokenized securities or tokenized real-world assets," and that partners can let qualified users borrow against RWAs, "including tokenized stocks and ETFs as they are added." That is a stated design, not a statement that those stocks or ETFs are already listed ([Aave](https://aave.com/blog/horizon-built-for-institutions)). From 14 Aug 2026, Aave Labs said new Horizon assets go through standard DAO governance rather than the earlier delegated listing model ([Horizon onboarding process](https://governance.aave.com/t/update-on-aave-horizon-asset-onboarding-process/25481)).
+
+On 18 Aug 2026, Securitize proposed onboarding HINC, the tokenized share class of the Neuberger Securitize High Income Tokenized Fund, as supply-only Horizon collateral. HINC is a permissioned Securitize DS Protocol fund token, not a Securitize Stocks entitlement token. LlamaRisk's 15 Sep 2026 assessment supported listing, with proposed parameters including 55% LTV, 67% liquidation threshold and an 8% liquidation bonus, and said two pre-activation conditions remained (a timelock on the token's `MASTER` upgrade role, and formal liquidator SLAs) ([HINC ARFC](https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500)). Aave Labs' 2 Nov 2026 October update said the community approved HINC and mWIN through Snapshot votes ([Aave Labs October 2026 update](https://governance.aave.com/t/al-development-update-october-2026/25979)). Whether HINC was subsequently activated on Horizon is not stated in the sources reviewed.
+
+Official Aave blog, docs and governance sources reviewed on 23 Nov 2026 do not list [[issuers/securitize|Securitize]] stock entitlement tokens, [[issuers/xstocks-backed|xStocks]], [[issuers/backpack|Backpack]] or [[issuers/ondo-global-markets|Ondo]] equities as Aave collateral. Securitize's own stock-token launch materials still describe lending on markets like Aave as planned; see the Securitize page.
+
+## Securities-finance blueprint (June 2026)
+
+On 29 Jun 2026, before the Equities Hub launched, Aave Labs published a research post on how V4 hubs and spokes could host securities-backed lending, repo and securities lending, including a possible higher-risk equities hub and permissioned or jurisdiction-scoped venues that enforce KYC and eligible-asset rules while still drawing on shared liquidity. That post is a proposed market structure, not a description of a live product ([Aave](https://aave.com/blog/rebuilding-securities-finance-v4)).
+
+## What this means for holders
+
+- Some Coinbase B20 tokens can already be posted as collateral to borrow USDC on the Equities Hub, if the holder is in an eligible non-U.S. jurisdiction. The tokens themselves are not borrowable on that market ([Aave](https://aave.com/blog/coinbase-tokenized-stocks); [Aave Labs 180-day report](https://governance.aave.com/t/aave-labs-180-day-report/26342)).
+- Weekend and holiday prices are held at the last Chainlink 24/5 print, so a gap at the reopen can move a position's health in one step ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)).
+- A liquidator that seizes Coinbase B20 tokens is, in LlamaRisk's assessment, an unvested holder and may not be able to redeem until vesting is completed ([B20 assessments](https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690)).
+- Proposed additions, including ANTc, and proposed collateral-factor cuts were not stated as executed as of 23 Nov 2026.
+
+*Reference information only, not investment advice.*
+
+## Sources
+Public originals for the facts on this page.
+
+- <https://aave.com/blog/coinbase-tokenized-stocks>
+- <https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427>
+- <https://governance.aave.com/t/coinbase-b20-equities-on-base-assessments/25690>
+- <https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850>
+- <https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943>
+- <https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441>
+- <https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482>
+- <https://aave.com/blog/horizon-launch>
+- <https://aave.com/blog/horizon-built-for-institutions>
+- <https://aave.com/docs/aave-v3/horizon>
+- <https://aave.com/blog/rebuilding-securities-finance-v4>
+- <https://governance.aave.com/t/update-on-aave-horizon-asset-onboarding-process/25481>
+- <https://governance.aave.com/t/arfc-onboard-hinc-neuberger-securitize-high-income-tokenized-fund-to-aave-horizon/25500>
+- <https://governance.aave.com/t/al-development-update-october-2026/25979>
+- <https://governance.aave.com/t/aave-labs-180-day-report/26342>
+
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Bitget
@@ -4977,6 +5316,10 @@ NYSE filed SR-NYSE-2026-17 (Rel. 34-105260), an immediately effective rule along
 
 Separately, ICE announced on 19 Jan 2026 that NYSE is developing a platform for 24/7 trading of tokenized equities and [[concepts/glossary#etf|ETFs]] with instant settlement and [[concepts/glossary#stablecoin|stablecoin]] funding, subject to approval and DTC readiness ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/)).
 
+## Can you trade tokenized NYSE stocks yet?
+
+Not yet. As of 13 Nov 2026, NYSE has filed a rule, like Nasdaq's, to trade tokenized versions of listed stocks through DTC's pilot ([NYSE](https://www.nyse.com/publicdocs/nyse/markets/nyse/rule-filings/sec-approvals/2026/%28SR-NYSE-2026-17%29_34-105260.pdf)). Separately it is building a 24/7 tokenized platform whose trades are to be settled on an Avalanche-based ledger ([ICE](https://ir.theice.com/press/news-details/2026/The-New-York-Stock-Exchange-Develops-Tokenized-Securities-Platform/); [NYSE on X](https://x.com/NYSE/status/2119812983224213903)).
+
 ## Settlement ledger: Avalanche
 On 9 Nov 2026 NYSE said Avalanche "will provide the core ledger technology for the clearing firm on the NYSE-affiliated tokenized securities platform", which is designed, subject to regulatory approvals, to support 24/7 trading, clearing and settlement for its subscribers ([NYSE on X](https://x.com/NYSE/status/2119812983224213903)). NYSE's advisory describes the platform as an upcoming [[concepts/glossary#ats|ATS]] and the aim as bringing clearing of tokenized equities onchain ([NYSE](https://www.prnewswire.com/news-releases/avalanche-to-support-nyses-affiliated-upcoming-digital-ats-nyse-content-update-302933387.html)); Ava Labs describes the same clearing-ledger role ([Ava Labs](https://www.avalanche.com/about/blog/wall-streets-next-chapter-is-being-built-on-avalanche)).
 
@@ -5039,16 +5382,16 @@ description: OKXICE is the first onchain venue to publish plans under the SEC's 
 type: venue
 jurisdiction: United States (TSV Exemption)
 chain: XLayer
-status: Announced launch beginning 2026-11-23
-last_updated: 2026-11-14
-last_checked: 2026-11-14
+status: Live; launched 2026-11-23 at noon ET, per OKX
+last_updated: 2026-11-24
+last_checked: 2026-11-24
 
 > [!info] At a glance
 > **Type:** venue  
 > **Jurisdiction:** United States (TSV Exemption)  
 > **Chain:** XLayer  
-> **Status:** Announced launch beginning 2026-11-23  
-> **Last updated:** 2026-11-14  
+> **Status:** Live; launched 2026-11-23 at noon ET, per OKX  
+> **Last updated:** 2026-11-24  
 
 | Field | Value |
 |---|---|
@@ -5057,28 +5400,63 @@ last_checked: 2026-11-14
 | product_name | Tokenized Securities Venue |
 | structure | Permissioned AMM (Uniswap v4 hook) |
 | chains | XLayer |
-| who_can_buy | Eligible U.S.-based OKX Inc. customers who have activated a CeDeFi Wallet, completed identity verification and completed onboarding with OKXICE; access also uses soulbound tokens per the TSV notice |
-| num_assets | More than 70 assets expected to be listed (OKX, 11 Nov 2026) |
+| who_can_buy | Eligible U.S.-based OKX Inc. customers who complete identity verification, activate a CeDeFi Wallet and complete OKX Inc. onboarding; access is subject to geographic and other eligibility requirements, and uses soulbound tokens per the TSV notice |
+| num_assets | 6 Tokenized NMS Stocks at launch (COIN, SECZ, MSTR, BTGO, HOOD, CRCL), each paired with USDC; 113 assets confirmed for a rolling rollout (OKX, 23 Nov 2026) |
 
-*In plain English: OKXICE is the first onchain venue to publish plans under the SEC's Innovation Exemption, using Uniswap pools. OKX has announced that trading for eligible U.S. customers is due to begin on 23 November 2026.*
+*In plain English: OKXICE is the first onchain venue to publish plans under the SEC's Innovation Exemption, using Uniswap pools. OKX said trading for eligible U.S. customers opened at noon ET on 23 November 2026.*
 
 The first public [[concepts/glossary#tsv|TSV]] notice under the [[concepts/innovation-exemption|Innovation Exemption]], dated 4 Oct 2026 ([OKXICE notice](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). Design per the notice: Uniswap v4 pools with an OKXICE TSV hook, access via soulbound tokens, pairs against USDC/USDG/USDT, no order book and no custody; it describes admin-key governance.
 
 The notice lists 63 symbols for 62 companies, since Alphabet has two share classes (GOOG and GOOGL) (counted from the [OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). Cerebras is not among them; OKXICE's own notices list it as an objector (see below). Coverage: [Ledger Insights](https://www.ledgerinsights.com/ice-okx-venture-plans-trading-of-tokenized-us-stocks-via-uniswap-pools/), [Crypto Briefing](https://cryptobriefing.com/okx-ice-uniswap-v4-hooks-tokenized-stocks/) (news).
 
-## When does OKXICE TSV launch?
-On 11 Nov 2026 OKX published an announcement that, beginning 23 Nov 2026, eligible U.S. customers will be able to trade digital securities around the clock through the OKXICE Tokenized Securities Venue, directly in the OKX app. More than 70 assets are expected to be listed, including securities from Better.com, BitGo, Circle, Coinbase, Robinhood, Securitize and Strategy, as well as 59 Direxion ETFs; Strategy will also list its preferred stocks ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). A spokesperson said not all of those assets will be available at the start ([CoinDesk](https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month)). The official post does not give a clock time on 23 Nov.
+## When did OKXICE TSV launch?
+On 23 Nov 2026 OKX said that, starting at noon ET that day, eligible U.S. customers can trade available assets around the clock on OKXICE TSV, in the TSV tab of the OKX app. The venue has confirmed 113 assets, including stocks, ETFs and ETPs, which will become available on a rolling basis beginning that day. Confirmed issuers and asset managers are Better.com, BitGo, Circle, Coinbase, Direxion, eToro, Fidelity Investments, Robinhood, Securitize, Strategy, Strive and Vida Global ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). Compared with OKX's 11 Nov announcement, the newly named names in that list are eToro, Fidelity Investments, Strive and Vida Global. The earlier post had said more than 70 assets were expected to be listed, including 59 Direxion ETFs, and that Strategy would also list its preferred stocks ([OKX, 11 Nov](https://www.okx.com/en-us/learn/okxice-tsv-launch)). The 23 Nov post does not say that all 113 assets are available at the open, and it does not name the day-one tickers.
 
-[[issuers/securitize|Securitize]] will provide the tokenization infrastructure. Each token will represent a security entitlement backed one-to-one by an underlying U.S. share, with applicable shareholder rights and economic benefits, including dividends, voting rights and participation in corporate actions. A 13 Nov 2026 Securitize article says Convertible Entitlement Tokens (CETs) are "the mechanism we're using to support the OKXICE TSV launch," and that the same infrastructure can enable "both stocks and ETFs to trade through the same CET infrastructure" ([Securitize](https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed)). That is Securitize's description of its tokenizer role. Trading will take place through automated market maker liquidity pools built on Uniswap v4 on X Layer. Customers will hold the tokens in self-custodial wallets; the venue will hold neither their assets nor their private keys. Access is limited to eligible U.S.-based OKX Inc. customers who have activated a CeDeFi Wallet and completed onboarding with OKXICE; it requires identity verification and is subject to geographic and other eligibility requirements. The venue's smart contracts restrict trading and liquidity provision to eligible wallets ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)). The same announcement's footer says the venue is offered by OKXICE LLC under a temporary SEC exemption, is not a registered exchange or broker-dealer, and is not approved by the SEC.
+The 20 Nov 2026 public notice says that at launch the venue makes available six Tokenized NMS Stocks, each paired with USDC and each tokenized by Securitize Markets, LLC: Coinbase Global (COIN), Securitize (SECZ), Strategy (MSTR), BitGo (BTGO), Robinhood (HOOD) and Circle (CRCL) ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). This page has not independently confirmed later additions past those six.
 
-As of the 5 Nov 2026 notice, Coinbase Global, Robinhood Markets, Circle Internet Group, Strategy Inc., Securitize Corp. and BitGo Holdings appear on OKXICE's 4 Oct list of Tokenized NMS Stocks to be made available for trading, and none of them is among the 67 issuers listed as objectors ([OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf); [OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). Better.com and the 59 Direxion ETFs named in the 11 Nov announcement were not on that 4 Oct list.
+[[issuers/securitize|Securitize]] provides the tokenization infrastructure. Each token is a security entitlement backed one-to-one by an underlying share, with applicable shareholder rights and economic benefits, including dividends, voting rights and corporate actions. Trading takes place through automated market maker liquidity pools on Uniswap v4, built on X Layer. Customers hold the tokens in self-custodial wallets; the venue does not hold customer assets or private keys. Access is limited to eligible U.S.-based OKX Inc. customers who complete identity verification, activate a CeDeFi Wallet and complete OKX Inc. onboarding, and is subject to geographic and other eligibility requirements. The venue's smart contracts restrict trading and liquidity provision to eligible wallets ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). The same post's footer says the venue is offered by OKXICE LLC under a temporary SEC exemption, that the NYSE does not operate or oversee it, and that it is not a registered exchange or broker-dealer and is not approved by the SEC.
+
+A 13 Nov 2026 Securitize article says Convertible Entitlement Tokens (CETs) are "the mechanism we're using to support the OKXICE TSV launch," and that the same infrastructure can enable "both stocks and ETFs to trade through the same CET infrastructure" ([Securitize](https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed)). That is Securitize's description of its tokenizer role.
+
+As of the 5 Nov 2026 notice, Coinbase Global, Robinhood Markets, Circle Internet Group, Strategy Inc., Securitize Corp. and BitGo Holdings already appeared on OKXICE's 4 Oct list of Tokenized NMS Stocks to be made available for trading, and none of them was among the 67 issuers listed as objectors ([OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf); [OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). Better.com and the 59 Direxion ETFs named in the 11 Nov announcement were not on that 4 Oct list. A spokesperson had said not all of the announced assets would be available at the start ([CoinDesk](https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month)).
 
 CoinDesk described OKXICE as set to be the second venue to start under the Innovation Exemption, following Canton-based TSV LLC earlier in November ([CoinDesk](https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month)). That ranking is CoinDesk's.
 
 A Reuters item, captured via [Investing.com](https://www.investing.com/news/stock-market-news/okxice-to-launch-247-trading-in-tokenized-us-securities-5018819) syndication because the [original Reuters URL](https://www.reuters.com/legal/government/okxice-launch-247-trading-tokenized-us-securities-2026-11-11/) returned HTTP 401 (paywalled) on 11 Nov 2026, also reports the 23 Nov launch.
 
+## How is OKXICE TSV built on X Layer?
+The 20 Nov 2026 notice says the venue's smart contracts are deployed on XLayer, a public permissionless blockchain, at these addresses:
+
+- TSVRegistryV1 (`0x5bd7ea82642b49ebdfc3fbc0e656941c165392ea`) registers Tokenized NMS Stocks, AMM liquidity pools and participant permissions.
+- TSVSwapRouterV1 (`0xc58d2bf7ad7cb023760e767e9050be3f15cad686`) is the entry point through which trades are submitted to the pools.
+- TSVVolumeLedgerV1 (`0x9b43d49b1a6d41aa22ac788442eb5cb5bbc543c5`) records the daily volume limit and cumulative trading volume for each Tokenized NMS Stock.
+- TSVLPManagerV1 (`0x9418a8ccb8170814d27c7f3db99e1b9f8c4a7b76`) manages liquidity positions, including non-transferable records of liquidity provided.
+- TSVHookV1, the OKXICE TSV Hook (`0xf151416e74d6b4ae00197e8d8e4f4765283b3fff`), verifies that a wallet holds a valid soulbound token before every trade and liquidity action, enforces the trading rules, and checks each trade against the applicable volume limit.
+- PermissionsAdapterFactory (`0x4c750656fca58da2a2e0402bd1ab0b39d134bdba`) creates and validates the permission adapters through which Tokenized NMS Stock is held in the pools under the tokenizer's transfer restrictions.
+- An SBT contract (`0x2d7b601Fb9a54F62E7257B19F18BE315D2d76f9c`) issues and revokes the soulbound tokens used for permissioning.
+- The AMM pools are created in Uniswap v4's PoolManager (`0x360e68faccca8ca495c1b759fd9eee466db9fb32`), which the notice describes as third-party contracts that do not belong to OKXICE TSV.
+
+A wallet holding a valid soulbound token may interact with the TSV contracts directly or through a custom integration. Third-party contracts cannot integrate unless they are whitelisted; the notice says OKXICE TSV does not currently support aggregators, solvers or relayers. Administrator keys are managed by OKX Technology Inc.: critical functions require a multi-signature transaction, and day-to-day functions use a single administrator key. Prior to commencing operations, the contracts were audited internally by OKX Technology Inc. and externally by Certified Kernel Tech LLC, an independent third-party security firm. Changes and upgrades are reviewed and audited internally by OKX Technology Inc. before deployment ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)).
+
+
+## Where can you see OKXICE TSV trading data?
+OKXICE TSV makes transaction data freely and publicly available, in machine-readable form, at [okx.com/okxicetsv](https://www.okx.com/okxicetsv). The 20 Nov 2026 notice says that data covers all transactions during the preceding 30 days and is updated within 10 minutes of each transaction. For each trade it includes the symbol of the Tokenized NMS Stock and of the paired payment stablecoin, the USD price, the size, the UTC timestamp and the direction of the trade. The venue also publishes the smart contract address of each AMM liquidity pool, the daily share volume of each asset pair, and the end-of-day size of each pool ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)).
+
+Official API documentation is in the [OKX OnchainOS TSV data reference](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference), which is linked from that page as "API Docs". The reference describes three open GET endpoints that require no login, API key or signature, with a limit of 2 requests per second per IP:
+
+- **asset-list** returns the supported TSV assets, up to 300 entries in one response, including each stock token's address and symbol, the payment asset symbol, and the Uniswap v4 pool ID.
+- **transaction-list** returns trades from the last 30 days, including the USD execution price, the executed share quantity, the UTC confirmation time, the buy or sell direction, and the pool fee.
+- **daily-statistics** is documented as returning daily executed share volume and each pool's end-of-day size.
+
+A query of those public endpoints on the evening of 23 Nov 2026 ET returned the six launch pools (BTGO, MSTR, HOOD, COIN, CRCL and SECZ, each paired with USDC), with stock token addresses and Uniswap v4 pool IDs, and trade fills that listed a 0.2% liquidity-pool fee. The documented transaction fields, and the fills returned that evening, do not include trader wallet addresses. The daily-statistics endpoint was still returning an empty list at that time. The separate 0.1% OKXICE service fee is not broken out on each fill.
+
+The fee schedule on [okx.com/okxicetsv](https://www.okx.com/okxicetsv) lists a current total trading fee of 30 bps (0.30%): a 0.2% liquidity pool fee and a 0.1% OKXICE service fee. The same page says OKXICE waives gas fees for users.
+
+## How much traded in OKXICE's first 24 hours?
+In the first 24 hours after the noon ET launch on 23 Nov 2026 (through noon ET on 24 Nov), the six launch USDC pools recorded 3,314 trades worth about \$2.55 million. Just over half of that dollar volume traded outside regular U.S. market hours. The full breakdown, including prices and pool sizes, is in [[analyses/okxice-tsv-first-24-hours|OKXICE TSV's first 24 hours]]. Figures are from the venue's public TSV API, pulled around 12:30 PM ET on 24 Nov 2026 ([transaction-list](https://web3.okx.com/api/v6/explorer/tsv/transaction-list), [daily-statistics](https://web3.okx.com/api/v6/explorer/tsv/daily-statistics)). The same 24 Nov pull found that the daily-statistics feed, which had been empty the evening before, was now populated, and that the asset list still showed only the same six launch USDC pools ([asset-list](https://web3.okx.com/api/v6/explorer/tsv/asset-list)).
+
 ## Which issuers have objected to OKXICE trading their stock?
-OKXICE's public notice of 5 Nov 2026 lists **67** issuers that objected (Alphabet counted once), up from 50 on 30 Oct. The 17 additions include Amazon, Apple, Tesla, Netflix, Meta, Palantir, S&P Global, KLA, Super Micro, Nebius, Boeing, ServiceNow, Lam Research, Home Depot, GE Vernova and SpaceX. That notice itself gave no trading start date ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). The same notice describes the venue as Uniswap v4 pools on XLayer, a public blockchain, with 24/7 operation planned ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). A later OKX announcement of 11 Nov set a beginning date of 23 Nov 2026 (see [[#when-does-okxice-tsv-launch|When does OKXICE TSV launch?]]).
+OKXICE's public notice of 20 Nov 2026 still lists **67** issuers that objected (Alphabet counted once), the same count and names as the 5 Nov notice ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf); [OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). The 5 Nov notice listed **67** issuers, up from 50 on 30 Oct. The 17 additions include Amazon, Apple, Tesla, Netflix, Meta, Palantir, S&P Global, KLA, Super Micro, Nebius, Boeing, ServiceNow, Lam Research, Home Depot, GE Vernova and SpaceX. That notice itself gave no trading start date ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). The same notice describes the venue as Uniswap v4 pools on XLayer, a public blockchain, with 24/7 operation planned ([OKXICE notice, 5 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)). An OKX announcement of 11 Nov set a beginning date of 23 Nov 2026; OKX later said the venue opened at noon ET that day (see [[#when-did-okxice-tsv-launch|When did OKXICE TSV launch?]]).
 
 CoinDesk tallied objections from 56 of the 62 companies on the original list, which differs from the 67 objectors on the 5 Nov notice; CoinDesk also reported that total objections reached 67, including companies outside that initial selection ([CoinDesk](https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month)). This page keeps the notice's count of 67.
 
@@ -5098,10 +5476,12 @@ Cerebras appears as an objector even though it was not among the 63 symbols in t
 On 5 Mar 2026, before the TSV notices, Intercontinental Exchange announced a strategic relationship and a minority investment in OKX at a stated \$25 billion valuation, with the terms undisclosed, and said ICE would have a board seat on OKX's board. ICE said the minority position was not expected to have a material impact on its 2026 financial results or capital return plans ([ICE](https://ir.theice.com/press/news-details/2026/ICE-Makes-Investment-in-OKX-Establishing-Strategic-Relationship/)). That investment is separate from the 50/50 OKXICE LLC joint venture that operates this venue, which is described in later OKXICE notices (see [[#which-issuers-have-objected-to-okxice-trading-their-stock|Which issuers have objected?]]). The same March release also mentions, subject to regulatory approval, OKX providing access to ICE's U.S. futures and NYSE tokenized equities markets; that is NYSE's separate issuer-sponsored platform, not this TSV ([[platforms-venues/nyse-ice-tokenized-platform|NYSE / ICE tokenized platform]]).
 
 ## What this means for holders
-- OKXICE is a [[concepts/glossary#tsv|TSV]] under the [[concepts/glossary#innovation-exemption|Innovation Exemption]]: access is controlled through non-transferable access tokens, and trading pairs are [[concepts/glossary#stablecoin|stablecoins]] (USDC, USDG, USDT) ([OKX](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)). The 11 Nov announcement limits access at launch to eligible U.S.-based OKX Inc. customers who have activated a CeDeFi Wallet, completed identity verification and completed onboarding with OKXICE ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)).
-- Customers hold the tokens in self-custodial wallets; the venue does not hold their assets or private keys ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)).
-- Each token is described as a security entitlement backed one-to-one by an underlying U.S. share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch)).
-- Issuers can object to third-party tokens of their stock: 67 had objected by 5 Nov 2026, which can keep those stocks off the venue ([OKXICE notice](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf)).
+- OKXICE is a [[concepts/glossary#tsv|TSV]] under the [[concepts/glossary#innovation-exemption|Innovation Exemption]]: access is controlled through non-transferable access tokens, and trading pairs are [[concepts/glossary#stablecoin|stablecoins]]. The first notice named USDC, USDG and USDT ([OKXICE notice, 4 Oct](https://www.okx.com/cdn/assets/files/2610/798CC1267CB56FB2.pdf)); the 20 Nov notice gives USDC and USDG as examples, and the six stocks available at launch are each paired with USDC ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). The 23 Nov announcement limits access to eligible U.S.-based OKX Inc. customers who complete identity verification, activate a CeDeFi Wallet and complete OKX Inc. onboarding ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)).
+- Customers hold the tokens in self-custodial wallets; the venue does not hold their assets or private keys ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)).
+- Each token is described as a security entitlement backed one-to-one by an underlying share, with applicable shareholder rights including dividends, voting and corporate actions ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)).
+- Trade data for the preceding 30 days is published freely in machine-readable form at [okx.com/okxicetsv](https://www.okx.com/okxicetsv), and through a no-login public API documented in the [OKX OnchainOS TSV data reference](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference) ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)).
+- In the first 24 hours after the noon ET launch, the six launch pools recorded 3,314 trades worth about \$2.55 million, with just over half of that dollar volume outside regular U.S. market hours. See [[analyses/okxice-tsv-first-24-hours|OKXICE TSV's first 24 hours]].
+- Issuers can object to third-party tokens of their stock: 67 had objected as of the 20 Nov 2026 notice, the same count as on 5 Nov, which can keep those stocks off the venue ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)).
 
 *Reference information only, not investment advice.*
 
@@ -5121,7 +5501,7 @@ Public originals for the facts on this page.
 - <https://ir.theice.com/press/news-details/2026/ICE-Makes-Investment-in-OKX-Establishing-Strategic-Relationship/>
 - <https://medium.com/securitize/the-tsv-stack-you-bring-execution-and-liquidity-we-bring-the-stock-b2cb64c744ed>
 
-*Last checked 2026-11-14. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-24. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
 # Prometheum
@@ -5378,15 +5758,15 @@ type: infrastructure
 jurisdiction: unknown
 chain: unknown
 status: live
-last_updated: 2026-11-20
-last_checked: 2026-11-20
+last_updated: 2026-11-23
+last_checked: 2026-11-23
 
 > [!info] At a glance
 > **Type:** infrastructure  
 > **Jurisdiction:** unknown  
 > **Chain:** unknown  
 > **Status:** live  
-> **Last updated:** 2026-11-20  
+> **Last updated:** 2026-11-23  
 
 | Field | Value |
 |---|---|
@@ -5402,7 +5782,7 @@ last_checked: 2026-11-20
 
 Feeds combine the underlying 24/5 equity price with the issuer's [[concepts/glossary#multiplier|multiplier]] and respect issuer-controlled oracle pauses; issuer-specific pages exist for Coinbase [[concepts/glossary#b20|B20]] and Robinhood ([Chainlink](https://docs.chain.link/data-feeds/tokenized-equity-feeds)).
 
-Data Streams price regular, extended and overnight sessions with market-status flags and staleness checks ([Chainlink](https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide)). For splits: pause the feed, stage the new multiplier, unpause; the issuer coordinates timing and Chainlink provides no corporate-action calendar ([Chainlink](https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits)).
+Data Streams price regular, extended and overnight sessions with market-status flags and staleness checks ([Chainlink](https://docs.chain.link/data-streams/rwa-streams/24-5-us-equities-user-guide)). [[platforms-venues/aave|Aave]] says the Equities Hub on Base uses Chainlink 24/5 tokenized-equity feeds that publish from Sunday 20:00 ET to Friday 20:00 ET and hold the last price over weekends and U.S. holidays ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)). Aave Labs' SPCXc technical assessment recorded weekend publication gaps of 49.14 hours and a longest gap of 52.47 hours in the prior month, and said work toward 24/7 availability was in progress ([SPCXc assessment](https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943)). The 21 Sep 2026 update to the V4 Base deployment ARFC also described 24/7 feeds as expected later; whether they are in production is not stated in the sources reviewed on 23 Nov 2026 ([ARFC, Deploy Aave V4 on Base](https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427)). For splits: pause the feed, stage the new multiplier, unpause; the issuer coordinates timing and Chainlink provides no corporate-action calendar ([Chainlink](https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits)).
 
 In an 11 Nov 2026 comment letter on the [[concepts/innovation-exemption|Innovation Exemption]], Chainlink Labs proposed FAQs and nonbinding principles on comparable TSV trade reports, corporate-action reconciliation across systems, and how TSVs should assess external data used for pricing and controls. Chainlink is a vendor of these services; the letter is advocacy, not a product specification ([Chainlink Labs](https://www.sec.gov/comments/4-927/4927-1133160-4036827.pdf)).
 
@@ -5416,11 +5796,14 @@ Public originals for the facts on this page.
 - <https://docs.chain.link/data-streams/tokenized-asset-streams/handling-stock-splits>
 - <https://www.sec.gov/comments/4-927/4927-1133160-4036827.pdf>
 - <https://www.prnewswire.com/news-releases/chainlink-develops-blockchain-solution-with-ubs-for-the-2-trillion-global-structured-products-market-302944470.html>
+- <https://aave.com/blog/coinbase-tokenized-stocks>
+- <https://governance.aave.com/t/arfc-deploy-aave-v4-on-base/25427>
+- <https://governance.aave.com/t/tokenized-space-exploration-technologies-corp-shares-spcxc-on-aave-base-assessments/25943>
 
-*Last checked 2026-11-20. Headline fields only; `unknown` means not yet verified from a source.*
+*Last checked 2026-11-23. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
-# DTCC Tokenization Service (DTS)
+# DTCC Tokenization Service (DTS): the DTC tokenization pilot
 URL: https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot
 description: The DTCC Tokenization Service (DTS) went live on 28 Oct 2026. DTC turns eligible DTC-held securities into tokenized entitlements on Canton and DTCC's private Besu network, under an 11 Dec 2025 SEC no-action letter.
 type: infrastructure
@@ -5439,7 +5822,7 @@ last_checked: 2026-11-18
 
 | Field | Value |
 |---|---|
-| name | DTCC Tokenization Service (DTS) |
+| name | DTCC Tokenization Service (DTS): the DTC tokenization pilot |
 | jurisdiction | United States |
 | product_name | DTCC Tokenization Service (DTS; Tokenized Entitlements) |
 | structure | Security entitlements recorded on DLT |
@@ -5447,7 +5830,7 @@ last_checked: 2026-11-18
 | who_can_buy | DTC participants (20 signed at launch, 28 Oct 2026); clients of Participants cannot submit conversion orders or independently register wallets (DTCC FAQs, retrieved 14 Nov 2026) |
 | num_assets | 34 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
-*In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.*
+*In plain English: DTC, the US central securities depository, launched the DTCC Tokenization Service (DTS) on 28 Oct 2026 under an 11 Dec 2025 SEC no-action letter. It turns eligible DTC-held securities into tokenized entitlements on Canton and DTCC's private Besu network.*
 
 DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); 24X Exchange filed rules referencing it ([SEC](https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20)).
 
@@ -5821,11 +6204,51 @@ Public originals for the facts on this page.
 *Last checked 2026-10-27. Headline fields only; `unknown` means not yet verified from a source.*
 
 ========================================================================
+# 2026-11-24: OKXICE TSV's first 24 hours of trading
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-24-okxice-tsv-first-24-hours
+last_checked: 2026-11-24
+
+- New analysis: [[analyses/okxice-tsv-first-24-hours|OKXICE TSV's first 24 hours]]. In the 24 hours after the noon ET launch on 23 Nov 2026 (through noon ET on 24 Nov), the six launch USDC pools recorded 3,314 trades worth \$2,546,330.59. Sells outnumbered buys. Circle (CRCL) and Robinhood (HOOD) made up about two-thirds of the dollars, and just over half the dollar volume traded outside regular U.S. market hours. Official end-of-day pool size on the 23 Nov EST calendar day was \$1,224,370.68. Figures are from the venue's public TSV API, pulled around 12:30 PM ET on 24 Nov 2026 ([transaction-list](https://web3.okx.com/api/v6/explorer/tsv/transaction-list), [daily-statistics](https://web3.okx.com/api/v6/explorer/tsv/daily-statistics), [asset-list](https://web3.okx.com/api/v6/explorer/tsv/asset-list); [API docs](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference)), with public X Layer records for sending addresses ([OKLink](https://www.oklink.com/x-layer/address/0xc58d2bf7ad7cb023760e767e9050be3f15cad686)) and Yahoo Finance as a market-price reference. Why 992 trades happened before the announced noon launch, the number of end users, and an overnight reference price are unknown. [[platforms-venues/okxice-tsv|OKXICE TSV]] now links to the analysis and notes that the daily-statistics feed is populated and that the asset list still showed the same six launch pools.
+
+========================================================================
+# 2026-11-23: OKXICE TSV public data API
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-okxice-tsv-public-data-api
+last_checked: 2026-11-23
+
+- [[platforms-venues/okxice-tsv|OKXICE TSV]]: Official API documentation for the venue's public market data is in the [OKX OnchainOS TSV data reference](https://web3.okx.com/onchainos/dev-docs/market/onchaindata-tsv-reference), linked as "API Docs" from [okx.com/okxicetsv](https://www.okx.com/okxicetsv). The reference describes three open GET endpoints (asset-list, transaction-list and daily-statistics) that require no login, API key or signature, with a 2 requests-per-second limit per IP. The 20 Nov 2026 notice already said the venue would publish 30-day, machine-readable trade data, updated within 10 minutes, at that same page ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)). A 23 Nov 2026 evening ET query of the public API returned the six launch USDC pools and trade fills with a 0.2% liquidity-pool fee; trader wallet addresses are omitted, daily-statistics was still empty, and the 0.1% OKXICE service fee is not broken out per fill. The fee schedule on [okx.com/okxicetsv](https://www.okx.com/okxicetsv) lists a total trading fee of 30 bps (0.30%): a 0.2% liquidity pool fee plus a 0.1% OKXICE service fee, and says OKXICE waives gas fees for users.
+
+========================================================================
+# 2026-11-23: OKXICE TSV launched
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-okxice-tsv-launch
+last_checked: 2026-11-23
+
+- [[platforms-venues/okxice-tsv|OKXICE TSV]]: OKX said the venue opened at noon ET on 23 Nov 2026 for eligible U.S. customers, in the TSV tab of the OKX app, with 113 assets confirmed for a rolling rollout, including stocks, ETFs and ETPs. Confirmed issuers and asset managers are Better.com, BitGo, Circle, Coinbase, Direxion, eToro, Fidelity Investments, Robinhood, Securitize, Strategy, Strive and Vida Global ([OKX](https://www.okx.com/en-us/learn/okxice-tsv-launch-going-live)). The 20 Nov 2026 public notice says that at launch the venue makes available six Tokenized NMS Stocks, each paired with USDC and each tokenized by Securitize Markets, LLC: COIN, SECZ, MSTR, BTGO, HOOD and CRCL. The same notice still lists 67 objectors, unchanged from 5 Nov, and names the X Layer contracts (TSVRegistryV1, TSVSwapRouterV1, TSVVolumeLedgerV1, TSVLPManagerV1, TSVHookV1, PermissionsAdapterFactory, an SBT contract, and Uniswap v4's PoolManager) and pre-launch audits by OKX Technology Inc. (internal) and Certified Kernel Tech LLC (external) ([OKXICE notice, 20 Nov](https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.20.pdf)).
+- [[build/trading-reference-architecture|Trading reference architecture]] and [[comparisons/trading-venue-architectures|Trading venue architectures]] are updated for the live status and the contract-by-contract X Layer design. [[issuers/securitize|Securitize]] is updated for the tokenizer role on the live venue, which remains distinct from Securitize Stocks on Solana.
+
+========================================================================
+# 2026-11-23: Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-aave-equities-hub-horizon
+last_checked: 2026-11-23
+
+- New page: [[platforms-venues/aave|Aave]], covering the V4 Equities Hub on Base and Aave Horizon on Ethereum.
+- Aave Labs said the Equities Hub was activated on 25 Sep 2026 with seven Coinbase tokens (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc, TSLAc) as collateral to borrow USDC, and that access is limited to eligible jurisdictions outside the U.S. ([Aave](https://aave.com/blog/coinbase-tokenized-stocks); [Aave Labs 180-day report](https://governance.aave.com/t/aave-labs-180-day-report/26342)). The tokens are collateral-only. Prices use Chainlink 24/5 feeds that hold the last print over weekends and U.S. holidays ([Aave](https://aave.com/blog/coinbase-tokenized-stocks)).
+- SPCXc is treated as a live Equities Hub reserve in LlamaRisk's 23 Nov 2026 collateral-factor ARFC (current factor 55%). Aave Labs posted a Direct-to-AIP listing on 15 Oct 2026 and said AIP #537 voting would start on 27 Oct; the exact execution date is not stated ([Direct-to-AIP, SPCXc](https://governance.aave.com/t/direct-to-aip-asset-listing-spcxc-to-the-aave-v4-equities-hub-on-base/25850); [ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)).
+- Open proposals as of 23 Nov 2026, not stated as executed: LlamaRisk on 18 Nov proposed adding NFLXc, ORCLc, PLTRc, AMDc, NOWc and MSTRc as collateral, and on 23 Nov proposed ANTc at a 45% collateral factor plus cuts to six of the eight live factors. A lender reply the same day asked to delay or stage ANTc until after lock-up releases starting 15 Dec 2026 ([ARFC, expand](https://governance.aave.com/t/arfc-expand-coinbase-tokenized-equities-on-base/26441); [ARFC, collateral-factor update](https://governance.aave.com/t/arfc-collateral-factor-update-for-coinbase-tokenized-equities-on-base/26482)).
+- [[issuers/coinbase-tokenized-stocks|Coinbase tokenized stocks]], [[analyses/anthropic-ipo-tokenized-stock-use-case|the Anthropic use case]], [[infrastructure/chainlink-equity-feeds|Chainlink equity feeds]] and the [[build/trading-reference-architecture#off-hours-pricing-and-collateral|reference architecture]] are updated to match. Horizon is a separate permissioned RWA market; official Aave sources reviewed on 23 Nov 2026 do not list Securitize stock tokens, xStocks, Backpack or Ondo equities as Aave collateral. Aave Labs said a Snapshot approved HINC, a Securitize-administered credit fund, for Horizon; whether it was then activated is not stated ([Aave Horizon docs](https://aave.com/docs/aave-v3/horizon); [Aave Labs October 2026 update](https://governance.aave.com/t/al-development-update-october-2026/25979)).
+
+========================================================================
 # 2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table
 URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-22-anthropic-timeline-table-removed
 last_checked: 2026-11-22
 
 - [[analyses/anthropic-ipo-tokenized-stock-use-case|Anthropic's IPO as a tokenized-stock use case]] no longer includes the dated timeline table. The short answer, swimlane chart, rANT note and takeaways stay. The chart was not redrawn; Bitget's rANT listing announcement is noted under it ([Bitget](https://www.bitget.com/support/articles/12560603901016); [Bitget](https://www.bitget.com/spotlight/ipo-prime)).
+
+========================================================================
+# 2026-11-22: Anthropic legal-models section adds a diagram and keeps the sourced table
+URL: https://edstokenizedsecuritiesrails.com/changelog/2026-11-22-anthropic-legal-models-diagram
+last_checked: 2026-11-22
+
+- [[analyses/anthropic-ipo-tokenized-stock-use-case|Anthropic's IPO as a tokenized-stock use case]] now opens the legal-models section with a four-group diagram of the ten products. The sourced table is unchanged and sits in a collapsed "Full table with sources" disclosure under the chart.
 
 ========================================================================
 # 2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case

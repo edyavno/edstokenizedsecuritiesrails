@@ -52,6 +52,10 @@ Ondo tokenized stocks are structured notes issued by Ondo Global Markets (BVI) L
 
 The issuer is 90.01% owned by Flux Finance Inc. (a wholly owned subsidiary of the Ondo Foundation) and 9.99% owned by Ondo Finance Inc. ([legal](https://docs.ondo.finance/ondo-stocks/legal-and-regulatory)). Ondo Finance is described as the technology and service provider, not the issuer ([trust and transparency](https://docs.ondo.finance/ondo-stocks/trust-and-transparency)). An EEA/EU base prospectus has been approved by the Financial Market Authority Liechtenstein (FMA), according to the same legal notice, and is published on each token page at [app.ondo.finance](https://app.ondo.finance) ([Ondo Stocks](https://ondo.finance/ondo-stocks)).
 
+## When did Ondo Global Markets launch, and how big is it?
+
+Ondo Global Markets (now branded Ondo Stocks) launched in September 2025, per Ondo ([Ondo PR Newswire](https://www.prnewswire.com/news-releases/ondo-stocks-surpasses-1-billion-in-value-as-ecosystem-surges-302852154.html)). On 27 Oct 2026 Ondo claimed \$1.3B in total value locked and more than 450,000 cumulative holders (issuer claim) ([Ondo blog](https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap)).
+
 ## How does minting and redemption work?
 
 Direct [[concepts/glossary#mint|mint]] and [[concepts/glossary#redeem|redemption]] on the Ondo Stocks platform use signed quotes (IGMTokenManager). Purchases are in USDon, Ondo's 1:1 dollar stablecoin; USDC can be swapped 1:1 atomically when the swapper has liquidity. The minimum is \$1. Minting is instant and atomic; redemption to USDon is always instant, and redemption to USDC is instant if the swapper has enough USDC. Bank-wire redemption is not supported ([investing and redeeming](https://docs.ondo.finance/ondo-stocks/investing-and-redeeming); [API overview](https://docs.ondo.finance/api-reference/overview)).

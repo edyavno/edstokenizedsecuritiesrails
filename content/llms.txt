@@ -18,7 +18,7 @@ Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
 - [Glossary](https://edstokenizedsecuritiesrails.com/concepts/glossary): Plain-English definitions of the jargon used on this wiki, from allowlist to wrapper.
 - [What changed](https://edstokenizedsecuritiesrails.com/whats-changed): Weekly headlines on tokenized securities, with a note on what each change means for holders.
 - [Rules by jurisdiction](https://edstokenizedsecuritiesrails.com/topics/rules-by-jurisdiction): Where tokenized securities stand under the rules in each place this wiki tracks, in one table.
-- [Database of tokenized-securities issuers, venues and infrastructure](https://edstokenizedsecuritiesrails.com/database): One table of the 34 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
+- [Database of tokenized-securities issuers, venues and infrastructure](https://edstokenizedsecuritiesrails.com/database): One table of the 35 issuers, venues/exchange rules and infrastructure providers covered by this wiki, with jurisdiction, legal structure, chains and who can buy. Download as CSV or JSON.
 - [Changelog](https://edstokenizedsecuritiesrails.com/changelog/): Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 - [About](https://edstokenizedsecuritiesrails.com/about): Who curates Ed's Tokenized Securities Rails and how pages are sourced.
 
@@ -56,6 +56,7 @@ Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
 
 ## Analyses
 - [Anthropic's IPO as a tokenized-stock use case: one share, many legal wrappers](https://edstokenizedsecuritiesrails.com/analyses/anthropic-ipo-tokenized-stock-use-case): Short answer. Anthropic sold its IPO shares through underwriters and named brokers. No token was part of that offering.
+- [OKXICE TSV's first 24 hours: $2.55 million traded across six tokenized stocks](https://edstokenizedsecuritiesrails.com/analyses/okxice-tsv-first-24-hours): In the first 24 hours after its 23 Nov 2026 noon ET launch, OKXICE recorded 3,314 trades worth about 2.55 million dollars across six tokenized stocks.
 
 ## Issuers
 - [Backpack Securities](https://edstokenizedsecuritiesrails.com/issuers/backpack): on Backpack you own a real share through a brokerage-style entitlement. You can also turn selected stocks into a separate 1:1 token on Solana and back again.
@@ -74,6 +75,7 @@ Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
 
 ## Platforms and venues
 - [21X](https://edstokenizedsecuritiesrails.com/platforms-venues/21x): 21X runs a regulated EU market where orders are matched and settled by smart contracts on the blockchain itself, not on a private server.
+- [Aave](https://edstokenizedsecuritiesrails.com/platforms-venues/aave): Aave runs a Base lending market where some Coinbase stock tokens can be posted as collateral to borrow USDC, and a separate Ethereum market, Horizon, where…
 - [Bitget](https://edstokenizedsecuritiesrails.com/platforms-venues/bitget): Bitget ran an Anthropic IPO subscription through IPO Prime and said it would list rANT, a Reality token, for spot trading on 19 Nov 2026 during US market…
 - [Bullish Exchange](https://edstokenizedsecuritiesrails.com/platforms-venues/bullish): Bullish runs a crypto exchange in Gibraltar where its own shares now trade as tokens that are real, registered shares.
 - [Bybit](https://edstokenizedsecuritiesrails.com/platforms-venues/bybit): Bybit is a crypto exchange that lists xStocks for trading.
@@ -90,7 +92,7 @@ Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
 ## Infrastructure
 - [Broadridge](https://edstokenizedsecuritiesrails.com/infrastructure/broadridge): Broadridge runs most shareholder voting in the US, and plans to let holders of tokenized NYSE shares vote from their wallets.
 - [Chainlink tokenized equity feeds](https://edstokenizedsecuritiesrails.com/infrastructure/chainlink-equity-feeds): Chainlink supplies stock prices to blockchains so apps can value stock tokens, including outside market hours.
-- [DTCC Tokenization Service (DTS)](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot): The DTCC Tokenization Service (DTS) went live on 28 Oct 2026. DTC turns eligible DTC-held securities into tokenized entitlements on Canton and DTCC's private Besu network, under an 11 Dec 2025 SEC no-action letter.
+- [DTCC Tokenization Service (DTS): the DTC tokenization pilot](https://edstokenizedsecuritiesrails.com/infrastructure/dtcc-tokenization-pilot): The DTCC Tokenization Service (DTS) went live on 28 Oct 2026. DTC turns eligible DTC-held securities into tokenized entitlements on Canton and DTCC's private Besu network, under an 11 Dec 2025 SEC no-action letter.
 - [Fairmint](https://edstokenizedsecuritiesrails.com/infrastructure/fairmint): Fairmint is a transfer agent: the firm that keeps a company's official list of shareholders.
 - [tZERO](https://edstokenizedsecuritiesrails.com/infrastructure/tzero): tZERO builds the record-keeping and trading plumbing for tokenized shares, and is lined up to be one of NYSE's approved token record-keepers.
 - [Uniswap v4 permissioned pools](https://edstokenizedsecuritiesrails.com/infrastructure/uniswap-permissioned-pools): Uniswap's permissioned pools let only approved wallets trade a token, so regulated assets can use onchain pools.
@@ -98,7 +100,12 @@ Curated by [Edward Yavno](https://edstokenizedsecuritiesrails.com/about)
 - [Zerohash](https://edstokenizedsecuritiesrails.com/infrastructure/zerohash): Zerohash sells brokerages the plumbing to offer tokenized assets to their customers.
 
 ## Changelog entries
+- [2026-11-24: OKXICE TSV's first 24 hours of trading](https://edstokenizedsecuritiesrails.com/changelog/2026-11-24-okxice-tsv-first-24-hours): - New analysis: OKXICE TSV's first 24 hours. In the 24 hours after the noon ET launch on 23 Nov 2026 (through noon ET on 24 Nov), the six launch USDC pools recorded 3,314 trades worth \$2,546,330.59.
+- [2026-11-23: OKXICE TSV public data API](https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-okxice-tsv-public-data-api): - OKXICE TSV: Official API documentation for the venue's public market data is in the OKX OnchainOS TSV data reference, linked as "API Docs" from okx.com/okxicetsv.
+- [2026-11-23: OKXICE TSV launched](https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-okxice-tsv-launch): - OKXICE TSV: OKX said the venue opened at noon ET on 23 Nov 2026 for eligible U.S. customers, in the TSV tab of the OKX app, with 113 assets confirmed for a rolling rollout, including stocks, ETFs and ETPs.
+- [2026-11-23: Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](https://edstokenizedsecuritiesrails.com/changelog/2026-11-23-aave-equities-hub-horizon): - New page: Aave, covering the V4 Equities Hub on Base and Aave Horizon on Ethereum. - Aave Labs said the Equities Hub was activated on 25 Sep 2026 with seven Coinbase tokens (AAPLc, AMZNc, GOOGLc, METAc, MSFTc, NVDAc,…
 - [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](https://edstokenizedsecuritiesrails.com/changelog/2026-11-22-anthropic-timeline-table-removed): - Anthropic's IPO as a tokenized-stock use case no longer includes the dated timeline table.
+- [2026-11-22: Anthropic legal-models section adds a diagram and keeps the sourced table](https://edstokenizedsecuritiesrails.com/changelog/2026-11-22-anthropic-legal-models-diagram): - Anthropic's IPO as a tokenized-stock use case now opens the legal-models section with a four-group diagram of the ten products.
 - [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](https://edstokenizedsecuritiesrails.com/changelog/2026-11-21-bitget-rant-ipo-prime): - New pages: Reality (issuer of rANT, per Bitget) and Bitget (IPO Prime subscription and rANT spot listing).
 - [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](https://edstokenizedsecuritiesrails.com/changelog/2026-11-21-anthropic-traded-vs-held): - Anthropic's IPO as a tokenized-stock use case: rewritten to be shorter, with a new chart comparing day-one spot volume by issuer (TechFlow) with value held onchain on 20 Nov (Entropy Advisors, Tom Wan on X).
 - [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](https://edstokenizedsecuritiesrails.com/changelog/2026-11-21-anthropic-days-1-2-reported-metrics): - Implementations by model: two-day DEX volume by chain from Sunrise (Solana \$140M+, Robinhood Chain \$64M, BNB Chain \$27M, Base \$17M, Ethereum about \$1M;

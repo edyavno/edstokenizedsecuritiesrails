@@ -1,5 +1,5 @@
 ---
-name: DTCC Tokenization Service (DTS)
+name: 'DTCC Tokenization Service (DTS): the DTC tokenization pilot'
 jurisdiction: United States
 product_name: DTCC Tokenization Service (DTS; Tokenized Entitlements)
 structure: Security entitlements recorded on DLT
@@ -9,7 +9,7 @@ num_assets: '34 securities at launch (~$30T eligible): select Russell 1000 equit
 structure_short: Depository pilot
 who_can_buy_short: DTC participants
 last_checked: '2026-11-18'
-title: DTCC Tokenization Service (DTS)
+title: 'DTCC Tokenization Service (DTS): the DTC tokenization pilot'
 tags:
 - infrastructure
 type: infrastructure
@@ -28,7 +28,7 @@ description: The DTCC Tokenization Service (DTS) went live on 28 Oct 2026. DTC t
 
 | Field | Value |
 |---|---|
-| name | DTCC Tokenization Service (DTS) |
+| name | DTCC Tokenization Service (DTS): the DTC tokenization pilot |
 | jurisdiction | United States |
 | product_name | DTCC Tokenization Service (DTS; Tokenized Entitlements) |
 | structure | Security entitlements recorded on DLT |
@@ -36,7 +36,7 @@ description: The DTCC Tokenization Service (DTS) went live on 28 Oct 2026. DTC t
 | who_can_buy | DTC participants (20 signed at launch, 28 Oct 2026); clients of Participants cannot submit conversion orders or independently register wallets (DTCC FAQs, retrieved 14 Nov 2026) |
 | num_assets | 34 securities at launch (~\$30T eligible): select Russell 1000 equities, ETFs, Treasuries |
 
-*In plain English: DTC, the US central securities depository, is testing tokenized versions of shares it already holds.*
+*In plain English: DTC, the US central securities depository, launched the DTCC Tokenization Service (DTS) on 28 Oct 2026 under an 11 Dec 2025 SEC no-action letter. It turns eligible DTC-held securities into tokenized entitlements on Canton and DTCC's private Besu network.*
 
 DTC operates a tokenization pilot under a 11 Dec 2025 SEC no-action letter ([SEC](https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105047.pdf)); 24X Exchange filed rules referencing it ([SEC](https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-24x-2026-20)).
 

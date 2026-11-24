@@ -1,12 +1,17 @@
 ---
 title: Changelog
-last_checked: '2026-11-22'
+last_checked: '2026-11-24'
 description: Public changes, every entry in the vault as of each publish. See What changed for the week-by-week view.
 ---
 
 Public changes, every entry in the vault as of each publish. See [[whats-changed|What changed]] for the week-by-week view.
 
+- [2026-11-24: OKXICE TSV's first 24 hours of trading](/changelog/2026-11-24-okxice-tsv-first-24-hours)
+- [2026-11-23: OKXICE TSV public data API](/changelog/2026-11-23-okxice-tsv-public-data-api)
+- [2026-11-23: OKXICE TSV launched](/changelog/2026-11-23-okxice-tsv-launch)
+- [2026-11-23: Aave Equities Hub, SPCXc, proposed ANTc listing, and Horizon](/changelog/2026-11-23-aave-equities-hub-horizon)
 - [2026-11-22: Anthropic timeline keeps the swimlane and drops the dated table](/changelog/2026-11-22-anthropic-timeline-table-removed)
+- [2026-11-22: Anthropic legal-models section adds a diagram and keeps the sourced table](/changelog/2026-11-22-anthropic-legal-models-diagram)
 - [2026-11-21: Bitget rANT (Reality, IPO Prime) added to the Anthropic use case](/changelog/2026-11-21-bitget-rant-ipo-prime)
 - [2026-11-21: Anthropic tokens, traded vs. held, and prices at the close](/changelog/2026-11-21-anthropic-traded-vs-held)
 - [2026-11-21: Anthropic tokens by chain, outside Nasdaq hours, and by AMM (reported)](/changelog/2026-11-21-anthropic-days-1-2-reported-metrics)
